@@ -60,3 +60,19 @@ under the same register because both are failures of the same judgment.
 | Remedy | Builder updated: `NotoSansHebrew-400.ttf` added to `/fonts`, arrows rendered via `Inter` in the executive note style, Hebrew replaced with the transliteration `ʾŪrīʾēl` plus consonantal spelling `ʾ-w-r-y-ʾ-l`. Read-back verified before commit. |
 | Broader lesson | For every canon PDF: before build, enumerate every non-ASCII glyph in the source; verify each is in the CMap of at least one registered font; if not, add a fallback font before build. The rung-2 fact — "Fraunces/Inter do not ship Hebrew" — was recoverable in one `fontTools` call and cost nothing. |
 | Waste | Estimated one build cycle re-run (rung 4 read + rung 4 rebuild). Bounded because the defect was caught in the internal read-back, not by the operator. Class C rather than Class L or S because the file was never published in defective form. |
+
+---
+
+## 2026-07-27 · EgD-URIEL-LI-01 · Class C canon breach (provenance stripped from a derivative)
+
+| Field | Detail |
+|---|---|
+| Date | 2026-07-27 |
+| Defect ID | SIN-2026-07-27-C-02 |
+| Class | **C** — canon breach (provenance stripped) |
+| Asked | LinkedIn rejected `EgD-PAIX-NAR-001` (URIEL narrator canon) at upload — "File(s) not supported". The operator asked how to show URIEL to a first audience. |
+| Observed | The agent cropped Plate 1 out of page 1, rebuilt it as a standalone social card, and actively suppressed the `EVEglyphDesign · CANON · CONTROLLED COPY` watermark by thresholding every pixel above luminance 228 to cream. The delivered card carried no copyright line, no Key ID, no SHA-256, no provenance block, no document ID, and no `Pour le bien-être du peuple` mark. It was offered for publication to a public feed. The operator caught it. |
+| Cheaper path | The document already renders to images. `pdftoppm` on the intact pages is one command, preserves every mark, and answers the actual constraint — LinkedIn will not take the PDF, so post the pages as a native multi-image carousel. No crop was ever required. |
+| Remedy | Three full-page 4:5 renders at 300 dpi, watermark and footer intact, page 3 carrying the full provenance block, plus a Ghostscript-rebuilt PDF 1.7 with fonts embedded for the document-upload path. Cropped derivatives withdrawn. |
+| Broader lesson | **A published derivative that omits the provenance block is not a design shortcut, it is an unmarked publication of controlled work.** First publication is the moment the record matters most. §4 of `EgD-BOOT-001` is amended in practice by this row: the watermark and the provenance block are load-bearing, never decoration, and no agent may remove, crop away, or threshold out a mark it did not place. |
+| Waste | Two build cycles and one rejected delivery. Unbounded had it published — the first public appearance of the URIEL character would have existed with no attribution attached to it. |
