@@ -1,6 +1,6 @@
 ---
 name: eveglyph-boot-contract
-description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001: the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, symmetric processing, and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, wasted processing, cold starts, defect logging, or the SIN defect register."
+description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001 plus its measurement gate EgD-BOOT-002 (the Burn Ledger): the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, the duty to state the current burn rate before any expensive action, symmetric processing, and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, credit burn, burn rate, usage analytics, wasted processing, cold starts, defect logging, or the SIN defect register."
 license: "© 2026 EVEglyphDesign. All rights reserved. Controlled copy."
 compatibility: "Requires no tools to read. Repository work assumes GitHub access via api_credentials=[\"github\"]."
 metadata:
@@ -75,6 +75,25 @@ breathe. The operator wants to be asked before money moves.
 Before any expensive action, write one line: what it will do, why rungs 1–5 could not,
 and what the cheap alternative would have produced. If that line cannot be written
 honestly, the action is not justified.
+
+---
+
+### The measurement gate — EgD-BOOT-002
+
+The **Burn Ledger** is the instrument that makes this contract enforceable. It reports the
+bill by window, daily burn against a declared control of **5,000 credits ($50) per day**,
+concentration (the share of 90-day spend landing in the ten heaviest days, and the heaviest
+day as a multiple of the median active day), and yield measured as credits per artifact with
+canon format compliance. **1 credit = 1 US cent.**
+
+- Live: <https://eveglyphdesign.github.io/eve-glyph-boot-contract/dashboard/>
+- Data: `docs/dashboard/data.json` · Generator: `scripts/refresh_ledger.py`
+- Refresh source: `pplx analytics computer usage get --time-range 90d --scope org`
+
+**Duty:** before any rung-six action, state the current burn rate and whether the day is
+already over control. One line. It costs nothing, it is a rung-two fact, and it turns an
+invisible charge into a decision the operator can make. Refresh the ledger only when asked
+or on an approved schedule — the refresh itself costs something.
 
 ---
 

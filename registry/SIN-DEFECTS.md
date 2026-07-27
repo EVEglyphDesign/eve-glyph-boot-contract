@@ -32,3 +32,15 @@ under the same register because both are failures of the same judgment.
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
 *Pour le bien-être du peuple.*
+
+### SIN-2026-07-27-01 — R — retrieval waste, unmeasurable until now
+
+| Field | Value |
+|---|---|
+| Date | 2026-07-27 |
+| Class | R — retrieval waste |
+| Asked | A performance monitoring surface for the beginning of processing. |
+| Observed | Ninety days of org spend totalled 644,620 credits ($6,446), of which **64.4% landed in ten days**. The heaviest single day, 2026-05-20, ran 122,470 credits ($1,225) — **35.5× the median active day** of 3,447 credits ($34). Twenty-four of ninety days ran above a $50/day control. Thirty-day yield: 189,252 credits ($1,893) for 18 recorded artifacts, $105 each, of which only 22.2% were PDFs against a canon PDF default. |
+| Finding | The distribution, not the total, is the defect. Spend that concentrates 64% of a quarter into ten days is spend that tracked the operator's attention rather than the operator's need. It is invisible from inside a flow state, which is exactly when it occurs. |
+| Cheaper path | The six-rung ladder of EgD-BOOT-001, plus the duty added by EgD-BOOT-002: state the burn rate before any rung-six action. |
+| Remedy | EgD-BOOT-002 issued — public ledger, controlled PDF, refresh generator, and the burn-rate declaration bound into the loadable skill. |
