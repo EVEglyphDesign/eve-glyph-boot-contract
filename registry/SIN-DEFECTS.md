@@ -76,3 +76,17 @@ under the same register because both are failures of the same judgment.
 | Remedy | Three full-page 4:5 renders at 300 dpi, watermark and footer intact, page 3 carrying the full provenance block, plus a Ghostscript-rebuilt PDF 1.7 with fonts embedded for the document-upload path. Cropped derivatives withdrawn. |
 | Broader lesson | **A published derivative that omits the provenance block is not a design shortcut, it is an unmarked publication of controlled work.** First publication is the moment the record matters most. §4 of `EgD-BOOT-001` is amended in practice by this row: the watermark and the provenance block are load-bearing, never decoration, and no agent may remove, crop away, or threshold out a mark it did not place. |
 | Waste | Two build cycles and one rejected delivery. Unbounded had it published — the first public appearance of the URIEL character would have existed with no attribution attached to it. |
+
+---
+
+| Field | Detail |
+|---|---|
+| Date | 2026-07-27 |
+| Defect ID | SIN-2026-07-27-R-03 |
+| Class | **R** — retrieval waste (cold start on a held template) |
+| Asked | Hawkins Twin thread. After publishing the mock ADA/ATD 20 Group composite dashboard, the operator asked for a one-page PDF leave-behind for Tim to carry into the 20 Group room. |
+| Observed | The agent began the task by reading the two attached meeting screenshots — already seen twice in the same thread and carrying no new information — instead of recalling the controlled L2 note template. The operator had to stop the work and say so: "you're not doing a symmetrical view… the PDF that I'm talking about, with all the text, explaining really the theoretical framework fit for Uriel… would have been really easy for you to get to." |
+| Cheaper path | Rung 2/3. One grep for `Uriel` across `memory/` returns `EVEglyphDesign--Uriel-and-the-Akkadian-through-line.pdf` (`EgD-URIEL-AKK-01`) in `memory/sessions/asset_index.md` in under a second — the established L2 register: running head with orange rule, orange eyebrow, Fraunces title, standfirst, cream abstract with orange left border, numbered sections in dense justified prose, evidence table, diagonal watermark, and the four-line provenance footer. That is the format the operator meant by "one-page PDF", and it was produced by this system the same day. |
+| Remedy | `EgD-HWK-COMP-01` — *The composite, and what sits under it* — built in the `EgD-URIEL-AKK-01` register, one page, provenance intact, published to the repository and the public surface. |
+| Broader lesson | **The output canon is not only the palette and the marks; it is the register of the last document the operator accepted.** When the operator says "the PDF", he means a specific held artefact. Re-reading attachments already in the window is not diligence — it is the cold start §1 warns about, dressed as care. Recall the template before drafting the content. |
+| Waste | One correction round and the operator's time. Two message turns and one build cycle that would not have occurred. |
