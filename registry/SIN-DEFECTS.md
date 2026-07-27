@@ -44,3 +44,19 @@ under the same register because both are failures of the same judgment.
 | Finding | The distribution, not the total, is the defect. Spend that concentrates 64% of a quarter into ten days is spend that tracked the operator's attention rather than the operator's need. It is invisible from inside a flow state, which is exactly when it occurs. |
 | Cheaper path | The six-rung ladder of EgD-BOOT-001, plus the duty added by EgD-BOOT-002: state the burn rate before any rung-six action. |
 | Remedy | EgD-BOOT-002 issued — public ledger, controlled PDF, refresh generator, and the burn-rate declaration bound into the loadable skill. |
+
+---
+
+## 2026-07-27 · EgD-URIEL-AKK-01 · Class C canon breach (glyph coverage)
+
+| Field | Detail |
+|---|---|
+| Date | 2026-07-27 |
+| Defect ID | SIN-2026-07-27-C-01 |
+| Class | **C** — canon breach (glyph coverage) |
+| Asked | An A4 PDF note on Uriel and the Akkadian through-line, canon-compliant, landed in the enoch-convergence repository and on a public surface. |
+| Observed | First render of the PDF showed `\u0000` tofu boxes wherever `→` (U+2192) and Hebrew אוּרִיאֵל (U+05D0…U+05DC) should have rendered. Fraunces static ships neither the arrow nor Hebrew coverage; Inter has the arrow but not Hebrew. The defect was caught in read-back before delivery — not in the delivered file. |
+| Cheaper path | (a) Register a Hebrew-capable font (Noto Sans Hebrew) at build time and route Hebrew glyphs through it via `<font name='Hebrew'>`. (b) Route the arrow through Inter, which carries it in every subset. (c) Where reliable RTL bidi is not available in the layout engine (ReportLab has none), prefer transliteration in the body and reserve the native script for provenance. |
+| Remedy | Builder updated: `NotoSansHebrew-400.ttf` added to `/fonts`, arrows rendered via `Inter` in the executive note style, Hebrew replaced with the transliteration `ʾŪrīʾēl` plus consonantal spelling `ʾ-w-r-y-ʾ-l`. Read-back verified before commit. |
+| Broader lesson | For every canon PDF: before build, enumerate every non-ASCII glyph in the source; verify each is in the CMap of at least one registered font; if not, add a fallback font before build. The rung-2 fact — "Fraunces/Inter do not ship Hebrew" — was recoverable in one `fontTools` call and cost nothing. |
+| Waste | Estimated one build cycle re-run (rung 4 read + rung 4 rebuild). Bounded because the defect was caught in the internal read-back, not by the operator. Class C rather than Class L or S because the file was never published in defective form. |
