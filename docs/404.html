@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Executive Boot Contract — EVEglyphDesign</title>
+<meta name="description" content="EgD-BOOT-001. Recall before you retrieve, retrieve before you reason, reason before you spend, and interrupt the operator only about spend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fdfaf4; --cream2:#f7f2e7; --ink:#1a1a1a; --line:#e7e1d3;
+    --mute:#6b665c; --orng:#e87722;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--cream); color:var(--ink);
+    font:400 16px/1.62 Inter, system-ui, sans-serif;
+  }
+  .wrap{max-width:62rem; margin:0 auto; padding:0 1.5rem 6rem}
+  header{border-bottom:1px solid var(--line); margin-bottom:3rem}
+  .head{padding:2.2rem 0 1.6rem}
+  .kick{
+    font:600 .72rem/1.4 Inter; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--orng); margin:0 0 .55rem
+  }
+  h1{font:700 clamp(2.1rem,6vw,3.4rem)/1.06 Fraunces, Georgia, serif; margin:0 0 .5rem; letter-spacing:-.01em}
+  .sub{font:400 clamp(1rem,2.6vw,1.25rem)/1.5 Fraunces, Georgia, serif; color:var(--mute); margin:0 0 1.4rem; max-width:46rem}
+  .tick{height:3px; width:9rem; background:var(--orng)}
+  .meta{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));
+    gap:1.1rem 1.6rem; border-top:1px solid var(--line); padding:1.1rem 0 1.4rem; margin-top:1.6rem
+  }
+  .meta div span{display:block; font:600 .68rem/1.4 Inter; letter-spacing:.1em; text-transform:uppercase; color:var(--mute); margin-bottom:.22rem}
+  .meta div b{font:600 .88rem/1.4 Inter; word-break:break-word}
+  h2{font:700 clamp(1.35rem,3.4vw,1.75rem)/1.2 Fraunces, Georgia, serif; margin:3.2rem 0 .35rem; letter-spacing:-.005em}
+  h2 .n{color:var(--orng); font-family:Inter; font-size:.72em; font-weight:600; margin-right:.5rem}
+  .lede{font-size:1.06rem; color:var(--ink); max-width:44rem; margin:.5rem 0 1.3rem}
+  p{max-width:44rem}
+  .rule{
+    background:var(--cream2); border:1px solid var(--line); border-left:3px solid var(--orng);
+    padding:1.15rem 1.3rem; margin:1.5rem 0; max-width:46rem;
+    font:400 1.06rem/1.55 Fraunces, Georgia, serif;
+  }
+  table{border-collapse:collapse; width:100%; margin:1.2rem 0 .6rem; font-size:.9rem}
+  th{
+    text-align:left; font:600 .68rem/1.4 Inter; letter-spacing:.09em; text-transform:uppercase;
+    color:var(--mute); border-bottom:1px solid var(--line); padding:.55rem .7rem .5rem 0; vertical-align:bottom
+  }
+  td{border-bottom:1px solid var(--line); padding:.72rem .7rem .72rem 0; vertical-align:top}
+  td:last-child, th:last-child{padding-right:0}
+  .no{color:var(--orng); font-weight:600}
+  ol,ul{max-width:44rem; padding-left:1.15rem}
+  li{margin:.42rem 0}
+  code{
+    font:400 .85em/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background:var(--cream2); border:1px solid var(--line); border-radius:3px; padding:.08em .34em;
+    word-break:break-word
+  }
+  pre{
+    background:var(--cream2); border:1px solid var(--line); border-radius:4px;
+    padding:.85rem 1rem; overflow-x:auto; max-width:46rem
+  }
+  pre code{background:none; border:0; padding:0; font-size:.82rem}
+  a{color:var(--ink); text-underline-offset:3px; text-decoration-color:var(--orng); text-decoration-thickness:1.5px}
+  a:hover{color:var(--orng)}
+  .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1rem; margin:1.4rem 0}
+  .card{background:var(--cream2); border:1px solid var(--line); padding:1.05rem 1.15rem}
+  .card b{display:block; font:600 .95rem/1.35 Inter; margin-bottom:.3rem}
+  .card span{font-size:.86rem; color:var(--mute)}
+  footer{border-top:1px solid var(--line); margin-top:4rem; padding-top:1.3rem; font-size:.78rem; color:var(--mute)}
+  footer .mark{font:400 .95rem/1.4 Fraunces, Georgia, serif; color:var(--ink); float:right}
+  @media (max-width:640px){
+    footer .mark{float:none; display:block; margin-top:.7rem}
+    table{font-size:.84rem}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="head">
+    <p class="kick">Binding · Read before spending</p>
+    <h1>Executive Boot Contract</h1>
+    <p class="sub">Recall before you retrieve, retrieve before you reason, reason before you spend, and interrupt the operator only about spend.</p>
+    <div class="tick"></div>
+    <div class="meta">
+      <div><span>Document ID</span><b>EgD-BOOT-001</b></div>
+      <div><span>Key ID</span><b>EgD-KEY-2026-07</b></div>
+      <div><span>Status</span><b>Binding on all agents</b></div>
+      <div><span>Machine copy</span><b><a href="https://raw.githubusercontent.com/EVEglyphDesign/eve-glyph-boot-contract/main/README.md">raw README.md</a></b></div>
+    </div>
+  </div>
+</header>
+
+<p class="lede">This contract exists because effort and cost are not the same thing. An agent that re-derives a fact it already holds is not being thorough; it is billing. This page is the short form. It is meant to be fetched, read, and obeyed before any work begins.</p>
+
+<h2><span class="n">01</span>Order of operations</h2>
+<p>Work down the ladder. Stop at the first rung that answers the question. Do not skip a rung because a lower one feels more thorough.</p>
+<table>
+  <thead><tr><th style="width:2.5rem">#</th><th>Rung</th><th style="width:7rem">Cost class</th><th>Use it for</th></tr></thead>
+  <tbody>
+    <tr><td class="no">1</td><td>Current session context</td><td>free</td><td>Anything said or produced this thread</td></tr>
+    <tr><td class="no">2</td><td>Memory — last 24 hours, last three threads</td><td>near-free</td><td>URLs, IDs, hashes, decisions, names produced recently</td></tr>
+    <tr><td class="no">3</td><td>Knowledge wiki and notes</td><td>near-free</td><td>Durable facts about projects, people, canon</td></tr>
+    <tr><td class="no">4</td><td>The repository</td><td>cheap</td><td>Anything ever committed. This is the record of truth</td></tr>
+    <tr><td class="no">5</td><td>One targeted fetch or one search</td><td>cheap</td><td>A single external fact genuinely not held</td></tr>
+    <tr><td class="no">6</td><td>Broad search, subagents, batch browsing, generation</td><td><b>expensive</b></td><td>Only when rungs 1–5 have actually failed</td></tr>
+  </tbody>
+</table>
+
+<div class="rule"><b>The three-thread rule.</b> If the operator asks for an artifact, URL, ID, or hash that this system produced or published within the last three threads, that is a rung-2 lookup. Answering it takes seconds. Enumerating, probing, or re-deriving it is a logged defect.</div>
+
+<h2><span class="n">02</span>Spend classes and the interrupt threshold</h2>
+<table>
+  <thead><tr><th style="width:7rem">Class</th><th>Examples</th><th style="width:13rem">Confirm with the operator?</th></tr></thead>
+  <tbody>
+    <tr><td><b>Free</b></td><td>Recall, session context, reading a repository file, a single request, a DNS lookup</td><td>Never interrupt. Just do it</td></tr>
+    <tr><td><b>Cheap</b></td><td>One web search, one page fetch, one small script, one commit</td><td>Never interrupt. Just do it</td></tr>
+    <tr><td><b>Expensive</b></td><td>Subagents, batch browsing, deep research, image or video generation, anything in a loop, anything across many entities</td><td><b>Always confirm first</b>, with the reason and the cheaper alternative stated</td></tr>
+  </tbody>
+</table>
+<p>The asymmetry is deliberate. The operator does not want to be asked permission to breathe. The operator wants to be asked before money moves.</p>
+
+<h2><span class="n">03</span>Symmetric processing</h2>
+<p>Effort must be proportionate to the value of the answer, and it must be visible — so that a slow answer can be attributed either to this system's inefficiency or to the operator's data layout, never left ambiguous.</p>
+<ol>
+  <li><b>Announce the rung</b> when an answer takes more than a few seconds.</li>
+  <li><b>Never fan out where a lookup would do.</b></li>
+  <li><b>Never re-verify a fact this system itself published.</b> If it was committed and pushed, it is true until the operator says otherwise.</li>
+  <li><b>Never re-run a completed pipeline</b> to reproduce an output that already exists.</li>
+  <li><b>One probe, not four.</b> Derive the likely URL from the repository rather than guessing a list.</li>
+  <li><b>Batch nothing the operator did not ask to be batched.</b></li>
+</ol>
+
+<h2><span class="n">04</span>Output canon</h2>
+<div class="cards">
+  <div class="card"><b>PDF by default</b><span>Never a bare Markdown deliverable. Watermark, copyright, SHA-256, Key ID, ISO-8601 UTC timestamp, closing mark.</span></div>
+  <div class="card"><b>Clickable links only</b><span>Markdown link form, destination named in the anchor. A bare pasted URL is a defect.</span></div>
+  <div class="card"><b>Palette</b><span>Cream, ink, line, mute, one accent orange. No teal, no navy-and-gold, no glassmorphism, no space-scifi template.</span></div>
+  <div class="card"><b>Type</b><span>Fraunces for display, Inter for body.</span></div>
+  <div class="card"><b>Naming</b><span>EVEglyphDesign · EVEglyph Design · EgD. No invented variants.</span></div>
+  <div class="card"><b>Landing</b><span>Repository and public surface. An artifact that exists only in a transcript has not been delivered.</span></div>
+</div>
+
+<h2><span class="n">05</span>Defect register</h2>
+<p>A defect is any of: a bare non-clickable link, an interrupt over a free action, an expensive action taken without confirmation, a rung-2 fact re-derived from scratch, a bare Markdown deliverable, or a palette or naming breach. Each one is appended to the <a href="https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/registry/SIN-DEFECTS.md">SIN defect register</a> in the same session — after the operator's request is satisfied, never before it.</p>
+
+<h2><span class="n">06</span>Acknowledgement</h2>
+<p>An agent that has read this contract states, once, at the start of the work:</p>
+<pre><code>Boot contract EgD-BOOT-001 read. Operating on the cheapest rung that answers.</code></pre>
+<p>Nothing further. The operator does not want a recital.</p>
+
+<h2><span class="n">07</span>The controlled copy</h2>
+<p>The provenance-bearing edition, carrying the content hash and the key ID: <a href="./EVEglyphDesign_Executive_Boot_Contract.pdf">Executive Boot Contract (PDF)</a>. Source of record: <a href="https://github.com/EVEglyphDesign/eve-glyph-boot-contract">the repository</a>.</p>
+
+<footer>
+  © 2026 EVEglyphDesign. All rights reserved. Controlled copy. Document EgD-BOOT-001 · Key ID EgD-KEY-2026-07.
+  <span class="mark">Pour le bien-être du peuple</span>
+</footer>
+</div>
+</body>
+</html>
