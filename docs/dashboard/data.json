@@ -1,0 +1,661 @@
+{
+ "generated": "2026-07-27T08:42:56Z",
+ "last_updated": "2026-07-27T06:13:22.513354Z",
+ "document": "EgD-BOOT-001",
+ "daily": [
+  {
+   "date": "2026-04-28",
+   "credits": 0
+  },
+  {
+   "date": "2026-04-29",
+   "credits": 0
+  },
+  {
+   "date": "2026-04-30",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-01",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-02",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-03",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-04",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-05",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-06",
+   "credits": 3584
+  },
+  {
+   "date": "2026-05-07",
+   "credits": 2400
+  },
+  {
+   "date": "2026-05-08",
+   "credits": 2002
+  },
+  {
+   "date": "2026-05-09",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-10",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-11",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-12",
+   "credits": 0
+  },
+  {
+   "date": "2026-05-13",
+   "credits": 3836
+  },
+  {
+   "date": "2026-05-14",
+   "credits": 21718
+  },
+  {
+   "date": "2026-05-15",
+   "credits": 4752
+  },
+  {
+   "date": "2026-05-16",
+   "credits": 32626
+  },
+  {
+   "date": "2026-05-17",
+   "credits": 52768
+  },
+  {
+   "date": "2026-05-18",
+   "credits": 11988
+  },
+  {
+   "date": "2026-05-19",
+   "credits": 55494
+  },
+  {
+   "date": "2026-05-20",
+   "credits": 122470
+  },
+  {
+   "date": "2026-05-21",
+   "credits": 34488
+  },
+  {
+   "date": "2026-05-22",
+   "credits": 3050
+  },
+  {
+   "date": "2026-05-23",
+   "credits": 20452
+  },
+  {
+   "date": "2026-05-24",
+   "credits": 2566
+  },
+  {
+   "date": "2026-05-25",
+   "credits": 700
+  },
+  {
+   "date": "2026-05-26",
+   "credits": 1624
+  },
+  {
+   "date": "2026-05-27",
+   "credits": 1472
+  },
+  {
+   "date": "2026-05-28",
+   "credits": 10102
+  },
+  {
+   "date": "2026-05-29",
+   "credits": 2818
+  },
+  {
+   "date": "2026-05-30",
+   "credits": 2702
+  },
+  {
+   "date": "2026-05-31",
+   "credits": 5788
+  },
+  {
+   "date": "2026-06-01",
+   "credits": 1556
+  },
+  {
+   "date": "2026-06-02",
+   "credits": 2869
+  },
+  {
+   "date": "2026-06-03",
+   "credits": 1543
+  },
+  {
+   "date": "2026-06-04",
+   "credits": 3877
+  },
+  {
+   "date": "2026-06-05",
+   "credits": 3058
+  },
+  {
+   "date": "2026-06-06",
+   "credits": 443
+  },
+  {
+   "date": "2026-06-07",
+   "credits": 3582
+  },
+  {
+   "date": "2026-06-08",
+   "credits": 3871
+  },
+  {
+   "date": "2026-06-09",
+   "credits": 2229
+  },
+  {
+   "date": "2026-06-10",
+   "credits": 2424
+  },
+  {
+   "date": "2026-06-11",
+   "credits": 2560
+  },
+  {
+   "date": "2026-06-12",
+   "credits": 3510
+  },
+  {
+   "date": "2026-06-13",
+   "credits": 543
+  },
+  {
+   "date": "2026-06-14",
+   "credits": 6902
+  },
+  {
+   "date": "2026-06-15",
+   "credits": 450
+  },
+  {
+   "date": "2026-06-16",
+   "credits": 316
+  },
+  {
+   "date": "2026-06-17",
+   "credits": 7549
+  },
+  {
+   "date": "2026-06-18",
+   "credits": 221
+  },
+  {
+   "date": "2026-06-19",
+   "credits": 4350
+  },
+  {
+   "date": "2026-06-20",
+   "credits": 305
+  },
+  {
+   "date": "2026-06-21",
+   "credits": 232
+  },
+  {
+   "date": "2026-06-22",
+   "credits": 581
+  },
+  {
+   "date": "2026-06-23",
+   "credits": 255
+  },
+  {
+   "date": "2026-06-24",
+   "credits": 1065
+  },
+  {
+   "date": "2026-06-25",
+   "credits": 1445
+  },
+  {
+   "date": "2026-06-26",
+   "credits": 232
+  },
+  {
+   "date": "2026-06-27",
+   "credits": 569
+  },
+  {
+   "date": "2026-06-28",
+   "credits": 6208
+  },
+  {
+   "date": "2026-06-29",
+   "credits": 1646
+  },
+  {
+   "date": "2026-06-30",
+   "credits": 312
+  },
+  {
+   "date": "2026-07-01",
+   "credits": 3691
+  },
+  {
+   "date": "2026-07-02",
+   "credits": 6067
+  },
+  {
+   "date": "2026-07-03",
+   "credits": 15045
+  },
+  {
+   "date": "2026-07-04",
+   "credits": 4969
+  },
+  {
+   "date": "2026-07-05",
+   "credits": 1225
+  },
+  {
+   "date": "2026-07-06",
+   "credits": 4837
+  },
+  {
+   "date": "2026-07-07",
+   "credits": 7993
+  },
+  {
+   "date": "2026-07-08",
+   "credits": 1571
+  },
+  {
+   "date": "2026-07-09",
+   "credits": 2334
+  },
+  {
+   "date": "2026-07-10",
+   "credits": 5005
+  },
+  {
+   "date": "2026-07-11",
+   "credits": 16396
+  },
+  {
+   "date": "2026-07-12",
+   "credits": 7878
+  },
+  {
+   "date": "2026-07-13",
+   "credits": 5809
+  },
+  {
+   "date": "2026-07-14",
+   "credits": 4528
+  },
+  {
+   "date": "2026-07-15",
+   "credits": 1442
+  },
+  {
+   "date": "2026-07-16",
+   "credits": 4201
+  },
+  {
+   "date": "2026-07-17",
+   "credits": 436
+  },
+  {
+   "date": "2026-07-18",
+   "credits": 3384
+  },
+  {
+   "date": "2026-07-19",
+   "credits": 17533
+  },
+  {
+   "date": "2026-07-20",
+   "credits": 7135
+  },
+  {
+   "date": "2026-07-21",
+   "credits": 2741
+  },
+  {
+   "date": "2026-07-22",
+   "credits": 3630
+  },
+  {
+   "date": "2026-07-23",
+   "credits": 4889
+  },
+  {
+   "date": "2026-07-24",
+   "credits": 5112
+  },
+  {
+   "date": "2026-07-25",
+   "credits": 41039
+  },
+  {
+   "date": "2026-07-26",
+   "credits": 1627
+  }
+ ],
+ "windows": {
+  "d1": 1627,
+  "d7": 66173,
+  "d30": 189252,
+  "d90": 644620,
+  "d7_per_day": 9453.3,
+  "d30_per_day": 6308.4,
+  "d90_per_day": 7162.4
+ },
+ "shape": {
+  "active_days": 78,
+  "median_active_day": 3447.0,
+  "peak_day": "2026-05-20",
+  "peak_credits": 122470,
+  "peak_vs_median": 35.5,
+  "top10_share": 64.4
+ },
+ "models_90d": [
+  {
+   "name": "Claude Opus 4.7",
+   "credits": 304141
+  },
+  {
+   "name": "Claude Opus 4.8",
+   "credits": 50984
+  },
+  {
+   "name": "claude-opus-5-0",
+   "credits": 30849
+  },
+  {
+   "name": "GPT-5.2",
+   "credits": 22097
+  },
+  {
+   "name": "Claude Sonnet 5",
+   "credits": 18685
+  },
+  {
+   "name": "Claude Sonnet 4.6",
+   "credits": 14640
+  },
+  {
+   "name": "GPT-5.4 mini",
+   "credits": 924
+  },
+  {
+   "name": "Gemini 3 Flash",
+   "credits": 409
+  },
+  {
+   "name": "GPT-5.4 nano",
+   "credits": 53
+  },
+  {
+   "name": "GPT Image 2",
+   "credits": 18
+  },
+  {
+   "name": "Nano Banana Pro",
+   "credits": 18
+  },
+  {
+   "name": "PPLX Computer Evo 3.5",
+   "credits": 12
+  },
+  {
+   "name": "Evo V3",
+   "credits": 3
+  },
+  {
+   "name": "GPT Image 1",
+   "credits": 3
+  },
+  {
+   "name": "Eleven Scribe v2",
+   "credits": 2
+  },
+  {
+   "name": "Grok 4.1",
+   "credits": 2
+  }
+ ],
+ "models_30d": [
+  {
+   "name": "Claude Opus 4.7",
+   "credits": 78919
+  },
+  {
+   "name": "Claude Opus 4.8",
+   "credits": 47813
+  },
+  {
+   "name": "claude-opus-5-0",
+   "credits": 30849
+  },
+  {
+   "name": "Claude Sonnet 5",
+   "credits": 18685
+  },
+  {
+   "name": "Claude Sonnet 4.6",
+   "credits": 6245
+  },
+  {
+   "name": "GPT-5.2",
+   "credits": 6201
+  },
+  {
+   "name": "Gemini 3 Flash",
+   "credits": 364
+  },
+  {
+   "name": "GPT-5.4 mini",
+   "credits": 198
+  },
+  {
+   "name": "GPT-5.4 nano",
+   "credits": 30
+  },
+  {
+   "name": "GPT Image 2",
+   "credits": 18
+  },
+  {
+   "name": "Nano Banana Pro",
+   "credits": 18
+  },
+  {
+   "name": "PPLX Computer Evo 3.5",
+   "credits": 12
+  },
+  {
+   "name": "GPT Image 1",
+   "credits": 3
+  }
+ ],
+ "source_90d": [
+  {
+   "name": "Paid",
+   "credits": 388208
+  },
+  {
+   "name": "Promo",
+   "credits": 256081
+  }
+ ],
+ "yield_30d": {
+  "credits": 189252,
+  "artifacts": 18,
+  "credits_per_artifact": 10514.0,
+  "pdf": 4,
+  "markdown": 10,
+  "pdf_share": 22.2,
+  "by_type": [
+   {
+    "name": "Markdown/Text",
+    "count": 10
+   },
+   {
+    "name": "PDF",
+    "count": 4
+   },
+   {
+    "name": "Spreadsheet/CSV",
+    "count": 2
+   },
+   {
+    "name": "Code",
+    "count": 1
+   },
+   {
+    "name": "Website/Webapp",
+    "count": 1
+   }
+  ],
+  "skills": [
+   {
+    "name": "build-knowledge",
+    "count": 2
+   },
+   {
+    "name": "website-building",
+    "count": 2
+   },
+   {
+    "name": "custom-notifications",
+    "count": 1
+   },
+   {
+    "name": "design-foundations",
+    "count": 1
+   },
+   {
+    "name": "explore-memory",
+    "count": 1
+   },
+   {
+    "name": "office/pdf",
+    "count": 1
+   },
+   {
+    "name": "programmatic-tool-calling",
+    "count": 1
+   },
+   {
+    "name": "publish-to-github-pages",
+    "count": 1
+   },
+   {
+    "name": "search",
+    "count": 1
+   },
+   {
+    "name": "task-scheduling",
+    "count": 1
+   },
+   {
+    "name": "website-building/game",
+    "count": 1
+   },
+   {
+    "name": "website-building/webapp",
+    "count": 1
+   },
+   {
+    "name": "website-building/website-publishing",
+    "count": 1
+   }
+  ],
+  "connectors": [
+   {
+    "name": "Google Calendar",
+    "count": 22
+   },
+   {
+    "name": "GitHub",
+    "count": 3
+   },
+   {
+    "name": "Google Drive",
+    "count": 3
+   },
+   {
+    "name": "WhatsApp Business",
+    "count": 3
+   },
+   {
+    "name": "Other",
+    "count": 2
+   },
+   {
+    "name": "YouTube",
+    "count": 2
+   },
+   {
+    "name": "YouTube Analytics",
+    "count": 2
+   },
+   {
+    "name": "Cloudflare",
+    "count": 1
+   },
+   {
+    "name": "Dropbox",
+    "count": 1
+   },
+   {
+    "name": "Google Cloud",
+    "count": 1
+   },
+   {
+    "name": "Microsoft Entra ID",
+    "count": 1
+   },
+   {
+    "name": "Slack",
+    "count": 1
+   },
+   {
+    "name": "Twilio",
+    "count": 1
+   }
+  ]
+ },
+ "members": [
+  {
+   "email": "j8k8skp5gf@privaterelay.appleid.com",
+   "used": 66173,
+   "paid": 58092,
+   "promo": 7884
+  }
+ ],
+ "leaderboard_range": "7d"
+}

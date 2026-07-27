@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burn Ledger — EVEglyphDesign</title>
+<meta name="description" content="EgD-BOOT-002. Credit burn, concentration, and yield per artifact for the EVEglyphDesign org on Perplexity Computer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fdfaf4; --cream2:#f7f2e7; --ink:#1a1a1a; --line:#e7e1d3;
+    --mute:#6b665c; --orng:#e87722;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0; background:var(--cream); color:var(--ink);
+       font:400 16px/1.6 Inter, system-ui, sans-serif; font-variant-numeric:tabular-nums lining-nums}
+  .wrap{max-width:72rem; margin:0 auto; padding:0 1.5rem 5rem}
+  a{color:var(--ink); text-underline-offset:3px; text-decoration-color:var(--orng); text-decoration-thickness:1.5px}
+  a:hover{color:var(--orng)}
+
+  header{border-bottom:1px solid var(--line); padding:2rem 0 1.4rem; margin-bottom:1.6rem}
+  .kick{font:600 .72rem/1.4 Inter; letter-spacing:.14em; text-transform:uppercase; color:var(--orng); margin:0 0 .5rem}
+  h1{font:700 clamp(2rem,5.6vw,3.1rem)/1.05 Fraunces, Georgia, serif; margin:0 0 .4rem; letter-spacing:-.01em}
+  .sub{font:400 clamp(.98rem,2.4vw,1.18rem)/1.5 Fraunces, Georgia, serif; color:var(--mute); margin:0; max-width:44rem}
+  .tick{height:3px; width:8rem; background:var(--orng); margin-top:1.1rem}
+
+  .gate{background:var(--cream2); border:1px solid var(--line); border-left:3px solid var(--orng);
+        padding:.95rem 1.15rem; margin:1.5rem 0 2.2rem; font-size:.93rem}
+  .gate b{font-weight:600}
+
+  h2{font:700 clamp(1.25rem,3.2vw,1.6rem)/1.2 Fraunces, Georgia, serif; margin:2.8rem 0 .2rem}
+  .h2note{color:var(--mute); font-size:.88rem; margin:.25rem 0 1.1rem; max-width:46rem}
+
+  .kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(10.5rem,1fr)); gap:1px;
+        background:var(--line); border:1px solid var(--line); margin:1.4rem 0}
+  .kpi{background:var(--cream); padding:1rem 1.05rem}
+  .kpi span{display:block; font:600 .66rem/1.4 Inter; letter-spacing:.1em; text-transform:uppercase;
+            color:var(--mute); margin-bottom:.42rem}
+  .kpi b{display:block; font:700 clamp(1.4rem,3.4vw,1.8rem)/1.05 Fraunces, Georgia, serif}
+  .kpi i{display:block; font-style:normal; font-size:.78rem; color:var(--mute); margin-top:.3rem}
+  .kpi .up{color:var(--orng); font-weight:600}
+
+  .panel{border:1px solid var(--line); background:var(--cream2); padding:1.1rem 1.2rem 1.2rem; margin:1.2rem 0}
+  .chartbox{position:relative; height:320px}
+  @media(max-width:640px){.chartbox{height:250px}}
+
+  table{border-collapse:collapse; width:100%; font-size:.88rem; margin:.9rem 0 0}
+  th{text-align:left; font:600 .66rem/1.4 Inter; letter-spacing:.09em; text-transform:uppercase; color:var(--mute);
+     border-bottom:1px solid var(--line); padding:.5rem .6rem .45rem 0}
+  td{border-bottom:1px solid var(--line); padding:.6rem .6rem .6rem 0; vertical-align:middle}
+  th:last-child,td:last-child{padding-right:0; text-align:right}
+  th:nth-child(2),td:nth-child(2){text-align:right}
+  .bar{height:6px; background:var(--orng); display:block; border-radius:1px; min-width:2px}
+  .barwrap{width:100%; background:var(--line); height:6px; border-radius:1px}
+  td.num{font-weight:600}
+
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:1.6rem}
+  @media(max-width:760px){.two{grid-template-columns:1fr; gap:.4rem}}
+
+  .flags li{margin:.5rem 0; max-width:46rem}
+  .flags b{color:var(--orng)}
+  ul{padding-left:1.1rem}
+
+  footer{border-top:1px solid var(--line); margin-top:3.5rem; padding-top:1.2rem; font-size:.76rem; color:var(--mute)}
+  footer .mark{font:400 .92rem/1.4 Fraunces, Georgia, serif; color:var(--ink); float:right}
+  @media(max-width:640px){footer .mark{float:none; display:block; margin-top:.6rem} table{font-size:.82rem}}
+  .loading{color:var(--mute); font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="kick">EgD-BOOT-002 · Companion control to the boot contract</p>
+  <h1>Burn Ledger</h1>
+  <p class="sub">What the credits cost, where they concentrate, and what they bought. Measured, not asserted.</p>
+  <div class="tick"></div>
+</header>
+
+<div class="gate">
+  <b>The gate.</b> No expensive action proceeds until this ledger has been read.
+  Free and cheap rungs need no permission; anything on rung six is confirmed first.
+  Contract: <a href="../">EgD-BOOT-001</a> ·
+  Defects: <a href="https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/registry/SIN-DEFECTS.md">SIN register</a>
+</div>
+
+<div id="app"><p class="loading">Loading the ledger…</p></div>
+
+<footer>
+  © 2026 EVEglyphDesign. All rights reserved. Controlled copy. Document EgD-BOOT-002 · Key ID EgD-KEY-2026-07.
+  <span id="prov"></span>
+  <span class="mark">Pour le bien-être du peuple</span>
+</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+const ORNG='#e87722', INK='#1a1a1a', MUTE='#6b665c', LINE='#e7e1d3', CREAM='#fdfaf4';
+const CEILING = 5000;            // declared daily control, in credits
+const usd = c => '$' + (c/100).toLocaleString('en-US',{maximumFractionDigits:0});
+const num = n => Number(n).toLocaleString('en-US',{maximumFractionDigits:0});
+const usdp = c => c > 0 && c < 1000 ? '$' + (c/100).toFixed(2) : usd(c);
+
+function kpi(label, value, note){
+  return `<div class="kpi"><span>${label}</span><b>${value}</b>${note?`<i>${note}</i>`:''}</div>`;
+}
+function rankTable(rows, head, fmt){
+  const max = Math.max(...rows.map(r=>r.v), 1);
+  return `<table><thead><tr><th>${head[0]}</th><th>${head[1]}</th><th style="width:34%">${head[2]||'Share'}</th></tr></thead><tbody>`
+    + rows.map(r=>`<tr><td>${r.k}</td><td class="num">${fmt(r.v)}</td>
+       <td><span class="barwrap"><span class="bar" style="width:${(r.v/max*100).toFixed(1)}%"></span></span></td></tr>`).join('')
+    + `</tbody></table>`;
+}
+
+fetch('./data.json?_=' + Date.now()).then(r=>r.json()).then(d=>{
+  const w=d.windows, s=d.shape, y=d.yield_30d;
+  const breach = d.daily.filter(x=>x.credits>CEILING);
+  const paid = (d.source_90d.find(x=>x.name==='Paid')||{credits:0}).credits;
+  const promo = (d.source_90d.find(x=>x.name==='Promo')||{credits:0}).credits;
+  const drift = w.d7_per_day / w.d30_per_day;
+  const topModel = d.models_90d[0] || {name:'—', credits:0};
+
+  document.getElementById('prov').textContent =
+    ` Generated ${d.generated}. Source: Perplexity Computer usage analytics, org scope, last updated ${d.last_updated}. 1 credit = 1 US cent.`;
+
+  document.getElementById('app').innerHTML = `
+  <h2>The bill</h2>
+  <p class="h2note">Org-scope credit consumption. One credit is one US cent, so these are real dollars.</p>
+  <div class="kpis">
+    ${kpi('Last 90 days', usd(w.d90), num(w.d90)+' credits')}
+    ${kpi('Last 30 days', usd(w.d30), num(w.d30)+' credits')}
+    ${kpi('Last 7 days', usd(w.d7), num(w.d7)+' credits')}
+    ${kpi('Burn rate now', usd(w.d7_per_day)+'/day',
+        `<span class="${drift>1.15?'up':''}">${drift>=1?'&#9650;':'&#9660;'} ${Math.abs((drift-1)*100).toFixed(0)}% vs the 30-day average of ${usd(w.d30_per_day)}/day</span>`)}
+    ${kpi('Paid vs promo', ((paid/(paid+promo))*100).toFixed(0)+'% paid', usd(paid)+' paid · '+usd(promo)+' promo')}
+  </div>
+
+  <h2>Daily burn, ninety days</h2>
+  <p class="h2note">Bars are days. The line is the seven-day moving average. The dashed rule is the declared
+     daily control of ${num(CEILING)} credits (${usd(CEILING)}); ${breach.length} of ${d.daily.length} days breached it.</p>
+  <div class="panel"><div class="chartbox"><canvas id="cDaily"></canvas></div></div>
+
+  <h2>Concentration — the drift signal</h2>
+  <p class="h2note">Waste does not arrive evenly. It arrives in flow states, when nobody is watching the meter.
+     These three numbers are the ones to watch.</p>
+  <div class="kpis">
+    ${kpi('Top ten days', s.top10_share+'% of the spend', 'ten days out of ninety')}
+    ${kpi('Heaviest day', usd(s.peak_credits), s.peak_day+' — '+s.peak_vs_median+'× the median active day')}
+    ${kpi('Median active day', usdp(s.median_active_day), s.active_days+' of 90 days had any activity')}
+    ${kpi('Days over control', breach.length, 'ceiling '+usd(CEILING)+'/day')}
+  </div>
+
+  <h2>Where the credits go</h2>
+  <p class="h2note">By model, ninety days. Model choice is the single largest lever on the bill — a heavyweight
+     model left running on cheap work is the most common form of silent burn. Top eight shown per window.</p>
+  <div class="two">
+    <div>
+      <p class="h2note"><b>Ninety days</b></p>
+      ${rankTable(d.models_90d.filter(m=>m.credits>0).slice(0,8).map(m=>({k:m.name,v:m.credits})), ['Model','Credits'], usdp)}
+    </div>
+    <div>
+      <p class="h2note"><b>Last thirty days</b></p>
+      ${rankTable(d.models_30d.filter(m=>m.credits>0).slice(0,8).map(m=>({k:m.name,v:m.credits})), ['Model','Credits'], usdp)}
+    </div>
+  </div>
+
+  <h2>What it bought</h2>
+  <p class="h2note">Spend is only half the ledger. This is the yield: artifacts produced in the last thirty days,
+     and the canon compliance of their formats.</p>
+  <div class="kpis">
+    ${kpi('Cost per artifact', y.credits_per_artifact!=null?usd(y.credits_per_artifact):'—',
+       num(y.artifacts)+' artifacts for '+usd(y.credits))}
+    ${kpi('PDF share', (y.pdf_share!=null?y.pdf_share+'%':'—'),
+       `canon default is PDF · ${y.pdf} PDF vs ${y.markdown} markdown`)}
+    ${kpi('Skills loaded', num(y.skills.reduce((a,b)=>a+b.count,0)), y.skills.length+' distinct')}
+    ${kpi('Connector calls', num(y.connectors.reduce((a,b)=>a+b.count,0)), y.connectors.length+' distinct')}
+  </div>
+  <div class="two">
+    <div>
+      <p class="h2note"><b>Artifacts by type, thirty days</b></p>
+      ${rankTable(y.by_type.map(a=>({k:a.name,v:a.count})), ['Type','Count'], num)}
+    </div>
+    <div>
+      <p class="h2note"><b>Skills loaded, thirty days</b></p>
+      ${rankTable(y.skills.slice(0,10).map(a=>({k:a.name,v:a.count})), ['Skill','Threads'], num)}
+    </div>
+  </div>
+
+  <h2>Findings</h2>
+  <ul class="flags">
+    <li><b>Concentration is the finding, not the total.</b> ${s.top10_share}% of ninety days of spend landed in ten
+        days, and the heaviest single day ran ${s.peak_vs_median}× the median active day. A steady operator does not
+        produce that curve. Flow states do, and that is exactly when the meter goes unread.</li>
+    <li><b>Cost per artifact is ${y.credits_per_artifact!=null?usd(y.credits_per_artifact):'—'}.</b>
+        ${usd(y.credits)} across thirty days produced ${num(y.artifacts)} recorded artifacts. Whatever else that
+        buys — reasoning, search, iteration — it is the number to drive down, and it can only fall if the
+        cheap rungs are used first.</li>
+    <li><b>Format canon is at ${y.pdf_share!=null?y.pdf_share+'%':'—'} compliance.</b> ${y.pdf} of ${num(y.artifacts)}
+        artifacts were PDFs against ${y.markdown} markdown files, where the canon default is PDF. Format drift and
+        spend drift are the same failure of attention.</li>
+    <li><b>${d.models_90d[0]?`${topModel.name} carries ${usd(topModel.credits)} of the ninety-day bill`:'—'}.</b>
+        Heavyweight models are correct for hard reasoning and wasteful for lookups. Rung one of the contract exists
+        so that lookups never reach them.</li>
+  </ul>
+
+  <h2>Members</h2>
+  <p class="h2note">Leaderboard window: ${d.leaderboard_range||'—'}.</p>
+  <table><thead><tr><th>Member</th><th>Used</th><th>Paid</th></tr></thead><tbody>
+    ${d.members.map(m=>`<tr><td>${m.email}</td><td class="num">${usd(m.used)}</td><td>${usd(m.paid)}</td></tr>`).join('')}
+  </tbody></table>
+  `;
+
+  // ---- chart ----
+  const labels = d.daily.map(x=>x.date);
+  const vals = d.daily.map(x=>x.credits);
+  const ma = vals.map((_,i)=>{
+    const s0=Math.max(0,i-6), w=vals.slice(s0,i+1);
+    return w.reduce((a,b)=>a+b,0)/w.length;
+  });
+  Chart.defaults.font.family = 'Inter, system-ui, sans-serif';
+  Chart.defaults.color = MUTE;
+  new Chart(document.getElementById('cDaily'), {
+    data:{ labels, datasets:[
+      { type:'bar', label:'Credits', data:vals,
+        backgroundColor: vals.map(v=>v>CEILING? ORNG : '#c9c2b0'),
+        borderWidth:0, barPercentage:.92, categoryPercentage:.96, order:2 },
+      { type:'line', label:'7-day average', data:ma, borderColor:INK, borderWidth:1.6,
+        pointRadius:0, tension:.3, order:1 },
+      { type:'line', label:'Daily control', data:vals.map(()=>CEILING), borderColor:MUTE,
+        borderWidth:1, borderDash:[5,4], pointRadius:0, order:0 }
+    ]},
+    options:{
+      maintainAspectRatio:false, animation:{duration:500},
+      interaction:{mode:'index', intersect:false},
+      scales:{
+        x:{ grid:{display:false}, ticks:{maxTicksLimit:9, font:{size:10},
+            callback(v){ const s=this.getLabelForValue(v); return s? s.slice(5) : s; } },
+            border:{color:LINE} },
+        y:{ grid:{color:LINE, drawTicks:false}, border:{display:false},
+            ticks:{ font:{size:10}, callback:v=>'$'+(v/100).toLocaleString('en-US') } }
+      },
+      plugins:{
+        legend:{ display:true, position:'bottom', labels:{boxWidth:10, boxHeight:2, font:{size:11}, padding:14} },
+        tooltip:{ backgroundColor:INK, titleFont:{size:11}, bodyFont:{size:11}, displayColors:false, padding:9,
+          callbacks:{ label:c=>`${c.dataset.label}: ${usd(c.parsed.y)}` } }
+      }
+    }
+  });
+}).catch(e=>{
+  document.getElementById('app').innerHTML =
+    `<p class="loading">Ledger data could not be loaded (${e}). Regenerate with <code>scripts/refresh_ledger.py</code>.</p>`;
+});
+</script>
+</body>
+</html>
