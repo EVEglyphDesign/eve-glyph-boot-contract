@@ -118,3 +118,16 @@ under the same register because both are failures of the same judgment.
 | Observed | Built the dataset pipeline, query surface, five documentation files, schemas and provenance ledger strictly sequentially on the main thread, with no fan-out, for roughly ten minutes before the operator interrupted and ordered a fan-out. |
 | Cheaper path | Recognise a live-client deadline as the controlling constraint and parallelise from the first turn — publish the working surface first to establish the live URL, then fan the documentation, the PDF and the defect log out to concurrent subagents. Serial execution was not cheaper in credits, only slower in wall-clock, which was the resource that actually mattered. |
 | Waste | ~10 minutes of client-facing latency and the operator having to intervene to correct the agent's execution shape. |
+
+---
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-28 |
+| Defect ID | SIN-2026-07-28-C-03 |
+| Class | **C** — canon breach |
+| Asked | An 8–14 page strategy paper for Tim Hawkins and Luke Weatherbie in the Hawkins Twin lane, canon-compliant, with a mandatory page-by-page read-back. |
+| Observed | The first build produced 14 pages containing three near-empty or half-empty pages (an orphaned footnote block, an orphaned closing mark, and a human section running roughly a third short) and one rendering fault — a bare `&` in ReportLab Paragraph markup emitting `R&D;` instead of `R&D`. A half-empty page is a canon defect. |
+| Cheaper path | Wrap footnote and closing blocks in `KeepTogether` and escape all ampersands as `&amp;` at authoring time rather than discovering both in read-back. The read-back caught every fault before the artifact left the workspace, which is what it is for, but two rebuild passes were spent on faults that are known ReportLab behaviour. |
+| Waste | Two additional build-and-render cycles plus fourteen page reads. Nothing reached the client. |
+| Resolution | Fixed and rebuilt to 12 pages, all read back clean. Published at https://eveglyphdesign.github.io/eve-hawkins-sovereign-enterprise/ |
