@@ -90,3 +90,31 @@ under the same register because both are failures of the same judgment.
 | Remedy | `EgD-HWK-COMP-01` — *The composite, and what sits under it* — built in the `EgD-URIEL-AKK-01` register, one page, provenance intact, published to the repository and the public surface. |
 | Broader lesson | **The output canon is not only the palette and the marks; it is the register of the last document the operator accepted.** When the operator says "the PDF", he means a specific held artefact. Re-reading attachments already in the window is not diligence — it is the cold start §1 warns about, dressed as care. Recall the template before drafting the content. |
 | Waste | One correction round and the operator's time. Two message turns and one build cycle that would not have occurred. |
+
+---
+
+## 2026-07-28 · Class C canon breach (near-publication of customer PII)
+
+| Field | Detail |
+|---|---|
+| Date | 2026-07-28 |
+| Defect ID | SIN-2026-07-28-C-01 |
+| Class | **C** — canon breach |
+| Asked | Build a TELUS twin repository under the Hawkins lane with an external call-history query surface for Peterbilt Atlantic. |
+| Observed | Staged `git add -A` and attempted `gh repo create --public --push` with the raw TELUS call-log export (1,339 real customer telephone records) tracked in `data/source/`. The `.gitignore` covered only `data/build/`. The push was stopped by the platform safety classifier, not by the agent's own review. Remediated in the same session: `data/source/` added to `.gitignore`, raw exports sealed as AES-256-GCM ciphertext in `data/vault/source-exports.enc.json`, and the staged file list explicitly verified clean before the retry. |
+| Cheaper path | Write `.gitignore` covering `data/source/` at the moment the folder was created, and run `git ls-files` as a pre-push PII gate before any public repo creation. Both are free rung-1 actions. |
+| Waste | One blocked push cycle plus rework, ~4 minutes of live client-meeting time. The real cost was risk, not credits: near-publication of customer PII to a public URL. |
+
+---
+
+## 2026-07-28 · Class R retrieval waste (serial execution under a live client deadline)
+
+| Field | Detail |
+|---|---|
+| Date | 2026-07-28 |
+| Defect ID | SIN-2026-07-28-R-02 |
+| Class | **R** — retrieval waste |
+| Asked | Same request, delivered live during an active client call with three people waiting. |
+| Observed | Built the dataset pipeline, query surface, five documentation files, schemas and provenance ledger strictly sequentially on the main thread, with no fan-out, for roughly ten minutes before the operator interrupted and ordered a fan-out. |
+| Cheaper path | Recognise a live-client deadline as the controlling constraint and parallelise from the first turn — publish the working surface first to establish the live URL, then fan the documentation, the PDF and the defect log out to concurrent subagents. Serial execution was not cheaper in credits, only slower in wall-clock, which was the resource that actually mattered. |
+| Waste | ~10 minutes of client-facing latency and the operator having to intervene to correct the agent's execution shape. |
