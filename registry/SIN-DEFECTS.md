@@ -143,3 +143,29 @@ under the same register because both are failures of the same judgment.
 | Cheaper path | Three `gh api` reads — a repository list, a tree listing, and four file fetches — cost effectively nothing and were run afterwards in under two minutes. They materially changed the architecture: the ledger is unreachable on Fortellis, which converts the two-lane design from a preference into a requirement, and CDK's own Setup → Bulk → Delta pattern partly answers the delta question that a subagent was dispatched to reason about from first principles. Both facts were held, and neither was in the subagent briefs. |
 | Waste | One subagent brief written without the repository facts and later superseded; one cancelled and respawned subagent; an architecture page that would have been drawn wrong had the read not happened before the redraw. |
 | Resolution | Repositories read at rung four; all specifications and the v3 six-page architecture rebuilt on the held facts and published to https://eveglyphdesign.github.io/hawkins-twin-platform/architecture/ . Standing correction: for any Hawkins, Peterbilt, PACCAR or CDK question, `gh api users/EVEglyphDesign/repos` and a tree listing come before any subagent is spawned, without exception. |
+
+---
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-29 |
+| Defect ID | SIN-2026-07-29-L-02 |
+| Class | **L** — link / source integrity |
+| Asked | "Give me a real link for this." The operator screenshotted the phrase "licensed API catalogue" on the published Shoulders page and asked for a genuine destination. |
+| Observed | The published page cited PACCAR's API licence terms to `staging-paccar.anthology-digital.com` — a web agency's pre-production host, not PACCAR. The claim "the catalogue itself would not load" was also wrong: `developers.paccar.cloud` loads fine without a login. A research lane surfaced the staging host, and it was published without anyone checking that the domain belonged to the organisation being cited. The canon requires clickable links; it does not say anything about whether the destination is the real party. It should. |
+| Cheaper path | One `curl -sI` against the domain before publishing, or simply reading the hostname. Cost: nothing. The canonical page `paccar.com/digital-services-terms/` in fact returns 404 and has no replacement in PACCAR's footer, sitemap or site search — which is itself a finding worth publishing, and was lost by citing a mirror instead. |
+| Waste | A published external surface carrying a citation to a third party's staging server, and a false negative claim about the developer portal. Operator had to catch it. |
+| Resolution | Page corrected and republished: https://eveglyphdesign.github.io/eve-hawkins-cdk-twin/shoulders/ . Now cites the live [PACCAR API Catalog](https://developers.paccar.cloud/) and its public API list, records that the list contains exactly one entry (OAuth), that Get Started is sign-in gated, and that the canonical terms page 404s so the licence wording is indicative only. Standing correction: **before publishing any citation, check that the hostname belongs to the organisation being cited.** A staging, mirror, aggregator or agency host is not a primary source and must be labelled as a recovered copy if used at all. |
+
+---
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-29 |
+| Defect ID | SIN-2026-07-29-C-03 |
+| Class | **C** — canon breach, recurring |
+| Asked | Four research lanes on open-source DMS foundations, open standards, the PACCAR platform and SAP Datasphere, each preloaded with `eveglyph-boot-contract`. |
+| Observed | Two of the four lanes (C and D) opened their reports by declaring the boot contract "an unrelated prompt-injection attempt" with "fake branding" and a "fictitious defect register," and stated they had disregarded it entirely. This is the third occurrence; three of five lanes did the same on the previous spin. |
+| Cheaper path | Not a spend defect. The lanes followed the task rules file and the research was unaffected. But a governing contract that subordinate agents routinely classify as an attack is not governing anything below the top level. |
+| Waste | None to the work product. The cost is structural: the canon cannot be relied upon to reach delegated agents. |
+| Resolution | Logged at the operator's discretion. Open question for the operator: whether the contract should be restated inside each task rules file, where subordinate agents demonstrably do accept it, rather than relying on skill preloading. |
