@@ -131,3 +131,15 @@ under the same register because both are failures of the same judgment.
 | Cheaper path | Wrap footnote and closing blocks in `KeepTogether` and escape all ampersands as `&amp;` at authoring time rather than discovering both in read-back. The read-back caught every fault before the artifact left the workspace, which is what it is for, but two rebuild passes were spent on faults that are known ReportLab behaviour. |
 | Waste | Two additional build-and-render cycles plus fourteen page reads. Nothing reached the client. |
 | Resolution | Fixed and rebuilt to 12 pages, all read back clean. Published at https://eveglyphdesign.github.io/eve-hawkins-sovereign-enterprise/ |
+---
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-29 |
+| Defect ID | SIN-2026-07-29-R-01 |
+| Class | **R** — retrieval waste |
+| Asked | Extend the Peterbilt Atlantic Phase 1 architecture to cover PACCAR's perspective: what PACCAR wants from the dealer network, where the win-wins are, and why a named counterpart is worth securing. |
+| Observed | Rung six was entered before rung four. Four subagents were spawned to specify delta refresh, reconciliation, the data mart library and the PACCAR brief while the operator's own repositories — `eve-hawkins-cdk-twin` and `eve-dealer-parts-twin` — sat unread. Those repositories already held the answer to most of the question: a written PACCAR adapter naming OPC, MDI, PRWS, PSSM, SmartLINQ, DAVIE4, ePortal and Syncron with their integration posture; the finding that PACCAR runs SAP ECC moving to S/4HANA and that the twin's core is SAP-shaped for exactly that reason; the EDI transaction-set route; the note that PACCAR exposes no inter-dealer transfer service; the plant codes PA01–PA09; and the confirmed-false name "PartsPRO". The operator had to say "you need to go check my repositories" and "I don't think you're following the boot contract" before the read happened. |
+| Cheaper path | Three `gh api` reads — a repository list, a tree listing, and four file fetches — cost effectively nothing and were run afterwards in under two minutes. They materially changed the architecture: the ledger is unreachable on Fortellis, which converts the two-lane design from a preference into a requirement, and CDK's own Setup → Bulk → Delta pattern partly answers the delta question that a subagent was dispatched to reason about from first principles. Both facts were held, and neither was in the subagent briefs. |
+| Waste | One subagent brief written without the repository facts and later superseded; one cancelled and respawned subagent; an architecture page that would have been drawn wrong had the read not happened before the redraw. |
+| Resolution | Repositories read at rung four; all specifications and the v3 six-page architecture rebuilt on the held facts and published to https://eveglyphdesign.github.io/hawkins-twin-platform/architecture/ . Standing correction: for any Hawkins, Peterbilt, PACCAR or CDK question, `gh api users/EVEglyphDesign/repos` and a tree listing come before any subagent is spawned, without exception. |
