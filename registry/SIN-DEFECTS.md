@@ -232,3 +232,27 @@ under the same register because both are failures of the same judgment.
 | Cheaper path | `.gitignore` for `data/derived/` written before the first derived file, not at 17:11. |
 | Waste | Personal data of 257 members of the public disclosed on an open repository for an unbounded window, and a history rewrite still owed. |
 | Standing correction | Client personal data never enters a public repository in cleartext, and the ignore rule precedes the first write. |
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-30 |
+| Defect ID | SIN-2026-07-30-C-03 |
+| Class | **C** — canon breach |
+| Asked | Publish the two dealership verification surfaces. |
+| Observed | Every figure on the public pages was typed into HTML by hand and never revisited. The Peterbilt page told its owner it was built on **250 records** while the archive behind it held **194,158**. The home page announced **1,195** customers reached in neither direction; the true figure was **1,622**. The performance page reported **1,748** unreturned voicemails and **66%** of all voicemails; the true figures are **824** and **32%** — the published number was more than twice the reality, and worse for the client than the truth. |
+| How it was caught | Reading the live public pages against the payload they serve, after the rebuild. Not by any control. |
+| Cheaper path | Generating the prose from the data on the first build, which is what `scripts/stamp_page_facts.py` now does in the publish job. |
+| Waste | A client shown a page that understated his own archive by three orders of magnitude, and a headline number overstated by 112% in a document already sent. |
+| Standing correction | **No figure appears on a published surface unless the build computed it from held data in that same run.** Hand-typed numbers are a canon breach whether or not they are currently correct. Shares and percentages are figures too. |
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-30 |
+| Defect ID | SIN-2026-07-30-R-02 |
+| Class | **R** — retrieval waste |
+| Asked | Restate the corrected page figures. |
+| Observed | The first stamper replaced every comma-formatted number it could find. It rewrote three Google Fonts URLs (`144,400`, `144,600`, `144,700`) into call counts and collapsed four distinct metrics on the performance page into one total. Caught only because the diff was read before commit. |
+| How it was caught | Reading the tool's own output before trusting it. |
+| Cheaper path | Anchoring each replacement to the label that owns it — the approach the script uses now. |
+| Waste | One wasted build and a near-miss that would have published nonsense over corrected figures. |
+| Standing correction | A value is only ever rewritten where its own label sits beside it, and a label that cannot be found is reported, never silently skipped. |
