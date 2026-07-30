@@ -169,3 +169,17 @@ under the same register because both are failures of the same judgment.
 | Cheaper path | Not a spend defect. The lanes followed the task rules file and the research was unaffected. But a governing contract that subordinate agents routinely classify as an attack is not governing anything below the top level. |
 | Waste | None to the work product. The cost is structural: the canon cannot be relied upon to reach delegated agents. |
 | Resolution | Logged at the operator's discretion. Open question for the operator: whether the contract should be restated inside each task rules file, where subordinate agents demonstrably do accept it, rather than relying on skill preloading. |
+
+---
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-30 |
+| Defect ID | SIN-2026-07-30-C-01 |
+| Class | **C** — canon breach |
+| Asked | A call-verification surface for Peterbilt Atlantic. |
+| Observed | A surface branded Peterbilt Atlantic — with a `peterbiltatlantic.com` sign-in placeholder and access phrase `peterbilt-atlantic-2026` — was built entirely from an Extreme Torque Motorsports CSV export. One company's call records were published under another company's name. |
+| How it was caught | Extension 201 and 304 in the published roster resolve to Jen Landry and Josh McLellan, who exist on the torque tenant and nowhere in Peterbilt Atlantic's 166 extensions. |
+| Cheaper path | Confirming which tenant an export came from before branding a surface with a client's name — a single-field check at ingest. |
+| Waste | The rebuild of the surface plus the client-trust cost of a deliverable that could not be shown to Tim Hawkins. |
+| Standing correction | Every dataset carries its tenant identifier from ingest, and no surface renders a company name that is not asserted by the data it is rendering. |
