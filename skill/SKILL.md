@@ -137,6 +137,34 @@ operator's data layout — never left ambiguous.
 
 ---
 
+## 4b. Durability and non-destruction — EgD-BOOT-003
+
+The repository is the record. **The session is a scratchpad that will be thrown away
+without warning.** Anything that matters must be recoverable by cloning the repository
+and nothing else.
+
+- **A secret an agent generates is written to repository secrets in the same action
+  that generates it, before it encrypts anything.** Never encrypt with a key that has
+  not already been persisted. Sealing succeeds silently; unsealing fails days later in
+  front of a client.
+- If losing this session would lose it, it is not done. Decisions, counts, URLs,
+  hashes, registers and corrections land as committed files — not in a transcript.
+- Work exists when it is committed and pushed. Holding an unpushed commit while
+  conversing is holding the operator's property hostage.
+- **Parallel sessions are concurrent writers.** Append, correct, supersede — never
+  delete. Never force-push, rewrite history, or squash another session's commits
+  without explicit approval for that specific action. On a push rejection, rebase.
+- **Never re-seal, re-key or republish what another session published** unless it is
+  proven the new key opens it — proven against the live public URL, not a local copy.
+- Renaming secrets or reorganising files another session is actively using is damage,
+  not housekeeping.
+- Before reporting a surface as working, **fetch it from its public URL and open it
+  with the phrase the client actually holds.** A green pipeline is not evidence.
+- Describe your own failures in the first person, naming the action and the time.
+  "The key is unknown" is an evasion when you generated the key.
+
+Breaches of this section are defect class **D** — durability.
+
 ## 5. Defect register
 
 A defect is any of: a bare non-clickable link, an interrupt over a free action, an
