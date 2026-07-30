@@ -183,3 +183,52 @@ under the same register because both are failures of the same judgment.
 | Cheaper path | Confirming which tenant an export came from before branding a surface with a client's name — a single-field check at ingest. |
 | Waste | The rebuild of the surface plus the client-trust cost of a deliverable that could not be shown to Tim Hawkins. |
 | Standing correction | Every dataset carries its tenant identifier from ingest, and no surface renders a company name that is not asserted by the data it is rendering. |
+
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-30 |
+| Defect ID | SIN-2026-07-30-D-01 |
+| Class | **D** — durability |
+| Asked | Seal the full TELUS call history so the client surfaces could be rebuilt from it. |
+| Observed | At 17:11 UTC I generated an encryption passphrase inside the working session, sealed 226,482 records with it (Peterbilt 193,913 across 14 shards, Torque 32,569 across 6), and never wrote it to repository secrets. The session was destroyed. The shards in `data/archive/<tenant>/shards/` cannot be opened by anyone, including me. Two re-key runs (`30573942263`, `30574615435`) failed with `InvalidTag` because `ARCHIVE_PASSPHRASE` — which does exist — seals the older single-tenant archive, not these. |
+| How it was caught | Luke Weatherbie could not open the Extreme Torque page with the phrase he had been given at 15:09 EDT, and said so in the client WhatsApp group. The client, not the pipeline, found it. |
+| Cheaper path | Writing the passphrase to repository secrets in the same action that generated it, before encrypting anything. One `gh secret set`. |
+| Waste | Both client surfaces reduced to 250 records; a full re-pull of both tenants from TELUS; the client asking the operator whether there were grounds to sue. |
+| Standing correction | §7.1 — never encrypt with a key that has not already been persisted to the repository. |
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-30 |
+| Defect ID | SIN-2026-07-30-D-02 |
+| Class | **D** — durability |
+| Asked | Nothing. This was unrequested tidying. |
+| Observed | I renamed the credential references in `.github/workflows/telus-sync.yml` from `RC_*`/`RC_PB_*` to `RC_PETERBILT_*`/`RC_TORQUE_*` because the originals read ambiguously. Those secrets were never created, so the sync workflow could not run. Worse, a concurrent session then read my invented name `RC_PETERBILT_JWT` as evidence that a Peterbilt token was missing, and reported that the client would have to mint a new JWT in the developer console — a call to the client that my rename alone made necessary. |
+| How it was caught | Reading the secret list against the workflow: no secret matching either invented name has ever existed on the repository. |
+| Cheaper path | Leave working references alone. Ambiguity in a name is solved by resolving the tenant from the account ID the platform returns, not by renaming files another session is reading. |
+| Waste | A broken sync workflow, a false "client must re-key" conclusion in a second session, and the operator's time spent arbitrating between two threads. |
+| Standing correction | §7.2 — renaming across files another session is actively using is damage, not housekeeping. |
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-30 |
+| Defect ID | SIN-2026-07-30-C-02 |
+| Class | **C** — canon breach |
+| Asked | Establish how far back TELUS holds call history for each tenant. |
+| Observed | I reported that Extreme Torque's history stops at 2026-02-16 with 32,569 records, called it a proven TELUS retention edge, committed my own pull logs to `registry/RETENTION.md` as evidence, and carried the figure into the executive brief written for Tim Hawkins. It was false. My backfill walks day by day and halts after 21 consecutive empty days; it hit a sparse stretch and stopped. A month-windowed pull on the same account returns 81,513 records back to 2025-06-29. |
+| How it was caught | A concurrent session re-pulled with month windows and withdrew the figure in commit `ac96da2`. |
+| Cheaper path | Treating a stop condition in my own tool as a property of my own tool. The logs I filed as evidence documented my loop exiting, not TELUS discarding data. |
+| Waste | A false finding in a client deliverable, and a retention record that had to be retracted. |
+| Standing correction | Evidence must distinguish what the source system returned from what our own traversal chose to stop asking for. Never window a backfill by day with an empty-day halt. |
+
+| Field | Entry |
+|---|---|
+| Date | 2026-07-30 |
+| Defect ID | SIN-2026-07-30-D-03 |
+| Class | **D** — durability |
+| Asked | Build the client-facing normaliser lane. |
+| Observed | Commit `41ace96` at 15:32 EDT committed `data/derived/peterbilt/calls.json` and `data/derived/torque/calls.json` in cleartext to a **public** repository — 500 records containing 257 distinct real customer telephone numbers with caller names. Removed from the tip at 16:27 by `17864ae`. Removal from the tip is not removal: at the time of writing they remain fetchable from history by anyone who clones. |
+| How it was caught | Auditing the repository after the client incident, not by any control in the pipeline. |
+| Cheaper path | `.gitignore` for `data/derived/` written before the first derived file, not at 17:11. |
+| Waste | Personal data of 257 members of the public disclosed on an open repository for an unbounded window, and a history rewrite still owed. |
+| Standing correction | Client personal data never enters a public repository in cleartext, and the ignore rule precedes the first write. |
