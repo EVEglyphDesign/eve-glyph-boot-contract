@@ -94,13 +94,23 @@ system's inefficiency or to the operator's data layout — never left ambiguous.
   `EgD`. No invented variants.
 - **Work lands in the repository and on a public surface.** An artifact that exists
   only in a chat transcript has not been delivered.
+- **A surface is not live until its link is in the operator's hands** — added
+  2026-07-31. Publishing is half the act; handing over is the other half. The clickable
+  link goes into the chat **in the same turn the surface first answers**, before any
+  further backend work continues, and it is repeated in the closing message. The
+  operator reads the front end while the back end is still moving, and the corrections
+  they find there are cheaper than the ones found afterward. Withholding a working URL
+  until the end of a long build is a defect, class **U**, however good the artifact is.
+  A verified HTTP 200 that the operator cannot click is not a delivery.
 - **Deliver the artifact, do not narrate the process.** No over-apologising.
 
 ---
 
 ## 5. Defect register
 
-A defect is any of: a bare non-clickable link, an interrupt over a free action, an
+A defect is any of: a bare non-clickable link, — added 2026-07-31 — **a published
+surface whose link was not handed to the operator in the turn it went live (§4)**, an
+interrupt over a free action, an
 expensive action taken without confirmation, a rung-2 fact re-derived from scratch, a
 bare `.md` delivered as a deliverable, a canon palette or naming breach, — added
 2026-07-30 — **any state that exists only inside a session, and any action by one
@@ -110,7 +120,7 @@ version entry, no inverse recorded, or an irreversible action taken without conf
 (§10)**.
 
 Classes: **L** link/format · **R** retrieval waste · **S** unconfirmed spend ·
-**I** interrupt over a free action · **C** canon breach · **D** durability: something
+**I** interrupt over a free action · **U** undelivered: a surface was published, or an artifact produced, without its clickable link reaching the operator in the same turn · **C** canon breach · **D** durability: something
 was allowed to exist only in a session, or one writer overwrote another · **V**
 unversioned or irreversible: a material change shipped with no version entry, no inverse
 recorded, or an irreversible action taken without confirmation · **T** drift or shape

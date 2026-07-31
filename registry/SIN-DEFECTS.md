@@ -5,7 +5,9 @@ the boot contract. Rows are append-only. Entries are logged **after** the operat
 request is satisfied, never in place of satisfying it.
 
 Classes: **L** link/format · **R** retrieval waste · **S** unconfirmed spend ·
-**I** interrupt over a free action · **C** canon breach (palette, naming, format).
+**I** interrupt over a free action · **U** undelivered (a surface published without its
+clickable link reaching the operator in the same turn) · **C** canon breach (palette,
+naming, format).
 
 ---
 
@@ -263,3 +265,5 @@ under the same register because both are failures of the same judgment.
 
 | 2026-07-31 | C-05 | C | Publish a masked worklist to a dealer-facing page | Masked the last four digits into HMAC-derived pseudo-digits and rendered the result as `+15063005478` under a MASKED NUMBERS badge. The transform was right and the presentation was a lie: the row looked like a real, dialable number, and the first six digits are real. A service manager working the list would have called a stranger in the right town. | Render what the chips already rendered — `+1 506 300-••••`. The format existed in the same codebase. | A dealership cold-calling strangers from a privacy feature |
 | 2026-07-31 | T-01 | T | Keep one masking rule | Two implementations of masking exist — `engine/publish.py` and `docs/assets/build_surfaces.py`, the latter still wired into `republish.yml` — and they do not agree. Recorded rather than fixed; the divergent one is stricter, so it is a drift risk and not an exposure. | One rule, one implementation, imported by both callers. | A surface whose privacy behaviour depends on which workflow last ran |
+
+| 2026-07-31 | U-01 | U | Extend the TELUS Twin into No More IVR, then add the SAP lane | Built the repository, published GitHub Pages, verified HTTP 200 on the page and the PDF - and kept building. The operator sat through two long backend stretches with a working public URL already in existence and no link in front of him. He had to stop the work twice and say so, having said it several times in earlier threads. | Post the clickable link the moment the surface first returns 200, then continue. It costs one line. | Two interruptions, and a front end the operator could not review while the back end was still cheap to change. Standing correction: canon section 4 now carries the rule and class **U**. |
