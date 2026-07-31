@@ -17,6 +17,35 @@ naming, format).
 | 2026-07-26 | `SIN-2026-07-26-02` | L | Same request | Returned the address as bare plain text rather than a clickable link | Markdown link form is the canon default and costs nothing | Operator could not tap the link on a phone. Second round trip required |
 | 2026-07-25 | `SIN-2026-07-25-01` | C | A canon specification PDF | First build rendered five pages of content but stamped a three-page footer, and orphaned a caption onto a near-empty page | Read the page count back from the document before stamping it. A two-pass build costs milliseconds | One wasted build cycle, caught before delivery |
 | 2026-07-31 | R-04 | R | Deploy the Cloudflare broker. The operator believed a Cloudflare account already existed and had said so | Reported that no Cloudflare account was connected, and repeated it across three separate turns, on the strength of rungs 1–2 only: the connector list, no `wrangler` on `PATH`, and no `CF_*` in the sandbox environment. **The repository was never read.** The checkout is sparse, so `.github/workflows` was not present locally at all, and 35 of the operator's 37 repositories had never once been listed. The operator had to challenge the claim before the rung-4 read happened. That read took a single call and settled the question outright | §1 rung 4 — the repository is the record. One `git grep` over the remote tree plus one pass of `gh secret list` across every repository answers *does a Cloudflare setup exist* definitively, and costs less than the sentence asserting it does not. State absence from the record, never from the sandbox | Three turns carrying an unverified negative, and the operator's confidence in the report — the expensive loss, because a claim of absence that was never checked is indistinguishable from one that was |
+| 2026-07-31 | C-09 | C | Step-by-step instructions the operator could execute himself to stand up Cloudflare | Told him step 2, claiming the `workers.dev` subdomain, could be skipped. The stated grounds were Cloudflare's own routing page, which says every Worker is assigned a `workers.dev` route when it is created. That sentence is true only once a subdomain exists on the account. The page never said the subdomain was optional; the inference was mine and it was presented to him as documentation | The runbook already listed claiming the subdomain as step 2. Leaving it in cost the operator one click. Removing it cost two failed deploys. Where a source is silent, say the source is silent — do not convert silence into permission, and never on the authority of a link the operator can open himself | Two failed CI runs (`30641808599`, and the R2 failure in `30641720433` was separate), one extra round trip, and about eight minutes — of which roughly five were TLS provisioning on a subdomain that would already have existed had step 2 been left alone |
+
+### C-09 — silence in a source is not permission
+
+I read [Cloudflare's `workers.dev` routing page](https://developers.cloudflare.com/workers/configuration/routing/workers-dev/)
+looking for whether a subdomain had to be claimed before a first deploy. The page does not
+say. It says something adjacent and true — that Workers are assigned a `workers.dev` route
+on creation — and I reported that adjacent truth to the operator as grounds for skipping the
+step, in the same message where I linked the page as my source.
+
+The deploy then failed with exactly the thing I had ruled out:
+
+    You need to register a workers.dev subdomain before publishing to workers.dev
+
+This is R-04's failure wearing different clothes. There, I asserted an absence I had not
+checked. Here, I asserted a permission the source had not granted. Both are a claim without
+a rung, and in both the operator absorbed the cost of my confidence.
+
+Two aggravating details, recorded because they are the useful part:
+
+1. **The correct instruction was already written.** Step 2 of the runbook said to claim the
+   subdomain. I overrode my own committed document on the strength of a fresh inference. The
+   document was right. A committed artifact outranks a same-session reading of a doc.
+2. **I cited the page while contradicting it.** Attaching a link to an unsupported claim
+   makes the claim look verified. That is worse than stating it bare, because the operator
+   reasonably reads a citation as evidence that someone checked.
+
+The remedy is a sentence, not a process: when a source does not address the question, say
+so and keep the safer step. Silence is not permission.
 
 ### R-04 — the finding, and why the outcome does not excuse the method
 
