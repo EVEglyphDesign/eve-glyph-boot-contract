@@ -16,6 +16,52 @@ naming, format).
 | 2026-07-26 | `SIN-2026-07-26-01` | R | The external link to the parish platform — a URL this system published and holds in recent context | Started enumerating the whole repository list and probing four candidate URLs to rediscover a known address | Rung-2 recall. The URL was produced within the last three threads and should have been returned in seconds | One repo enumeration, four HTTP probes, one cancelled call, and roughly four minutes of the operator's time while he was mid-email |
 | 2026-07-26 | `SIN-2026-07-26-02` | L | Same request | Returned the address as bare plain text rather than a clickable link | Markdown link form is the canon default and costs nothing | Operator could not tap the link on a phone. Second round trip required |
 | 2026-07-25 | `SIN-2026-07-25-01` | C | A canon specification PDF | First build rendered five pages of content but stamped a three-page footer, and orphaned a caption onto a near-empty page | Read the page count back from the document before stamping it. A two-pass build costs milliseconds | One wasted build cycle, caught before delivery |
+| 2026-07-31 | R-04 | R | Deploy the Cloudflare broker. The operator believed a Cloudflare account already existed and had said so | Reported that no Cloudflare account was connected, and repeated it across three separate turns, on the strength of rungs 1–2 only: the connector list, no `wrangler` on `PATH`, and no `CF_*` in the sandbox environment. **The repository was never read.** The checkout is sparse, so `.github/workflows` was not present locally at all, and 35 of the operator's 37 repositories had never once been listed. The operator had to challenge the claim before the rung-4 read happened. That read took a single call and settled the question outright | §1 rung 4 — the repository is the record. One `git grep` over the remote tree plus one pass of `gh secret list` across every repository answers *does a Cloudflare setup exist* definitively, and costs less than the sentence asserting it does not. State absence from the record, never from the sandbox | Three turns carrying an unverified negative, and the operator's confidence in the report — the expensive loss, because a claim of absence that was never checked is indistinguishable from one that was |
+
+### R-04 — the finding, and why the outcome does not excuse the method
+
+The rung-4 read the operator asked for was performed and is conclusive. Across all
+**37 repositories** on
+[the EVEglyphDesign account](https://github.com/EVEglyphDesign?tab=repositories):
+
+- the only `wrangler` configuration files anywhere are `api/wrangler.jsonc` and
+  `broker/wrangler.jsonc` in
+  [eve-hawkins-telus-twin](https://github.com/EVEglyphDesign/eve-hawkins-telus-twin),
+  both written earlier the same day by this system;
+- no repository holds a Cloudflare credential of any kind. The full deduplicated set
+  of secret names across all 37 repositories is `ARCHIVE_PASSPHRASE`,
+  `DERIVED_PASSPHRASE`, `RC_PETERBILT_CLIENT_ID`, `RC_PETERBILT_CLIENT_SECRET`,
+  `RC_PETERBILT_JWT`, `RC_TORQUE_CLIENT_ID`, `RC_TORQUE_CLIENT_SECRET`,
+  `RC_TORQUE_JWT`, `SURFACE_PHRASE_PETERBILT`, `SURFACE_PHRASE_TORQUE`,
+  `TWIN_DB_HOST`, `TWIN_DB_INGEST_PASSWORD`, `TWIN_DB_NAME`, `TWIN_DB_READ_PASSWORD`,
+  `YOUTUBE_API_KEY`. There is no `CLOUDFLARE_*`, no `CF_*`, no `R2_*`, no
+  `WRANGLER_*`;
+- no repository contains a `_worker.js`, a `functions/` directory, or any other
+  Cloudflare deployment artefact.
+
+**So the conclusion stood. That is not a defence.** The defect is not the answer, it is
+that the answer was asserted three times from a place that could not contain it. The
+sandbox has never been able to tell anyone what is in the operator's repositories, and
+saying "no Cloudflare account is connected" while looking only at the sandbox is a
+statement about this system's own environment dressed as a statement about the
+operator's estate. Being right by luck and right by method are indistinguishable in the
+transcript and completely different in what they cost next time.
+
+**A negative is a claim, and a claim needs a rung.** Every retrieval defect in this
+register so far has been the cost of looking in the wrong place for something that was
+held. This one is the mirror image: the cost of declaring something absent without
+looking in the only place that could hold it. Both come from the same root, which is
+starting from the sandbox instead of from the record.
+
+**One distinction the operator is owed, because it survives the finding.** Whether a
+Cloudflare *account* exists is not visible from GitHub and this system cannot see a
+Cloudflare dashboard; the operator may well have one, and nothing above contradicts
+him. What is now established is narrower and is the actual blocker: **no credential to
+any Cloudflare account exists anywhere in the repositories or in this system**, so
+`wrangler deploy` cannot run. Conflating "the operator has an account" with "this
+system can deploy" is what made the original claim sloppy, and the two must be reported
+separately from here on.
+
 
 ---
 
