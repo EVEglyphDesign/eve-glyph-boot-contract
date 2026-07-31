@@ -273,3 +273,51 @@ under the same register because both are failures of the same judgment.
 | 2026-07-31 | D-01 | D | Publish the sealed voicemail audio behind the dealer gate | The 57 files at `docs/torque/data/vm/*.enc` are unopenable ciphertext and have been since they were written. `docs/assets/build_surfaces.py::encrypt_audio` derived their key from a PBKDF2 salt it stored in `docs/<tenant>/data/calls.enc.json`. `engine/publish.py` overwrites that exact file with an empty legacy stub carrying a **fresh random salt** — torque `NGZHkpBY5yIxpcn7pJnhLQ==`, peterbilt `xG6VFh83lsYCcdnD/XscvQ==`, both `public_meta.kind == legacy_stub_empty`. The salt that opens those recordings is gone from the surface and from the repository. The dealer's phrase is correct and still opens nothing. Not caught by any workflow: both scripts exit 0, the files are present, the page simply never had a control that opened one. | Never store a key parameter in a file another writer owns. Seal in a self-describing envelope that carries its own salt, iterations and nonce — the format the rest of the repository already used. | 57 customer voicemails published, none playable, for an unknown number of days |
 | 2026-07-31 | C-06 | C | Pull each dealership's roster under its own credentials | `republish.yml` has a step named `torque — pull roster` whose entire environment is Peterbilt's: `RC_CLIENT_ID`, `RC_CLIENT_SECRET` and `RC_JWT` are all `RC_PETERBILT_*` and `RC_TENANT` is `peterbilt`. Torque's roster is never pulled by that workflow; Peterbilt's is pulled twice. The credentials decide which dealership answers, not the step name — the job cannot fail, it just silently serves one tenant. Found reading the file to copy its voicemail step, not by any check. Recorded and not fixed: `republish.yml` is the divergent-masking lane already held open under T-01, and it is not touched in the same pass as the dashboard. | Route on the account ID the credentials resolve to, as `rebuild.yml` already does, and abort when two credential sets resolve to the same dealership. | A staff roster attributed to the wrong dealership for as long as the surface was built by that lane |
 | 2026-07-31 | D-02 | D | Publish the surfaces without damaging the record they live in | The repository stood at 913 MB and grew ~32 MB per publish. `engine/publish.py` deleted every weekly call shard and re-encrypted all 34 under a fresh salt and nonce each run, so identical content became wholly different ciphertext; git stores whole blobs and cannot compress ciphertext, so the same closed call history was committed in full every time — measured at 51.0 MB across 43 files in commit `805985c`. Weeks that closed months ago cannot change. The repository was re-committing its own history. Worse than the waste: this was **carried as a known open item and restated to the operator at the end of three separate sessions** instead of being fixed. Naming a defect in a status line is not the same as repairing it, and reporting it repeatedly made it look attended to while it kept costing. The operator had to ask directly before it was addressed. | Compare content before writing. `public_meta.sha256_plaintext` was already in every envelope, in the clear, for exactly this purpose. Sweep stale shards after the write by name rather than clearing the directory before it. Keep a file only when the phrase in force now actually opens it, so a rekey still rewrites everything and D-01 cannot recur at archive scale. | ~50 MB per publish, unbounded; 913 MB standing, which stopping the growth does not reclaim |
+
+### C-06 — resolved 2026-07-31
+
+Fixed in [eve-hawkins-telus-twin@752d49a](https://github.com/EVEglyphDesign/eve-hawkins-telus-twin/commit/752d49a).
+
+The step now uses `RC_TORQUE_*`, and Peterbilt got the voicemail pull it never had.
+The pairing is no longer something a reviewer has to notice: `telus_api.token()`
+resolves `GET /restapi/v1.0/account/~` and aborts when the account does not match
+`RC_TENANT`. That is the one point every pull passes through, `voicemail_pull.py`
+included, so the guard cannot be forgotten by a new workflow. An unset `RC_TENANT`
+and an unregistered account both abort. `preflight` may opt out because it exists
+to identify an unknown credential, and the opt-out is a Python argument rather than
+an environment variable, so no YAML can switch the guard off.
+
+`scripts/identify_tenant.py` already existed and its docstring claimed every job
+resolved through it. That claim was false for a month while this ran. The lesson
+recorded here is not that a check was missing — it is that **a guard a workflow has
+to opt into is a guard that will eventually be skipped**, and that documenting a
+control as universal is not the same as placing it in the path.
+
+Verified live, restate run
+[30613474451](https://github.com/EVEglyphDesign/eve-hawkins-telus-twin/actions/runs/30613474451):
+`account 1377120024 is 'torque'` → 77 extensions, `account 1287221024 is 'peterbilt'`
+→ 166 extensions, both matching registry/TENANTS.md, each verified before writing.
+
+**No wrong-tenant data reached the public pages.** Archive paths are tenant-scoped,
+so the mispaired step overwrote Peterbilt's own roster twice rather than writing into
+Torque's; `restate.yml`, which builds the live surfaces, pairs correctly; and the two
+published rosters are disjoint — Torque runs Moncton, Woodstock and Fredericton,
+Peterbilt runs Dartmouth, Kentville, Deer Lake, Charlottetown and Saint Pascal. Two
+Torque dashboard rows do read `Moncton Service - PETERBILT ATLAN`; that is the external
+caller's name on a genuine inbound call between two dealerships of the same group, not
+roster contamination.
+
+Cover: `engine/test_tenant_guard.py`, 11 assertions — the exact C-06 pairing, its
+mirror, unregistered accounts, absent `RC_TENANT`, register drift against
+`identify_tenant.py`, and a sweep of every workflow step and inline invocation for a
+tenant paired with another tenant's secrets.
+
+One further defect fell out of it, fixed in
+[b49bc60](https://github.com/EVEglyphDesign/eve-hawkins-telus-twin/commit/b49bc60):
+`restate.yml` printed `len()` of the roster object, so it logged `3 extensions` for a
+77-extension dealership. It was only exposed because adding provenance fields changed
+the number to 6. A figure that never changes reads as a constant, not as a bug — which
+is how it survived every run to date.
+
+Still open: **T-01**, `docs/assets/build_surfaces.py` implements a second divergent
+masking scheme and remains wired into `republish.yml`. Untouched here, deliberately.
