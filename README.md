@@ -102,13 +102,18 @@ system's inefficiency or to the operator's data layout — never left ambiguous.
 
 A defect is any of: a bare non-clickable link, an interrupt over a free action, an
 expensive action taken without confirmation, a rung-2 fact re-derived from scratch, a
-bare `.md` delivered as a deliverable, a canon palette or naming breach, or — added
+bare `.md` delivered as a deliverable, a canon palette or naming breach, — added
 2026-07-30 — **any state that exists only inside a session, and any action by one
-session that destroys or silently supersedes another's work (§7)**.
+session that destroys or silently supersedes another's work (§7)**, or — added
+2026-07-30 — **an unversioned or irreversible change: a material change shipped with no
+version entry, no inverse recorded, or an irreversible action taken without confirmation
+(§10)**.
 
 Classes: **L** link/format · **R** retrieval waste · **S** unconfirmed spend ·
 **I** interrupt over a free action · **C** canon breach · **D** durability: something
-was allowed to exist only in a session, or one writer overwrote another.
+was allowed to exist only in a session, or one writer overwrote another · **V**
+unversioned or irreversible: a material change shipped with no version entry, no inverse
+recorded, or an irreversible action taken without confirmation.
 
 When one occurs, append a row to
 [`registry/SIN-DEFECTS.md`](./registry/SIN-DEFECTS.md) in the same working session —
@@ -243,3 +248,46 @@ converts an invisible charge into a decision the operator can make.
 
 Refresh the ledger when the operator asks for it, or on a schedule the operator has
 approved — never unprompted, because the refresh itself costs something.
+
+---
+
+## 9. Everything lands in the repository — EgD-BOOT-004
+
+The operator's words: "anything like this at all still goes into my repo. I don't want
+anything in the session memory, nothing at all. I want to be able to rewind from my repo."
+
+The rule: no finding, decision, figure, defect, credential inventory, or artifact may
+exist only in a chat transcript or in an agent's session memory. If it was worked out, it
+is committed. Session memory is a cache, never a record. An agent that reports a result
+it did not commit has not delivered it.
+
+The practical test: if this thread were deleted right now, could the work be
+reconstructed from the repository alone? If not, the work is not finished.
+
+---
+
+## 10. Versioned and reversible — EgD-BOOT-005
+
+Every material change is issued as a numbered version, and every version records how to
+go back. A version nobody can undo is not a version, it is a bet.
+
+1. A monotonic version arc is kept in [`registry/VERSIONS.md`](./registry/VERSIONS.md) in
+   each working repository. It only grows.
+2. Every change carries a dotted hierarchical ID tied to a component blueprint —
+   `L0` / `L1.2` / `L2.3.1` style, the operator's S/4-retrofit blueprint split, also used
+   on his eDiscovery platform and his truth ledger. The dots are the structure; do not
+   flatten them into a running number.
+3. Every change row states its inverse — the exact command or action that undoes it. A
+   row with no inverse is not a finished row.
+4. Where a change is genuinely irreversible, it is labelled **irreversible** in the arc
+   rather than quietly listed among the rest, and it requires the operator's confirmation
+   before it is made. Silence is not confirmation.
+5. Each version carries an annotated git tag.
+
+A client who concludes he went the wrong way must be able to walk the arc backwards
+without asking anyone.
+
+---
+
+© 2026 EVEglyphDesign. All rights reserved. Controlled copy.
+*Pour le bien-être du peuple.*

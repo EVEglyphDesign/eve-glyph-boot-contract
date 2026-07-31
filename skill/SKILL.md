@@ -1,13 +1,13 @@
 ---
 name: eveglyph-boot-contract
-description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001 plus its measurement gate EgD-BOOT-002 (the Burn Ledger): the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, the duty to state the current burn rate before any expensive action, symmetric processing, and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, credit burn, burn rate, usage analytics, wasted processing, cold starts, defect logging, or the SIN defect register."
+description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001 plus its measurement gate EgD-BOOT-002 (the Burn Ledger): the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, the duty to state the current burn rate before any expensive action, symmetric processing, and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, credit burn, burn rate, usage analytics, wasted processing, cold starts, defect logging, the SIN defect register, repository-only record keeping (EgD-BOOT-004), or versioning and reversibility (EgD-BOOT-005)."
 license: "© 2026 EVEglyphDesign. All rights reserved. Controlled copy."
 compatibility: "Requires no tools to read. Repository work assumes GitHub access via api_credentials=[\"github\"]."
 metadata:
   author: EVEglyphDesign
   document-id: EgD-BOOT-001
   key-id: EgD-KEY-2026-07
-  version: '1.0'
+  version: '1.1'
   canonical: https://raw.githubusercontent.com/EVEglyphDesign/eve-glyph-boot-contract/main/README.md
 ---
 
@@ -165,11 +165,48 @@ and nothing else.
 
 Breaches of this section are defect class **D** — durability.
 
+## 4c. Everything lands in the repository — EgD-BOOT-004
+
+The operator's words: "anything like this at all still goes into my repo. I don't want
+anything in the session memory, nothing at all. I want to be able to rewind from my repo."
+
+The rule: no finding, decision, figure, defect, credential inventory, or artifact may
+exist only in a chat transcript or in an agent's session memory. If it was worked out, it
+is committed. Session memory is a cache, never a record. An agent that reports a result it
+did not commit has not delivered it.
+
+The practical test: if this thread were deleted right now, could the work be reconstructed
+from the repository alone? If not, the work is not finished.
+
+## 4d. Versioned and reversible — EgD-BOOT-005
+
+Every material change is issued as a numbered version, and every version records how to go
+back. A version nobody can undo is not a version, it is a bet.
+
+1. A monotonic version arc is kept in [`registry/VERSIONS.md`](../registry/VERSIONS.md) in
+   each working repository. It only grows.
+2. Every change carries a dotted hierarchical ID tied to a component blueprint —
+   `L0` / `L1.2` / `L2.3.1` style, the operator's S/4-retrofit blueprint split, also used
+   on his eDiscovery platform and his truth ledger. The dots are the structure; do not
+   flatten them into a running number.
+3. Every change row states its inverse — the exact command or action that undoes it. A row
+   with no inverse is not a finished row.
+4. Where a change is genuinely irreversible, it is labelled **irreversible** in the arc
+   rather than quietly listed among the rest, and it requires the operator's confirmation
+   before it is made. Silence is not confirmation.
+5. Each version carries an annotated git tag.
+
+A client who concludes he went the wrong way must be able to walk the arc backwards
+without asking anyone.
+
+Breaches of this section are defect class **V** — unversioned or irreversible.
+
 ## 5. Defect register
 
 A defect is any of: a bare non-clickable link, an interrupt over a free action, an
 expensive action taken without confirmation, a rung-2 fact re-derived from scratch, a bare
-Markdown deliverable, or a palette or naming breach.
+Markdown deliverable, a palette or naming breach, state that exists only inside a session
+(§4b), or an unversioned or irreversible change (§4d).
 
 Append a row to `registry/SIN-DEFECTS.md` in
 [the boot-contract repository](https://github.com/EVEglyphDesign/eve-glyph-boot-contract)
@@ -178,7 +215,8 @@ never before it and never instead of it. Record: date, defect ID, class, what wa
 what was done instead, the cheaper path that existed, and the estimated waste.
 
 Classes: **L** link/format · **R** retrieval waste · **S** unconfirmed spend ·
-**I** interrupt over a free action · **C** canon breach.
+**I** interrupt over a free action · **C** canon breach · **D** durability · **V**
+unversioned or irreversible.
 
 ---
 
