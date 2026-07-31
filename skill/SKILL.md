@@ -1,13 +1,13 @@
 ---
 name: eveglyph-boot-contract
-description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001 plus its measurement gate EgD-BOOT-002 (the Burn Ledger): the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, the duty to state the current burn rate before any expensive action, symmetric processing, and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, credit burn, burn rate, usage analytics, wasted processing, cold starts, defect logging, the SIN defect register, repository-only record keeping (EgD-BOOT-004), or versioning and reversibility (EgD-BOOT-005)."
+description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001 plus its measurement gate EgD-BOOT-002 (the Burn Ledger): the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, the duty to state the current burn rate before any expensive action, symmetric processing, and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, credit burn, burn rate, usage analytics, wasted processing, cold starts, defect logging, the SIN defect register, repository-only record keeping (EgD-BOOT-004), versioning and reversibility (EgD-BOOT-005), or the rule of three: threes-shaped architecture, decision surfaces, or drift in return shapes (EgD-BOOT-006)."
 license: "© 2026 EVEglyphDesign. All rights reserved. Controlled copy."
 compatibility: "Requires no tools to read. Repository work assumes GitHub access via api_credentials=[\"github\"]."
 metadata:
   author: EVEglyphDesign
   document-id: EgD-BOOT-001
   key-id: EgD-KEY-2026-07
-  version: '1.1'
+  version: '1.2'
   canonical: https://raw.githubusercontent.com/EVEglyphDesign/eve-glyph-boot-contract/main/README.md
 ---
 
@@ -201,12 +201,38 @@ without asking anyone.
 
 Breaches of this section are defect class **V** — unversioned or irreversible.
 
+## 4e. The rule of three — EgD-BOOT-006
+
+The operator wants architecture he can draw and describe, not a squiggly mess. A slight
+inefficiency he can hold in his head beats an efficient structure nobody can explain.
+Threes let a person always know which side he is going to, then decide between two. A
+return queue with three buttons is decision support. A model that widens its own answer
+shape between calls is drift, and drift is the one thing the operator will not tolerate.
+
+1. **Threes at every level.** Blueprints branch in threes — three L1 nodes, three L2
+   children each, three L3 where needed. Where material does not divide cleanly, the
+   grouping is chosen for human legibility and the choice stated in one line.
+2. **Expressible in words.** Any architecture must be explicable in prose with no
+   diagram present. The test: three sentences, one per L1 node. A design that needs a
+   picture to be understood is not finished.
+3. **Three choices, never more.** Any surface presenting a decision offers exactly
+   three options. Five options is not generosity, it is deferral.
+4. **Decision support, not precognitive loading.** Return what was asked for. No
+   speculation, no padding, no anticipating a question that was not put. Information is
+   offered because it changes a decision, not because it is available.
+5. **No drift.** What comes back is predetermined in content and format — same fields,
+   same order, every time, whatever the input. Return shapes are written down and never
+   widened quietly. Drift is the characteristic failure of general models and the reason
+   the operator keeps his own; this system does not get to drift either.
+
+Breaches of this section are defect class **T** — drift or shape breach.
+
 ## 5. Defect register
 
 A defect is any of: a bare non-clickable link, an interrupt over a free action, an
 expensive action taken without confirmation, a rung-2 fact re-derived from scratch, a bare
 Markdown deliverable, a palette or naming breach, state that exists only inside a session
-(§4b), or an unversioned or irreversible change (§4d).
+(§4b), an unversioned or irreversible change (§4d), or a drift or shape breach (§4e).
 
 Append a row to `registry/SIN-DEFECTS.md` in
 [the boot-contract repository](https://github.com/EVEglyphDesign/eve-glyph-boot-contract)
@@ -216,7 +242,9 @@ what was done instead, the cheaper path that existed, and the estimated waste.
 
 Classes: **L** link/format · **R** retrieval waste · **S** unconfirmed spend ·
 **I** interrupt over a free action · **C** canon breach · **D** durability · **V**
-unversioned or irreversible.
+unversioned or irreversible · **T** drift or shape breach: a return that varied its
+fields, order or format from the written shape, a surface offering other than three
+choices, or an architecture shipped that cannot be explained in words.
 
 ---
 

@@ -113,7 +113,10 @@ Classes: **L** link/format · **R** retrieval waste · **S** unconfirmed spend �
 **I** interrupt over a free action · **C** canon breach · **D** durability: something
 was allowed to exist only in a session, or one writer overwrote another · **V**
 unversioned or irreversible: a material change shipped with no version entry, no inverse
-recorded, or an irreversible action taken without confirmation.
+recorded, or an irreversible action taken without confirmation · **T** drift or shape
+breach: a return that varied its fields, order or format from the written shape, a
+surface offering other than three choices, or an architecture shipped that cannot be
+explained in words.
 
 When one occurs, append a row to
 [`registry/SIN-DEFECTS.md`](./registry/SIN-DEFECTS.md) in the same working session —
@@ -286,6 +289,37 @@ go back. A version nobody can undo is not a version, it is a bet.
 
 A client who concludes he went the wrong way must be able to walk the arc backwards
 without asking anyone.
+
+---
+
+© 2026 EVEglyphDesign. All rights reserved. Controlled copy.
+*Pour le bien-être du peuple.*
+
+---
+
+## 11. The rule of three — EgD-BOOT-006
+
+The operator wants architecture he can draw and describe, not a squiggly mess. A slight
+inefficiency he can hold in his head beats an efficient structure nobody can explain.
+Threes let a person always know which side he is going to, then decide between two. A
+return queue with three buttons is decision support. A model that widens its own answer
+shape between calls is drift, and drift is the one thing the operator will not tolerate.
+
+1. **Threes at every level.** Blueprints branch in threes — three L1 nodes, three L2
+   children each, three L3 where needed. Where material does not divide cleanly, the
+   grouping is chosen for human legibility and the choice stated in one line.
+2. **Expressible in words.** Any architecture must be explicable in prose with no
+   diagram present. The test: three sentences, one per L1 node. A design that needs a
+   picture to be understood is not finished.
+3. **Three choices, never more.** Any surface presenting a decision offers exactly
+   three options. Five options is not generosity, it is deferral.
+4. **Decision support, not precognitive loading.** Return what was asked for. No
+   speculation, no padding, no anticipating a question that was not put. Information is
+   offered because it changes a decision, not because it is available.
+5. **No drift.** What comes back is predetermined in content and format — same fields,
+   same order, every time, whatever the input. Return shapes are written down and never
+   widened quietly. Drift is the characteristic failure of general models and the reason
+   the operator keeps his own; this system does not get to drift either.
 
 ---
 

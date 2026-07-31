@@ -18,6 +18,7 @@ recorded in the Confirmed column.
 | Version | ID | Date (UTC) | Change | Inverse (exact command/action) | Tag | Confirmed (if irreversible) |
 |---|---|---|---|---|---|---|
 | v1.0 | L0 | 2026-07-30 | Added EgD-BOOT-004 (repository-only record) and EgD-BOOT-005 (versioned and reversible) to `README.md` and `skill/SKILL.md`; added defect class **V**; created this arc. | `git revert` the commit that lands this row, or `git checkout <prior-tag> -- README.md skill/SKILL.md` | `v1.0-boot-004-005` | n/a — reversible |
+| v1.1 | L1.1 | 2026-07-30 | Added EgD-BOOT-006 (the rule of three) as §11 in `README.md` and §4e in `skill/SKILL.md`; added defect class **T** — drift or shape breach — to the §5 class list in both files; bumped `skill/SKILL.md` metadata version to `1.2` and updated its frontmatter description to mention EgD-BOOT-006. | `git revert` the commit that lands this row, or `git checkout <prior-tag> -- README.md skill/SKILL.md` | `v1.1-boot-006` | n/a — reversible |
 
 ---
 
