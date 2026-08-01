@@ -17,6 +17,13 @@ of three, no unconfirmed spend — and from the position paper `EgD-POS-001`.
 
 ### I.1 Who he is
 
+> **Superseded, 1 August 2026.** The counterpart is **Zane Hall**, who writes
+> [Frictionless Decisions](https://eveglyphdesign.github.io/eve-substack-archive/zanehall/)
+> and who has already agreed to review the position paper. Ashutosh Bansal, identified below,
+> is a subscription, not the friend. The corrections that follow from reading Zane's full
+> archive are in [Reading Zane Hall](https://eveglyphdesign.github.io/eve-substack-archive/review/EgD-REV-001.html)
+> — §I.3 and §II of this note are amended there.
+
 The writer is **Ashutosh Bansal**, and the publication is
 [The Transformation Advantage](https://www.linkedin.com/pulse/why-semiconductor-sop-underpricing-volatility-what-its-bansal-t0n4c).
 One correction before anything is built on top of it: it runs as a **LinkedIn
