@@ -19,6 +19,7 @@ recorded in the Confirmed column.
 |---|---|---|---|---|---|---|
 | v1.0 | L0 | 2026-07-30 | Added EgD-BOOT-004 (repository-only record) and EgD-BOOT-005 (versioned and reversible) to `README.md` and `skill/SKILL.md`; added defect class **V**; created this arc. | `git revert` the commit that lands this row, or `git checkout <prior-tag> -- README.md skill/SKILL.md` | `v1.0-boot-004-005` | n/a — reversible |
 | v1.1 | L1.1 | 2026-07-30 | Added EgD-BOOT-006 (the rule of three) as §11 in `README.md` and §4e in `skill/SKILL.md`; added defect class **T** — drift or shape breach — to the §5 class list in both files; bumped `skill/SKILL.md` metadata version to `1.2` and updated its frontmatter description to mention EgD-BOOT-006. | `git revert` the commit that lands this row, or `git checkout <prior-tag> -- README.md skill/SKILL.md` | `v1.1-boot-006` | n/a — reversible |
+| v1.2 | L1.2 | 2026-08-01 | Published position paper **EgD-POS-001 — The Additive Position** as `docs/position/EgD-POS-001.md`, the canon PDF `docs/position/EVEglyphDesign_Additive_Position.pdf` (5 pp., source SHA-256 `56b9c42c…dc9a`), and the public page `docs/position/index.html` at the `/position/` surface. Adds no clause to the boot contract; states the availability position derived from it. | `git revert` the commit that lands this row, or `git rm -r docs/position && git checkout <prior-tag> -- registry/VERSIONS.md` | `v1.2-pos-001` | n/a — reversible |
 
 ---
 
