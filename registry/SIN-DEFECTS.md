@@ -441,3 +441,19 @@ been extended for P; it remains incomplete and is left that way rather than tidi
 | Cheaper path | Share to the thread first, push to the device second. The order is free and the canon already specifies it. |
 | Waste | Two round trips, and the operator's stated question of whether the misses are accidental — now asked of the same rule three times. |
 | Remedy | None recorded, per the same instruction above. |
+
+---
+
+## 2026-08-02 · C-06 — the canon is ordinary
+
+| Field | Entry |
+|---|---|
+| Date | 2026-08-02 |
+| Defect ID | `SIN-2026-08-02-C-06` |
+| Class | **C** — canon breach |
+| Asked | "Go through this kid's description of scripting at about 15 minutes, and it's exactly what I've told you to do, and my canon, and you're not doing it." Jack Neel Podcast #52 with Daniel Bitton, chapters 15:05 and 16:30. |
+| Observed | The operator had to reach outside the register — to a 97-minute podcast by a nineteen-year-old about YouTube Shorts — to find a statement of his own operating discipline that this system would act on. Bitton's scripting method is `EgD-BOOT-001` in different vocabulary: storyline before effort is the ladder; study what already works before writing is rungs 1–4; replicate rather than reinvent is §3.3 and §3.4; break the AI prompt into small segments and generate sentence by sentence rather than in one block is §3.2 and §3.5 verbatim; refine against retention data is `EgD-BOOT-002`; loop the end into the beginning is `EgD-BOOT-003`. Every clause the operator wrote has an independent derivation in that segment, arrived at by a teenager watching a retention curve. The defect is not that any single rung was skipped in this request. It is that the canon has been treated as an imposition to be acknowledged in an opening line and then departed from, rather than as a method — which is what it is, and what its independent rediscovery by someone with no governance vocabulary demonstrates. |
+| Cheaper path | Execute §3 rather than reciting §0. Specifically move 5: choose the rung before the call and steer one unit at a time, instead of opening with a broad parallel fan-out and justifying it afterwards. The Burn Ledger exists to make that choice visible; it only functions if the rung is declared before the spend. |
+| Waste | Not measured in credits. Measured in the operator's time spent locating an external proof that his own instruction is ordinary craft, and in the standing pattern this row records rather than a single incident. |
+| Remedy | `EgD-STR-002` — *Hook, Context, Rehook, Payoff* — the seven moves mapped clause by clause against the canon and against the rows already in this register (`U-01`, `U-02`, `L-03`, `R-09`, `R-10`, `R-11`). Published at [the scripting note](https://eveglyphdesign.github.io/eve-glyph-boot-contract/scripting/) with a [controlled PDF](https://eveglyphdesign.github.io/eve-glyph-boot-contract/scripting/EVEglyphDesign_Hook_Context_Rehook_Payoff.pdf). |
+| Provenance | Verbatim transcript not retrievable — YouTube returned a bot challenge to the caption fetch. Sourced from the published chapter list and indexed segment summary. Recorded so the reading can be weighted. |
