@@ -6,7 +6,7 @@ SRC = "/home/user/workspace/ebc/docs/scripting/EgD-STR-002.md"
 OUT = "/home/user/workspace/ebc/docs/scripting/index.html"
 RAW = open(SRC, encoding="utf-8").read()
 SHA = hashlib.sha256(RAW.encode("utf-8")).hexdigest()
-DECK = ("A fifteen-year-old's short-form scripting method, mapped clause by clause onto the EVEglyphDesign boot contract — and the gap between the two.")
+DECK = ("An eighteen-year-old's short-form scripting method, mapped clause by clause onto the EVEglyphDesign boot contract — and the gap between the two.")
 
 
 def inline(s):
@@ -124,7 +124,7 @@ li{margin:0 0 10px}
 a{color:var(--accent)}
 code{background:var(--cream2);padding:1px 5px;font-size:.88em}
 table{width:100%%;border-collapse:collapse;margin:24px 0 28px;font-size:14px}\nth{text-align:left;background:var(--cream2);border-bottom:2px solid var(--accent);padding:10px 12px;font:600 13px/1.4 Inter}\ntd{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top;line-height:1.55}\nfooter{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 60px;font-size:12.5px;color:var(--mute)}
-footer .mark{font:400 15px/1 Fraunces,Georgia,serif;color:var(--ink);margin-top:10px}
+footer .canon{margin-bottom:14px;line-height:1.6}\nfooter .mark{font:400 15px/1 Fraunces,Georgia,serif;color:var(--ink);margin-top:10px}
 </style>
 </head>
 <body>
@@ -148,6 +148,7 @@ footer .mark{font:400 15px/1 Fraunces,Georgia,serif;color:var(--ink);margin-top:
 %(body)s
 </main>
 <footer>
+  <p class="canon">© 2026 Dany Theriault. EVE “digital stem cell” glyph and glyph-based design principles — all rights reserved. Stewardship of rights of use and assignment for large public and institutional usage rests with the Pacific Utilities Design Council. Published as a time-stamped record of authorship and intent.</p>
   <p>\u00a9 2026 EVEglyphDesign. All rights reserved. Controlled copy. \u00b7 Key ID EgD-KEY-2026-07 \u00b7
   <a href="EVEglyphDesign_Hook_Context_Rehook_Payoff.pdf">Controlled PDF</a> \u00b7
   <a href="https://github.com/EVEglyphDesign/eve-glyph-boot-contract">Repository</a></p>

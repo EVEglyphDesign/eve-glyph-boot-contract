@@ -28,7 +28,7 @@ OUT = "/home/user/workspace/ebc/docs/scripting/EVEglyphDesign_Hook_Context_Rehoo
 TS = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 DOC_ID = "EgD-STR-002"; KEY_ID = "EgD-KEY-2026-07"
 TITLE = "Hook, Context, Rehook, Payoff"
-SUB = ("A fifteen-year-old's short-form scripting method, mapped clause by clause onto the EVEglyphDesign boot contract, and the gap between the two.")
+SUB = ("An eighteen-year-old's short-form scripting method, mapped clause by clause onto the EVEglyphDesign boot contract, and the gap between the two.")
 RAW = open(SRC, encoding="utf-8").read()
 SHA = hashlib.sha256(RAW.encode("utf-8")).hexdigest()
 PAGES = int(sys.argv[1]) if len(sys.argv) > 1 else 0
@@ -241,7 +241,11 @@ def build():
         Paragraph(f'<font name="Inter-SB">SHA-256 of source</font>  '
                   f'<font name="Courier" size="7">{SHA}</font>', st_cap),
         Spacer(1, 4),
-    ] + parse(RAW)
+    ] + parse(RAW) + [
+        Spacer(1, 20), Rule(), Spacer(1, 9),
+        Paragraph('© 2026 Dany Theriault. EVE “digital stem cell” glyph and glyph-based design principles — all rights reserved. Stewardship of rights of use and assignment for large public and institutional usage rests with the Pacific Utilities Design Council. Published as a time-stamped record of authorship and intent.',
+                  S("canonfoot", fontSize=7.4, leading=10.6, textColor=MUTE)),
+    ]
     # switch to the full-height body frame after the cover page
     from reportlab.platypus import NextPageTemplate, PageBreak
     story.insert(0, NextPageTemplate("body"))

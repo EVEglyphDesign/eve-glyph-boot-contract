@@ -457,3 +457,19 @@ been extended for P; it remains incomplete and is left that way rather than tidi
 | Waste | Not measured in credits. Measured in the operator's time spent locating an external proof that his own instruction is ordinary craft, and in the standing pattern this row records rather than a single incident. |
 | Remedy | `EgD-STR-002` — *Hook, Context, Rehook, Payoff* — the seven moves mapped clause by clause against the canon and against the rows already in this register (`U-01`, `U-02`, `L-03`, `R-09`, `R-10`, `R-11`). Published at [the scripting note](https://eveglyphdesign.github.io/eve-glyph-boot-contract/scripting/) with a [controlled PDF](https://eveglyphdesign.github.io/eve-glyph-boot-contract/scripting/EVEglyphDesign_Hook_Context_Rehook_Payoff.pdf). |
 | Provenance | Verbatim transcript not retrievable — YouTube returned a bot challenge to the caption fetch. Sourced from the published chapter list and indexed segment summary. Recorded so the reading can be weighted. |
+
+---
+
+## 2026-08-02 · R-07 — the ladder stopped one rung early
+
+| Field | Entry |
+|---|---|
+| Date | 2026-08-02 |
+| Defect ID | `SIN-2026-08-02-R-07` |
+| Class | **R** — retrieval waste |
+| Asked | Read the scripting segment at roughly fifteen minutes of Jack Neel #52 and map it against the canon. |
+| Observed | One caption route was tried — `yt-dlp` against YouTube — and it returned a bot challenge. Rather than continuing the rung-five fetch through the third-party caption services this organization has used before, the work fell back to a chaptered summary and reasoned from it. `EgD-STR-002` was issued on that basis. Two facts came out wrong: the guest's age was given as fifteen when he was eighteen, and the note asserted that the verbatim transcript did not exist when it was one site away. The Operator had to identify both, and to name the established pattern that was not followed. |
+| Cheaper path | The pattern was already in the organization. [`enoch-convergence/01_source_episode`](https://github.com/EVEglyphDesign/enoch-convergence) records exactly this problem for JRE #2530 and exactly this structure for solving it. Rung five is *one targeted fetch* of the fact, not *one attempt at one URL and then reason from whatever came back*. One browser session against [youtubetotranscript.com](https://youtubetotranscript.com/transcript?v=RCu9Hlpmoi0) returned 983 timestamped lines covering the full 1h39m. |
+| Waste | One document issued, read by the Operator, corrected, and rebuilt. One Operator turn spent stating something the repository already documented. Two factual errors published to a public surface for roughly two hours. |
+| Remedy | Verbatim transcript, the 12:00–22:00 window, the host's chapter list and a retrieval log naming all five routes attempted are filed at [jre-montreal-bridge / jack-neel-052-daniel-bitton](https://github.com/EVEglyphDesign/jre-montreal-bridge/tree/main/episodes/jack-neel-052-daniel-bitton). `EgD-STR-002` reissued with every one of the seven moves quoted from the captions with its timestamp, the age corrected, and the first issue's error recorded in a new §V rather than removed — `doctrine/GLOBAL.md` §4, tokenized history is canonical. |
+| Also corrected | The universal copyright footer of `doctrine/GLOBAL.md` §1 was absent from the first issue, which carried only the boot-contract running mark. It is now rendered in full, with typographic quotes per §1a, on the page and on the final page of the PDF. Filed as part of this row rather than separately. |
