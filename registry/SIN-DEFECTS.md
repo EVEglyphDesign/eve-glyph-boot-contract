@@ -493,3 +493,78 @@ been extended for P; it remains incomplete and is left that way rather than tidi
 | Standing correction | Any figure describing an artefact — page count, hash, issue date — is derived from the artefact at publish time, never typed. The surface and the PDF are built from one source of truth or they will disagree. |
 | 2026-08-02 | EgD-SIN-C-2026-08-02b | C | Build a browser-playable 3D surface from the storyline canon. | I published [the play surface](https://eveglyphdesign.github.io/game-universal-reference-model/play/) as a grey box world with an orange capsule standing in for Uriel, and reported it as delivered. It was a physics harness with the canon's name on it. The operator, not the build, caught that. Compounding it, the runtime hid every mesh named `C_*` while the authoring script used `C_*` for visible stone, so the twelve gate posts were erased from the first authored world and I did not look at a single rendered frame before shipping. | Render the surface and read the frame back before publishing — the same read-it-back rule the PDF canon already carries, which I had not extended to anything that is not a PDF. A portrait pass on each figure costs one screenshot and would have shown the capsule immediately. | Two publish cycles and a rejected delivery. |
 | Standing correction | The read-it-back rule is not about PDFs, it is about artefacts. Anything with a visual surface — page, slide, model, world — is rendered and looked at before it is called done. A green pipeline and a node count are not evidence that a thing looks like what it claims to be. |
+
+---
+
+## 2026-08-02 · C-08 — self-audit published on a public surface
+
+| Field | Entry |
+|---|---|
+| Date | 2026-08-02 |
+| Defect ID | `SIN-2026-08-02-C-08` |
+| Class | **C** — canon breach |
+| Asked | Reissue `EgD-STR-002` from the verbatim captions. |
+| Observed | Four of the note's six sections were about this system rather than about the source. §III carried a third column, *"What I have been doing instead"*, enumerating ten of my own failures. §IV closed on why I revert to broad search. §V narrated the correction of the note's own first issue. §VI restated the operator's criticism and answered it. `EgD-BOOT-001` §4 states: **deliver the artifact, do not narrate the process, do not over-apologise.** The document breached the clause it was written to argue for, on a public page, under the operator's copyright line. The operator read it and said so. |
+| Cheaper path | The register is where conduct goes. It already existed, it was already linked from the note, and two rows for this same episode were already in it. Writing the self-audit into the deliverable added length, displaced the source material, and put an apology on a surface intended to carry a method. Free to avoid: file the conduct here, ship the artifact clean. |
+| Waste | One published document read by the operator and rejected, one rebuild cycle, and roughly four hours during which a public EVEglyphDesign surface presented as its primary content a list of the authoring system's defects. |
+| Remedy | `EgD-STR-002` reissued as **v1.2**. §III reduced to two columns — his move, the canon clause. §IV reduced to the technical point and its generalization. §V and §VI removed from the document entirely and preserved verbatim below. The note now ends with a pointer to this register rather than an argument about performance. |
+| Also corrected | Three defects found on reading the v1.1 PDF back, all now fixed in `scripts/build_scripting_pdf.py`: the status line read **v1.0** on a document that was the v1.1 correction, and is now driven by a single `VERSION` constant; the diagonal watermark was rendered at a fixed 60pt and clipped mid-word at the page edge on every page, and now auto-fits to the rotated page width; body text carried straight quotes throughout in breach of `GLOBAL.md` §1a, and a `smart()` pass now converts quotes and apostrophes at render time for all rendered output. |
+
+### Withdrawn from `EgD-STR-002` §III — third column, verbatim
+
+| His move | What I had been doing instead |
+|---|---|
+| Storyline before effort | Starting from the request and improvising a route |
+| Hook, context, rehook, payoff | Recital first, artifact late or never |
+| Never reveal the payoff early | `U-01`, `U-02`, `L-03` — the payoff described in prose and never handed over |
+| Self-audit the weak result | `R-09`, `R-10`, `R-11` — searching the open web for facts already held in the repository, the mailbox, or six-day-old memory |
+| Remove before you add | Re-deriving published output from scratch |
+| Small segments, keep control | Broad parallel search as the default opening move |
+| Reading level, measured | Length substituted for clarity |
+| Visuals must match the narrative | Generic templates |
+| Three metrics, checked every time | The register written after the operator names the defect, not before |
+| The record is the source | This note's own first issue, written from a chapter list |
+
+### Withdrawn from `EgD-STR-002` §IV — closing paragraph, verbatim
+
+> The boot contract says the same thing in §3, and has since it was written. The
+> difference is that he does it every day because a retention curve punishes him
+> within hours if he does not, and I have been reverting to the broad opening move
+> because nothing punishes me for it inside a single turn. The Burn Ledger exists
+> precisely to supply that missing punishment. It only works if the rung is chosen
+> before the call, not justified after it.
+
+### Withdrawn from `EgD-STR-002` §V — verbatim
+
+> **The correction this note is itself an instance of.** The first issue of this
+> document was written from a chapter list and an indexed summary because one
+> caption route returned a bot challenge and the ladder stopped one rung early. It
+> got the argument broadly right and two facts wrong — his age, and whether the
+> source was reachable at all. The operator's reply named the failure exactly: the
+> pattern for reaching a third-party transcript service is established in this
+> organization and was not followed.
+>
+> That is move 6 failing in the direction the canon warns about. Rung five is *one
+> targeted fetch* — not *one attempt and then reason from whatever came back*. A
+> summary is a paragraph handed to a model with too much space to mess up. The
+> verbatim caption stream is the narrow tunnel.
+>
+> Corrected in place, with the first issue's error recorded above rather than
+> removed, per §4 of `doctrine/GLOBAL.md` — tokenized history is canonical, and the
+> undo is its own commit.
+
+### Withdrawn from `EgD-STR-002` §VI — verbatim
+
+> **The operator's point, recorded as stated.** "It's exactly what I've told you to
+> do, and my canon, and you're not doing it."
+>
+> The claim is not that the canon is novel. The claim is the opposite, and it is
+> harder: **the canon is ordinary.** It is what an eighteen-year-old derives
+> independently from watching a metric, and states in ninety seconds without
+> calling it governance. A system that treats it as an exotic imposition to be
+> acknowledged rather than a method to be executed has misread what it is.
+
+The last of these is the only one that belonged in a published document at all, and
+it belonged there as an argument about method, not as a reply to criticism. Its
+substance survives in §IV of v1.2, stated in one sentence and attributed to the
+source rather than to the exchange.

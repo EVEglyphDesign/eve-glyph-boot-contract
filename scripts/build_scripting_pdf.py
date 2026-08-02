@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """EgD-STR-001 — The Review Path. EVEglyphDesign canon PDF."""
-import hashlib, datetime, re, sys
+import hashlib, datetime, math, re, sys
 from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.units import mm
 from reportlab.lib.colors import HexColor
@@ -28,7 +28,8 @@ OUT = "/home/user/workspace/ebc/docs/scripting/EVEglyphDesign_Hook_Context_Rehoo
 TS = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 DOC_ID = "EgD-STR-002"; KEY_ID = "EgD-KEY-2026-07"
 TITLE = "Hook, Context, Rehook, Payoff"
-SUB = ("An eighteen-year-old's short-form scripting method, mapped clause by clause onto the EVEglyphDesign boot contract, and the gap between the two.")
+VERSION = "v1.2"
+SUB = ("A short-form scripting method quoted from the captions and mapped clause by clause onto the EVEglyphDesign boot contract.")
 RAW = open(SRC, encoding="utf-8").read()
 SHA = hashlib.sha256(RAW.encode("utf-8")).hexdigest()
 PAGES = int(sys.argv[1]) if len(sys.argv) > 1 else 0
@@ -60,7 +61,8 @@ st_td = S("td", fontSize=7.6, leading=10.6)
 def mk_table(rows, esc):
     """rows: list of list[str] markdown cells; first row is the header."""
     ncol = len(rows[0])
-    widths = [FW * w for w in ([0.26, 0.34, 0.40] if ncol == 3 else [1.0 / ncol] * ncol)]
+    _w = {3: [0.26, 0.34, 0.40], 2: [0.40, 0.60]}.get(ncol, [1.0 / ncol] * ncol)
+    widths = [FW * w for w in _w]
     data = [[Paragraph(esc(c), st_th if r == 0 else st_td) for c in row]
             for r, row in enumerate(rows)]
     t = Table(data, colWidths=widths, repeatRows=1, hAlign="LEFT")
@@ -102,7 +104,18 @@ class Pull(Flowable):
         self.p.drawOn(c, self.pad + 6, self.pad)
 
 
+def smart(s):
+    """Typographic quotes — GLOBAL.md §1a. Rendered output never carries straight quotes."""
+    s = re.sub('(^|[\\s(\\[\u2014\u2013])"', '\\1\u201c', s)
+    s = s.replace('"', '\u201d')
+    s = re.sub(r"(?<=[A-Za-z0-9])'(?=[A-Za-z])", '\u2019', s)   # contractions
+    s = re.sub(r"(?<=[A-Za-z])'(?![A-Za-z])", '\u2019', s)       # possessive plurals
+    s = re.sub(r"(^|[\s(\[])'", '\\1\u2018', s)
+    return s
+
+
 def esc(s):
+    s = smart(s)
     s = s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     s = re.sub(r"\*\*(.+?)\*\*", r'<font name="Inter-Bold">\1</font>', s)
     s = re.sub(r"`([^`]+?)`", r'<font name="Courier" size="8.6">\1</font>', s)
@@ -182,10 +195,16 @@ def paint(canvas, doc):
     canvas.setFillColor(CREAM); canvas.rect(0, 0, W, H, stroke=0, fill=1)
     canvas.saveState()
     canvas.translate(W/2, H/2); canvas.rotate(38)
-    canvas.setFont("Fraunces-Bold", 60); canvas.setFillColor(HexColor("#f5f0e6"))
-    canvas.drawCentredString(0, -18, "EVEglyphDesign")
-    canvas.setFont("Inter", 12.5)
-    canvas.drawCentredString(0, -44, "C A N O N   \u00b7   C O N T R O L L E D   C O P Y")
+    # auto-fit the mark inside the rotated page so it can never clip an edge
+    _wm, _sub = "EVEglyphDesign", "C A N O N   \u00b7   C O N T R O L L E D   C O P Y"
+    _avail = 0.86 * min(W / abs(math.cos(math.radians(38))),
+                        H / abs(math.sin(math.radians(38))))
+    _size = min(52.0, _avail / (pdfmetrics.stringWidth(_wm, "Fraunces-Bold", 1000) / 1000.0))
+    canvas.setFont("Fraunces-Bold", _size); canvas.setFillColor(HexColor("#f9f6ef"))
+    canvas.drawCentredString(0, -0.30 * _size, _wm)
+    _s2 = min(11.0, _avail / (pdfmetrics.stringWidth(_sub, "Inter", 1000) / 1000.0))
+    canvas.setFont("Inter", _s2)
+    canvas.drawCentredString(0, -0.30 * _size - 1.9 * _s2, _sub)
     canvas.restoreState()
     canvas.setFont("Inter-SB", 7); canvas.setFillColor(MUTE)
     canvas.drawString(MARGIN_L, H - 15*mm,
@@ -235,7 +254,7 @@ def build():
         Paragraph(
             f'<font name="Inter-SB">Document ID</font>  {DOC_ID}'
             f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;<font name="Inter-SB">Key ID</font>  {KEY_ID}'
-            f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;<font name="Inter-SB">Status</font>  strategy note, v1.0'
+            f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;<font name="Inter-SB">Status</font>  strategy note, {VERSION}'
             f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;<font name="Inter-SB">Issued</font>  {TS}',
             st_cap),
         Paragraph(f'<font name="Inter-SB">SHA-256 of source</font>  '
