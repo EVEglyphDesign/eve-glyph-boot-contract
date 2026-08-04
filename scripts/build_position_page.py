@@ -49,6 +49,8 @@ def body(md):
                 i += 1; q.append(lines[i][2:])
             out.append("<blockquote><p>" + inline(" ".join(q)) + "</p></blockquote>")
             i += 1; continue
+        if ln.startswith("#### "):
+            fp(); fl(); out.append("<h4>" + inline(ln[5:]) + "</h4>"); i += 1; continue
         if ln.startswith("### "):
             fp(); fl(); out.append("<h3>" + inline(ln[4:]) + "</h3>"); i += 1; continue
         if ln.startswith("## "):
@@ -105,6 +107,7 @@ h1{font:700 clamp(38px,7vw,60px)/1.04 Fraunces,Georgia,serif;margin:0 0 8px;lett
 main{padding:14px 0 10px}
 h2{font:700 25px/1.25 Fraunces,Georgia,serif;margin:52px 0 4px;padding-top:22px;border-top:2px solid var(--accent)}
 h3{font:700 17.5px/1.35 Fraunces,Georgia,serif;margin:30px 0 2px}
+h4{font:600 13px/1.4 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:26px 0 6px}
 p{margin:0 0 16px}
 blockquote{margin:30px 0;padding:18px 22px;background:var(--cream2);border-left:3px solid var(--accent);font:400 19px/1.55 Fraunces,Georgia,serif}
 blockquote p{margin:0}
@@ -125,7 +128,7 @@ footer .mark{font:400 15px/1 Fraunces,Georgia,serif;color:var(--ink);margin-top:
   <div class="rule"></div>
   <p class="deck">%(deck)s</p>
   <p class="meta">
-    <b>Document ID</b> EgD-POS-001 &nbsp;\u00b7&nbsp; <b>Key ID</b> EgD-KEY-2026-07 &nbsp;\u00b7&nbsp; <b>Status</b> position paper, v2.0<br>
+    <b>Document ID</b> EgD-POS-001 &nbsp;\u00b7&nbsp; <b>Key ID</b> EgD-KEY-2026-07 &nbsp;\u00b7&nbsp; <b>Status</b> position paper, v3.0<br>
     <b>SHA-256 of source</b> <code>%(sha)s</code>
   </p>
   <div class="cta">

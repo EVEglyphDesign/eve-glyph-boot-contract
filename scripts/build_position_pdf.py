@@ -47,6 +47,8 @@ def S(name, **kw):
 
 st_h1 = S("h1", fontName="Fraunces-Bold", fontSize=15, leading=19, spaceAfter=3)
 st_h2 = S("h2", fontName="Fraunces-Bold", fontSize=11.6, leading=15, spaceAfter=2)
+st_h3 = S("h3", fontName="Inter-SB", fontSize=8.6, leading=12,
+          textColor=MUTE, spaceAfter=2)
 st_body = S("b", spaceAfter=8)
 st_bul = S("bu", spaceAfter=6, leftIndent=13, bulletIndent=2, firstLineIndent=0)
 st_quote = S("q", fontName="Fraunces", fontSize=11.2, leading=17, spaceAfter=0)
@@ -112,6 +114,11 @@ def parse(md):
                 i += 1; q.append(lines[i][2:])
             out.append(Spacer(1, 3)); out.append(Pull(esc(" ".join(q))))
             out.append(Spacer(1, 11)); i += 1; continue
+        if ln.startswith("#### "):
+            flush(); out.append(Spacer(1, 5))
+            out.append(KeepTogether([Paragraph(esc(ln[5:]).upper(), st_h3),
+                                     Spacer(1, 2)]))
+            i += 1; continue
         if ln.startswith("### "):
             flush(); out.append(Spacer(1, 6))
             out.append(KeepTogether([Paragraph(esc(ln[4:]), st_h2), Spacer(1, 3)]))
@@ -199,7 +206,7 @@ def build():
         Paragraph(
             f'<font name="Inter-SB">Document ID</font>  {DOC_ID}'
             f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;<font name="Inter-SB">Key ID</font>  {KEY_ID}'
-            f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;<font name="Inter-SB">Status</font>  position paper, v2.0'
+            f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;<font name="Inter-SB">Status</font>  position paper, v3.0'
             f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;<font name="Inter-SB">Issued</font>  {TS}',
             st_cap),
         Paragraph(f'<font name="Inter-SB">SHA-256 of source</font>  '

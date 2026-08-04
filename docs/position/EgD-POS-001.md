@@ -1,6 +1,6 @@
 # The Additive Position
 
-**Document ID** `EgD-POS-001` · **Key ID** `EgD-KEY-2026-07` · **Status** position paper, v2.0
+**Document ID** `EgD-POS-001` · **Key ID** `EgD-KEY-2026-07` · **Status** position paper, v3.0
 
 Who EVEglyph Design technology is made available to, on what terms, and how it enters an
 enterprise estate without competing with the vendor already in it.
@@ -18,26 +18,29 @@ in `eve-datasphere-sovereign`.
 
 Three roles. Entry is by role, not by licence count.
 
-### I.1 The child
+### I.1 The individual
 
-The consumer model hands a child a feed. The feed selects the next input before the child
-does. The boot contract already classifies that behaviour in machines as **precognitive
-loading** — returning what was not asked for, anticipating a question that was not put.
-In a model it is a defect. Pointed at a nine-year-old it is the business model.
+The consumer model hands a person a feed. The feed selects the next input before the
+person does. The boot contract already classifies that behaviour in machines as
+**precognitive loading** — returning what was not asked for, anticipating a question that
+was not put. In a model it is a defect. Pointed at a human being it is the business model,
+and the younger the human being, the better it works.
 
-We invert it. The child receives the raw material and the tools to structure it, inside
-an environment scoped to school, cohort and parish, with no global discoverability
-surface. The structuring is the instruction. Sorting, naming, relating and correcting are
-the work, and the work leaves an artifact.
+We invert it. The individual receives the raw material and the tools to structure it,
+inside an environment scoped to the group they actually belong to — school, cohort,
+parish, employer, congregation — with no global discoverability surface. The structuring
+is the instruction. Sorting, naming, relating and correcting are the work, and the work
+leaves an artifact.
 
-The claim is bounded and testable: for the hour a child is inside our surface, she is
+The claim is bounded and testable: for the hour a person is inside our surface, they are
 building rather than being loaded. We do not claim anything about the other twenty-three.
 
-### I.2 The household
+### I.2 The organisation
 
-The household is the governing body of the environment the child enters, not a user
-account inside it. It needs enforceable controls that hold before commercial engagement
-pressure argues the other way.
+The organisation is the governing body of the environment the individual enters, not a
+billing account attached to it. It holds the consent, the retention rule and the release
+gate, and it needs enforceable controls that hold before commercial engagement pressure
+argues the other way.
 
 Precedence is fixed: safety, then betterment, then everything else. A feature that clears
 safety but not betterment does not ship. This is a gate in the release process, not a
@@ -45,10 +48,71 @@ statement of values.
 
 ### I.3 The practitioner
 
-The parish administrator, the utility engineer, the accountant, the dealer principal, the
-consultant whose name is on the outcome. Enterprise here denotes personal, traceable
-responsibility for downstream consequences — not seat count, not an SSO tier. These are
-the people who absorb the cost of platform decisions taken above them.
+The utility engineer, the plant operator, the accountant, the parish administrator, the
+dealer principal, the transformation consultant whose name is on the outcome. Enterprise
+here denotes personal, traceable responsibility for downstream consequences — not seat
+count, not an SSO tier. These are the people who absorb the cost of platform decisions
+taken above them.
+
+**Practitioner is a qualified role, not a self-description.** It is not a job title inside
+an IT function and it is not conferred by employment at a vendor. It is held by people
+trained and educated in enterprise consulting in the broad sense — the discipline of
+taking responsibility for a system other people depend on.
+
+#### I.3.1 Eligibility
+
+A candidate must satisfy both tests.
+
+**The custody test.** The candidate has held, for a sustained period, personal
+accountability for a system whose failure has consequences beyond their own employment —
+an electric utility, a nuclear or process plant, a municipal service, a financial ledger,
+a fleet, a parish or institutional register, a multi-year enterprise transformation. Deep
+craft counts. Seniority counts. A decade of doing the work counts. A certification
+purchased last quarter does not.
+
+**The stability test.** The candidate's profession must not be one whose duty of care is
+about to be rewritten by the work we are doing, and must not be one whose economics depend
+on human distress. Excluded on that basis:
+
+- **Professions in the path of the change** — clinical medicine, psychology and
+  psychotherapy, and adjacent care professions. Their obligations to a patient are being
+  reshaped by exactly the systems in scope here. They cannot hold custody of the standard
+  and be governed by it at the same time.
+- **Professions monetising distress** — commission sales, and any role whose
+  compensation rises as a person's confusion, fear or dependence rises.
+- **Elected and appointed political office**, for the same reason and for one more: the
+  register must not become a lobbying surface.
+
+The exclusions are structural, not moral. An excluded professional may be a customer, a
+reviewer, a co-author or a beneficiary. They may not be the person the standard is held
+by. Exclusion is reviewable: a candidate may state the case in the register and the
+decision is recorded with a reason.
+
+#### I.3.2 Certification and maintenance
+
+Admission is by examination, and admission decays without upkeep. Three obligations, held
+against the practitioner register `EgD-REG-PRAC-001`:
+
+1. **A certification examination.** Assessed on the canon, the precedence order, the
+   sovereignty guarantees and the entry rules in §IV — and on judgement under those rules,
+   not on recall. Sat once, recorded in the register with a date and a result.
+2. **Maintenance reading.** A published reading set, revised as the canon is revised, with
+   the practitioner's acknowledgement recorded against each revision. A standard nobody has
+   read the current version of is not in force.
+3. **Forum contribution.** A standing obligation to contribute to the public review forum —
+   a correction, a case, a defect, a dissent. A practitioner who only consumes is lapsed.
+   Contributions are public and attributable, and they are the evidence that the standard
+   is being exercised rather than merely held.
+
+Lapse is recorded, not concealed. The register shows current, lapsed and withdrawn status
+with dates, because a credential nobody can check is a claim.
+
+#### I.3.3 Instantiation inside PAIX
+
+Inside the PAIX parish platform these three roles instantiate as **the child**, **the
+household** and **the parishioner**, and that framing governs there. The general form —
+individual, organisation, practitioner — is the one this paper carries, and the parish
+framing is a specialisation of it, never a replacement for it.
 
 ---
 
@@ -73,7 +137,7 @@ not in the engine. It is in three guarantees:
 - **Every change is versioned and carries its inverse.** A wrong turn is walked back
   without anyone's permission.
 
-One shape serves both scales: the child sorting a calendar and the enterprise mirroring a
+One shape serves both scales: the individual sorting a calendar and the enterprise mirroring a
 universal journal off a disaster-recovery copy it has already paid for. There is no
 reduced-function version for the customers without a budget.
 
