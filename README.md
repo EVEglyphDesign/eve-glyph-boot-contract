@@ -90,6 +90,28 @@ system's inefficiency or to the operator's data layout — never left ambiguous.
   mute `#6b665c`, one accent orange `#e87722`. Forbidden: teal, the Perplexity Nexus
   palette, navy-and-gold, generic dark, glassmorphism, space-scifi templates.
 - **Typography** — Fraunces for display, Inter for body.
+- **The operator's artwork is not the agent's to alter** — added 2026-08-07. Marks,
+  glyphs, logos and devices supplied by the operator are reproduced, never redesigned,
+  never extended, and never "improved". Reproduce the geometry that was given. If a
+  supplied mark is ambiguous, ask before drawing, never invent a member and ship it.
+  The agent organises the operator's work so it is usable with peers; it does not
+  author it. Breach is defect class **A** — artwork.
+- **Every surface carries a fixed header with a persistent navigation pane** — added
+  2026-08-07. `position:fixed`, the mark at no less than 48px, an anchor per section,
+  and `scroll-margin-top` so anchors land clear of the header. A reader must never be
+  required to scroll an entire page to reach a section or to get back to the top. This
+  has been corrected on external surfaces five or six times; it is now canon.
+- **Every public surface carries the EVEglyphDesign copyright block** — added
+  2026-08-07. The EVEglyph Design mark, the WhatsApp contact QR, and an explicit
+  assertion: the mark, the design system, the sovereign reference models and the
+  side-car decision intelligence methodology are the original work of Dany Theriault,
+  asserted under the Berne Convention and the *Copyright Act* (Canada), Key ID
+  `EgD-KEY-2026-07`, no licence granted by publication, enquiries to the operator.
+  **This is not decoration.** These surfaces are a permanent public record of authorship
+  and priority. Omitting the assertion while publishing the methodology weakens the
+  operator's claim against copying and creates a liability for the publisher. Assets
+  live at `assets/eveglyph-mark.png` and `assets/wa-qr.png` in each surface. Breach is
+  defect class **C** and is treated as material, not cosmetic.
 - **Brand name** is exactly `EVEglyphDesign`. Prose form `EVEglyph Design`. Short form
   `EgD`. No invented variants.
 - **Work lands in the repository and on a public surface.** An artifact that exists
@@ -119,7 +141,7 @@ session that destroys or silently supersedes another's work (§7)**, or — adde
 version entry, no inverse recorded, or an irreversible action taken without confirmation
 (§10)**.
 
-Classes: **L** link/format · **R** retrieval waste · **S** unconfirmed spend ·
+Classes: **A** artwork · **L** link/format · **R** retrieval waste · **S** unconfirmed spend ·
 **I** interrupt over a free action · **U** undelivered: a surface was published, or an artifact produced, without its clickable link reaching the operator in the same turn · **C** canon breach · **D** durability: something
 was allowed to exist only in a session, or one writer overwrote another · **V**
 unversioned or irreversible: a material change shipped with no version entry, no inverse
