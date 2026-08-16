@@ -636,3 +636,43 @@ handbook source and the landing HTML. The retraction is on the record in the mir
 ledger, `registry/PROVENANCE.md` in
 [the Emerson Rush twin repository](https://github.com/EVEglyphDesign/emerson-rush-twin/blob/main/registry/PROVENANCE.md),
 so the earlier hashes remain tamper-verifiable while the surface is clean.
+| 2026-08-16 | EgD-SIN-R-2026-08-16 | R | Extend Part 0 of Lillian's Guide so that EVE is named. | I invented a summary of EVE — "the research and governance project that exists to free the digital world from institutional lock-in and place data and decision intelligence back in the hands of the people who generate them" — and published it as canon on a public surface, twice, in the handbook and on the landing card. The record has said what EVE is for months, in the operator's own repositories: `EVEglyphDesign/eve-datasphere-sovereign` (README, `docs/thesis.md`) states plainly that EVE is Enterprise Value Engineering — the econometric utility ledger extending SAP's ACDOCA and master-data substrates through Datasphere, with the customer free to choose SAP, another firm, or their own team to manage the surrounding services. This was the canonical definition and it was written by the operator, in his repositories. I never opened them. I built two full revisions on top of the invented summary, and the operator had to correct it directly, from his phone, at bedtime. | Rung 3 first — the knowledge-wiki page for a project named `emerson-rush-twin` names its adjacent projects and the operator's language is consistent across the wiki. Rung 4 second — one `gh search code --owner EVEglyphDesign "Datasphere"` returns `eve-datasphere-sovereign/README.md` and `docs/thesis.md` in the first two hits, and both files open with the definition. Total cost to have got the definition right the first time: two lookups, seconds each, less than the cost of one line of the PDF I published instead. | Two full build-hash-push-verify cycles built on the wrong definition, one retraction cycle (rev 4, which was also required), one correction cycle (rev 5), the operator's time reading and correcting canon at midnight, and the harder cost the register keeps naming — a public surface under his name that told the world what EVE means, and got it wrong. |
+
+### EgD-SIN-R-2026-08-16 — the record was already written; I did not read it
+
+The register has C-10 in it from 2026-08-02 in almost the same shape: designing against a
+document the operator had already committed, without reading the boundaries the document
+sets. The pattern was named in that entry as *the cold-start pattern the boot contract
+names by phrase* — an agent that begins each request as though nothing has ever been said
+to it. Two weeks later, on Lillian's Guide, I did it again. This time the boundary I did
+not read was not a game-scene constraint; it was the definition of the flagship acronym of
+the practice.
+
+Two things make this worse than a plain retrieval miss:
+
+1. **The invented summary sounded canonical.** \"The research and governance project that
+   exists to free the digital world from institutional lock-in\" is the sort of sentence
+   the operator's practice does write. It rhymes with his voice. That is precisely why an
+   invented summary is more dangerous than an obvious guess: I generated something that
+   *sounded* like it was from the record, and I published it as if it were.
+
+2. **The right answer was in a repository named after the concept.** The operator's
+   [`eve-datasphere-sovereign`](https://github.com/EVEglyphDesign/eve-datasphere-sovereign)
+   repository is the flagship EVE artifact. The first sentence of its README defines the
+   pattern. The first paragraph of `docs/thesis.md` names ACDOCA and Datasphere as the
+   substrate. A single `gh search code` in the org would have returned both files as the
+   top hits. I did not run it.
+
+The rule that now stands, in one sentence: **when the concept has its own repository, open
+the repository before writing the definition anywhere else.**
+
+Correction is live at
+[the Lillian's Guide public surface](https://eveglyphdesign.github.io/emerson-rush-twin/mirror-3/www.emersonrush.com/lillians-guide/):
+a 5-page PDF with SHA-256
+`ada4df31db5b665cdaaeb808ac034677d4887c87d58f202d0958cc6b9bdb5531`, verified against the
+live URL, whose Part 0 now reads *EVE stands for Enterprise Value Engineering* and
+grounds the pattern in ACDOCA, Datasphere, and customer-owned choice of service posture.
+The ledger in
+[`registry/PROVENANCE.md`](https://github.com/EVEglyphDesign/emerson-rush-twin/blob/main/registry/PROVENANCE.md)
+of the mirror repository carries the correction as Revision 5 with rev-4 hashes preserved
+for tamper-verification.
