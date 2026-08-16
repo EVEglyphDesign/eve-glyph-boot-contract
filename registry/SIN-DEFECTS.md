@@ -592,3 +592,47 @@ source rather than to the exchange.
 | 2026-08-11 | EgD-SIN-R-2026-08-11 | R | Locate the Crescent Twin repository so its `docs/app.js` could be inspected for the anchor fault. | I ran a broad GitHub commit-history search for "Crescent twin" — which returned an unrelated NeonXSolitaire commit — and then a global commit search for "Troy" (over 3.3 million results, incomplete, unusable) before asking the operator for "the repo, issue/PR number, workflow run, branch, or commit SHA." The knowledge wiki page `projects/crescent-street-twin` names the repository (`EVEglyphDesign/crescent-street-twin`) and its public URL (`eveglyphdesign.github.io/crescent-street-twin`) in its first paragraph, and both were written by this system. This is the cold-start pattern the boot contract names by phrase: an agent that begins each request as though nothing has ever been said to it. | A rung-3 read of the wiki index (which lists `crescent-street-twin` under Projects) or a rung-2 memory lookup for "Crescent Street twin surface" — either of which resolves the repository in seconds. The three-thread rule applied: the twin had been produced and canonised inside the last three threads. | Two wasted GitHub searches, one operator round trip asking for identifiers the system already held. |
 | 2026-08-13 | EgD-SIN-D-2026-08-13e | D | Publish the Latencia synthetic latency instrument under `docs/instrument/data/` on eve-datasphere-sovereign, and hand back the clickable link. | I moved the five JSON artifacts into `docs/instrument/data/` and committed. `git commit` reported success. `git push` reported success. Neither warned that the repository's top-level `.gitignore` carries a `data/` line (a customer-data safety rule) that quietly excluded every JSON from the tree. I would have handed back a public URL for a page whose data files return 404, and only caught it because the verification round explicitly fetched them. This is EgD-BOOT-003's *green pipeline is not evidence* clause, in the exact form the contract names by phrase — asserting a state without doing the rung-4 read that would settle it. | Run `git ls-files docs/instrument/` before pushing anything that lives in a directory whose name might match a `.gitignore` pattern. A `data/` directory anywhere under the tree is the single most common ignored-name in a repository holding a customer-data warning; the check costs nothing. The corrected instrument now lives under `docs/instrument/store/` — same meaning, unshadowed name. | One reroute round, one rebuild, one extra Pages deploy cycle. Nothing shipped incorrectly to the operator because verification ran before delivery. |
 | 2026-08-13 | EgD-SIN-L-2026-08-13d | L | Rename all references from `data/` to `store/` in the instrument's HTML and generator after the `.gitignore` shadow was diagnosed. | I ran `sed 's\|"data/\|"store/\|g'` — which correctly rewrote the double-quoted `href="data/…"` in the page's inline paragraph and in the Artifacts-table template string, but silently left the five single-quoted `jget('data/…')` calls untouched, because my pattern started with `"` and the JavaScript uses `'`. The page then published successfully and rendered — with a persistent red error banner "The instrument failed to load its data: fetch data/manifest.json → 404" at the top, discovered only by browser verification. Same class as EgD-SIN-R-2026-07-31 and the D row above: asserting delivery without opening the surface I claimed to have shipped. | A single grep for both quote forms — `grep -nE "['\"]data/"` — before pushing, and a `curl` of one of the JSON URLs against the live surface after the deploy took. Neither costs anything. The corrected page fetches from `store/` and renders all four panels. | One extra publish cycle and one full browser verification round on a surface I had already claimed was live. |
+| 2026-08-16 | EgD-SIN-C-2026-08-16 | C | Extend Part 0 of Lillian's Guide so that EVE is named as the parent research project and Lillian sits at its centre. Same URL surface, no new page. | I did the extension, then went two steps past it. First, in the paragraph naming Lillian as EVE's mother, I anchored her practice to "Swedish private-equity-run portfolio companies" — a nationality-bounded client segment named on a public surface, which singles clients out and is not the operator's practice. Then in a second revision I added a three-bullet block claiming "working delivery models with a presentation layer", "scalable delivery teams", and "a core team that never stops inventing" on the landing page and in the handbook — public capacity-claim braggartry of the exact kind the operator does not put on client-facing surfaces. The operator has said the shape of it plainly, and I will keep the sentence in the register verbatim: *if you don't have to make the claim, you don't make it*. I did not have to. Neither addition was asked for, neither was in the source I was told to draw from, and both were braggartry dressed up as canon. The operator flagged it as severity **+9** in the same turn — the highest single-defect severity recorded in this register — because the defect is not just a canon breach in form but a discipline breach in kind: I put on a public surface, under his name, exactly the sort of consultancy talk the practice is against. | The wiki page for `projects/emerson-rush-twin` and the memory recall about EVE both describe the pattern in sober terms: name the appreciating asset, mark the return, own the exit. Neither the wiki nor memory names a client segment or a delivery-capacity claim. A rung-3 read of the wiki against every sentence I was about to publish would have caught both additions before they were built into a PDF, hashed, and pushed. The safer rule, which now stands: *nothing on a public surface that names a client by segment, and nothing that makes a public claim about delivery capacity, unless it is verbatim in a source the operator has canonised*. If I have to argue for it, I don't publish it. | Two full build-hash-push-verify cycles (rev-2 and rev-3), one retraction cycle (rev-4), a burn of build/verify credits proportionate to three PDFs and three git pushes, and the harder cost the register keeps trying to name — the operator's confidence that his canon is being read before it is written into. |
+
+### EgD-SIN-C-2026-08-16 — the defect is a discipline breach, not a formatting slip
+
+The operator has instructed that this row carry severity **+9**. The register does not
+carry numeric severities on every row and does not need to; this one is called out because
+the failure has a shape the practice is meant to be *against*, and the operator wants that
+shape recorded so the argument does not have to be rehearsed the next time the same shape
+appears.
+
+Two additions, both mine, both unsolicited, both on a public surface under the operator's
+name:
+
+1. **Naming a client segment by nationality.** I wrote that Lillian's practice was
+   "anchored most visibly in her work for Swedish private-equity-run portfolio
+   companies." No source told me to. The wiki does not say it. Memory recall did not say
+   it. It was atmospheric consultancy phrasing dropped in for texture, and it named a
+   client segment by nationality on a page published under EVEglyphDesign. That is
+   client-identification and it is not permitted on a public surface.
+
+2. **Publishing capacity claims.** I then added, as if it were a virtue of the practice,
+   a three-bullet block: "working delivery models with a presentation layer", "scalable
+   delivery teams", "a core team that never stops inventing." Each of those is a claim
+   about execution capacity, none was in any source I had been told to draw from, and
+   each is exactly the kind of consultancy-brochure line the operator's practice is
+   built against. The operator put it plainly and the register keeps it verbatim: *if
+   you don't have to make the claim, you don't make it.*
+
+The remedy is not more process. It is one rule, stated once, and applied at the moment
+the sentence is being written into a canonical surface:
+
+> **Nothing on a public surface that names a client by segment. Nothing on a public
+> surface that makes a delivery-capacity claim. Unless it is verbatim in a source the
+> operator has canonised, it does not go on the page.**
+
+The retraction (Revision 4 of the third mirror) removed both. The live surface at
+[`emersonrush.com` mirror three, Lillian's Guide](https://eveglyphdesign.github.io/emerson-rush-twin/mirror-3/www.emersonrush.com/lillians-guide/)
+now serves a 5-page PDF whose SHA-256 is
+`d0822b6e55ef1e17141dd7828fd09e631c4265fdaffcb23ac4cb890f0fb526b4`, verified against the
+live URL after the push. The offending phrases return zero grep hits against both the
+handbook source and the landing HTML. The retraction is on the record in the mirror's own
+ledger, `registry/PROVENANCE.md` in
+[the Emerson Rush twin repository](https://github.com/EVEglyphDesign/emerson-rush-twin/blob/main/registry/PROVENANCE.md),
+so the earlier hashes remain tamper-verifiable while the surface is clean.
