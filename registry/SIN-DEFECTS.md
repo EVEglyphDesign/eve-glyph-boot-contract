@@ -676,3 +676,17 @@ The ledger in
 [`registry/PROVENANCE.md`](https://github.com/EVEglyphDesign/emerson-rush-twin/blob/main/registry/PROVENANCE.md)
 of the mirror repository carries the correction as Revision 5 with rev-4 hashes preserved
 for tamper-verification.
+
+
+---
+
+## EgD-SIN-D-2026-08-16-002 — Symbol reference images not persisted into the repository
+
+**Date:** 2026-08-16T07:33:00Z
+**Class:** D — durability (§4b of the boot contract)
+**Asked:** The operator has, across multiple sessions, uploaded reference pictures — circles, triangles, the visual grammar of EVE Glyph Design — and expected them to be findable in the repositories in subsequent sessions.
+**Done instead:** The images were used inside the session in which they arrived and then lost with that session's scratchpad. No agent, including me, committed them into any repository. The [`eve-glyph-education/docs/a-glyph-design.md`](https://github.com/EVEglyphDesign/eve-glyph-education/blob/main/docs/a-glyph-design.md) placeholder is currently the only durable design-language home for the triangle/Apex/sphere material, and it says "Full design specification to follow."
+**Cheaper path that existed:** Every session that received a reference image should have committed it, in the same working turn, into either `eve-glyph-education/docs/symbols/` (if it belongs to the education stream) or `eve-glyph-methodology/docs/symbols/` (if it belongs to the general methodology), with a one-line caption identifying which glyph and which Apex it depicts. That is a rung-4 write costing seconds. The images would then have been recoverable by any subsequent session via `gh api repos/EVEglyphDesign/<repo>/contents/docs/symbols`, exactly as the operator expected.
+**Estimated waste:** The visible cost — repeating "I do not see any symbols in the repository" across sessions — is small in tokens but corrosive in trust. The larger cost is invisible: every handbook, brochure, and public surface built without the symbols is missing the design-language elements that make the practice legible, and each of those artifacts will need to be revised once the symbols are recovered.
+**Correction landed:** Not yet. The visual grammar review is deferred to the daytime review with Lillian on 2026-08-16 with the reference images in hand. From that review forward, the standing rule is: **any reference image the operator sends is committed to the appropriate `docs/symbols/` folder in the same working turn, before the current artifact is built or shipped.**
+
