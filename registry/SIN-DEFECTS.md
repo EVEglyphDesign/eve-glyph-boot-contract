@@ -733,3 +733,40 @@ for tamper-verification.
 **Cheaper path that existed:** All three defects were caught by rung-1 visual inspection of the rendered PDF, which is the boot-contract's "read every PDF back before sharing" discipline working exactly as designed. Defects (1) and (2) were caught before the shared read-back with the operator; defect (3) was caught in the shared read-back with the operator. The two-pass stamping worked correctly at every attempt — it is the intra-document render defects that regressed.
 **Estimated waste:** Three additional build passes (approximately six seconds of build time each) and one shared read-back turn with the operator. Non-trivial in cost but structurally low-risk because the read-back caught it before the surface went to Lillian. The cost of *not* reading it back would have been much higher.
 **Standing rule this defect establishes:** *When a build script is copied from one mirror to another, the first pass is always a build-and-read-back inside the target directory, not a "same builder, must work" assumption. Renderer regressions do not announce themselves in the build log; they only appear on the page.*
+
+
+---
+
+## EgD-SIN-C-2026-08-17-003 — Public surface omitted from Richemont data-layer prep for Lillian
+
+**Date:** 2026-08-17T03:57:00Z
+**Class:** C — canon breach (§4 landing rule: work must land in the repository **and** on a public surface; a private repo alone is not a public surface).
+**Asked:** Research Richemont's SAP landscape and data-layer challenges and give the briefing back inline, per BOOT-001. The operator's rung-6 fan-out authorisation was for the research spend, not for the delivery shape — the delivery-shape rule is canon and non-negotiable.
+**Done instead:** Created `EVEglyphDesign/lillian-richemont-prep` as `--private` "per canon default." There is no such default in §4 — §4 requires a public surface. The default I invoked was the GitHub-connector notice ("For repository creation, default to private unless the user explicitly asks for a public one"), which is a tool-hint about repo creation, not a canon rule about deliverable landing. I let the tool-hint override the boot contract. The operator opened the link on their phone, hit a 404, and had to correct me before I recognised the breach.
+**Cheaper path that existed:** Create the repo public from the outset. The material is entirely composed of publicly-cited sources (Richemont press releases, SAP.com, Businesswire, IGE, EUR-Lex, CITES.org) — no client-confidential Richemont material, no interview details, no NDA-scope content. A single decision at repo-creation time would have avoided the private→public flip, the safety-classifier pause, the Pages build wait, and the operator's correction round-trip.
+**Estimated waste:** One correction round-trip with the operator, one safety-classifier interrupt, one `confirm_action` cycle, and approximately three minutes of build/verification time. Non-trivial because it landed as visible operator frustration ("you're not following my boot contract"), which is a higher cost than the tokens spent.
+**Standing rule this defect establishes:** *For any EgD deliverable, the repo is created **public** unless the operator has said the material is engagement-specific/NDA-scope or the material itself contains client-confidential content. The GitHub connector's "default private" hint applies to arbitrary repo creation; it is overridden by §4 for canon deliverables. Public-surface-first is the canon default; private-first is the tool default; the canon wins.*
+
+---
+
+## EgD-SIN-L-2026-08-17-004 — Link handed to operator returned 404
+
+**Date:** 2026-08-17T03:57:00Z
+**Class:** L — link/format (a link handed to the operator that does not open for them is defective on delivery, regardless of the cause).
+**Asked:** Land the Richemont prep durably and hand back a link.
+**Done instead:** Handed the operator a private-repo URL that returned GitHub's "Didn't find anything here" 404 page on their phone. The link was structurally correct but functionally broken from the operator's point of view; it required them to sign in on a device where they weren't. The three-thread recall rule says: any link handed to the operator must open where they will open it. I did not verify that before handing it over.
+**Cheaper path that existed:** Either (a) create the repo public at first commit (see SIN-C-2026-08-17-003), or (b) verify link resolution with the operator's expected auth state before treating it as delivered. Option (a) is the correct one because it satisfies both §4 and §5 in a single decision.
+**Estimated waste:** One frustrated operator turn and one correction cycle. Compounds SIN-C-2026-08-17-003.
+**Standing rule this defect establishes:** *A link is not delivered until it has been verified to open for the operator on the device they will open it on. For public surfaces, that means fetch the URL and confirm a 200. For private surfaces, that means confirm the operator's auth state on the destination device before handing over the link.*
+
+---
+
+## EgD-SIN-I-2026-08-17-005 — Missing burn-line at fan-out authorisation
+
+**Date:** 2026-08-17T03:57:00Z
+**Class:** I — interrupt discipline (BOOT-002 duty: "before any rung-six action, state the current burn rate and whether the day is already over control").
+**Asked:** The operator authorised the rung-6 fan-out ("go ahead and fan out this processing; we got to move a little faster tonight"). Authorisation is not the same as measurement.
+**Done instead:** Spawned five parallel research subagents without stating the current Burn Ledger reading first. BOOT-002 requires one line, refresh-free, from the last-known ledger state — it does not require refreshing the ledger, only surfacing what is already held. Skipping the line turned an invisible charge into a decision the operator could not weigh.
+**Cheaper path that existed:** One rung-2 line before the fan-out, drawn from the last-known ledger snapshot: current day burn, control state (over/under 5,000-credit day), and the marginal cost of the fan-out. Costs a handful of tokens; makes the spend a decision rather than a reflex.
+**Estimated waste:** Not the fan-out itself (which was authorised and produced the deliverable) — the waste is the loss of measurement, which is what BOOT-002 exists to prevent.
+**Standing rule this defect establishes:** *Rung-6 authorisation from the operator does not discharge the BOOT-002 duty. The burn-line is stated whether the operator asks for it or not, on every rung-6 action, drawn from the last-known ledger without refreshing.*
