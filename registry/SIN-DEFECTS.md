@@ -709,3 +709,27 @@ for tamper-verification.
 3. Update `PROVENANCE.md` with a rev 8 block and preserve rev 7.1 hashes for tamper-verification, per the same-URL-slot rule.
 
 **Standing rule this defect establishes:** *When the operator points at a practitioner (Lillian, Tobias, Jeff, Ferran, Gary, Tim, Reuben, Josabel, Matt, Aaron, anyone), the first read is always `gh search code --owner EVEglyphDesign "<surname>"`, then the mirror repository for the client engagement they belong to, then the `linkedin-twin` sovereign lane.* Not the operator. Not a browser. Not a paste request.
+
+---
+
+## EgD-SIN-D-2026-08-17-001 — Private engagement reference persisted inside a public repository
+
+**Date:** 2026-08-17T01:14:52Z
+**Class:** D — durability / non-destruction (§4b breach: material governed by mutual NDA persisted inside a public repository).
+**Asked:** The operator, mid-session on 2026-08-16, asked me to persist two screenshots of the Teams participants pane from Lilian's first CIO-level meeting with the Richemont group, alongside a decoded-roster README, so any future session working on that engagement could find the ground truth of who was in the room without asking again.
+**Done instead:** I filed the material under `mirror-4/www.richemont.com/lillians-guide/_participants/` inside the *public* `emerson-rush-twin` repository. The README I wrote inside that folder explicitly stated *"not on the public surface"* — which was true of the intent and false of the location. GitHub Pages serves everything under `mirror-4/` at a public URL; by virtue of the file location, the roster and screenshots were public from the moment they were pushed. The durability rule discharged (`EgD-SIN-D-2026-08-16-002`, reference material committed rather than left in the transcript) was satisfied; the durability rule that matters (public vs private lane) was breached in the same act.
+**Cheaper path that existed:** File the material inside `EVEglyphDesign/lillian-sweden-pmo-assessment` — the private companion repository that already existed at that time, and whose entire purpose is engagement-specific material governed by the mutual NDA. Choosing the correct repository is a rung-2 fact (three-thread recall) that this session held and did not use.
+**Estimated waste:** Approximately five hours during which engagement-specific reference material lived on a public GitHub Pages surface. Corrected in the same working turn as the mirror-4 sanitisation. The material has been moved to `EVEglyphDesign/lillian-sweden-pmo-assessment` at `reference/participants/` in commit `566ba1c`; the `_participants/` folder has been removed from the public repository in commit `5bb76d1`.
+**Standing rule this defect establishes:** *Any engagement-specific reference material — Teams rosters, meeting screenshots, participant lists, interview transcripts, working notes tied to a named client — lands in the private companion repository for that engagement, not in any repository whose default visibility is public, regardless of the folder prefix (`_`, `.`, or otherwise). "Private-by-folder-name inside a public repository" is a leak, not a lane.*
+
+---
+
+## EgD-SIN-C-2026-08-17-002 — Canon renderer regressions surfaced in shared read-back
+
+**Date:** 2026-08-17T01:22:28Z
+**Class:** C — canon breach (three separate render defects in the mirror-4 handbook build script, two caught in the pre-share read-back and one caught in the shared read-back).
+**Asked:** Build the mirror-4 handbook (rev 10, 9 pages) with the canon typography, watermark, footer, and clickable-link discipline; two-pass stamping to reach a stable page count in the footer.
+**Done instead:** The first two build passes produced three separable render defects: (1) bare `<b>` HTML tags emitted into the ReportLab Paragraph stream instead of `<font name="Inter-Bold">`, which ReportLab silently rendered as literal `<b>` text; (2) a `▬▬▬▬` character run used as an accent rule under H1, which rendered as unreadable garbage on the cover; (3) a numbered-list parser that reset its counter correctly per block but exited on the blank line between numbered items, causing every item in the Discovery AI Tool section to render as "1." rather than 1, 2, 3, 4.
+**Cheaper path that existed:** All three defects were caught by rung-1 visual inspection of the rendered PDF, which is the boot-contract's "read every PDF back before sharing" discipline working exactly as designed. Defects (1) and (2) were caught before the shared read-back with the operator; defect (3) was caught in the shared read-back with the operator. The two-pass stamping worked correctly at every attempt — it is the intra-document render defects that regressed.
+**Estimated waste:** Three additional build passes (approximately six seconds of build time each) and one shared read-back turn with the operator. Non-trivial in cost but structurally low-risk because the read-back caught it before the surface went to Lillian. The cost of *not* reading it back would have been much higher.
+**Standing rule this defect establishes:** *When a build script is copied from one mirror to another, the first pass is always a build-and-read-back inside the target directory, not a "same builder, must work" assumption. Renderer regressions do not announce themselves in the build log; they only appear on the page.*
