@@ -770,3 +770,16 @@ for tamper-verification.
 **Cheaper path that existed:** One rung-2 line before the fan-out, drawn from the last-known ledger snapshot: current day burn, control state (over/under 5,000-credit day), and the marginal cost of the fan-out. Costs a handful of tokens; makes the spend a decision rather than a reflex.
 **Estimated waste:** Not the fan-out itself (which was authorised and produced the deliverable) — the waste is the loss of measurement, which is what BOOT-002 exists to prevent.
 **Standing rule this defect establishes:** *Rung-6 authorisation from the operator does not discharge the BOOT-002 duty. The burn-line is stated whether the operator asks for it or not, on every rung-6 action, drawn from the last-known ledger without refreshing.*
+
+
+---
+
+### 2026-08-18 · Defect EgD-DEF-2026-08-18-01 — client name written into public gate draft (caught pre-push)
+
+**Date:** 2026-08-18T02:00:00Z
+**Class:** C — canon breach (client-naming redaction rule).
+**Asked:** Build a public gate page for Jeff Eden's pursuit at the current client, following the standing redaction canon that the client's name, the sponsor's name, and the sponsor's-boss name do not appear in any public artifact.
+**Done instead:** First revision of `index.html` in the `enterprise-agent-enablement` repo included the literal client name in the Package-it paragraph and in the "What I'd like to talk about" paragraph. Caught on self-review before pushing to `main`, so the leak never reached the live public surface, but the string was written into the local file and would have been pushed on the next command in the same block.
+**Cheaper path that existed:** A single grep-for-client-names pass on any file destined for the public repo before every commit. Costs nothing; catches every occurrence.
+**Estimated waste:** Zero external damage this time (caught pre-push). The defect is that the redaction rule is enforced by memory rather than by a check. Memory has now failed once; the check needs to become mechanical.
+**Standing rule this defect establishes:** *Before every commit to any public EVEglyphDesign repository, grep the diff for the current client's name, the current sponsor's name, and the current sponsor's-boss name. If any hit, do not commit. This applies whether the write feels like a "gate page" or a "canon file" — the grep runs on any path that will land on a public surface.*
