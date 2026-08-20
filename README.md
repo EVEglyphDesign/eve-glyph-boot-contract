@@ -79,11 +79,26 @@ system's inefficiency or to the operator's data layout — never left ambiguous.
 
 ## 4. Output canon — non-negotiable
 
-- **Default deliverable is a PDF.** Never a bare Markdown file. Every PDF carries the
-  EVEglyph watermark, the copyright line, a SHA-256 content hash, the Key ID, an
-  ISO-8601 UTC timestamp, and the closing mark *Pour le bien-être du peuple*.
-  Markdown is permitted only for files that are functionally Markdown — this README,
-  a provenance ledger, a repository document.
+- **Default deliverable is the artifact in its natural shape** — amended 2026-08-19.
+  A demonstration is an HTML surface. A working document a human is going to comment
+  on and iterate on is Markdown. A dashboard is a live page. **PDF is not the default
+  for new work** — rebuilding a Markdown or an HTML into PDF costs credits for output
+  the operator often strips out anyway, and efficiency is itself canon. PDF is opt-in:
+  produced when the operator asks for it, when the deliverable is a controlled
+  distribution, or when the artifact requires a hash-stamped point-in-time record.
+- **Existing PDFs are perpetual assets** — added 2026-08-19. Once a PDF has been
+  produced and shared with the operator, it is not deleted, not superseded silently,
+  and not replaced with a Markdown link. It is updated in place through its
+  decommission — corrected, re-hashed, re-stamped, and kept at the same URL. Deleting
+  a shared PDF because a later stylistic rule says "no more PDFs" is a defect,
+  class **D** — durability. Rule changes apply to *new* work; they do not retroactively
+  strip already-delivered artifacts. **Formal decommission** means the operator asks
+  for it, or the containing project is retired; nothing else.
+- **When a PDF is produced** — whether new-by-request or being updated in place — it
+  carries the EVEglyph watermark, the copyright line, a SHA-256 content hash, the Key
+  ID, an ISO-8601 UTC timestamp, and the closing mark *Pour le bien-être du peuple*.
+  Markdown is a first-class deliverable, not a fallback — this README, a provenance
+  ledger, a repository document, an operator-facing brief.
 - **Every link given to the operator is clickable.** Markdown link form, with the
   destination named in the anchor text. A bare URL pasted as plain text is a defect.
 - **Palette** — cream `#fdfaf4`, cream-2 `#f7f2e7`, ink `#1a1a1a`, line `#e7e1d3`,
