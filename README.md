@@ -41,6 +41,51 @@ log it under §5.
 
 ---
 
+### §1a Rung 0 — outcome and custody frame (added 2026-08-24)
+
+Before the ladder fires, state the frame. **No rung 1 lookup, no rung 5 fetch, no rung 6
+spend runs until Rung 0 is on the page.** Perplexity's default is depth-first per
+technical object — each object extended to its next logical conclusion before the next
+object is touched. That produces correct specifics and wrong architecture, and it hides
+the places where the owner has to participate under a wall of endpoints. Design work is
+done the other way: outcome first, custody next, participation points named, and *then*
+specifics — only where custody has been established.
+
+Rung 0 is one block, ≤10 lines total, fixed shape:
+
+1. **Outcome.** One sentence, in the operator's language, of what changes in the world.
+2. **Owner participation points.** The 3–7 major steps where the operator, or a named
+   third party, decides, signs, or is named. Numbered.
+3. **Data custody map.** For each participation point, who holds the data before,
+   during, and after — **named parties, not systems**. "PACCAR", "the dealer",
+   "EVEglyphDesign", not "the API".
+4. **Boundary of this turn.** What will and will not be elaborated in the reply that
+   follows. Everything outside the boundary is deferred, not guessed.
+
+Rung 0 carries no URLs, no endpoint names, no auth models, no field lists, no schemas.
+Those are rung 3 and later, and they only appear once §1b's custody gate opens.
+
+### §1b Breadth-before-depth, and the custody gate on specifics (added 2026-08-24)
+
+Two mechanical rules the ladder enforces once Rung 0 is stated:
+
+1. **Breadth before depth.** When N technical objects are in scope, the first pass
+   touches all N at Rung 0 depth. No object advances to rung 1 until every object has a
+   Rung 0 line. Depth-first elaboration on object 1 while objects 2..N are unexamined is
+   a defect — class **F**, drift, depth-first.
+2. **Custody gate on specifics.** A specific — an endpoint, a schema, a key, a field, a
+   parameter, an auth model — may appear in output only if the reply can name (i) whose
+   data it touches, (ii) which participation point it serves, and (iii) which custody
+   boundary it crosses. If any of the three is unknown, the specific is deferred. Guessing
+   is a class **F** defect. So is filling the gap with a plausible default.
+
+The cheap alternative to depth-first drift is always the same: one Rung 0 line per
+object, then stop and let the operator choose which object advances. That choice is a
+rung-1 fact and takes seconds. Elaborating eighteen objects to their next conclusion
+when the operator asked which three matter is not thoroughness, it is billing.
+
+---
+
 ## 2. Spend classes and the interrupt threshold
 
 | Class | Examples | Confirm with the operator? |
@@ -163,7 +208,11 @@ unversioned or irreversible: a material change shipped with no version entry, no
 recorded, or an irreversible action taken without confirmation · **T** drift or shape
 breach: a return that varied its fields, order or format from the written shape, a
 surface offering other than three choices, or an architecture shipped that cannot be
-explained in words.
+explained in words · **F** drift, depth-first — added 2026-08-24 — a reply that extended
+a technical object past Rung 0 before the outcome-and-custody frame was on the page, or
+emitted a specific (endpoint, schema, key, field, auth model) without naming whose data
+it touches, which participation point it serves, and which custody boundary it crosses
+(§1a, §1b).
 
 When one occurs, append a row to
 [`registry/SIN-DEFECTS.md`](./registry/SIN-DEFECTS.md) in the same working session —
