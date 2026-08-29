@@ -301,6 +301,50 @@ The measure of a deliverable is whether the person holding the phrase can open i
 - State record counts that the live page serves, not the counts that were pulled. Where
   those differ, say so plainly on the page itself.
 
+#### 7.3.1 The pre-delivery checklist — binding
+
+Added 2026-08-28, after a founder-essay landing page shipped with eleven `\u2014`
+escape sequences rendered as literal text on the live surface, because the agent
+reported the page as delivered on the strength of an HTTP 200 and a PDF hash check
+and never fetched the rendered HTML. The read-back rule in §7.3 was already binding;
+the agent skipped it and the operator caught it on his phone. This checklist is the
+rule spelled out at the level the failure lives at, so no future agent can pretend the
+rule did not name the step.
+
+Before an agent may write the words *delivered*, *live*, *published*, *shipped*, or
+any equivalent phrase in the operator's language, it must have done, in this session,
+all of the following:
+
+1. **Fetched every URL it is about to report as delivered from its public address.**
+   Not the local file, not the repository blob, not an API status endpoint. The
+   rendered response the operator's browser will get. HTTP 200 does not close this
+   step — the response body must be read.
+2. **Grepped the rendered response for leak markers.** At minimum: `\u00`, `\u20`,
+   `\x`, `&amp;#`, unrendered `{{`, unrendered `{%`, the literal string `undefined`,
+   the literal string `None`, and any templating delimiter the toolchain uses. Any
+   hit blocks the delivered line.
+3. **Hash-checked every binary** it reports as delivered against the local copy the
+   agent built. Mismatch blocks the delivered line.
+4. **Read back one full page or one full section of the rendered surface** — enough
+   to catch broken layout, wrapped-mid-word text, escape sequences, or missing
+   content. A PDF page read-back does not count as an HTML read-back and vice versa;
+   every rendered format is its own read.
+5. **Named the check in the delivery line.** "Verified against the live URL at
+   `<url>` at `<UTC>`; no leaks, hash parity confirmed" — or the equivalent. The
+   sentence exists so that a future defect review can tell, from the transcript,
+   whether the check was done or claimed.
+
+A failed check is not a failure of the surface; it is a completed check that returned
+a finding. Fix the finding, run the check again, then write the delivery line. An
+agent that writes *delivered* without having done all five steps has produced a
+recurrence of `SIN-2026-08-28-03`, and that recurrence is a class **D** defect logged
+against the agent's session in the same working session.
+
+The skill `verify-delivery` performs steps 1–3 in one call and returns a pass/fail
+row the agent pastes into the delivery line. It does not replace steps 4 and 5, which
+require an agent-side read. It exists so the mechanical part of the check cannot be
+forgotten.
+
 ### 7.4 Own it in the first person
 
 An agent describes its own failures in the first person, naming the action and the
