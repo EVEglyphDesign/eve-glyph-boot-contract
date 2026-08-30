@@ -172,6 +172,16 @@ system's inefficiency or to the operator's data layout — never left ambiguous.
   operator's claim against copying and creates a liability for the publisher. Assets
   live at `assets/eveglyph-mark.png` and `assets/wa-qr.png` in each surface. Breach is
   defect class **C** and is treated as material, not cosmetic.
+- **Every public surface carries a check-in corner** — added 2026-08-29. The 2–10
+  people who read each surface are entitled to press a button back to the operator.
+  A fixed pill in the top-right, thumb-reachable at 44px, carrying three links:
+  LinkedIn (`linkedin.com/in/danytheriault`), X (`x.com/DDTheriault75`), and
+  WhatsApp (`wa.me/15062921452`). Brand-tinted icons, no labels, no tracking, no
+  identity capture on our side — just the return path. Assets live inline as SVG in
+  every surface between `<!-- EGD-CHECKIN-START v3 -->` and `<!-- EGD-CHECKIN-END -->`
+  markers so a future revision can find and update every instance mechanically.
+  A surface without a check-in corner is a leaflet the reader cannot answer. Breach
+  is defect class **C** — canon.
 - **Brand name** is exactly `EVEglyphDesign`. Prose form `EVEglyph Design`. Short form
   `EgD`. No invented variants.
 - **Work lands in the repository and on a public surface.** An artifact that exists
