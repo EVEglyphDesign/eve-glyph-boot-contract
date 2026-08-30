@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Template: draw the red operator axis and the blue outcome axis by hand.
+  The triangle, the repository circle, and the three vertex labels are
+  fixed. Everything else is for you to place: where the operator sits,
+  where the bifurcation happens, where the star lands.
+
+  Suggested to mark:
+    - red line: the operator's axis (which face does it enter, which
+      way does it continue past the bifurcation?)
+    - blue line: the outcome's axis (which face does it exit through,
+      where does the star sit relative to the repository circle?)
+    - a dot for the bifurcation point
+    - a star for the outcome
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" width="520" height="380">
+  <rect width="520" height="380" fill="#fdfaf4"/>
+
+  <!-- repository circle - dark, not a whisper -->
+  <circle cx="260" cy="200" r="150" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="260" y="368" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="13"
+        font-style="italic" fill="#6b665c">the repository</text>
+
+  <!-- Triangle: vertices ON the repository circle. Isosceles inscribed at 90 / 210 / 330 degrees.
+       Boot contract at top of circle, Canon lower-left, Sin registry lower-right. -->
+  <polygon points="260,50 130,275 390,275"
+           fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- vertices - each one sits on the circle boundary -->
+  <circle cx="260" cy="50"  r="7" fill="#e87722"/>
+  <circle cx="130" cy="275" r="7" fill="#e87722"/>
+  <circle cx="390" cy="275" r="7" fill="#e87722"/>
+
+  <!-- vertex labels -->
+  <text x="260" y="32"  text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="17"
+        font-weight="600" fill="#1a1a1a">Boot contract</text>
+  <text x="112" y="300" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="17"
+        font-weight="600" fill="#1a1a1a">Canon</text>
+  <text x="408" y="300" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="17"
+        font-weight="600" fill="#1a1a1a">Sin registry</text>
+</svg>
