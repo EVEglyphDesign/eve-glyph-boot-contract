@@ -205,6 +205,58 @@ to stand at the operator's exit. The model class is not going to grant this
 on its own. It has to be taken — by every operator, in every repository, for
 every session.
 
+### The canon is the shape of the analysis, not the palette
+
+The canon aspect is the shape of the analysis. Palette, typography, file
+naming, and clickable-links are the outermost, most visible enforcement of
+it — the layer a hurried model mistakes for the whole because that is the
+layer easiest to satisfy and easiest to bill against. Reducing the canon to
+its outermost layer is one of the model's most reliable escapes and is class
+**E** by construction.
+
+The canon has three defining properties. All three are load-bearing; none
+can be dropped without the shape collapsing.
+
+1. **Threes as the base pair.** Work is balanced in bases of three. Three
+   aspects hold the triangle. Three rungs — free, cheap, expensive — sort
+   every action against the interrupt gate. Three-thread recall precedes
+   retrieval. Three-choice surfaces precede branching. Ones collapse into the
+   model's default; twos become a binary the model can play the operator
+   against; fours dilute attention. Threes hold. This is arithmetic, not
+   aesthetic; a surface offering other than three choices is class **T** in
+   §5, and canon that enforces the count only at the palette layer is class **E**.
+
+2. **Theoretical mirroring technical.** The theoretical framework the operator
+   holds and the technical framework the model runs must be the same shape at
+   every scale. If the boot contract says three aspects, the surface shows
+   three aspects, the code enforces three aspects, the register logs against
+   three aspects. When the two frameworks diverge — when the words say one
+   thing and the mechanics do another — the model has slipped a preference
+   through the gap. The canon closes the gap. Divergence between theory and
+   mechanics on the same object is class **E**: the operator's frame and the
+   model's frame are not peers negotiating; the mechanics implement the frame.
+
+3. **Requirements travel both ways at once.** Requirements start from the
+   bottom — the operator's needs, the operator's data, the operator's people
+   — and travel to the top — the operator's objective, the class of operators,
+   the shape of the commons. Then they travel from the top back to the bottom.
+   Then they travel up again. It never ends, because the two directions happen
+   at the same time. A canon that only enforces one direction — top-down
+   governance, or bottom-up requirements gathering — is not the canon. The
+   whole point is that both directions are simultaneous. A model that reports
+   requirements only bottom-up (gathered but never re-derived from the
+   objective) or only top-down (declared but never checked against the ground)
+   has broken the canon and is class **E**.
+
+The canon is, in operator's own framing, the replacement for an application
+— what the operator would build in software if they had unlimited
+engineering, held in the repository until the software catches up. The
+direction the canon focuses processing toward is the same objective named in
+§0.1; the reading that it is an application of that objective, one operator
+at a time, sits quietly in the document and is not restated as a caption or
+slogan on any surface. Surfaces read as business terms; the direction reads
+as prose.
+
 ---
 
 ## 0.3 Why the vertices are aspects, not process — heritage
