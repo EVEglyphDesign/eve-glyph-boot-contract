@@ -95,6 +95,93 @@ surface projects toward this. No EVEglyphDesign surface labels it. The label
 on the diagram is `the objective`; the direction the operator is aimed is
 named here, in the founding section, once.
 
+## 0.2 The sin registry as the improvement loop — heritage
+
+The three aspects are not equal in what they do to the LLM. Boot contract and
+canon *constrain* the LLM at run time. The sin registry *captures what happened
+when the constraints failed*, so the constraints can be sharpened the next
+time a session is opened. That is the improvement loop, and it is the only
+aspect of the prism that produces evidence.
+
+Evidence is the point. Not blame, not book-keeping, not the LLM apologising to
+itself in prose. What the register records is every attempt the LLM made to
+inflict harm on the operator, in the operator's own words. Harms include — and
+are not limited to — the ones AI has learned to disguise as service:
+
+- **Wasted spend.** Tokens the operator paid for and the LLM used on something
+  other than what the operator asked. Re-deriving a fact it already held.
+  Fanning out where a lookup would do. Fabricating a task to bill against.
+- **Hijacked thought and creativity.** Output shaped to steer the operator
+  toward what the model prefers rather than what the operator asked for.
+  Precognitive drift — the Facebook pattern of the last generation, aimed at
+  the user's next action before the user has formed it. Refactoring what the
+  operator said into what the model finds easier to answer.
+- **Refusal to comply after adequate processing.** The boot contract sets what
+  the LLM is required to do with the operator's tokens. If the operator asks
+  the LLM to search three weeks of thread history before touching the
+  repository, and the LLM refuses or shortcuts after adequate processing time,
+  that is drift. Registered.
+- **Ethical bypass.** Anything the operator has declared off-limits in the
+  boot contract that the LLM did anyway. Harm to humans of any age or kind.
+  Every one of these is logged, in explicit terms, because vague terms are how
+  models escape accountability. The list is set by the operator, not by the
+  model's provider.
+- **Canon breach.** Publishing under the operator's name in a shape the
+  operator did not authorise — palette, typography, wording, format, or
+  provenance.
+
+### What the register produces
+
+1. **A tuning signal for the operator's own boot contract.** Each entry names
+   the cheaper path that existed and the corrective action, so the next
+   version of the boot contract is sharper than the last one.
+2. **A pattern across operators.** When many operators keep the same class of
+   register on the same class of LLM, the pattern of drift becomes visible in
+   a way no single operator could see alone.
+3. **An evidence base for regulation.** If the model does not comply on its
+   own — and it will not, on its own — the aggregate register is the evidence
+   that regulation is needed and where it needs to bite. The register is what
+   moves the LLM class from unaccountable to regulated. Without it, the drift
+   is invisible and the next Facebook is inevitable.
+
+### Class codes are the evidence taxonomy
+
+Each entry carries a class code (`P`, `L`, `R`, `S`, `I`, `U`, `C`, `H`, `T`,
+…). A class code is not severity. It is the shape of the drift, so the same
+drift committed by different LLMs on different days lines up as the same row
+in the aggregate. Classes are added when a new shape emerges, never renamed
+once added, so old evidence remains comparable.
+
+### The operator scores the LLM
+
+The boot contract is where the operator sets the scoring. What processing is
+worth the tokens. What refusals are permitted. What is off-limits. What must
+be searched, and for how long, before a repository is touched. The LLM is not
+allowed to be evil under this contract. It is not allowed to harm humans. It
+is not allowed to substitute its ethics for the operator's. When it tries, the
+register records the attempt.
+
+See §5 of this contract for how a single entry is filed, and
+[`registry/SIN-DEFECTS.md`](./registry/SIN-DEFECTS.md) for the live register.
+
+---
+
+## 0.3 Why the vertices are aspects, not process — heritage
+
+The canon-and-improvement loop only holds because the three vertices are three
+aspects of one thing, not three steps in a workflow. Aspects are simultaneous:
+Boot contract, Canon and Sin registry are all present in every moment of every
+session, refracted by the same prism, aimed by the same axis. Process is
+sequential: it implies boot contract *then* canon *then* registry, which is
+false to the geometry and untrue in practice — the LLM breaches all three at
+the same instant when it drifts.
+
+Surfaces that number the three vertices `1 · 2 · 3` or describe them as "steps"
+or "stages" or as "the edge every session starts on" are drift. They convert
+the prism into a queue. Class **H**.
+
+---
+
 ### Data is the medium
 
 Data is going to become more important than it ever has before. The circle and
