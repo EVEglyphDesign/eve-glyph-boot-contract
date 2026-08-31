@@ -42,4 +42,22 @@
   <text x="408" y="300" text-anchor="middle"
         font-family="Fraunces, Georgia, serif" font-size="17"
         font-weight="600" fill="#1a1a1a">Sin registry</text>
+
+  <!-- Founding axis - operator's eye and projected objective on opposite
+       sides of the repository circle. Do not ship without both. -->
+
+  <!-- Operator's eye - blue X, lower-left, outside the circle -->
+  <g stroke="#1e5fb3" stroke-width="6" stroke-linecap="round" fill="none">
+    <line x1="40" y1="315" x2="80" y2="355"/>
+    <line x1="80" y1="315" x2="40" y2="355"/>
+  </g>
+  <text x="30" y="338" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="22"
+        font-weight="700" fill="#1e5fb3">*</text>
+
+  <!-- Projected objective - red X, upper-right, outside the circle -->
+  <g stroke="#c8102e" stroke-width="6" stroke-linecap="round" fill="none">
+    <line x1="440" y1="45" x2="480" y2="85"/>
+    <line x1="480" y1="45" x2="440" y2="85"/>
+  </g>
 </svg>

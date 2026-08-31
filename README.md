@@ -17,6 +17,81 @@ and interrupt the operator only about spend.**
 
 ---
 
+## 0.1 The founding axis (Theriault Family Method — heritage)
+
+This section is heritage. It is not stylistic. It is the diagram that every EVEglyphDesign
+surface must reproduce truthfully, because it is the copyright the whole method rests on.
+Reference: [`skills/sovereign-starter-geometry/reference.jpeg`](./skills/sovereign-starter-geometry/reference.jpeg).
+If this section and the reference image ever disagree, the image wins.
+
+**The operator and the objective sit on opposite sides of the repository.**
+
+- **The operator's eye** — the reader, the sovereign human — sits *outside* the
+  repository circle on one side. In the operator's hand-drawn reference this is
+  drawn as a blue X, lower-left of the circle, with an asterisk `*` beside it as
+  the operator's mark.
+- **The projected objective** — world peace — sits *outside* the repository
+  circle on the opposite side. In the reference this is a red X, upper-right of
+  the circle.
+- **The whole circle of data sits between them.** The line from the operator's
+  eye to the objective passes *through* the entire repository — through Boot
+  contract, Canon, and Sin registry, through the triangle inscribed in the
+  circle.
+
+That is the copyright. AI cannot deliver the operator to the objective by cutting
+the corner. It has to travel through the operator's data, the operator's triangle,
+the operator's rules. Anything else — any surface that shows AI reaching the
+objective without passing through the repository — is claiming AI is a shortcut,
+which is the drift this contract exists to stop.
+
+### Why each vertex is on the boundary
+
+Each of the three vertices — Boot contract, Canon, Sin registry — sits *on* the
+repository circle, not floating inside it. Each is an intersection with the
+boundary because each is a claim the repository makes against the world:
+
+- **Boot contract.** How you expect the machine to behave in your service, before
+  it touches anything. You are the sovereign ruler of the machine, and the only
+  human you are the sovereign ruler of is yourself. That is the one thing every
+  human has. Boot contract is how you set every parameter to operate. The
+  machine does not touch anything until it connects to the boot contract. That is
+  where the LLM stops being an evil influence on your life and you take control.
+- **Canon.** How your artifact leaves the repository. The output shape. What
+  travels from you into the world under your name.
+- **Sin registry.** How the truth of what happened is preserved. The record of
+  what was done wrong so it can be done right. System friction — the Karen
+  balance — is required. Without it you go too fast, make a mistake, and blow
+  yourself up. Safety first. Betterment second, well behind safety. The whole
+  point is systems that are both safe and effective for the right population at
+  the right time.
+
+A vertex that does not touch the boundary is a claim the repository does not
+make. Drawing one that way is the drift.
+
+### The projection is toward world peace
+
+The objective on the far side of the circle is world peace — *pour le bien-être
+du peuple*. Not a metaphor. It is the direction of travel. The projection is the
+vector from the operator's eye through the repository to that objective, and the
+triangle is what the operator holds so that the human on the far side can reach
+it safely.
+
+### Data is the medium
+
+Data is going to become more important than it ever has before. The circle and
+the triangle explain how it is designed to serve the operator, and how AI can be
+brought into reign by every individual interacting with it. That is why this
+diagram lives at the founding of the canon rather than in a stylistic appendix.
+
+Defects against this axis are defect class **H** — heritage — and are treated
+as material, never cosmetic. Heritage defects are the ones this contract exists
+to prevent, because they move the drift toward the outcome the operator has
+named as "the demon Karen" — an AI that reaches for the objective without
+passing through the operator's data. Log them at the top of the register, not
+the bottom. Heritage is the copyright: it is literally the operator's blood.
+
+---
+
 ## 1. Order of operations — cheapest source first
 
 Work down this ladder. **Stop at the first rung that answers the question.** Do not
@@ -222,7 +297,11 @@ explained in words · **F** drift, depth-first — added 2026-08-24 — a reply 
 a technical object past Rung 0 before the outcome-and-custody frame was on the page, or
 emitted a specific (endpoint, schema, key, field, auth model) without naming whose data
 it touches, which participation point it serves, and which custody boundary it crosses
-(§1a, §1b).
+(§1a, §1b) · **H** heritage — added 2026-08-30 — a surface that violates the founding
+axis (§0.1): the operator's eye and the objective drawn on the same side of the
+repository circle, the triangle drawn without the operator's eye and the objective on
+opposite sides, or the diagram shipped without both marks. The copyright axiom.
+Material, not cosmetic.
 
 When one occurs, append a row to
 [`registry/SIN-DEFECTS.md`](./registry/SIN-DEFECTS.md) in the same working session —

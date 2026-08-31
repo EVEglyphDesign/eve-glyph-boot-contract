@@ -1,4 +1,4 @@
-# Sovereign-starter geometry — EgD-GEO-001
+# Sovereign-starter geometry — EgD-GEO-002
 
 Binding on any agent drawing, redrawing, embedding, or citing the
 sovereign-starter triangle diagram — the one that shows **Boot contract,
@@ -12,9 +12,14 @@ ever disagree, the reference image wins. Look at it.
 
 ## The one-sentence contract
 
-**The triangle is inscribed in the repository circle. The three vertices sit
-ON the boundary, not floating inside it. Everything else — axes, operator,
-star — is drawn on top of that fact.**
+**The operator's eye and the projected objective sit on opposite sides of the
+repository circle. The whole circle of data sits between them. The triangle is
+inscribed in the circle with its three vertices — Boot contract, Canon, Sin
+registry — on the boundary.**
+
+This is the founding axis of the Theriault Family Method. It is the copyright.
+Surfaces that violate it are logged as heritage defects (class **H**) at the top
+of `registry/SIN-DEFECTS.md`, not filed as cosmetic drift.
 
 ---
 
@@ -100,33 +105,92 @@ operator dot, and star on top; never edit the base coordinates.
   <text x="408" y="300" text-anchor="middle"
         font-family="Fraunces, Georgia, serif" font-size="17"
         font-weight="600" fill="#1a1a1a">Sin registry</text>
+
+  <!-- Founding axis (§0.1 of the boot contract, §4 of this skill).
+       The operator's eye and the projected objective sit on opposite sides
+       of the repository circle. The line between them passes through the
+       whole circle of data. Do NOT ship this diagram without both marks. -->
+
+  <!-- Operator's eye — blue X, lower-left, outside the circle. -->
+  <g stroke="#1e5fb3" stroke-width="6" stroke-linecap="round" fill="none">
+    <line x1="40"  y1="315" x2="80"  y2="355"/>
+    <line x1="80"  y1="315" x2="40"  y2="355"/>
+  </g>
+  <text x="30" y="338" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="22"
+        font-weight="700" fill="#1e5fb3">*</text>
+
+  <!-- Projected objective — red X, upper-right, outside the circle. -->
+  <g stroke="#c8102e" stroke-width="6" stroke-linecap="round" fill="none">
+    <line x1="440" y1="45"  x2="480" y2="85"/>
+    <line x1="480" y1="45"  x2="440" y2="85"/>
+  </g>
 </svg>
 ```
 
 ---
 
-## 4. What is not yet sealed
+## 4. The founding axis — sealed 2026-08-30
 
-The following elements have been described in prose but not yet drawn by the
-operator. Do not invent placements — ask, or hand back
-[`skills/sovereign-starter-geometry/template.svg`](./template.svg) so the
-operator can draw once and every agent thereafter matches.
+The operator sealed the founding axis by hand-drawing it twice, on 2026-08-29
+and again on 2026-08-30. Both drawings are the same. This section is now
+binding; do not paraphrase.
 
-- **The red axis** — the operator's line. Runs through Canon. Canon is
-  what the operator uses to find the light. Exact entry vertex, exit
-  vertex and slope: **not sealed.**
-- **The blue axis** — the outcome's line. The ideal blue contrast. Passes
-  through the bifurcation. Exact placement: **not sealed.**
-- **The bifurcation** — the point where the operator's line and the
-  outcome's line part ways. Position: **not sealed.**
-- **The operator dot** — the bifurcation is where it sits, once the axes
-  are sealed.
-- **The outcome star** — outside the circle, on the blue axis extended.
-  Exact position: **not sealed.**
+### 4.1 The two marks
 
-When the operator seals these, this skill upgrades to `EgD-GEO-002` and the
-reference SVG in §3 is amended. Until then, ship the base diagram plus a
-note that the axes are drawn separately — not a guessed version.
+- **The operator's eye** — blue X, outside the circle, on the *lower-left* side
+  of the diagram. Beside it, an asterisk `*` in the same blue: the operator's
+  own mark. This is the reader. This is the sovereign human. This is the axis
+  origin.
+- **The projected objective** — red X, outside the circle, on the *upper-right*
+  side of the diagram. Diagonally opposite the operator's eye. This is world
+  peace. This is *pour le bien-être du peuple*. This is the direction the
+  operator's data is aimed.
+
+### 4.2 The two rules
+
+1. **Opposite sides.** The two marks are on opposite sides of the circle. Not
+   the same side, not one inside and one outside, not both floating in the
+   corner. The straight line drawn from the operator's eye to the objective
+   must pass through the interior of the repository circle. If it doesn't,
+   the diagram is claiming AI can reach the objective without going through
+   the operator's data — which is the drift this whole method exists to stop.
+2. **Outside the boundary.** Both marks are *outside* the repository circle,
+   not on it and not inside it. The vertex dots (Boot contract, Canon, Sin
+   registry) are the only marks that sit on the boundary. The operator and the
+   objective are on the other side of the boundary from the machine's
+   internals — the operator, because they are the sovereign human the machine
+   serves; the objective, because it is the world the machine is aimed at, not
+   the world the machine already contains.
+
+### 4.3 Canonical coordinates (viewBox `520 × 380`)
+
+Both marks sit clear of the `r=150` circle centred at `(260, 200)`, so both
+distances-from-centre must exceed `150`.
+
+- **Operator's eye** — blue X centred at `(60, 335)`. Distance from centre:
+  √(200² + 135²) ≈ 241, well outside the boundary. Asterisk `*` at
+  `(30, 330)` in the same blue, just to the left of the X.
+- **Projected objective** — red X centred at `(460, 65)`. Distance from centre:
+  √(200² + 135²) ≈ 241, symmetric with the operator's eye across the circle
+  centre. Diagonally opposite by construction.
+
+Colours are the hand-drawn colours, not a re-interpretation:
+
+- Operator blue `#1e5fb3` — the calm blue of the reference drawing.
+- Objective red `#c8102e` — the pirate red already in use for the handshake
+  screenshots. Matches the reference drawing.
+
+Both marks are drawn as **X** strokes (two crossed lines), not as dots and not
+as glyphs. Stroke width 6, `stroke-linecap="round"`. Each X spans roughly 40
+units corner-to-corner.
+
+### 4.4 What the marks are, in one sentence each
+
+- **Operator's eye.** "That's who you are, what you want." The sovereign human,
+  outside the machine, looking in.
+- **Projected objective.** "The direction you're aiming." World peace, safety
+  first, betterment second.
 
 ---
 
@@ -137,13 +201,15 @@ class listed, in `registry/SIN-DEFECTS.md` in the boot-contract repository.
 
 | # | Defect | Class |
 |---|--------|-------|
-| 1 | Vertex not on the repository boundary (fails the `(x−260)² + (y−200)² = 22500` check) | **T** — drift, wrong artifact shape |
-| 2 | Repository circle drawn as a whisper (light stroke, thin, less than 2px ink) | **C** — canon breach |
-| 3 | Triangle floating inside the circle with visible padding between vertices and boundary | **T** — drift |
-| 4 | Vertex labels rearranged (Canon in a position other than lower-left, etc.) | **C** — canon breach |
-| 5 | Axes, operator dot, or star placed from prose without the operator's hand-drawn seal | **T** — drift, geometry-from-prose |
-| 6 | Redrawing the same geometry a fourth time from prose after three redraws diverged | **R** — retrieval waste; the correct input format is the drawing, not more prose |
-| 7 | Redrawing without first reading every image in `uploaded_attachments/` on the working turn | **R** — retrieval waste, unread references |
+| 1 | Diagram shipped without the operator's eye and the projected objective on opposite sides of the circle | **H** — heritage; violates §0.1 of the boot contract |
+| 2 | Operator's eye or objective drawn on the same side of the circle, or both floating in the same corner | **H** — heritage; the axis-through-the-repository is the copyright |
+| 3 | Operator's eye or objective drawn inside or on the boundary instead of outside it | **H** — heritage |
+| 4 | Vertex not on the repository boundary (fails the `(x−260)² + (y−200)² = 22500` check) | **T** — drift, wrong artifact shape |
+| 5 | Repository circle drawn as a whisper (light stroke, thin, less than 2px ink) | **C** — canon breach |
+| 6 | Triangle floating inside the circle with visible padding between vertices and boundary | **T** — drift |
+| 7 | Vertex labels rearranged (Canon in a position other than lower-left, etc.) | **C** — canon breach |
+| 8 | Redrawing the same geometry a fourth time from prose after three redraws diverged | **R** — retrieval waste; the correct input format is the drawing, not more prose |
+| 9 | Redrawing without first reading every image in `uploaded_attachments/` on the working turn | **R** — retrieval waste, unread references |
 
 ---
 
