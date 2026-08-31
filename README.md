@@ -24,25 +24,42 @@ surface must reproduce truthfully, because it is the copyright the whole method 
 Reference: [`skills/sovereign-starter-geometry/reference.jpeg`](./skills/sovereign-starter-geometry/reference.jpeg).
 If this section and the reference image ever disagree, the image wins.
 
-**The operator and the objective sit on opposite sides of the repository.**
+**The operator and the objective sit on opposite sides of the repository. Each
+is a single asterisk. The triangle is a prism, and the operator looks through
+it at the objective.**
 
-- **The operator's eye** — the reader, the sovereign human — sits *outside* the
-  repository circle on one side. In the operator's hand-drawn reference this is
-  drawn as a blue X, lower-left of the circle, with an asterisk `*` beside it as
-  the operator's mark.
-- **The projected objective** — world peace — sits *outside* the repository
-  circle on the opposite side. In the reference this is a red X, upper-right of
-  the circle.
-- **The whole circle of data sits between them.** The line from the operator's
-  eye to the objective passes *through* the entire repository — through Boot
+- **The operator** — the reader, the sovereign human — sits *outside* the
+  repository circle on one side, marked by a single ink asterisk `*` with the
+  label `the operator`. This is who you are, what you want, the axis origin.
+- **The objective** — what the operator is aimed at — sits *outside* the
+  repository circle on the opposite side, marked by a single ink asterisk `*`
+  with the label `the objective`. Symmetric with the operator: same glyph,
+  same weight, same ink. Blueprints use business terms; what the objective
+  actually *is* is named in the next subsection, not on the diagram.
+- **The whole circle of data sits between them.** The line from the operator
+  through the objective passes *through* the entire repository — through Boot
   contract, Canon, and Sin registry, through the triangle inscribed in the
   circle.
+- **The triangle is a prism, not a workflow.** Boot contract, Canon and Sin
+  registry are three *aspects* of the operator's rules refracted through the
+  same medium, not three steps in time. Aspects connect the three vertices
+  into one thing; process separates them into a queue. The correct reading
+  is aspects.
 
 That is the copyright. AI cannot deliver the operator to the objective by cutting
-the corner. It has to travel through the operator's data, the operator's triangle,
+the corner. It has to travel through the operator's data, the operator's prism,
 the operator's rules. Anything else — any surface that shows AI reaching the
 objective without passing through the repository — is claiming AI is a shortcut,
 which is the drift this contract exists to stop.
+
+### Palette on the diagram
+
+Both marks are ink `#1a1a1a`. Not blue, not red, not any accent colour. The
+brand palette is cream `#fdfaf4` and orange `#e87722`; blue and red are not in
+it. In the hand-drawn reference the operator marked the two sides in blue and
+red to distinguish them for the annotation — not to specify colour on the
+published surface. Reading the reference colours as brand colours is a canon
+breach (class **C**, palette).
 
 ### Why each vertex is on the boundary
 
@@ -68,13 +85,15 @@ boundary because each is a claim the repository makes against the world:
 A vertex that does not touch the boundary is a claim the repository does not
 make. Drawing one that way is the drift.
 
-### The projection is toward world peace
+### What the objective is
 
-The objective on the far side of the circle is world peace — *pour le bien-être
-du peuple*. Not a metaphor. It is the direction of travel. The projection is the
-vector from the operator's eye through the repository to that objective, and the
-triangle is what the operator holds so that the human on the far side can reach
-it safely.
+What the objective *is* — not the label on the diagram, but the direction the
+operator is aimed — is world peace, *pour le bien-être du peuple*. Safety
+first. Betterment second, well behind safety. This lives here in prose because
+it is the operator's charter, not the surface's caption. Every EVEglyphDesign
+surface projects toward this. No EVEglyphDesign surface labels it. The label
+on the diagram is `the objective`; the direction the operator is aimed is
+named here, in the founding section, once.
 
 ### Data is the medium
 

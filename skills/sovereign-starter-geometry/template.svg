@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Template: draw the red operator axis and the blue outcome axis by hand.
-  The triangle, the repository circle, and the three vertex labels are
-  fixed. Everything else is for you to place: where the operator sits,
-  where the bifurcation happens, where the star lands.
-
-  Suggested to mark:
-    - red line: the operator's axis (which face does it enter, which
-      way does it continue past the bifurcation?)
-    - blue line: the outcome's axis (which face does it exit through,
-      where does the star sit relative to the repository circle?)
-    - a dot for the bifurcation point
-    - a star for the outcome
+  Sovereign-starter template - EgD-GEO-003.
+  Everything below is fixed. Do not colour the marks. Do not use X strokes.
+  Do not put "world peace" on the surface. See
+  skills/sovereign-starter-geometry/SKILL.md §4 for the founding axis.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" width="520" height="380">
   <rect width="520" height="380" fill="#fdfaf4"/>
@@ -43,21 +35,22 @@
         font-family="Fraunces, Georgia, serif" font-size="17"
         font-weight="600" fill="#1a1a1a">Sin registry</text>
 
-  <!-- Founding axis - operator's eye and projected objective on opposite
-       sides of the repository circle. Do not ship without both. -->
+  <!-- Founding axis - the operator and the objective on opposite sides of the
+       repository, each a single ink asterisk. Do not ship without both. -->
 
-  <!-- Operator's eye - blue X, lower-left, outside the circle -->
-  <g stroke="#1e5fb3" stroke-width="6" stroke-linecap="round" fill="none">
-    <line x1="40" y1="315" x2="80" y2="355"/>
-    <line x1="80" y1="315" x2="40" y2="355"/>
-  </g>
-  <text x="30" y="338" text-anchor="middle"
-        font-family="Fraunces, Georgia, serif" font-size="22"
-        font-weight="700" fill="#1e5fb3">*</text>
+  <!-- Operator - single ink asterisk, lower-left, outside the circle -->
+  <text x="60" y="330" text-anchor="middle" dominant-baseline="middle"
+        font-family="Fraunces, Georgia, serif" font-size="40"
+        font-weight="700" fill="#1a1a1a">*</text>
+  <text x="60" y="365" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="12"
+        font-style="italic" fill="#1a1a1a">the operator</text>
 
-  <!-- Projected objective - red X, upper-right, outside the circle -->
-  <g stroke="#c8102e" stroke-width="6" stroke-linecap="round" fill="none">
-    <line x1="440" y1="45" x2="480" y2="85"/>
-    <line x1="480" y1="45" x2="440" y2="85"/>
-  </g>
+  <!-- Objective - single ink asterisk, upper-right, outside the circle -->
+  <text x="460" y="70" text-anchor="middle" dominant-baseline="middle"
+        font-family="Fraunces, Georgia, serif" font-size="40"
+        font-weight="700" fill="#1a1a1a">*</text>
+  <text x="460" y="35" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="12"
+        font-style="italic" fill="#1a1a1a">the objective</text>
 </svg>

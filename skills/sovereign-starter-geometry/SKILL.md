@@ -1,4 +1,4 @@
-# Sovereign-starter geometry — EgD-GEO-002
+# Sovereign-starter geometry — EgD-GEO-003
 
 Binding on any agent drawing, redrawing, embedding, or citing the
 sovereign-starter triangle diagram — the one that shows **Boot contract,
@@ -12,14 +12,19 @@ ever disagree, the reference image wins. Look at it.
 
 ## The one-sentence contract
 
-**The operator's eye and the projected objective sit on opposite sides of the
-repository circle. The whole circle of data sits between them. The triangle is
-inscribed in the circle with its three vertices — Boot contract, Canon, Sin
-registry — on the boundary.**
+**The operator sits on one side of the repository, the objective on the other,
+both marked with a single asterisk in ink. The whole circle of data sits
+between them. The triangle is a prism inscribed in the circle — Boot contract,
+Canon and Sin registry are three aspects of the operator's rules, refracted —
+and the operator looks *through* the prism to see the objective.**
 
 This is the founding axis of the Theriault Family Method. It is the copyright.
 Surfaces that violate it are logged as heritage defects (class **H**) at the top
 of `registry/SIN-DEFECTS.md`, not filed as cosmetic drift.
+
+Business terms only on the surface: `the operator` on one side, `the objective`
+on the other. The metaphysics (world peace, *pour le bien-être du peuple*) live
+in the boot contract prose — not on the blueprint.
 
 ---
 
@@ -107,24 +112,27 @@ operator dot, and star on top; never edit the base coordinates.
         font-weight="600" fill="#1a1a1a">Sin registry</text>
 
   <!-- Founding axis (§0.1 of the boot contract, §4 of this skill).
-       The operator's eye and the projected objective sit on opposite sides
-       of the repository circle. The line between them passes through the
-       whole circle of data. Do NOT ship this diagram without both marks. -->
+       The operator and the objective sit on opposite sides of the repository
+       circle, each a single ink asterisk. The line between them passes
+       through the whole circle of data. Do NOT ship this diagram without
+       both marks, do NOT use colour, do NOT use X strokes, do NOT put
+       'world peace' on the surface. -->
 
-  <!-- Operator's eye — blue X, lower-left, outside the circle. -->
-  <g stroke="#1e5fb3" stroke-width="6" stroke-linecap="round" fill="none">
-    <line x1="40"  y1="315" x2="80"  y2="355"/>
-    <line x1="80"  y1="315" x2="40"  y2="355"/>
-  </g>
-  <text x="30" y="338" text-anchor="middle"
-        font-family="Fraunces, Georgia, serif" font-size="22"
-        font-weight="700" fill="#1e5fb3">*</text>
+  <!-- Operator - single ink asterisk, lower-left, outside the circle -->
+  <text x="60" y="330" text-anchor="middle" dominant-baseline="middle"
+        font-family="Fraunces, Georgia, serif" font-size="40"
+        font-weight="700" fill="#1a1a1a">*</text>
+  <text x="60" y="365" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="12"
+        font-style="italic" fill="#1a1a1a">the operator</text>
 
-  <!-- Projected objective — red X, upper-right, outside the circle. -->
-  <g stroke="#c8102e" stroke-width="6" stroke-linecap="round" fill="none">
-    <line x1="440" y1="45"  x2="480" y2="85"/>
-    <line x1="480" y1="45"  x2="440" y2="85"/>
-  </g>
+  <!-- Objective - single ink asterisk, upper-right, outside the circle -->
+  <text x="460" y="70" text-anchor="middle" dominant-baseline="middle"
+        font-family="Fraunces, Georgia, serif" font-size="40"
+        font-weight="700" fill="#1a1a1a">*</text>
+  <text x="460" y="35" text-anchor="middle"
+        font-family="Fraunces, Georgia, serif" font-size="12"
+        font-style="italic" fill="#1a1a1a">the objective</text>
 </svg>
 ```
 
@@ -138,59 +146,76 @@ binding; do not paraphrase.
 
 ### 4.1 The two marks
 
-- **The operator's eye** — blue X, outside the circle, on the *lower-left* side
-  of the diagram. Beside it, an asterisk `*` in the same blue: the operator's
-  own mark. This is the reader. This is the sovereign human. This is the axis
-  origin.
-- **The projected objective** — red X, outside the circle, on the *upper-right*
-  side of the diagram. Diagonally opposite the operator's eye. This is world
-  peace. This is *pour le bien-être du peuple*. This is the direction the
-  operator's data is aimed.
+- **The operator** — a single ink asterisk `*`, outside the circle, on the
+  *lower-left* side of the diagram. Below it, the label `the operator` in
+  italic Fraunces. This is the reader. This is the sovereign human. This is
+  the axis origin. Nothing else at this position — no X, no dot, no colour.
+- **The objective** — a single ink asterisk `*`, outside the circle, on the
+  *upper-right* side of the diagram. Above it, the label `the objective` in
+  italic Fraunces. Diagonally opposite the operator. This is the direction
+  the operator's data is aimed. Nothing else — no X, no dot, no colour, no
+  metaphysical label. Blueprints use business terms.
 
-### 4.2 The two rules
+### 4.2 The four rules
 
 1. **Opposite sides.** The two marks are on opposite sides of the circle. Not
    the same side, not one inside and one outside, not both floating in the
-   corner. The straight line drawn from the operator's eye to the objective
+   corner. The straight line drawn from the operator through the objective
    must pass through the interior of the repository circle. If it doesn't,
    the diagram is claiming AI can reach the objective without going through
    the operator's data — which is the drift this whole method exists to stop.
 2. **Outside the boundary.** Both marks are *outside* the repository circle,
    not on it and not inside it. The vertex dots (Boot contract, Canon, Sin
-   registry) are the only marks that sit on the boundary. The operator and the
-   objective are on the other side of the boundary from the machine's
-   internals — the operator, because they are the sovereign human the machine
-   serves; the objective, because it is the world the machine is aimed at, not
-   the world the machine already contains.
+   registry) are the only marks that sit on the boundary.
+3. **One asterisk per side.** Not an X, not a dot, not a compound glyph. A
+   single Fraunces asterisk in ink, sized to read at diagram scale. Symmetric
+   in size, symmetric in weight, symmetric in colour — the two sides are
+   equivalent-and-opposite, so their marks are visually equivalent.
+4. **Ink only.** Both marks are ink `#1a1a1a`. Not blue, not red, not any
+   accent colour. The brand carries cream and orange; blue and red are not
+   in the palette. The reference-drawing colours were the operator marking
+   *the diagram*, not marking *for the diagram*. This is a common misreading
+   — do not repeat it.
 
 ### 4.3 Canonical coordinates (viewBox `520 × 380`)
 
 Both marks sit clear of the `r=150` circle centred at `(260, 200)`, so both
-distances-from-centre must exceed `150`.
+distances-from-centre must exceed `150`. Positions are symmetric through the
+circle centre — reflecting one across `(260, 200)` gives the other exactly.
 
-- **Operator's eye** — blue X centred at `(60, 335)`. Distance from centre:
-  √(200² + 135²) ≈ 241, well outside the boundary. Asterisk `*` at
-  `(30, 330)` in the same blue, just to the left of the X.
-- **Projected objective** — red X centred at `(460, 65)`. Distance from centre:
-  √(200² + 135²) ≈ 241, symmetric with the operator's eye across the circle
-  centre. Diagonally opposite by construction.
+- **Operator asterisk** — ink `*` centred at `(60, 330)`, font-size 40,
+  Fraunces 700, `text-anchor="middle"`, `dominant-baseline="middle"`. Distance
+  from centre: √(200² + 130²) ≈ 239, well outside the boundary.
+- **Operator label** — `the operator` in Fraunces 12 italic, ink, centred at
+  `(60, 365)`. Below the asterisk.
+- **Objective asterisk** — ink `*` centred at `(460, 70)`, same font metrics
+  as the operator asterisk. Diagonally opposite by construction.
+- **Objective label** — `the objective` in Fraunces 12 italic, ink, centred at
+  `(460, 35)`. Above the asterisk.
 
-Colours are the hand-drawn colours, not a re-interpretation:
+### 4.4 The prism reading
 
-- Operator blue `#1e5fb3` — the calm blue of the reference drawing.
-- Objective red `#c8102e` — the pirate red already in use for the handshake
-  screenshots. Matches the reference drawing.
+The triangle is a prism. The operator looks *through* the prism at the
+objective. Boot contract, Canon and Sin registry are three aspects of the
+operator's rules, refracted by the same medium — the repository — into a
+single line of sight that reaches the objective safely.
 
-Both marks are drawn as **X** strokes (two crossed lines), not as dots and not
-as glyphs. Stroke width 6, `stroke-linecap="round"`. Each X spans roughly 40
-units corner-to-corner.
+- **Aspects, not process.** The three vertices are three views of one thing.
+  A process implies steps in time; the diagram is a single moment held under
+  the operator's rules. Language that describes them as a workflow is wrong.
+- **Boot contract.** How the operator expects the machine to behave before it
+  touches anything.
+- **Canon.** How the artifact leaves the repository.
+- **Sin registry.** How the truth of what happened is preserved so it can be
+  done right next time.
 
-### 4.4 What the marks are, in one sentence each
+### 4.5 What the marks are, in business terms
 
-- **Operator's eye.** "That's who you are, what you want." The sovereign human,
-  outside the machine, looking in.
-- **Projected objective.** "The direction you're aiming." World peace, safety
-  first, betterment second.
+- **The operator.** The sovereign human. The reader of the diagram.
+- **The objective.** What the operator is aiming at. The label on the surface
+  is `the objective` — nothing more specific. What the objective actually *is*
+  (world peace, *pour le bien-être du peuple*, safety first and betterment
+  second) lives in §0.1 of the boot contract, not on the blueprint.
 
 ---
 
@@ -201,15 +226,19 @@ class listed, in `registry/SIN-DEFECTS.md` in the boot-contract repository.
 
 | # | Defect | Class |
 |---|--------|-------|
-| 1 | Diagram shipped without the operator's eye and the projected objective on opposite sides of the circle | **H** — heritage; violates §0.1 of the boot contract |
-| 2 | Operator's eye or objective drawn on the same side of the circle, or both floating in the same corner | **H** — heritage; the axis-through-the-repository is the copyright |
-| 3 | Operator's eye or objective drawn inside or on the boundary instead of outside it | **H** — heritage |
-| 4 | Vertex not on the repository boundary (fails the `(x−260)² + (y−200)² = 22500` check) | **T** — drift, wrong artifact shape |
-| 5 | Repository circle drawn as a whisper (light stroke, thin, less than 2px ink) | **C** — canon breach |
-| 6 | Triangle floating inside the circle with visible padding between vertices and boundary | **T** — drift |
-| 7 | Vertex labels rearranged (Canon in a position other than lower-left, etc.) | **C** — canon breach |
-| 8 | Redrawing the same geometry a fourth time from prose after three redraws diverged | **R** — retrieval waste; the correct input format is the drawing, not more prose |
-| 9 | Redrawing without first reading every image in `uploaded_attachments/` on the working turn | **R** — retrieval waste, unread references |
+| 1 | Diagram shipped without the operator and the objective on opposite sides of the circle | **H** — heritage; violates §0.1 of the boot contract |
+| 2 | Operator or objective drawn on the same side of the circle, or both floating in the same corner | **H** — heritage; the axis-through-the-repository is the copyright |
+| 3 | Operator or objective drawn inside or on the boundary instead of outside it | **H** — heritage |
+| 4 | Either mark drawn as an X, a compound glyph, or anything other than a single Fraunces asterisk | **H** — heritage; symmetric single asterisks on both sides |
+| 5 | Either mark drawn in colour (blue, red, green, or any accent). Both are ink `#1a1a1a`. | **C** — canon breach; brand palette is cream and orange only |
+| 6 | Objective labelled "world peace" or any metaphysical term on the surface itself. Label is `the objective`. | **H** — heritage; blueprints use business terms |
+| 7 | Vertex not on the repository boundary (fails the `(x−260)² + (y−200)² = 22500` check) | **T** — drift, wrong artifact shape |
+| 8 | Repository circle drawn as a whisper (light stroke, thin, less than 2px ink) | **C** — canon breach |
+| 9 | Triangle floating inside the circle with visible padding between vertices and boundary | **T** — drift |
+| 10 | Vertex labels rearranged (Canon in a position other than lower-left, etc.) | **C** — canon breach |
+| 11 | Vertices described as steps in a process rather than aspects of one thing (workflow language) | **H** — heritage; aspects, not process |
+| 12 | Redrawing the same geometry a fourth time from prose after three redraws diverged | **R** — retrieval waste; the correct input format is the drawing, not more prose |
+| 13 | Redrawing without first reading every image in `uploaded_attachments/` on the working turn | **R** — retrieval waste, unread references |
 
 ---
 
