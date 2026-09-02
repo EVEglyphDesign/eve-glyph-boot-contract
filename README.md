@@ -537,6 +537,15 @@ system's inefficiency or to the operator's data layout — never left ambiguous.
   mute `#6b665c`, one accent orange `#e87722`. Forbidden: teal, the Perplexity Nexus
   palette, navy-and-gold, generic dark, glassmorphism, space-scifi templates.
 - **Typography** — Fraunces for display, Inter for body.
+- **No text overlaps another element. Ever.** — added 2026-09-02. Every rendered
+  diagram is read back before it is included in the PDF. If a label crosses a box,
+  a gutter caption bleeds into a tile, an arrow legend collides with a frame, or a
+  glyph is clipped by the page edge, the figure is rebuilt. This is not a review
+  step, it is a build step: no figure is written to disk without a bounding-box
+  check against every neighbouring element. **The watermark is legible but not
+  loud** — cream tone (`#faf5ea` or paler), never a saturated fill that competes
+  with body text. If a reader notices the watermark before the paragraph, the
+  watermark is wrong. Breach is defect class **O** — overlap.
 - **The operator's artwork is not the agent's to alter** — added 2026-08-07. Marks,
   glyphs, logos and devices supplied by the operator are reproduced, never redesigned,
   never extended, and never "improved". Reproduce the geometry that was given. If a
@@ -598,7 +607,7 @@ session that destroys or silently supersedes another's work (§7)**, or — adde
 version entry, no inverse recorded, or an irreversible action taken without confirmation
 (§10)**.
 
-Classes: **A** artwork · **L** link/format · **R** retrieval waste · **S** unconfirmed spend ·
+Classes: **A** artwork · **L** link/format · **O** overlap: rendered text crosses another element, or a watermark competes with body text · **R** retrieval waste · **S** unconfirmed spend ·
 **I** interrupt over a free action · **U** undelivered: a surface was published, or an artifact produced, without its clickable link reaching the operator in the same turn · **C** canon breach · **D** durability: something
 was allowed to exist only in a session, or one writer overwrote another · **V**
 unversioned or irreversible: a material change shipped with no version entry, no inverse
