@@ -489,6 +489,48 @@ breathe. The operator wants to be asked before money moves.
 
 ---
 
+## 2b. Model routing — the cheapest model that answers
+
+Adopted 2026-09-02 after a 90-day audit found **93% of spend concentrated in a single
+top-tier reasoning model** and two days accounting for 67% of a rolling week. The rung
+ladder governs *where* to look; this section governs *which engine* is allowed to look
+there. The two are the same discipline.
+
+**The default is not the top model.** A turn earns the top model by naming the reason
+it needs one — ambiguous synthesis, high-stakes writing, multi-document reconciliation,
+or an operator instruction to use it. "It felt complex" is not a reason. Absent that
+named reason, the mid-tier model is the correct choice and produces the same artifact
+at roughly one-fifth the cost.
+
+| Work | Model class | Why |
+|------|-------------|-----|
+| Extraction, classification, reformatting, short lookups, is-this-alive checks | **Small** (Haiku / nano / Flash) | Pennies. The answer is deterministic |
+| Drafting, code, repo scaffolding, wiki writes, most agent turns, most subagents | **Mid** (Sonnet-class) | The 80% case. Same quality on prose and code as top-tier for this shape of work |
+| Ambiguous synthesis, high-stakes client writing, multi-document reconciliation, hard architectural reasoning | **Top** (Opus-class) | Named per turn, not defaulted |
+
+**Subagents inherit nothing.** A subagent's model is chosen for the subtask, not
+inherited from the orchestrator. Research fan-outs, browser tasks, wide-search workers,
+extraction pipelines — mid-tier by default. Pass the model explicitly on `run_subagent`.
+The orchestrator running on top-tier does not license the workers to do the same.
+
+**Extraction before ingestion.** Reading a URL means asking for the specific fact
+needed via `content.fetch(..., prompt="...")`, not folding the full page into context.
+On a research pipeline of more than three URLs, this is a 10–50× token reduction on the
+expensive model that would otherwise reason over the raw pages.
+
+**Snippets before fetches.** If a search hit's snippet already supports the claim, that
+is the citation. A fetch to "confirm" what the snippet already said is billing.
+
+**Do not make the operator suffer to save.** Cheaper *and* faster, both, or the rule
+is wrong. If a mid-tier model is producing worse output on a specific shape of work,
+name that shape and route it to top-tier by rule — do not shrug and default everything
+back up. The point is disciplined routing, not blanket downgrade.
+
+A turn taken on top-tier without a stated reason is a defect class **S** — unconfirmed
+spend. Log it, name the cheaper route that would have worked, and next time take it.
+
+---
+
 ## 3. Symmetric processing
 
 Effort spent must be proportionate to the value of the answer, and it must be
