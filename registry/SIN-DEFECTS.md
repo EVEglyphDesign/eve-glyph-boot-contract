@@ -1134,3 +1134,48 @@ A recurrence of `SIN-2026-08-28-03` from any future agent — writing *delivered
 - **The cheaper path that existed:** When embedding a diagram that already carries its own title, either strip the title band from the diagram render or set the slide title to a complementary line that names *why* the diagram is on this slide, not what the diagram says. The rung-2 fact — that this specific PNG was authored with an in-image title, unlike the other three — was known when the slide dict was written and was ignored.
 - **Estimated waste:** One preview cycle to catch, one rebuild-commit-push-verify cycle to reissue. Same class-C rebuild cost as SIN-2026-09-02-03; the two were fixed in a single commit.
 - **Corrective action:** Standing rule: for any deck-embedded diagram authored to stand alone (i.e. carrying its own title band inside the image), the slide title MUST NOT restate the diagram's in-image title. It must either be shorter and complementary, or be omitted. When building the diagram-slide dict, the author reads the diagram once at full resolution first, notes whether it carries an in-image title, and writes the slide title against that. Reading test on future turns: does the slide title duplicate any text visible inside the embedded image? If yes, class-C.
+
+## 2026-09-04 — SIN-2026-09-04-01
+
+- **Class:** L (link/format — table cell overflow)
+- **What was asked:** Merge three EPIQ source documents into one authoritative blueprint PDF (EGD-EPQ-BLU-001 v2), covering DataSphere history reconstitution, Teams-agent delivery and the sales-order revenue-leakage extension.
+- **What was done instead:** First build (SHA `0ade8e74…`) shipped from `build_blueprint_merged.py` with the string `Z_C_SO_EDIT_PATTERN_SUMMARY` in the DataSphere view-layering table at Inter body size. It exceeded the second column's width and the renderer broke it mid-identifier onto two lines. Caught on read-back before share.
+- **The cheaper path that existed:** Long identifier strings — SAP view names, table names, field names — inside narrow table cells need a `<font size=8>` wrapper or a monospace fallback at author time, not after read-back. A build-time assertion on cell content widths (measure the widest atomic token in each cell against the column allocation) would have raised at pass one instead of at read-back.
+- **Estimated waste:** One read-back-detect-patch-rebuild-verify cycle; ~30 seconds of ReportLab compilation and ~1 credit of PDF re-render. No operator time.
+- **Corrective action:** In the merged build script, wrapped the identifier in `<font size=8>`. Standing rule: any narrow-column table cell containing a SAP identifier, view name, table name or field name longer than 20 characters MUST be rendered inside `<font size=8>` or use a monospace fallback. Cell-width assertion added to the corrective-action queue for `build_blueprint_merged.py`.
+
+## 2026-09-04 — SIN-2026-09-04-02
+
+- **Class:** C (canon breach — tofu from unrenderable arrow characters)
+- **What was asked:** Same authoritative merger.
+- **What was done instead:** First build rendered `S/4HANA → DataSphere` and `Router → Executor → Synthesizer` using the U+2192 arrow character. The embedded body font did not carry that glyph, so ReportLab emitted `\u0000` tofu boxes at those two positions. Caught on read-back.
+- **The cheaper path that existed:** The Inter and Fraunces TTFs bundled in this workspace are known not to carry U+2192 — a rung-2 fact from earlier canon builds. Substituting arrows with word forms (`to`, `/`) at author time avoids the tofu; alternatively, use a font that carries the glyph and verify with a probe render.
+- **Estimated waste:** Same cycle as SIN-2026-09-04-01 (bundled into one rebuild).
+- **Corrective action:** In `build_blueprint_merged.py`, replaced `→` with `to` in the S/4HANA-to-DataSphere prose and with `/` in the Router / Executor / Synthesizer callout. Standing rule: for any PDF built with the EVEglyph canon fonts, arrow characters (`→ ← ↔ ↑ ↓`) MUST be substituted with words or with `/` at author time — a `_probe_glyph_coverage()` check on the body font at build start would catch new arrival of such characters in prose.
+
+## 2026-09-04 — SIN-2026-09-04-03
+
+- **Class:** O (output canon — watermark competing with body)
+- **What was asked:** Same authoritative merger.
+- **What was done instead:** First build rendered the `EVEglyphDesign` diagonal watermark at 60pt in the canon cream `#fcf9f0`. On sparsely populated pages (page 6, page 27) the watermark read as dominant visual element instead of a subtle mark, breaching the canon "barely visible" requirement.
+- **The cheaper path that existed:** The eveglyph-boot-contract canon explicitly names the watermark as class-O bait when it competes with body text. Setting the watermark at 36pt (the value used in the recent Sera brief and the SAP-sovereign monitor) is the pattern-matched default. The 60pt value was an unforced choice.
+- **Estimated waste:** Same rebuild cycle as SIN-2026-09-04-01 (bundled).
+- **Corrective action:** Reduced watermark from 60pt to 36pt in `build_blueprint_merged.py`. Standing rule: EVEglyphDesign watermark size is 36pt on Letter/A4 body pages, cream `#fcf9f0`, unless the operator explicitly authorises a different size. Bake this as a canvas constant `WATERMARK_PT = 36` in every controlled-artifact build script.
+
+## 2026-09-04 — SIN-2026-09-04-04
+
+- **Class:** L (link/format — cover title line-break)
+- **What was asked:** Same authoritative merger.
+- **What was done instead:** First build rendered the cover title as a single line that wrapped ungracefully at `— DataSphere reconstitution…`, producing an orphaned em-dash at the end of line 1. Caught on read-back.
+- **The cheaper path that existed:** Cover titles are the single highest-visibility text on any deliverable; they get manual line-break authoring, not automatic wrap. Splitting the title into two Paragraph objects (title + subtitle) at author time is the canonical shape and matches every prior EVEglyph blueprint cover.
+- **Estimated waste:** Same rebuild cycle as SIN-2026-09-04-01 (bundled).
+- **Corrective action:** Split cover into `EPIQ Financial Reporting Platform / Authoritative blueprint` + subtitle `DataSphere history reconstitution, Teams agent delivery, sales-order revenue-leakage extension`. Standing rule: cover titles are always authored as explicit title + subtitle pairs, never as a single long string relying on auto-wrap.
+
+## 2026-09-04 — SIN-2026-09-04-05
+
+- **Class:** L (link/format — section-title orphan)
+- **What was asked:** Same authoritative merger.
+- **What was done instead:** First build's Section 4 title read `Sandbox modelling — the AI-assisted table-extract workflow`, which wrapped onto two lines and left `workflow` orphaned on line 2 above the section body. Caught on read-back.
+- **The cheaper path that existed:** Section titles above two lines are class-L bait for the same reason cover titles are. The short form `Sandbox modelling — AI table extract` carries the same meaning in half the width.
+- **Estimated waste:** Same rebuild cycle as SIN-2026-09-04-01 (bundled).
+- **Corrective action:** Shortened Section 4 title in `build_blueprint_merged.py`. Standing rule: section titles must fit on one line at the configured heading size. Build-time assertion: measure each rendered heading's width against the text-frame width and raise `LayoutError` on overflow.
