@@ -10,6 +10,24 @@ Canonical raw URL — fetch this, do not guess:
 
 ---
 
+## What this repository is
+
+**This is EVEglyphDesign's custom skills repository** — the method in loadable form, not
+documentation about it. It holds the skills an agent loads before it works
+(`skill/SKILL.md` — this contract, `EgD-BOOT-001`; `skills/sovereign-starter-geometry/` —
+the triangle drawing standard, `EgD-GEO-003`), the canon they enforce against
+(`README.md`, the canonical machine copy), the defect register
+(`registry/SIN-DEFECTS.md`), and the instrument that measures compliance
+(`docs/dashboard/`, the Burn Ledger).
+
+The sections below are **operating instructions for an AI working inside EVEglyphDesign's
+repositories** — where to look first, what may be spent without asking, what finished work
+must look like and where it lands, and what to do after a rule is broken. Their purpose is
+to make the information already held here usable without re-derivation. This is the short
+copy; the raw README wins over it, and fetching the raw README is a cheap rung-4 read.
+
+---
+
 ## 0. The one-sentence contract
 
 **Recall before you retrieve, retrieve before you reason, reason before you spend,

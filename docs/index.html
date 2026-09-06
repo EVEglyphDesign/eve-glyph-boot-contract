@@ -124,6 +124,21 @@
 
 <p class="lede">This contract exists because effort and cost are not the same thing. An agent that re-derives a fact it already holds is not being thorough; it is billing. This page is the short form. It is meant to be fetched, read, and obeyed before any work begins.</p>
 
+<h2><span class="n">00</span>What this repository is</h2>
+<p><b>This is EVEglyphDesign's custom skills repository.</b> It is not documentation about a method. It is the method in loadable form: instruction files an AI agent reads before it works, plus the canon and registers those instructions enforce against.</p>
+<table>
+  <thead><tr><th style="width:16rem">Path</th><th>What it is</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/skill/SKILL.md">skill/SKILL.md</a></td><td><b>Skill</b> — <code>eveglyph-boot-contract</code> (EgD-BOOT-001). Loaded first, on every EVEglyphDesign request and on any question about spend, burn rate, cold starts or defects</td></tr>
+    <tr><td><a href="https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/skills/sovereign-starter-geometry/SKILL.md">skills/sovereign-starter-geometry/</a></td><td><b>Skill</b> — EgD-GEO-003. Loaded before drawing, embedding or citing the sovereign-starter triangle. Ships with the hand-drawn reference, which wins over prose, and an SVG template</td></tr>
+    <tr><td><a href="https://raw.githubusercontent.com/EVEglyphDesign/eve-glyph-boot-contract/main/README.md">README.md</a></td><td><b>Canon</b> — the binding contract in full, and the canonical machine copy. If any other copy disagrees with it, the raw README wins</td></tr>
+    <tr><td><a href="https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/registry/SIN-DEFECTS.md">registry/SIN-DEFECTS.md</a></td><td><b>Register</b> — every logged defect with its class, what was asked, what was done instead, the cheaper path that existed, and the estimated waste</td></tr>
+    <tr><td><a href="./dashboard/">docs/dashboard/</a></td><td><b>Instrument</b> — the Burn Ledger. Measured spend against the declared control</td></tr>
+  </tbody>
+</table>
+<div class="rule"><b>What the numbered sections are for.</b> They are operating instructions for an AI working inside EVEglyphDesign's repositories, written to make the information already held here usable — cheaply, in the right order, without re-derivation. <b>01</b> is where to look first. <b>02</b> is what may be spent without asking. <b>03</b> is how effort is made visible. <b>04</b> is what finished work must look like and where it lands. <b>05</b> is what to do after a rule is broken. Durability, repository-only record keeping, versioning and the rule of three are in <a href="https://raw.githubusercontent.com/EVEglyphDesign/eve-glyph-boot-contract/main/README.md">the raw README</a>, §7 to §11.</div>
+<div class="rule"><b>How to load it.</b> In Perplexity, as a user skill: <code>load_skill(name="eveglyph-boot-contract", scope="user")</code>. Anywhere else, fetch the raw README — a rung-4 read, and cheap. <b>How to extend it.</b> A new rule lands as a committed section with an ID and a date; a new skill lands as <code>skills/&lt;name&gt;/SKILL.md</code> with anything binding it depends on stored beside it. Nothing binding lives only in a session.</div>
+
 <h2><span class="n">01</span>Order of operations</h2>
 <p>Work down the ladder. Stop at the first rung that answers the question. Do not skip a rung because a lower one feels more thorough.</p>
 <table>

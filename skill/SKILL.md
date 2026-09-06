@@ -25,6 +25,31 @@ do not over-apologise.
 
 ---
 
+## Where this comes from
+
+This skill is one file in **EVEglyphDesign's custom skills repository**,
+[`eve-glyph-boot-contract`](https://github.com/EVEglyphDesign/eve-glyph-boot-contract).
+That repository is not documentation about a method; it is the method in loadable form.
+It holds the skills an agent loads before working, and the canon and registers those
+skills enforce against:
+
+| Path | What it is |
+|---|---|
+| `skill/SKILL.md` | This skill — `eveglyph-boot-contract`, EgD-BOOT-001 |
+| `skills/sovereign-starter-geometry/` | Skill EgD-GEO-003 — load before drawing, embedding or citing the sovereign-starter triangle. The hand-drawn `reference.jpeg` wins over any prose description |
+| `README.md` | The binding contract in full, and the canonical machine copy |
+| `registry/SIN-DEFECTS.md` | The defect register — see §5 |
+| `docs/`, `docs/dashboard/` | Public surfaces, controlled PDFs, and the Burn Ledger |
+
+**These rules are operating instructions for using what the repository already holds.**
+They exist so an agent looks in the right place first, spends in the right class, produces
+output in canon form, lands it durably, and logs it when it does not. Sections below are
+the short form; the raw README is the full text and wins over this file. Fetching it is a
+rung-4 read and it is cheap. New rules land there as committed sections with an ID and a
+date; new skills land as `skills/<name>/SKILL.md`. Nothing binding lives only in a session.
+
+---
+
 ## The one-sentence contract
 
 **Recall before you retrieve, retrieve before you reason, reason before you spend, and
