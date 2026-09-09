@@ -97,7 +97,7 @@ holding cost and provenance across a portfolio. The discipline is identical.
 | **Small segments, sentence by sentence, keep control** | **§3.2 and §3.5 — never fan out where a lookup would do; one probe, not four; batch nothing unasked** |
 | Fifth-to-eighth-grade reading level, measured | §4 and `OPERATOR-INTERFACE` §13.1 — answer in kind and in size, add nothing unrequested |
 | Visuals must match the narrative | §4 palette and typography — cream, ink, one accent orange, Fraunces and Inter |
-| Three metrics, checked every time | `EgD-BOOT-002` Burn Ledger and the `SIN-DEFECTS` register |
+| Three metrics, checked every time | `EgD-BOOT-002` Burn Ledger and the `RECORD-OF-DEFECTS` register |
 | The record is the source, not the summary | `EgD-BOOT-003` — the repository is the record, the session is a scratchpad |
 
 ---
@@ -121,7 +121,7 @@ measured quickly enough to punish the alternative.
 ---
 
 **Register.** Conduct arising from the production of this note is recorded in
-[the SIN defect register](https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/registry/SIN-DEFECTS.md)
+[the Record of Defect register](https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/registry/RECORD-OF-DEFECTS.md)
 — `SIN-2026-08-02-C-06`, `SIN-2026-08-02-R-07` and `SIN-2026-08-02-C-08` — and not
 on this page.
 
