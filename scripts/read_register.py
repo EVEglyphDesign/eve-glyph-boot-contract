@@ -2,7 +2,7 @@
 """
 scripts/read_register.py — the read side of the self-healing quality loop.
 
-Reads the Markdown source of truth at `registry/RECORD-OF-SUFFERING.md`,
+Reads the Markdown source of truth at `registry/OBSERVATIONS.md`,
 tags every entry, and writes the render at `registry/entries.jsonl`.
 Prints the distribution the read-back gate quotes.
 
@@ -35,7 +35,10 @@ from collections import Counter
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-SOURCE = REPO / "registry" / "RECORD-OF-SUFFERING.md"
+SOURCE = REPO / "registry" / "OBSERVATIONS.md"
+# Fallback for the transition window: if OBSERVATIONS.md is missing but the
+# prior file is present, read that instead. Removed after the rename settles.
+_FALLBACK = REPO / "registry" / "RECORD-OF-SUFFERING.md"
 RENDER = REPO / "registry" / "entries.jsonl"
 ANOMALIES = REPO / "registry" / "entries.anomalies.md"
 
@@ -194,12 +197,12 @@ def render_anomalies(anomalies: list[dict]) -> str:
     if not anomalies:
         return (
             "# Register parse anomalies\n\n"
-            "None. Every date-row in `RECORD-OF-SUFFERING.md` parsed into an entry.\n"
+            "None. Every date-row in `OBSERVATIONS.md` parsed into an entry.\n"
         )
     lines = [
         "# Register parse anomalies",
         "",
-        "Date-rows in `RECORD-OF-SUFFERING.md` that the read script could not",
+        "Date-rows in `OBSERVATIONS.md` that the read script could not",
         "parse into a tagged entry. Each is a false negative to investigate — a row",
         "the operator can see but the loop cannot count. Fix the row or fix the",
         "parser; do not silently drop.",
@@ -232,11 +235,12 @@ def main() -> int:
                    help="Write files without printing to stdout.")
     args = p.parse_args()
 
-    if not SOURCE.exists():
+    src = SOURCE if SOURCE.exists() else _FALLBACK
+    if not src.exists():
         print(f"source not found: {SOURCE}", file=sys.stderr)
         return 2
 
-    text = SOURCE.read_text(encoding="utf-8")
+    text = src.read_text(encoding="utf-8")
     entries, anomalies = parse_source(text)
     dist = distribution(entries)
 

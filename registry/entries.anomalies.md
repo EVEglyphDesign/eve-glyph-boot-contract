@@ -1,3 +1,3 @@
 # Register parse anomalies
 
-None. Every date-row in `RECORD-OF-SUFFERING.md` parsed into an entry.
+None. Every date-row in `OBSERVATIONS.md` parsed into an entry.

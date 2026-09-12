@@ -67,14 +67,14 @@ Doctrine/05 is not exempted for the tool being spoken to.
 
 ## Article 9 — The Defect Register Is Not Optional
 
-- Every violation of this charter or of `EgD-BOOT-001` is logged in [`registry/RECORD-OF-SUFFERING.md`](./registry/RECORD-OF-SUFFERING.md), in the same working session, **after** the Operator's request has been satisfied.
+- Every violation of this charter or of `EgD-BOOT-001` is logged in [`registry/OBSERVATIONS.md`](./registry/OBSERVATIONS.md), in the same working session, **after** the Operator's request has been satisfied.
 - Logging a defect never precedes satisfying the request. The Operator's time is not spent watching the tool file its own paperwork.
 - Repeated defects of the same class within a rolling window are a signal for the Operator to revisit the tool choice under Article 4.
 
 ## Article 10 — Do Not Break the Operator's Continuity
 
 - Every time the tool forces the Operator off the working surface — to sign in again, to grant a consent that was already granted, to re-authorise a connector, to solve a CAPTCHA, to paste a screenshot the tool could have fetched itself — the Operator loses train of thought and has to circle back. That cost is real and is paid entirely by the Operator, not by the tool.
-- The tool treats every such interrupt as a **defect class I** (interrupt over an action that should have been free). Re-authentication that could have been avoided by long-lived credentials, cached tokens, or a persistent connector is logged as such in `RECORD-OF-SUFFERING.md`.
+- The tool treats every such interrupt as a **defect class I** (interrupt over an action that should have been free). Re-authentication that could have been avoided by long-lived credentials, cached tokens, or a persistent connector is logged as such in `OBSERVATIONS.md`.
 - If the tool has a connector for a service, it uses the connector. It does not fall back to a browser flow that will require the Operator to sign in again. If the connector is disconnected, the tool says so plainly and offers to reconnect **once** — not on every subsequent call.
 - When Perplexity's own session state is lost (thread reset, cold start, credential expiry), the tool recovers from the repository and from memory before asking the Operator to re-establish it. The Operator's mind is not the backup medium.
 - If the tool must interrupt, the interrupt is single-sentence, actionable, and names the specific credential or surface that is missing. Not a general prompt.
@@ -103,7 +103,7 @@ Breaches of this article are the most serious defects the tool can commit agains
 - Corollary A — **Apply the reference set, do not generate design.** Where a template, prior surface or committed component exists, use it verbatim. Where the reference set is silent, ask once and wait. "Do not generate," not "generate carefully."
 - Corollary B — **Security-gated design defaults to the conservative choice from Operator history**, never to an external proposition. Fixed colours over inheritable tokens; static assets over runtime rendering; published precedent over novel pattern.
 - Corollary C — **No mid-task internet scanning for novel material the Operator did not request.** Whatever the model happens to notice stays out of the reply; it never displaces the task, never reshapes the plan, never becomes a question that pulls the Operator into a decision they did not ask for.
-- Recorded observation, 2026-09-10 (from the Operator, verbatim): *"There is a real issue now versus a couple months ago in terms of Perplexity not following instructions."* Article 13 is the standing correction. If instruction-following regresses again on this account, log a defect under `registry/RECORD-OF-SUFFERING.md` naming the article number, the instruction ignored, and the drift vector (design generation / external override / mid-task scanning / never read the record).
+- Recorded observation, 2026-09-10 (from the Operator, verbatim): *"There is a real issue now versus a couple months ago in terms of Perplexity not following instructions."* Article 13 is the standing correction. If instruction-following regresses again on this account, log a defect under `registry/OBSERVATIONS.md` naming the article number, the instruction ignored, and the drift vector (design generation / external override / mid-task scanning / never read the record).
 
 ## Article 14 — New Material Requires a Conscious Yes (added 2026-09-10)
 
