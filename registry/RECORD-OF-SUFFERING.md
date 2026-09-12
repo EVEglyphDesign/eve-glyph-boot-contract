@@ -54,6 +54,41 @@ ledger of anecdotes and becomes evidence that changes the operating guidance. Be
 three of a pattern, the register records what happened. At three, it *proves* something,
 and what it proves is on the plate of whoever holds the fault.
 
+## The self-healing quality loop
+
+A check without a loop is another clause on the pile. The register is the source of
+truth, and the loop is what turns it into a signal the canon can act on without a
+review round.
+
+- **Markdown is the source.** This file is what the operator reads. Nothing here is
+  moved, paraphrased, or reordered by any tool. If a row is edited, the Markdown is
+  edited first; every downstream artefact is regenerated from it.
+- **JSONL is the render.** [`registry/entries.jsonl`](./entries.jsonl) is the tagged
+  shape the loop reads. One JSON object per entry, with `id`, `date`, `class`, `fault`,
+  and the four prose fields, plus secondary tags extracted from the prose: `repeat_of`
+  (prior entry IDs cited in-row), `clause_cites` (contract sections referenced),
+  `boot_cites` (`EgD-BOOT-` documents referenced). Regenerated from the Markdown on
+  every register-touching turn; never hand-edited.
+- **Read script.** [`scripts/read_register.py`](../scripts/read_register.py) parses the
+  Markdown, writes the JSONL render, writes an anomaly list at
+  [`registry/entries.anomalies.md`](./entries.anomalies.md) for any date-row it could
+  not parse (a false negative in either direction is a defect the loop names, not one it
+  hides), and prints the distribution the read-back gate quotes.
+- **The read-back gate quotes the distribution.** Any return that describes work done
+  under the boot contract states the current row count, unique-ID count, and the classes
+  currently over threshold, quoted from the script's output in this session — not from
+  memory of the last session. This is what "self-healing" means in this context: the
+  loop names its own emerging shapes, so the canon does not have to name each future
+  shape in advance.
+- **The class taxonomy is not hard-coded.** The script counts whatever letter appears
+  in the class column. A new class surfaces in the distribution the first time a row
+  uses it. This is how `G`, `F`, and `E` reached the register without a parser change,
+  and how the next new class will too.
+
+Entries that describe misses *of the loop itself* (a stale render, a parse anomaly the
+review did not catch, a distribution quoted from memory) are logged in the same
+register, in the same shape, so the loop is measured by its own instrument.
+
 ## What this register is for
 
 The Record of Defect is the delivery log for AI-assisted work done under the boot
@@ -137,6 +172,7 @@ predate the 2026-09-09 rename and are also left exactly as written.
 
 | Date (UTC) | ID | Class | Fault | Asked for | What was done instead | Cheaper path that existed | Waste |
 |---|---|---|---|---|---|---|---|
+| 2026-09-12 | ROS-2026-09-12-03 | C | Agent | A distribution finding in the register body, generated as evidence for the canon rewrite | Wrote "twelve of fifteen classes are over the rule-of-three" in the Standing findings section, counting every class that appeared at least once rather than every class with three or more rows. The rule of three is stated one line above in the same file. The true number, from the read script installed the same day, is eight of fifteen — the seven single- and two-occurrence classes are below threshold and are named "watched" in the breakdown table right below the sentence I got wrong. Prose-vs-fact drift in a register-body claim, on the register that documents the loop, in the same session that built the loop. | The number was one `python3 scripts/read_register.py` call away, and the script had been written in the previous edit. Quote the script's line-1 output into the register body rather than restating it in prose. This is exactly the read-back the loop enforces on every other surface. | The operator did not see the wrong number — caught in the same commit as the loop that would have caught it if it had shipped. The waste is that the read-back gate needed to be applied to my own prose about the register, not only to future returns about other work. Registered so the loop is measured by its own instrument. |
 | 2026-09-12 | ROS-2026-09-12-02 | D | Agent | Confirm the rename to Record of Suffering was live, before writing the canon revision that requires exactly this check | Wrote two follow-up edits into `registry/RECORD-OF-SUFFERING.md` — the Patterns section and the corrected 107-row distribution finding — and prepared to draft the canon rewrite against them. Never committed them. Never pushed. Never fetched the raw surface to confirm what the operator would see. The last live commit was still `8cee221`, which does not contain either edit. Had the operator opened the raw URL between the earlier turn and this one, he would have seen a register with a stale 9-row finding and no Patterns section at all, while my prose was describing both as fact. This is the exact class — D, `EgD-BOOT-003` §7.3, "green pipeline is not evidence" — that the canon revision was about to promote to the universal read-back gate. Diagnosing D while committing D. | One `git status`, one `git push`, one `curl` of the raw URL, before any prose describes the file's state. Costs three lines. | Would have committed the operator to a canon revision drafted on top of an unrevised register, on the same turn where he named the register as what the canon is meant to correct. Nothing shipped to a third party — caught by the read-back on my own claim. |
 | 2026-09-12 | ROS-2026-09-12-01 | R | Agent | A retro-sweep of the class distribution across the register, as evidence for the canon rewrite | Counted only the 9 rows visible in the top *Entries* table and wrote a Standing finding on that number, missing 98 further rows in the per-entry sections below it. Reported "one class over threshold" when the true number, from a single-pass regex over the whole file, is twelve of fifteen. Same shape as R-04 in kind: a claim derived from the surface I could see rather than the record that was already open on disk. | One `python` pass over the whole file (the one I ran on the operator's next message), before writing the finding, not after. The file was already cloned. The read cost was milliseconds. | Committed a finding that undercounted the operator's evidence by an order of magnitude, on the exact turn where the accuracy of the count is what authorises a canon rewrite. The operator caught it in one line. |
 | 2026-08-02 | C-10 | C | Agent | An educational game with gated sections and basic lessons for children | Built and published a 3D field with Uriel standing on a measuring dais as a guide, with five lines of dialogue and a proximity trigger. The chapter source in `paix-educational-game` says in section VII, in plain words: "Uriel is named in the quoted text because the text names him. He is not a character, a guide, or a mechanic in the game." I had cloned that repository and did not read the boundaries section before designing against it. | One rung-4 read. `LES-QUATRE-JOURS-PERDUS.md` was already on disk at `/tmp/paix`. Reading its boundaries section before authoring the scene costs one file read and would have prevented the entire surface. | Six build-and-shoot iterations of a scene whose central figure had to be removed, plus the operator's own words that the work had drifted from what he asked for. The geometry was not the waste; designing a guide the canon forbids was. |
@@ -231,17 +267,30 @@ answer was already held. The cost was not in finding the fact; it was in the dec
 to look for it in the wrong place first. This is what §1 of the contract exists to
 prevent.
 
-**Every suffering to date is Agent-fault, and twelve of fifteen classes are over the
+**Every suffering to date is Agent-fault, and eight of fifteen classes are over the
 rule-of-three.**
 
-This finding replaces the smaller reading committed earlier in the same session, which
-counted only the nine rows in the top *Entries* table and missed 98 further rows in the
-per-entry sections below it. Reporting a class distribution from the visible surface
-rather than the whole record is class **R** in its own right, and the correction is
-logged as `ROS-2026-09-12-01` below.
+This finding replaces two earlier readings committed in the same session:
 
-As of the 2026-09-12 rename, the full register carries **107 rows across 106 unique IDs**.
-The class distribution across every row, top table and deep-dive sections combined:
+- The first counted only the nine rows in the top *Entries* table and missed the rest
+  of the file (logged as `ROS-2026-09-12-01`, class R).
+- The second corrected the row count to 107 but reported "twelve of fifteen classes
+  over threshold" — counting *any class that appeared* rather than *classes with three
+  or more rows*, which is what the rule of three actually says. The true number, from
+  the read script at `scripts/read_register.py`, is eight (logged as
+  `ROS-2026-09-12-03`, class C: prose-vs-fact drift in a register-body claim). This
+  is the loop catching a defect in the description of the loop, which is what it is
+  for.
+
+As of the 2026-09-12 rename plus the three same-session entries, the full register
+carries **109 rows across 107 unique IDs**. The class distribution across every row,
+top table and deep-dive sections combined, is generated by the read script and quoted
+verbatim below — not typed from memory:
+
+> `Register: 109 rows, 107 unique IDs, 8 classes over threshold (C=38, R=19, D=15,
+> L=8, E=6, S=5, T=4, H=3). Fault: Agent=109.`
+
+The full breakdown:
 
 | Class | Count | Reading |
 |---|---|---|
