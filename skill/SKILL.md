@@ -1,6 +1,6 @@
 ---
 name: eveglyph-boot-contract
-description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001 plus its measurement gate EgD-BOOT-002 (the Burn Ledger): the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, the duty to state the current burn rate before any expensive action, symmetric processing, and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, credit burn, burn rate, usage analytics, wasted processing, cold starts, defect logging, the Record of Defect register, repository-only record keeping (EgD-BOOT-004), versioning and reversibility (EgD-BOOT-005), or the rule of three: threes-shaped architecture, decision surfaces, or drift in return shapes (EgD-BOOT-006)."
+description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001 plus its measurement gate EgD-BOOT-002 (the Burn Ledger): the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, the duty to state the current burn rate before any expensive action, symmetric processing, and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, credit burn, burn rate, usage analytics, wasted processing, cold starts, defect logging, the Record of Suffering register, repository-only record keeping (EgD-BOOT-004), versioning and reversibility (EgD-BOOT-005), or the rule of three: threes-shaped architecture, decision surfaces, or drift in return shapes (EgD-BOOT-006)."
 license: "© 2026 EVEglyphDesign. All rights reserved. Controlled copy."
 compatibility: "Requires no tools to read. Repository work assumes GitHub access via api_credentials=[\"github\"]."
 metadata:
@@ -38,7 +38,7 @@ skills enforce against:
 | `skill/SKILL.md` | This skill — `eveglyph-boot-contract`, EgD-BOOT-001 |
 | `skills/sovereign-starter-geometry/` | Skill EgD-GEO-003 — load before drawing, embedding or citing the sovereign-starter triangle. The hand-drawn `reference.jpeg` wins over any prose description |
 | `README.md` | The binding contract in full, and the canonical machine copy |
-| `registry/RECORD-OF-DEFECTS.md` | The defect register — see §5 |
+| `registry/RECORD-OF-SUFFERING.md` | The defect register — see §5 |
 | `docs/`, `docs/dashboard/` | Public surfaces, controlled PDFs, and the Burn Ledger |
 
 **These rules are operating instructions for using what the repository already holds.**
@@ -265,7 +265,7 @@ expensive action taken without confirmation, a rung-2 fact re-derived from scrat
 Markdown deliverable, a palette or naming breach, state that exists only inside a session
 (§4b), an unversioned or irreversible change (§4d), or a drift or shape breach (§4e).
 
-Append a row to `registry/RECORD-OF-DEFECTS.md` in
+Append a row to `registry/RECORD-OF-SUFFERING.md` in
 [the boot-contract repository](https://github.com/EVEglyphDesign/eve-glyph-boot-contract)
 in the same working session — **after** the operator's actual request has been satisfied,
 never before it and never instead of it. Record: date, defect ID, class, what was asked,

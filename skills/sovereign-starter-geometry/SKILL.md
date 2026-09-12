@@ -20,7 +20,7 @@ and the operator looks *through* the prism to see the objective.**
 
 This is the founding axis of the Theriault Family Method. It is the copyright.
 Surfaces that violate it are logged as heritage defects (class **H**) at the top
-of `registry/RECORD-OF-DEFECTS.md`, not filed as cosmetic drift.
+of `registry/RECORD-OF-SUFFERING.md`, not filed as cosmetic drift.
 
 Business terms only on the surface: `the operator` on one side, `the objective`
 on the other. The metaphysics (world peace, *pour le bien-être du peuple*) live
@@ -222,7 +222,7 @@ single line of sight that reaches the objective safely.
 ## 5. Defect classes for this diagram
 
 Failing any of the following is a defect against this skill. Log with the
-class listed, in `registry/RECORD-OF-DEFECTS.md` in the boot-contract repository.
+class listed, in `registry/RECORD-OF-SUFFERING.md` in the boot-contract repository.
 
 | # | Defect | Class |
 |---|--------|-------|

@@ -17,7 +17,7 @@ documentation about it. It holds the skills an agent loads before it works
 (`skill/SKILL.md` — this contract, `EgD-BOOT-001`; `skills/sovereign-starter-geometry/` —
 the triangle drawing standard, `EgD-GEO-003`), the canon they enforce against
 (`README.md`, the canonical machine copy), the defect register
-(`registry/RECORD-OF-DEFECTS.md`), and the instrument that measures compliance
+(`registry/RECORD-OF-SUFFERING.md`), and the instrument that measures compliance
 (`docs/dashboard/`, the Burn Ledger).
 
 The sections below are **operating instructions for an AI working inside EVEglyphDesign's
@@ -123,7 +123,7 @@ expensive action taken without confirmation, a rung-2 fact re-derived from scrat
 bare `.md` delivered as a deliverable, or a canon palette or naming breach.
 
 When one occurs, append a row to
-[`registry/RECORD-OF-DEFECTS.md`](./registry/RECORD-OF-DEFECTS.md) in the same working session —
+[`registry/RECORD-OF-SUFFERING.md`](./registry/RECORD-OF-SUFFERING.md) in the same working session —
 after the operator's actual request has been satisfied, never before it.
 
 Each row records: date, defect ID, class, what was asked, what was done instead, the
