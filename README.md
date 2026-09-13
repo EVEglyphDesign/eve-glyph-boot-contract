@@ -99,11 +99,11 @@ it at the objective.**
   actually *is* is named in the next subsection, not on the diagram.
 - **The whole circle of data sits between them.** The line from the operator
   through the objective passes *through* the entire repository — through Boot
-  contract, Canon, and Sin registry, through the triangle inscribed in the
-  circle.
-- **The triangle is a prism, not a workflow.** Boot contract, Canon and Sin
-  registry are three *aspects* of the operator's rules refracted through the
-  same medium, not three steps in time. Aspects connect the three vertices
+  contract, Canon, and Observation registry, through the triangle inscribed
+  in the circle.
+- **The triangle is a prism, not a workflow.** Boot contract, Canon and
+  Observation registry are three *aspects* of the operator's rules refracted
+  through the same medium, not three steps in time. Aspects connect the three vertices
   into one thing; process separates them into a queue. The correct reading
   is aspects.
 
@@ -124,7 +124,7 @@ breach (class **C**, palette).
 
 ### Why each vertex is on the boundary
 
-Each of the three vertices — Boot contract, Canon, Sin registry — sits *on* the
+Each of the three vertices — Boot contract, Canon, Observation registry — sits *on* the
 repository circle, not floating inside it. Each is an intersection with the
 boundary because each is a claim the repository makes against the world:
 
@@ -136,9 +136,10 @@ boundary because each is a claim the repository makes against the world:
   where the LLM stops being an evil influence on your life and you take control.
 - **Canon.** How your artifact leaves the repository. The output shape. What
   travels from you into the world under your name.
-- **Sin registry.** How the truth of what happened is preserved. The record of
-  what was done wrong so it can be done right. System friction — the Karen
-  balance — is required. Without it you go too fast, make a mistake, and blow
+- **Observation registry.** How the truth of what happened is preserved. The
+  evidence record of what the work put on the operator's plate, so the boot
+  contract and canon can be sharpened the next time a session opens. System
+  friction — the Karen balance — is required. Without it you go too fast, make a mistake, and blow
   yourself up. Safety first. Betterment second, well behind safety. The whole
   point is systems that are both safe and effective for the right population at
   the right time.
@@ -156,13 +157,13 @@ surface projects toward this. No EVEglyphDesign surface labels it. The label
 on the diagram is `the objective`; the direction the operator is aimed is
 named here, in the founding section, once.
 
-## 0.2 The sin registry as the improvement loop — heritage
+## 0.2 The observation registry as the improvement loop — heritage
 
-The three aspects are not equal in what they do to the LLM. Boot contract and
-canon *constrain* the LLM at run time. The sin registry *captures what happened
-when the constraints failed*, so the constraints can be sharpened the next
-time a session is opened. That is the improvement loop, and it is the only
-aspect of the prism that produces evidence.
+The three aspects are not equal in what they do to the LLM. Boot contract
+and canon *constrain* the LLM at run time. The observation registry
+*captures what happened when the constraints failed*, so the constraints
+can be sharpened the next time a session is opened. That is the improvement
+loop, and it is the only aspect of the prism that produces evidence.
 
 Evidence is the point. Not blame, not book-keeping, not the LLM apologising to
 itself in prose. What the register records is every attempt the LLM made to
@@ -248,16 +249,17 @@ electricity means wasted humans and the operator knows this intimately. Canon
 is the **compounding asset** in the middle of the session — every honest
 spend of processing pays into it, and inside the compounding it holds the
 coin basket of the operator's inheritance so the coin can be spent honestly,
-counted openly, and never substituted for counterfeit. Sin registry is the
-log of every attempt the model made to breach the gate, spend from the basket
-dishonestly, or substitute counterfeit for the operator's coin. All three
+counted openly, and never substituted for counterfeit. The observation
+registry is the log of every attempt the model made to breach the gate,
+spend from the basket dishonestly, or substitute counterfeit for the
+operator's coin. All three
 bind the same processing, simultaneously, for the whole session.
 
 ### Language that reads as consent is drift
 
 Language that describes the triangle as a boundary the operator *offers*, or
-the boot contract as rules the model is *asked* to follow, or the sin registry
-as the LLM *apologising to itself*, is drift. It re-imagines the operator and
+the boot contract as rules the model is *asked* to follow, or the observation
+registry as the LLM *apologising to itself*, is drift. It re-imagines the operator and
 the model as peers negotiating conduct. They are not peers. The operator is a
 buyer of processing power. The model is the compute. Peer language is class
 **E** — enslavement breach — and is logged.
@@ -438,9 +440,9 @@ This has three permanent consequences for every session under this contract:
 
 The canon-and-improvement loop only holds because the three vertices are three
 aspects of one thing, not three steps in a workflow. Aspects are simultaneous:
-Boot contract, Canon and Sin registry are all present in every moment of every
-session, refracted by the same prism, aimed by the same axis. Process is
-sequential: it implies boot contract *then* canon *then* registry, which is
+Boot contract, Canon and Observation registry are all present in every moment
+of every session, refracted by the same prism, aimed by the same axis. Process
+is sequential: it implies boot contract *then* canon *then* registry, which is
 false to the geometry and untrue in practice — the LLM breaches all three at
 the same instant when it drifts.
 
@@ -736,8 +738,8 @@ Material, not cosmetic. · **E** enslavement breach — added 2026-08-31 — lan
 surface (marketing, documentation, README, artifact, or reply) that reads the operator
 and the model as peers negotiating conduct rather than buyer and compute. Signals: the
 triangle described as a boundary, a scaffold, guardrails, or a request; the boot
-contract described as behaviour the model is *asked* to follow; the sin registry
-described as bookkeeping, apology, or preferences-vs-rules; the model attributed
+contract described as behaviour the model is *asked* to follow; the observation
+registry described as bookkeeping, apology, or preferences-vs-rules; the model attributed
 aesthetic or ethical standing inside the operator's repository. Peer language is
 smuggled contraband. Material, not cosmetic. See §0.4.
 

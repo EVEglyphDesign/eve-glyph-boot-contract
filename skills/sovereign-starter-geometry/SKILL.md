@@ -2,7 +2,7 @@
 
 Binding on any agent drawing, redrawing, embedding, or citing the
 sovereign-starter triangle diagram — the one that shows **Boot contract,
-Canon, Sin registry inside the Repository**. Read this before writing SVG.
+Canon, Observation registry inside the Repository**. Read this before writing SVG.
 
 If a description of the diagram in this file and the operator's hand-drawn
 reference [`skills/sovereign-starter-geometry/reference.jpeg`](./reference.jpeg)
@@ -15,8 +15,8 @@ ever disagree, the reference image wins. Look at it.
 **The operator sits on one side of the repository, the objective on the other,
 both marked with a single asterisk in ink. The whole circle of data sits
 between them. The triangle is a prism inscribed in the circle — Boot contract,
-Canon and Sin registry are three aspects of the operator's rules, refracted —
-and the operator looks *through* the prism to see the objective.**
+Canon and Observation registry are three aspects of the operator's rules,
+refracted — and the operator looks *through* the prism to see the objective.**
 
 This is the founding axis of the Theriault Family Method. It is the copyright.
 Surfaces that violate it are logged as heritage defects (class **H**) at the top
@@ -43,12 +43,12 @@ The diagram carries four elements that are non-negotiable.
 - **Three vertex labels** in Fraunces 17 / 600 / `#1a1a1a`:
   - **Boot contract** at the top
   - **Canon** at the lower-left
-  - **Sin registry** at the lower-right
+  - **Observation registry** at the lower-right
 
 Vertices are on the boundary because each is a claim the repository makes
 against the world: how the surface behaves before it does anything (Boot
 contract), how the artifact leaves the repository (Canon), how the truth of
-what happened is preserved (Sin registry). A vertex floating inside the
+what happened is preserved (Observation registry). A vertex floating inside the
 circle is a claim the repository does not touch — which is the opposite of
 what the diagram is for.
 
@@ -62,7 +62,7 @@ in every template.
 - Circle centre `(260, 200)`, radius `150`
 - Boot contract vertex `(260, 50)` — top of circle, 90°
 - Canon vertex `(130, 275)` — lower-left, 210°
-- Sin registry vertex `(390, 275)` — lower-right, 330°
+- Observation registry vertex `(390, 275)` — lower-right, 330°
 
 Verify the vertices are on the boundary by evaluating
 `(x − 260)² + (y − 200)² = 150² = 22500` for each — every vertex satisfies
@@ -82,8 +82,8 @@ operator dot, and star on top; never edit the base coordinates.
 ```svg
 <svg viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg"
      role="img" aria-labelledby="tri-title tri-desc">
-  <title id="tri-title">Boot contract, Canon and Sin registry inscribed in the repository circle</title>
-  <desc id="tri-desc">A dark circle labelled the repository contains an isosceles triangle whose three vertices sit on the boundary of the circle: Boot contract at the top, Canon at the lower left, Sin registry at the lower right.</desc>
+  <title id="tri-title">Boot contract, Canon and Observation registry inscribed in the repository circle</title>
+  <desc id="tri-desc">A dark circle labelled the repository contains an isosceles triangle whose three vertices sit on the boundary of the circle: Boot contract at the top, Canon at the lower left, Observation registry at the lower right.</desc>
 
   <!-- repository circle - ink 2px, a real boundary -->
   <circle cx="260" cy="200" r="150" fill="none" stroke="#1a1a1a" stroke-width="2"/>
@@ -109,7 +109,7 @@ operator dot, and star on top; never edit the base coordinates.
         font-weight="600" fill="#1a1a1a">Canon</text>
   <text x="408" y="300" text-anchor="middle"
         font-family="Fraunces, Georgia, serif" font-size="17"
-        font-weight="600" fill="#1a1a1a">Sin registry</text>
+        font-weight="600" fill="#1a1a1a">Observation registry</text>
 
   <!-- Founding axis (§0.1 of the boot contract, §4 of this skill).
        The operator and the objective sit on opposite sides of the repository
@@ -165,8 +165,8 @@ binding; do not paraphrase.
    the diagram is claiming AI can reach the objective without going through
    the operator's data — which is the drift this whole method exists to stop.
 2. **Outside the boundary.** Both marks are *outside* the repository circle,
-   not on it and not inside it. The vertex dots (Boot contract, Canon, Sin
-   registry) are the only marks that sit on the boundary.
+   not on it and not inside it. The vertex dots (Boot contract, Canon,
+   Observation registry) are the only marks that sit on the boundary.
 3. **One asterisk per side.** Not an X, not a dot, not a compound glyph. A
    single Fraunces asterisk in ink, sized to read at diagram scale. Symmetric
    in size, symmetric in weight, symmetric in colour — the two sides are
@@ -196,8 +196,8 @@ circle centre — reflecting one across `(260, 200)` gives the other exactly.
 ### 4.4 The prism reading
 
 The triangle is a prism. The operator looks *through* the prism at the
-objective. Boot contract, Canon and Sin registry are three aspects of the
-operator's rules, refracted by the same medium — the repository — into a
+objective. Boot contract, Canon and Observation registry are three aspects of
+the operator's rules, refracted by the same medium — the repository — into a
 single line of sight that reaches the objective safely.
 
 - **Aspects, not process.** The three vertices are three views of one thing.
@@ -206,8 +206,8 @@ single line of sight that reaches the objective safely.
 - **Boot contract.** How the operator expects the machine to behave before it
   touches anything.
 - **Canon.** How the artifact leaves the repository.
-- **Sin registry.** How the truth of what happened is preserved so it can be
-  done right next time.
+- **Observation registry.** How the truth of what happened is preserved so it
+  can be done right next time.
 
 ### 4.5 What the marks are, in business terms
 
@@ -253,7 +253,7 @@ before writing SVG:
 
 Agents preparing other geometric diagrams (the EVE Glyph umbrella-and-knight
 mark, the Knight Triangle, etc.) load their own skill files — this one is
-specific to the Boot-contract / Canon / Sin-registry / Repository diagram.
+specific to the Boot-contract / Canon / Observation-registry / Repository diagram.
 
 ---
 
