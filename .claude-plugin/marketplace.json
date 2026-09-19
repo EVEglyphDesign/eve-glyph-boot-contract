@@ -1,0 +1,33 @@
+{
+  "name": "eveglyphdesign",
+  "owner": {
+    "name": "EVEglyphDesign",
+    "url": "https://github.com/EVEglyphDesign"
+  },
+  "metadata": {
+    "description": "EVEglyphDesign's controlled operating canon in loadable form. Additive to every other AI surface; substitutive for none.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "eveglyph-boot-contract",
+      "source": "./",
+      "description": "The binding processing and output contract EgD-BOOT-001 plus the sovereign-starter geometry reference. Load first, before any other work.",
+      "version": "1.5.0",
+      "author": {
+        "name": "EVEglyphDesign",
+        "url": "https://github.com/EVEglyphDesign"
+      },
+      "homepage": "https://eveglyphdesign.github.io/eve-glyph-boot-contract/",
+      "license": "SEE LICENSE-NOTICE.md",
+      "category": "governance",
+      "keywords": [
+        "governance",
+        "canon",
+        "boot-contract",
+        "sovereign",
+        "sap"
+      ]
+    }
+  ]
+}
