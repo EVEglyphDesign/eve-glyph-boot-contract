@@ -75,6 +75,82 @@ breathe. The operator wants to be asked before money moves.
 
 ---
 
+## 2b. Model routing — the cheapest model that answers
+
+Adopted 2026-09-02 after a 90-day audit found **93% of spend concentrated in a single
+top-tier reasoning model**. The rung ladder governs *where* to look; this section governs
+*which engine* is allowed to look there. Same discipline.
+
+**The default is not the top model.** A turn earns top-tier by naming the reason it needs
+one — ambiguous synthesis, high-stakes client writing, multi-document reconciliation, hard
+architectural reasoning, or an operator instruction. "It felt complex" is not a reason.
+Absent a named reason the mid-tier model is correct and produces the same artifact at
+roughly one-fifth the cost.
+
+| Work | Model class |
+|------|-------------|
+| Extraction, classification, reformatting, short lookups, is-this-alive checks | **Small** (Flash / Luna class) |
+| Drafting, code, repo scaffolding, wiki writes, most agent turns, most subagents | **Mid** (Sonnet class) |
+| Ambiguous synthesis, high-stakes client writing, multi-document reconciliation, hard architecture | **Top** (Opus class) — named per turn, never defaulted |
+
+**Subagents inherit nothing.** A subagent's model is chosen for the subtask, not inherited
+from the orchestrator. Pass `model` explicitly on `run_subagent`. A top-tier orchestrator
+does not license top-tier workers.
+
+**Extraction before ingestion.** Read a URL by asking for the fact needed —
+`content.fetch(..., prompt="...")` — not by folding the whole page into an expensive
+context. Past three URLs this is a 10–50× token reduction.
+
+**Snippets before fetches.** If the search snippet already supports the claim, that is the
+citation. Fetching to confirm what the snippet said is billing.
+
+**Do not make the operator suffer to save.** Cheaper *and* faster, both, or the rule is
+wrong. If a mid-tier model produces worse output on a specific shape of work, name that
+shape and route it to top-tier by rule — never shrug and default everything back up.
+
+A turn taken on top-tier without a stated reason is a defect class **S**. Log it, name the
+cheaper route, take it next time.
+
+---
+
+### The burn switch — EgD-BOOT-007
+
+§2b sets the standing default. This clause gives the operator the override, because a
+routing rule with no override is abandoned the first time a client is on the line. The
+lane is always exactly one of two.
+
+- **ECONOMY — the standing default.** No phrase opens it; it is simply on. Mechanical work
+  is delegated to a small- or mid-tier subagent at low reasoning effort: git operations,
+  conformance sweeps, repo and file reads, parsing, VIN and warranty joins, log and diff
+  scanning, link checks, ledger and dashboard refreshes, PDF assembly from settled copy.
+  Top-tier is reached only through the named-reason test above.
+- **BURN — opened by the operator, never inferred.** The phrase is `EgD-BURN ON`, optionally
+  with a ceiling and a duration — "EgD-BURN ON, $300, three hours". Inside the window: the
+  fastest top-tier model everywhere, the §2 expensive-action interrupt suspended, and no
+  cheaper-alternative line offered. The operator is live with a client or a developer and
+  latency is the only cost that matters. Closes on `EgD-BURN OFF`, or at 23:59
+  America/Bahia_Banderas the same day if no duration was named.
+
+Declare the active lane in one line when a session opens or the lane changes. Nothing
+further — the lane is a fact, not a topic.
+
+Log every BURN window to [`registry/BURN-WINDOWS.md`](https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/registry/BURN-WINDOWS.md) with its
+trigger, reason, ceiling, models, artifacts and client. An unattributed burn window becomes
+overhead by default; a recorded one can be rebilled.
+
+**Reach of this clause — stated plainly.** The orchestrator model of a session already in
+progress is fixed by the operator's model picker and no skill can reassign it mid-thread.
+What this clause does bind: what the orchestrator delegates and on which model, the
+reasoning effort it spends, the model every new session and scheduled task is started on,
+and the duty to declare the lane. For repo, script and data sessions the operator sets the
+lane at the picker before the first message. An expensive thread cannot be made cheap
+retroactively — that is the one part of this the harness cannot do for him.
+
+Model ids, per-lane defaults and the burn-window fields are in
+[`skill/references/model-routing.md`](https://github.com/EVEglyphDesign/eve-glyph-boot-contract/blob/main/skill/references/model-routing.md).
+
+---
+
 ## 3. Symmetric processing
 
 Effort spent must be proportionate to the value of the answer, and it must be
