@@ -1,0 +1,21 @@
+{
+  "name": "eveglyph-boot-contract",
+  "description": "EVEglyphDesign's binding processing and output contract EgD-BOOT-001, in loadable form. The cheapest-source-first retrieval ladder, the spend classes and interrupt threshold, the output canon, durability and reversibility rules, and the defect register.",
+  "version": "1.5.0",
+  "author": {
+    "name": "EVEglyphDesign",
+    "url": "https://github.com/EVEglyphDesign"
+  },
+  "homepage": "https://eveglyphdesign.github.io/eve-glyph-boot-contract/",
+  "repository": "https://github.com/EVEglyphDesign/eve-glyph-boot-contract",
+  "license": "SEE LICENSE-NOTICE.md",
+  "keywords": [
+    "governance",
+    "canon",
+    "boot-contract",
+    "sovereign",
+    "sap",
+    "spend-control",
+    "defect-register"
+  ]
+}
