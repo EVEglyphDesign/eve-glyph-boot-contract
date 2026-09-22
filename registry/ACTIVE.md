@@ -50,9 +50,11 @@ that would have prevented the next cold start lived only inside the session.
 - **Last-touched files:**
   [`START_HERE_silvatrading.com.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/START_HERE_silvatrading.com.md),
   [`README.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/README.md),
-  [`registry/silvatrading.com-incident-2026-09-21.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/silvatrading.com-incident-2026-09-21.md)
+  [`registry/silvatrading.com-incident-2026-09-21.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/silvatrading.com-incident-2026-09-21.md),
+  [`silvatrading-com/index.html`](https://github.com/EVEglyphDesign/silvatrading-com/blob/main/index.html) @ `5be0b82b5efb86618799b336c89729fd51d07b81`
+- **Deployed to:** https://silvatrading.com/ — 2026-09-21T23:07-06:00 (America/Bahia_Banderas) — `EVEglyphDesign/silvatrading-com@5be0b82b5efb86618799b336c89729fd51d07b81` (tag `deploy-2026-09-21-enterprise-system-services`)
 
-**Updated:** 2026-09-21T22:44-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session · **Commit:** to be stamped by the same commit that lands this file
+**Updated:** 2026-09-21T23:07-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session · **Commit:** to be stamped by the same commit that lands this file
 
 ---
 
