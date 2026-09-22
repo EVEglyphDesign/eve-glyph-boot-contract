@@ -48,13 +48,16 @@ that would have prevented the next cold start lived only inside the session.
 - **Current surface:** silvatrading.com
 - **Current repo:** [`EVEglyphDesign/eve-external-surfaces`](https://github.com/EVEglyphDesign/eve-external-surfaces)
 - **Last-touched files:**
-  [`START_HERE_silvatrading.com.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/START_HERE_silvatrading.com.md),
-  [`README.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/README.md),
-  [`registry/silvatrading.com-incident-2026-09-21.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/silvatrading.com-incident-2026-09-21.md),
-  [`silvatrading-com/index.html`](https://github.com/EVEglyphDesign/silvatrading-com/blob/main/index.html) @ `5be0b82b5efb86618799b336c89729fd51d07b81`
-- **Deployed to:** https://silvatrading.com/ — 2026-09-21T23:07-06:00 (America/Bahia_Banderas) — `EVEglyphDesign/silvatrading-com@5be0b82b5efb86618799b336c89729fd51d07b81` (tag `deploy-2026-09-21-enterprise-system-services`)
+  [`silvatrading-com/index.html`](https://github.com/EVEglyphDesign/silvatrading-com/blob/main/index.html) @ `5be0b82`,
+  [`observations-2026-09-21-multi-surface.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/observations-2026-09-21-multi-surface.md) (Claude-authored),
+  [`observations-2026-09-21-multi-surface-perplexity.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/observations-2026-09-21-multi-surface-perplexity.md) (Perplexity-authored sibling),
+  [`silvatrading.com-incident-2026-09-21.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/silvatrading.com-incident-2026-09-21.md) (rules 1–7, remediation ticked),
+  [`HANDOFF_TO_PERPLEXITY_2026-09-21.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/HANDOFF_TO_PERPLEXITY_2026-09-21.md) (closed with SHAs)
+- **Deployed to:** [silvatrading.com](https://silvatrading.com/) — title `Silva Trading Inc. — Enterprise System Services` — 2026-09-21T23:07-06:00 — `EVEglyphDesign/silvatrading-com@5be0b82` (tag [`deploy-2026-09-21-enterprise-system-services`](https://github.com/EVEglyphDesign/silvatrading-com/releases/tag/deploy-2026-09-21-enterprise-system-services))
+- **Register state:** boot contract at v1.7 (tag [`v1.7-observations-paired`](https://github.com/EVEglyphDesign/eve-glyph-boot-contract/releases/tag/v1.7-observations-paired)). Rows ROO-2026-09-21-01/02 (Perplexity, v1.6) and ROO-2026-09-21-03/04/05 (Perplexity, v1.7) landed. Claude's sibling account at `eve-external-surfaces/registry/observations-2026-09-21-multi-surface.md`.
+- **Incident status:** closed for deploy; open for the DNS/transfer state reconciliation (Step 0 `dig NS silvatrading.com` still not run by any surface, per Claude's D3 and C3).
 
-**Updated:** 2026-09-21T23:07-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session · **Commit:** to be stamped by the same commit that lands this file
+**Updated:** 2026-09-22T15:00-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session · **Commit:** to be stamped by the same commit that lands this file
 
 ---
 
