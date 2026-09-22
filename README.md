@@ -477,7 +477,7 @@ known fact is not thoroughness, it is billing.
 | # | Rung | Cost class | Use it for |
 |---|------|-----------|-----------|
 | 1 | The current session context already in the window | free | Anything said or produced this thread |
-| 2 | Session memory, last 24 hours, and the last three threads | near-free | URLs, IDs, hashes, decisions, names produced recently |
+| 2 | Session memory, last 24 hours, and the last three threads — including [`registry/ACTIVE.md`](./registry/ACTIVE.md) as the boot-time recent-work read | near-free | URLs, IDs, hashes, decisions, names produced recently. **Rung 2 is not complete until `registry/ACTIVE.md` has been read.** |
 | 3 | The knowledge wiki and notes | near-free | Durable facts about projects, people, canon |
 | 4 | The repository — `git`, `gh api`, raw file read | cheap | Anything ever committed. This is the record of truth |
 | 5 | One targeted fetch or one search | cheap | A single external fact that is genuinely not held |
