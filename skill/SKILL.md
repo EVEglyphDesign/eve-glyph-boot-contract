@@ -334,6 +334,16 @@ shape between calls is drift, and drift is the one thing the operator will not t
 
 Breaches of this section are defect class **T** — drift or shape breach.
 
+## 4f. Writers and readers — EgD-BOOT-008
+
+Every delegated agent, subagent, scheduled task and script is exactly one of three roles,
+named in the first line of its objective. **Writer** — commits content and registers in one
+named repository. **Linker** — mechanical fixes only: links, index entries, formatting,
+generated files; changes no claim. **Reader** — writes nothing and returns a fixed-shape
+report. Reader is the default; a task writes only when its objective says why. Readers
+report and a person or Writer decides. One writer per path at a time. Breach is class
+**D**. Full text: README §12.
+
 ## 5. Defect register
 
 A defect is any of: a bare non-clickable link, an interrupt over a free action, an

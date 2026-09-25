@@ -45,19 +45,16 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** silvatrading.com
-- **Current repo:** [`EVEglyphDesign/eve-external-surfaces`](https://github.com/EVEglyphDesign/eve-external-surfaces)
+- **Current surface:** [sapfans.io](https://sapfans.io/) — link and staleness check; boot contract roles clause
+- **Current repo:** [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io) and [`EVEglyphDesign/eve-glyph-boot-contract`](https://github.com/EVEglyphDesign/eve-glyph-boot-contract)
 - **Last-touched files:**
-  [`silvatrading-com/index.html`](https://github.com/EVEglyphDesign/silvatrading-com/blob/main/index.html) @ `5be0b82`,
-  [`observations-2026-09-21-multi-surface.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/observations-2026-09-21-multi-surface.md) (Claude-authored),
-  [`observations-2026-09-21-multi-surface-perplexity.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/observations-2026-09-21-multi-surface-perplexity.md) (Perplexity-authored sibling),
-  [`silvatrading.com-incident-2026-09-21.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/registry/silvatrading.com-incident-2026-09-21.md) (rules 1–7, remediation ticked),
-  [`HANDOFF_TO_PERPLEXITY_2026-09-21.md`](https://github.com/EVEglyphDesign/eve-external-surfaces/blob/main/HANDOFF_TO_PERPLEXITY_2026-09-21.md) (closed with SHAs)
-- **Deployed to:** [silvatrading.com](https://silvatrading.com/) — title `Silva Trading Inc. — Enterprise System Services` — 2026-09-21T23:07-06:00 — `EVEglyphDesign/silvatrading-com@5be0b82` (tag [`deploy-2026-09-21-enterprise-system-services`](https://github.com/EVEglyphDesign/silvatrading-com/releases/tag/deploy-2026-09-21-enterprise-system-services))
-- **Register state:** boot contract at v1.7 (tag [`v1.7-observations-paired`](https://github.com/EVEglyphDesign/eve-glyph-boot-contract/releases/tag/v1.7-observations-paired)). Rows ROO-2026-09-21-01/02 (Perplexity, v1.6) and ROO-2026-09-21-03/04/05 (Perplexity, v1.7) landed. Claude's sibling account at `eve-external-surfaces/registry/observations-2026-09-21-multi-surface.md`.
-- **Incident status:** **closed.** Step 0 run 2026-09-22 via Verisign registry whois (registrar = Porkbun, nameservers = ns4/ns5.wixdns.net, apex A = 185.199.108–111.153 = GitHub Pages). Registrar transfer complete; NS flip to Cloudflare not done — both partial states true simultaneously. All remediation boxes ticked in `EVEglyphDesign/eve-external-surfaces/registry/silvatrading.com-incident-2026-09-21.md`. Future NS-flip task tracked in `docs/TRANSFER_silvatrading.com.md`, not part of this incident.
+  [`sapfans-io/scripts/check-links.py`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/scripts/check-links.py),
+  [`sapfans-io/registry/LINK-CHECK.md`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/registry/LINK-CHECK.md),
+  [`sapfans-io/registry/VERSIONS.md`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/registry/VERSIONS.md) (tag `v2.1-link-check`),
+  `README.md` §12, `skill/SKILL.md` §4f, `registry/VERSIONS.md` v1.8 (tag `v1.8-boot-008-roles`)
+- **Open:** 4 broken links on sapfans.io awaiting an operator decision (report only, nothing repaired). SAPfans PR #3 still open behind the failed Cloudflare deploy.
 
-**Updated:** 2026-09-22T15:00-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session · **Commit:** to be stamped by the same commit that lands this file
+**Updated:** 2026-09-24T22:30-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
 
 ---
 

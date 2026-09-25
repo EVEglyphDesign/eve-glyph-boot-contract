@@ -1043,6 +1043,38 @@ shape between calls is drift, and drift is the one thing the operator will not t
    widened quietly. Drift is the characteristic failure of general models and the reason
    the operator keeps his own; this system does not get to drift either.
 
+## 12. Writers and readers — EgD-BOOT-008
+
+Adopted 2026-09-25. Most agent work does not need to write. An agent that can only read
+cannot damage the record, and a history in which every change traces to a named writer
+stays readable. Write access is therefore a role, granted narrowly, never a default.
+
+Three roles. Every delegated agent, subagent, scheduled task and script is exactly one of
+them, and its objective names the role in its first line.
+
+| Role | May write | Does | Examples |
+|---|---|---|---|
+| **Writer** | Content and registers, in the one repository it was pointed at | Produces the artifact the operator asked for and commits it with its VERSIONS row | Drafting a surface, landing a PDF, appending an OBSERVATIONS row |
+| **Linker** | Mechanical fixes only — links, index entries, formatting, generated files | Repairs structure the operator has already approved; changes no claim, copy or decision | Correcting a link path after a rename, regenerating a catalog page from its JSON |
+| **Reader** | Nothing. Returns a report | Reviews, researches, audits, checks links and staleness, reconciles figures | `sapfans-io/scripts/check-links.py`, conformance sweeps, VIN and warranty join checks, research subagents |
+
+1. **Reader is the default.** A delegated task is a Reader unless its objective states why
+   it must write. "It might need to" is not a reason.
+2. **Readers report, a person or a Writer decides.** A Reader's output is a report in a fixed
+   shape. Acting on it — deleting, merging, rotating out a reference — is a separate Writer
+   step the operator has approved.
+3. **The narrowest instructions go to the roles that write.** Writers and Linkers receive one
+   repository, the named paths, and the stated change. Breadth belongs to Readers.
+4. **One writer per path at a time.** Parallel sessions may read anything; only one may hold a
+   path for writing. This is §7's concurrent-writer rule applied to delegation.
+
+Breach — a Reader that wrote, a Linker that changed a claim, or a delegated task with no
+named role — is defect class **D** (durability). No new class is added.
+
+Pattern credit: the read-only agent split in
+[undefined-ui/second-brain-os](https://github.com/undefined-ui/second-brain-os) (MIT),
+where four of six agents cannot write. Idea only; no text or code copied.
+
 ---
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
