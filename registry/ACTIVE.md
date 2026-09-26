@@ -45,17 +45,14 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** [sapfans.io](https://sapfans.io/) and [silvatrading.com](https://silvatrading.com/) — language toggle EN · FR · ES · DE (English default) and one-line language statement
-- **Current repo:** [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io), [`EVEglyphDesign/silvatrading-com`](https://github.com/EVEglyphDesign/silvatrading-com) (serving), mirrored to [`EVEglyphDesign/eve-external-surfaces`](https://github.com/EVEglyphDesign/eve-external-surfaces)
+- **Current surface:** [sapfans.io/references.html](https://sapfans.io/references.html) — filterable SAP references catalog with review queue (v2.4)
+- **Current repo:** [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io)
 - **Last-touched files:**
-  [`sapfans-io/docs/i18n.js`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/docs/i18n.js), `docs/style.css`, `docs/{index,sovereign-start,tutorial,standards,repos,heritage,index-v2}.html`,
-  [`sapfans-io/registry/VERSIONS.md`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/registry/VERSIONS.md) v2.3 (tag `v2.3-i18n-toggle`);
-  [`silvatrading-com/assets/i18n.js`](https://github.com/EVEglyphDesign/silvatrading-com/blob/main/assets/i18n.js), `index.html`,
-  [`silvatrading-com/registry/VERSIONS.md`](https://github.com/EVEglyphDesign/silvatrading-com/blob/main/registry/VERSIONS.md) v1.1 (tag `v1.1-i18n-toggle`);
-  `eve-external-surfaces/surfaces/silvatrading.com/{index.html,assets/i18n.js}`
-- **Open:** PMI section in eve-external-surfaces (`8d42b1f`) still not deployed to the serving repo — awaiting operator. 4 broken links on sapfans.io still awaiting a decision.
+  `docs/references.html`, `docs/references.json`, [`registry/PROPOSALS.md`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/registry/PROPOSALS.md), `registry/proposals.json`,
+  `scripts/refs.py`, `intake/INBOX.md`, `.github/workflows/references.yml`, `.github/ISSUE_TEMPLATE/reference.yml`, `docs/i18n.js`, nav on all pages, `registry/VERSIONS.md` v2.4 (tag `v2.4-references-catalog`)
+- **Open:** 21 proposals awaiting operator review (9 sessions need the original LinkedIn post link; ch-geo Databricks gist is a scope question). R-021 learning.sap.com unit returned 404 on first check. Weekly ARK discovery run (model spend) proposed, not scheduled. Silva PMI section still undeployed.
 
-**Updated:** 2026-09-26T13:30-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
+**Updated:** 2026-09-26T15:40-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
 
 ---
 
