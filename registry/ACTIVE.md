@@ -45,16 +45,17 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** [sapfans.io](https://sapfans.io/) — link and staleness check; boot contract roles clause
-- **Current repo:** [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io) and [`EVEglyphDesign/eve-glyph-boot-contract`](https://github.com/EVEglyphDesign/eve-glyph-boot-contract)
+- **Current surface:** [sapfans.io](https://sapfans.io/) and [silvatrading.com](https://silvatrading.com/) — language toggle EN · FR · ES · DE (English default) and one-line language statement
+- **Current repo:** [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io), [`EVEglyphDesign/silvatrading-com`](https://github.com/EVEglyphDesign/silvatrading-com) (serving), mirrored to [`EVEglyphDesign/eve-external-surfaces`](https://github.com/EVEglyphDesign/eve-external-surfaces)
 - **Last-touched files:**
-  [`sapfans-io/scripts/check-links.py`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/scripts/check-links.py),
-  [`sapfans-io/registry/LINK-CHECK.md`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/registry/LINK-CHECK.md),
-  [`sapfans-io/registry/VERSIONS.md`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/registry/VERSIONS.md) (tag `v2.1-link-check`),
-  `README.md` §12, `skill/SKILL.md` §4f, `registry/VERSIONS.md` v1.8 (tag `v1.8-boot-008-roles`)
-- **Open:** 4 broken links on sapfans.io awaiting an operator decision (report only, nothing repaired). SAPfans PR #3 still open behind the failed Cloudflare deploy.
+  [`sapfans-io/docs/i18n.js`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/docs/i18n.js), `docs/style.css`, `docs/{index,sovereign-start,tutorial,standards,repos,heritage,index-v2}.html`,
+  [`sapfans-io/registry/VERSIONS.md`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/registry/VERSIONS.md) v2.3 (tag `v2.3-i18n-toggle`);
+  [`silvatrading-com/assets/i18n.js`](https://github.com/EVEglyphDesign/silvatrading-com/blob/main/assets/i18n.js), `index.html`,
+  [`silvatrading-com/registry/VERSIONS.md`](https://github.com/EVEglyphDesign/silvatrading-com/blob/main/registry/VERSIONS.md) v1.1 (tag `v1.1-i18n-toggle`);
+  `eve-external-surfaces/surfaces/silvatrading.com/{index.html,assets/i18n.js}`
+- **Open:** PMI section in eve-external-surfaces (`8d42b1f`) still not deployed to the serving repo — awaiting operator. 4 broken links on sapfans.io still awaiting a decision.
 
-**Updated:** 2026-09-24T22:30-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
+**Updated:** 2026-09-26T13:30-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
 
 ---
 
