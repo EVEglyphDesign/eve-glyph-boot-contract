@@ -45,11 +45,11 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** [sapfans.io/sovereign-start.html](https://sapfans.io/sovereign-start.html) and the download [`SOVEREIGN-STARTER.md`](https://github.com/EVEglyphDesign/sovereign-starter/blob/main/SOVEREIGN-STARTER.md) — evidence → decision → handoff (Part VII), proposed
+- **Current surface:** [sapfans.io/sovereign-start.html](https://sapfans.io/sovereign-start.html) and the download [`SOVEREIGN-STARTER.md`](https://github.com/EVEglyphDesign/sovereign-starter/blob/main/SOVEREIGN-STARTER.md) — evidence → decision → handoff (Part VII), live
 - **Current repo:** [`EVEglyphDesign/sovereign-starter`](https://github.com/EVEglyphDesign/sovereign-starter) and [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io)
 - **Last-touched files:**
   `SOVEREIGN-STARTER.md`, `docs/SOVEREIGN-STARTER.md`, `README.md` on branch `starter-v3.1-work-record` ([PR #1](https://github.com/EVEglyphDesign/sovereign-starter/pull/1)); `docs/sovereign-start.html` on branch `sovereign-start-evidence-chain` ([PR #4](https://github.com/EVEglyphDesign/sapfans-io/pull/4)); `registry/OBSERVATIONS.md` ROO-2026-09-27-01..03
-- **Open:** both PRs await operator review — merge starter PR #1 first, tag `v3.1`, then sapfans PR #4. Section strings not yet in `i18n.js`. Prior open items (21 reference proposals, PR #3, Silva PMI) unchanged.
+- **Open:** merged and live 2026-09-27 — starter PR #1 (tag `v3.1`), sapfans PR #4 (`#evidence-chain`). Section strings not yet in `i18n.js`. Prior open items (21 reference proposals, PR #3, Silva PMI) unchanged.
 
 **Updated:** 2026-09-27T20:30-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
 
