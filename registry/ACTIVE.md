@@ -45,14 +45,13 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** [sapfans.io/references.html](https://sapfans.io/references.html) — filterable SAP references catalog with review queue (v2.4)
-- **Current repo:** [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io)
+- **Current surface:** [sapfans.io/sovereign-start.html](https://sapfans.io/sovereign-start.html) and the download [`SOVEREIGN-STARTER.md`](https://github.com/EVEglyphDesign/sovereign-starter/blob/main/SOVEREIGN-STARTER.md) — evidence → decision → handoff (Part VII), proposed
+- **Current repo:** [`EVEglyphDesign/sovereign-starter`](https://github.com/EVEglyphDesign/sovereign-starter) and [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io)
 - **Last-touched files:**
-  `docs/references.html`, `docs/references.json`, [`registry/PROPOSALS.md`](https://github.com/EVEglyphDesign/sapfans-io/blob/main/registry/PROPOSALS.md), `registry/proposals.json`,
-  `scripts/refs.py`, `intake/INBOX.md`, `.github/workflows/references.yml`, `.github/ISSUE_TEMPLATE/reference.yml`, `docs/i18n.js`, nav on all pages, `registry/VERSIONS.md` v2.4 (tag `v2.4-references-catalog`), v2.5 (tag `v2.5-ark-lanes`), `registry/ark-monitor-lane.md`
-- **Open:** 21 proposals awaiting operator review (9 sessions need the original LinkedIn post link; ch-geo Databricks gist is a scope question). R-021 learning.sap.com unit returned 404 on first check. ARK lanes wired (v2.5): GitHub lane + inbox on free daily GitHub Action; web lane (SAP Learning, SAP Community, LinkedIn, MIT) as daily task cec9f10d. 31 proposals open. Silva PMI section still undeployed.
+  `SOVEREIGN-STARTER.md`, `docs/SOVEREIGN-STARTER.md`, `README.md` on branch `starter-v3.1-work-record` ([PR #1](https://github.com/EVEglyphDesign/sovereign-starter/pull/1)); `docs/sovereign-start.html` on branch `sovereign-start-evidence-chain` ([PR #4](https://github.com/EVEglyphDesign/sapfans-io/pull/4)); `registry/OBSERVATIONS.md` ROO-2026-09-27-01..03
+- **Open:** both PRs await operator review — merge starter PR #1 first, tag `v3.1`, then sapfans PR #4. Section strings not yet in `i18n.js`. Prior open items (21 reference proposals, PR #3, Silva PMI) unchanged.
 
-**Updated:** 2026-09-26T15:40-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
+**Updated:** 2026-09-27T20:30-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
 
 ---
 
