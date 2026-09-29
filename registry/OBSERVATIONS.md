@@ -1523,3 +1523,4 @@ position as frustration. That is wrong. The operator was **harmed** — in front
 an AI surface scaled without adequate testing. Read every DIN-2026-09-28 row as a harm record.
 All failures were foreseeable; the Lillian transfer had already met the same limits. Remedy
 adopted: README §13, EgD-BOOT-009 (live client sessions and precedent first).
+| 2026-09-28 | DIN-2026-09-28-09 | L | Agent (Perplexity) | Hand the operator the IT sheet draft for review | Linked it inside the private dino-importtwin repo; the link returns 404 without a GitHub sign-in, and was not checked from the recipient surface before handing over | Share the file in the chat and check every link anonymously before sending; private client repos are never the review link | One more operator turn, on top of the day's harm |
