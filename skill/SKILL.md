@@ -221,6 +221,26 @@ Breach = **C**, recurrence = **P**. Record harm to the operator as harm, highest
 
 ---
 
+## 2d. GitHub is standing access, never a click — EgD-BOOT-010
+
+Adopted 2026-09-29. Full text: README §14. The operator's words: "every time you make me
+click that button, you're causing me human suffering."
+
+- **Access is assumed.** Read and write to `EVEglyphDesign` for the whole session. If it is
+  missing, say so in one line (surface, missing scope). Ask for it at most once. Log it as
+  class **I**, fault Tooling.
+- **Every approval click is class I.** Keep them to the minimum: one change is one commit
+  call, with its VERSIONS and OBSERVATIONS rows inside it. No branch-push-PR split unless the
+  operator asked for review or the target is public canon under review. No re-reads to
+  re-verify what you just wrote.
+- **The click is the host's setting.** You cannot turn it off from the session and you do not
+  claim to have. Operator-side, once per surface: set the GitHub connector tools to allow
+  without asking, and record it on the capability card.
+- **No terminal instructions.** The operator does not use a terminal. Run it yourself, or
+  commit it as a script.
+
+---
+
 ## 3. Symmetric processing
 
 Effort must be proportionate to the value of the answer and **visible to the operator**,
