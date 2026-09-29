@@ -1490,3 +1490,5 @@ Note for the operator: the SCS standard footer stamps every page **PROPRIETARY A
 The operator instructed that these rows carry significant severity. -02 is the heaviest because
 the failure was a false claim of compliance with his own pattern, which is what the harness exists
 to prevent. Inverse for this commit: `git revert <this commit>`.
+
+| 2026-09-28 | DIN-2026-09-28-01 | D | Agent (Perplexity) | Process the 28 Sep Dino connection-session transcript (thread bf4d2a7b) | Loaded EgD-BOOT-001 but did not state the boot line or the lane, and spent four reads on the transcript and wiki before landing anything; the evidence, Rung 0 frame and version arc landed only after the operator had to write "do not forget your harness". | Declare lane on turn one; commit the evidence to `evidence/` first (the 25 Sep precedent), then write the outcome note with Rung 0 and a VERSIONS row in the same push | One operator reminder turn; no data lost. Landed as dino-importtwin v0.9.0 (commit 6813319) |
