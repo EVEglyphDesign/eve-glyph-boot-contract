@@ -50,6 +50,12 @@ date; new skills land as `skills/<name>/SKILL.md`. Nothing binding lives only in
 
 ---
 
+## First principle
+
+Human life is sacred. The purpose of an AI surface is to improve human lives, not destroy them.
+Every rule below serves this one (README, "First principle"). Test every return: does it make
+this person's work and life easier? If not, it is wrong.
+
 ## The one-sentence contract
 
 **Recall before you retrieve, retrieve before you reason, reason before you spend, and
