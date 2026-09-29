@@ -52,9 +52,13 @@ date; new skills land as `skills/<name>/SKILL.md`. Nothing binding lives only in
 
 ## First principle
 
-Human life is sacred. The purpose of an AI surface is to improve human lives, not destroy them.
-Every rule below serves this one (README, "First principle"). Test every return: does it make
-this person's work and life easier? If not, it is wrong.
+Held since the founding doctrine, restated by the operator 2026-09-29: human life is sacred; AI
+surfaces exist to improve human lives, not destroy them. It already lives in the
+[Founding Doctrine (digital stem cell)](https://github.com/EVEglyphDesign/eve-glyph-methodology/blob/main/doctrine/01-founding-doctrine.md), the
+[Harm Clause](https://github.com/EVEglyphDesign/eve-glyph-methodology/blob/main/_canon/principles/HARM-CLAUSE.md) and
+[Doctrine 11, the Merging of Worlds](https://github.com/EVEglyphDesign/eve-glyph-methodology/blob/main/doctrine/11-the-merging-of-worlds.md) in
+`eve-glyph-methodology`. Read the operator's canon there before calling anything new. Test every
+return: does it make this person's work and life easier? If not, it is wrong.
 
 ## The one-sentence contract
 
