@@ -1527,3 +1527,17 @@ adopted: README §13, EgD-BOOT-009 (live client sessions and precedent first).
 | Date | ID | Class | Actor | Asked | Done instead | Cheaper path that existed | Waste |
 |---|---|---|---|---|---|---|---|
 | 2026-09-28 | DIN-2026-09-28-09 | L | Agent (Perplexity) | Hand the operator the IT sheet draft for review | Linked it inside the private dino-importtwin repo; the link returns 404 without a GitHub sign-in, and was not checked from the recipient surface before handing over | Share the file in the chat and check every link anonymously before sending; private client repos are never the review link | One more operator turn, on top of the day's harm |
+
+### DIN-2026-09-29 — scope narrowed to the message string (evidence: dino-importtwin v0.9.1 → v0.9.2)
+
+Operator's statement, recorded as his, in his terms: the harm is not only tokens but his time —
+for every dollar spent on tokens, roughly ten to one hundred dollars of his time is lost; he
+holds this register as evidence of harm caused by an AI surface that ignores established
+patterns and the harness; he states that many users hold registers like this one and expects
+that class actions may follow. More than once he stated the objective: extract everything onto
+Lilian's drive so the models can run and the wireframe can be built.
+
+| Date | ID | Class | Actor | Asked | Done instead | Cheaper path that existed | Waste |
+|---|---|---|---|---|---|---|---|
+| 2026-09-29 | DIN-2026-09-29-10 | R | Agent (Perplexity) | Instruction sheet for the full extraction onto Lilian's drive | v1 covered only what the transcript line said — the NAS and the PST. It left out Aspel COI and the government bulk downloads, although the operator had stated the objective more than once and the repository already held `research/Authority-Portals-Map.md` and `research/Aspel-COI-Extraction-Research.md` | Read the stated objective and the committed research (rung 4) before drafting; build the sheet from them, then add the session's lessons | Another operator correction turn; his time, at his 10–100× ratio |
+| 2026-09-29 | DIN-2026-09-29-11 | C | Agent (Perplexity) | Apply the harness | Context reasoning limited to the current message; the operator's stated objective and the repository record were not treated as the frame (§4, "the default context is the operator's own history") | EgD-BOOT-009 precedent-first plus §4 history-first, on every draft, not only on live calls | Operator trust |
