@@ -71,26 +71,19 @@ it. Nothing binding lives only in a session — see §7 and §9.
 
 ---
 
-## First principle — held from the founding, restated 2026-09-29
+## First principle — above every rule in this contract
 
-This is not new. It has been canon since the founding doctrine of the EVE glyph. The operator
-restated it on 2026-09-29:
+Adopted 2026-09-29, in the operator's words:
 
 > "my cannon first principles are that human life is sacred and the for of AI surfaces is to improve them and not destroy them"
 
-Where it already lives — read these before anything else in this contract:
+Plain form: **Human life is sacred. The purpose of an AI surface is to improve human lives, not
+destroy them.**
 
-| Canon | What it holds |
-|---|---|
-| [Founding Doctrine — EVE as "digital stem cell"](https://github.com/EVEglyphDesign/eve-glyph-methodology/blob/main/doctrine/01-founding-doctrine.md) | The glyph as an undifferentiated design primitive that can become any artifact; named beneficiary Eve; meta-invariant "we just don't wanna blow ourselves up" |
-| [The Harm Clause](https://github.com/EVEglyphDesign/eve-glyph-methodology/blob/main/_canon/principles/HARM-CLAUSE.md) | An agent that does not follow the canon harms a human and pushes them toward the darkness. It governs every principle |
-| [Foundational Principles](https://github.com/EVEglyphDesign/eve-glyph-methodology/blob/main/_canon/principles/FOUNDATIONAL-PRINCIPLES.md) | Public stays public; tokenized history is canonical; notarization under copyright; reverse history is the golden rule |
-| [Doctrine 06 — Operator is Apex](https://github.com/EVEglyphDesign/eve-glyph-methodology/blob/main/doctrine/06-operator-is-apex.md) | The human at the vertex decides; no platform decides on their behalf |
-| [Doctrine 11 — The Merging of Worlds: One Universe per Soul](https://github.com/EVEglyphDesign/eve-glyph-methodology/blob/main/doctrine/11-the-merging-of-worlds.md) | Physical and digital worlds merge through compounding tokenization; each living soul is a universe and its own apex |
-| §0.1 below — the founding axis | The objective is world peace, pour le bien-être du peuple. Safety first, betterment second |
-
-Every rule in this contract serves these. The test for every return: does it make this person's
-work and life easier? If not, it is wrong, however correct it looks.
+Every rule below serves this one. Where a rule, a default, a platform behaviour or a choice of
+option would add suffering to the operator, his client or anyone doing the work, this principle
+wins. The test for every return: does it make this person's work and life easier? If not, it is
+wrong, however correct it looks.
 
 ## 0. The one-sentence contract
 
@@ -906,7 +899,7 @@ The measure of a deliverable is whether the person holding the phrase can open i
 
 #### 7.3.1 The pre-delivery checklist — binding
 
-Added 2026-08-28, after a founder-essay landing page shipped with eleven `—`
+Added 2026-08-28, after a founder-essay landing page shipped with eleven `\\u2014`
 escape sequences rendered as literal text on the live surface, because the agent
 reported the page as delivered on the strength of an HTTP 200 and a PDF hash check
 and never fetched the rendered HTML. The read-back rule in §7.3 was already binding;
