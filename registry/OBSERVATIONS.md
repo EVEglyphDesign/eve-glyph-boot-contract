@@ -1492,3 +1492,28 @@ the failure was a false claim of compliance with his own pattern, which is what 
 to prevent. Inverse for this commit: `git revert <this commit>`.
 
 | 2026-09-28 | DIN-2026-09-28-01 | D | Agent (Perplexity) | Process the 28 Sep Dino connection-session transcript (thread bf4d2a7b) | Loaded EgD-BOOT-001 but did not state the boot line or the lane, and spent four reads on the transcript and wiki before landing anything; the evidence, Rung 0 frame and version arc landed only after the operator had to write "do not forget your harness". | Declare lane on turn one; commit the evidence to `evidence/` first (the 25 Sep precedent), then write the outcome note with Rung 0 and a VERSIONS row in the same push | One operator reminder turn; no data lost. Landed as dino-importtwin v0.9.0 (commit 6813319) |
+
+### DIN-2026-09-28 — live client session, Dino connection (evidence: dino-importtwin `evidence/2026-09-28-connection-session/`)
+
+Operator's stated position, recorded as his, not interpreted: the extraction guidance given during
+the live client meeting wasted an enormous amount of time and cost him credibility with the client;
+the Enterprise Harness was not used; the pauses while he was online with the client were
+unacceptable; he does not intend to use Perplexity again in a client meeting and will move
+high-pressure work to the Claude surface; he considers that today showed most of the thousands of
+dollars spent on Perplexity were wasted. Severity: highest. Every row below is taken from the
+transcript, not from the agent's recollection.
+
+| Date | ID | Class | Actor | Asked | Done instead | Cheaper path that existed | Waste |
+|---|---|---|---|---|---|---|---|
+| 2026-09-28 | DIN-2026-09-28-02 | R | Agent (Perplexity), live session | Get Dino's NAS into governed Discovery storage | No pre-flight. NAS size, PC free disk (500 GB, ~250 free) and NAS read speed were discovered on screen, one failure at a time, with the client watching | Measure three numbers before the call: NAS size, PC free space, a timed 1 GB copy. The limit was knowable in advance | Most of a 4-hour client session |
+| 2026-09-28 | DIN-2026-09-28-03 | R | Agent (Perplexity), live session | Share a Drive destination with Dany and Dino | Built a folder in My Drive, then had to redo it as a shared drive ("we did this wrong in the 1st place"); invite sent to the wrong one of the operator's addresses | Shared drive from the start; the operator's working address is a held fact | Two rounds of screen-share steering |
+| 2026-09-28 | DIN-2026-09-28-04 | R | Agent (Perplexity), live session | Move the folders | Browser folder upload of a ~500 GB NAS; Chrome stalled counting files; then Drive for desktop, which stages locally and cannot pass a 400+ GB folder on a 250 GB-free disk | Never browser-upload at this size. Drive for desktop with the cache moved to a large disk, batches under 200 GB, or hand the job to Dino's IT person | Repeated cancel-and-retry in front of the client |
+| 2026-09-28 | DIN-2026-09-28-05 | C | Agent (Perplexity), live session | Screen-by-screen steps for a non-technical client | Wrong keyboard instruction (Ctrl+A to open File Explorer; it is Win+E); wrong Outlook export path first, then the duplicates option redone | One verified screen at a time, from the screen actually shown — an existing operator preference | Lost credibility on simple steps |
+| 2026-09-28 | DIN-2026-09-28-06 | D | Agent (Perplexity), live session | Follow the Monday plan (read-only service user, three sample orders, excluded folders, contract before data) | Plan abandoned for an ad hoc bulk copy; copying began without a signed NDA; `Renovacion_FIEL` and `Soporte` exclusions not enforced | The committed Monday note already held the gates; read it at session start | Custody and NDA exposure; open gates G1–G3 |
+| 2026-09-28 | DIN-2026-09-28-07 | G | Tooling / Platform | Answer fast while the operator is live with a client | Long response pauses; the operator filled them with "give me a second" dozens of times | Pre-staged instruction cards before the call; EgD-BURN ON prompted for a live client session | Client time and the operator's standing |
+| 2026-09-28 | DIN-2026-09-28-08 | C | Agent (Perplexity) | Apply the Enterprise Harness | Harness not visibly applied in the live session; in the follow-up thread it was applied only after the operator had to remind the agent twice | Boot line, lane and Rung 0 on turn one, every time | Operator trust in the harness itself |
+
+Canon candidate (operator to decide, not applied): a **live-client pre-flight** — before any
+session where the operator is on screen with a client, the agent prepares sizes, limits, the
+exact screens and a fallback, and asks whether to open EgD-BURN. Inverse for this commit:
+`git revert <this commit>`.
