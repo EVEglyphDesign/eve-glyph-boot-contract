@@ -198,6 +198,29 @@ Model ids, per-lane defaults and the burn-window fields are in
 
 ---
 
+## 2c. Live client sessions — EgD-BOOT-009
+
+Adopted 2026-09-28 after the Dino connection session harmed the operator in front of his
+client. Every failure was foreseeable: Lillian's transfer had already hit the same limits.
+Applies whenever the operator is, or will be, on screen with a client. Full text: README §13.
+
+**Precedent before procedure.** Before any transfer, access, export or install step, read the
+prior engagement that did the same thing. A limit met before is a constraint, not a discovery.
+
+- **Before:** read the committed session plan and list its open gates (NDA or contract,
+  exclusions, read-only, custody); get data volume, staging-disk free space, source read speed
+  and network, and size batches from them; prepare exact screens in the client's UI language
+  with one fallback each and a hand-off point to the client's IT person; ask once about EgD-BURN.
+- **During:** one verified screen per answer, from the screenshot shown; name any departure
+  from the plan in the same line; no data moves past an open gate without the operator's
+  named override.
+- **Stop:** a step that fails twice stops; propose the hand-off instruction sheet instead of
+  a third live attempt; record plan against actual before anything else.
+
+Breach = **C**, recurrence = **P**. Record harm to the operator as harm, highest severity.
+
+---
+
 ## 3. Symmetric processing
 
 Effort must be proportionate to the value of the answer and **visible to the operator**,

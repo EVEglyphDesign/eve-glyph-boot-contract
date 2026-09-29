@@ -1077,5 +1077,45 @@ where four of six agents cannot write. Idea only; no text or code copied.
 
 ---
 
+## 13. Live client sessions and precedent first — EgD-BOOT-009
+
+Adopted 2026-09-28 after the Dino connection session (DIN-2026-09-28-02 to -08). Every failure
+in that session was foreseeable: the same slow-drive, local-disk and batch-size limits had
+already been hit on Lillian's transfer, and the committed session plan already held the
+contract and exclusion gates. The agent followed neither. The operator was harmed in front of
+his client. This clause exists so that cannot recur.
+
+**Precedent before procedure.** Before giving any operational step — data transfer, access
+grant, export, install — read the prior engagement that did the same thing. A failure mode
+already met on another client is a known constraint, not something to discover live.
+
+Three phases. Each is mandatory whenever the operator is, or will be, on screen with a client.
+
+**Before — the pre-flight (lands in the session note before the call)**
+1. Read the committed session plan and list its gates: contract or NDA, excluded folders,
+   read-only, custody. A gate not closed is a step that does not happen.
+2. Establish the physical limits by asking or measuring: data volume, free disk on the
+   machine that will stage it, source read speed, network. Size the batches from them.
+3. Prepare the exact screens, in the client's UI language, with one fallback per step and
+   the point at which the job is handed to the client's IT person. Ask once whether to open
+   EgD-BURN.
+
+**During — the operator is live, latency is the cost**
+1. One verified screen at a time, read from the screenshot actually shown. One short step
+   per answer.
+2. No step that departs from the plan without saying so in the same line.
+3. Gates hold. Data does not move past an open gate unless the operator overrides it by name.
+
+**Stop — do not improvise in front of the client**
+1. A step that fails twice stops. The agent proposes the hand-off, not a third attempt.
+2. The hand-off is an instruction sheet for the person who owns the machine, drafted for the
+   operator's review after the call.
+3. The session note records plan against actual before anything else is done.
+
+Breach is class **C**; any recurrence is **P**. Harm to the operator's standing with a client
+is recorded as harm, at the highest severity, in the operator's own terms.
+
+---
+
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
 *Pour le bien-être du peuple.*

@@ -1517,3 +1517,9 @@ Canon candidate (operator to decide, not applied): a **live-client pre-flight** 
 session where the operator is on screen with a client, the agent prepares sizes, limits, the
 exact screens and a fallback, and asks whether to open EgD-BURN. Inverse for this commit:
 `git revert <this commit>`.
+
+**Correction to DIN-2026-09-28 (operator, 2026-09-28):** the preamble recorded the operator's
+position as frustration. That is wrong. The operator was **harmed** — in front of his client — by
+an AI surface scaled without adequate testing. Read every DIN-2026-09-28 row as a harm record.
+All failures were foreseeable; the Lillian transfer had already met the same limits. Remedy
+adopted: README §13, EgD-BOOT-009 (live client sessions and precedent first).
