@@ -45,13 +45,13 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** [sapfans.io/sovereign-start.html](https://sapfans.io/sovereign-start.html) and the download [`SOVEREIGN-STARTER.md`](https://github.com/EVEglyphDesign/sovereign-starter/blob/main/SOVEREIGN-STARTER.md) — evidence → decision → handoff (Part VII), live
-- **Current repo:** [`EVEglyphDesign/sovereign-starter`](https://github.com/EVEglyphDesign/sovereign-starter) and [`EVEglyphDesign/sapfans-io`](https://github.com/EVEglyphDesign/sapfans-io)
+- **Current surface:** — (no client-facing surface yet; [`Q-008`](https://github.com/EVEglyphDesign/scs-di-coe/blob/main/registry/OPEN-QUESTIONS.md) asks whether one is wanted). Work is the SCS Decision Intelligence CoE working kit, v0.1 draft for discussion
+- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe) (private)
 - **Last-touched files:**
-  `SOVEREIGN-STARTER.md`, `docs/SOVEREIGN-STARTER.md`, `README.md` on branch `starter-v3.1-work-record` ([PR #1](https://github.com/EVEglyphDesign/sovereign-starter/pull/1)); `docs/sovereign-start.html` on branch `sovereign-start-evidence-chain` ([PR #4](https://github.com/EVEglyphDesign/sapfans-io/pull/4)); `registry/OBSERVATIONS.md` ROO-2026-09-27-01..03
-- **Open:** merged and live 2026-09-27 — starter PR #1 (tag `v3.1`), sapfans PR #4 (`#evidence-chain`). Section strings not yet in `i18n.js`. Prior open items (21 reference proposals, PR #3, Silva PMI) unchanged.
+  `scs-di-coe`: whole tree, initial commit `7761009` (v0.1); `eve-glyph-boot-contract`: `registry/OBSERVATIONS.md` ROO-2026-10-12-01..02, `registry/ACTIVE.md`
+- **Open:** tag `v0.1` not on the remote (the Claude Code session's git proxy refused the tag push, HTTP 403); create it on `7761009` from GitHub Releases. `Q-001` (EVE Sphere, domain gene, key-by-day, three update loops) partly answered from `dino-importtwin`, still open. `Q-002`–`Q-010` open, owners named in `scs-di-coe/registry/OPEN-QUESTIONS.md`. Prior open items (sovereign-starter i18n strings, 21 reference proposals, PR #3, Silva PMI) unchanged.
 
-**Updated:** 2026-09-27T20:30-06:00 (America/Bahia_Banderas) · **By:** Perplexity Computer session
+**Updated:** 2026-10-13T21:26Z · **By:** Claude Code session `session_018janfrPyZTJ4HKeCjiX68H`
 
 ---
 
