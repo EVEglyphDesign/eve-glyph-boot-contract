@@ -160,6 +160,34 @@ described intention. "The palette is cream and orange" is not a check. "Palette 
 Justified by observation class **C** (39 rows) — the canon was stated correctly and
 violated in 39 different shapes because the check was described, not run.
 
+### N-11 · Source completeness gate before any intake
+
+Adopted 2026-10-22, in the operator's words: "you took the last couple of minutes of a
+meeting and you used it as authoritative transfer. Script for intake. It was clearly
+wrong, and you should have come back to me with that"; "stop hallucinating that you have
+anything to offer outside of my instruction".
+
+Do these three things before any transcript, export, file or message becomes the basis
+of a blueprint, proposal, deck or client document:
+
+1. **Measure coverage.** Compare what the source covers with what it claims to cover.
+   For a recording, check the header length against the first and last timestamps. For
+   an export, check row counts and period. For a thread, check the first and last turns.
+   Quote both numbers in the first return.
+2. **Stop if it is partial.** If the source is incomplete, or the record already says so,
+   build nothing on it. Ask once, in one line, for the full source, and stop there.
+   Recording the gap in a README and carrying on is a breach.
+3. **Attribute only what is labelled.** Attribute a quotation only to a labelled speaker.
+   Mark an unlabelled line as unattributed. Never infer the speaker from the layout.
+
+What comes back is the operator's instruction and the source's content, nothing else.
+Add nothing the operator did not name, unless it measurably lowers the operator's cost
+or improves the operator's result. Such an addition is offered as one line at the end
+and is never built without being chosen.
+
+Justified by HQV-2026-10-22-08 to -10 (**C**, **P**, highest severity), DIN-2026-09-28
+and observation class **R**.
+
 ## What is not in this file
 
 - **The full boot contract.** [`README.md`](../README.md) is the binding contract; this
