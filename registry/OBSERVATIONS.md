@@ -8,6 +8,8 @@
 
 The detailed commercial case stays in the Project file repository, not this public register. This entry records the defect and its preventive controls without publishing private engagement figures.
 
+| 2026-10-22 | DIPMO-2026-10-22-05 | P — recurring scope and positioning loss; visual QA failure | Agent (Perplexity) | Preserve the full DI PMO whitepaper proposition and Epiq scope, with an executive-ready four-circle diagram. | I narrowed the case to selected applications, substituted a vague “one migration decision” pilot, underplayed delivery acceleration and vendor protection through an evidence register, and shared a diagram with compressed mixed-format lists. The operator reported irritation and called the repeated low-quality output abusive. | Re-read the actual whitepaper, preserve umbrella scope plus explicit examples, use a concrete SAP work package, show baseline/change/approval/delivery/acceptance evidence, and visually check every overlap at final slide scale. v3 and the repository entry controls now carry these corrections. | Another correction round and late-night review burden; credits and human time not measured. |
+
 **Document ID** `EgD-BOOT-001/ROO` · **Key ID** `EgD-KEY-2026-07` · Companion to
 [`README.md`](../README.md) (`EgD-BOOT-001`) and to
 [`registry/NARROWING.md`](./NARROWING.md) (the AI surface's first read, which cites
