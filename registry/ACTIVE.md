@@ -45,13 +45,13 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** — (no client-facing surface yet; [`Q-008`](https://github.com/EVEglyphDesign/scs-di-coe/blob/main/registry/OPEN-QUESTIONS.md) asks whether one is wanted). Work is the SCS Decision Intelligence CoE working kit, v0.1 draft for discussion
-- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe) (private)
+- **Current surface:** Universal DI PMO pitch for Sashi as SI, under Lilian's governance. Deck v3 is rejected; current work is repository/harness repair, not another deck.
+- **Current repo:** [`EVEglyphDesign/eve-liliantwin-pmo`](https://github.com/EVEglyphDesign/eve-liliantwin-pmo) for instructions, templates and checks; private Universal DI PMO Project file repo for the case, deck and release status.
 - **Last-touched files:**
-  `scs-di-coe`: whole tree, initial commit `7761009` (v0.1); `eve-glyph-boot-contract`: `registry/OBSERVATIONS.md` ROO-2026-10-12-01..02, `registry/ACTIVE.md`
+  `eve-liliantwin-pmo`: `AGENTS.md`, `scripts/preflight.py`, `tests/test_preflight.py`, `registry/HARNESS-CHECK-2026-10-22.md`, `registry/VERSIONS.md`; Project: `START-HERE.md`, `AGENTS.md`, `di-pmo-pitch/RELEASE-STATUS.json`; boot contract: `registry/OBSERVATIONS.md`, `registry/ACTIVE.md`
 - **Open:** tag `v0.1` not on the remote (the Claude Code session's git proxy refused the tag push, HTTP 403); create it on `7761009` from GitHub Releases. `Q-001` (EVE Sphere, domain gene, key-by-day, three update loops) partly answered from `dino-importtwin`, still open. `Q-002`–`Q-010` open, owners named in `scs-di-coe/registry/OPEN-QUESTIONS.md`. Prior open items (sovereign-starter i18n strings, 21 reference proposals, PR #3, Silva PMI) unchanged.
 
-**Updated:** 2026-10-13T21:26Z · **By:** Claude Code session `session_018janfrPyZTJ4HKeCjiX68H`
+**Updated:** 2026-10-22 · **By:** Perplexity thread `9a86f655-6dd9-46db-bbb2-c4828d683d20`. The SCS open items above are preserved from the prior state, not newly verified.
 
 ---
 

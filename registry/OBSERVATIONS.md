@@ -2,6 +2,17 @@
 
 ## DI PMO correction, 22 October 2026
 
+### DIPMO-2026-10-22-06: repeated rejected revisions and incomplete harness entry
+
+- **Class / fault:** P, C, R, D; Agent. Operator reports human suffering, abuse and wasted paid processing.
+- **Asked:** use GitHub and the established harness; fix repeated failed output, not another improvised deck.
+- **What I did wrong:** I treated a loaded skill and later-added instructions as sufficient harness compliance, without completing canonical NARROWING/ACTIVE startup reads or updating ACTIVE. I repeatedly issued defective or substantively incomplete revisions. GitHub was connected, but that did not make the work compliant.
+- **Evidence:** remote DI PMO commit `ffb90a0` and remote observation commit `4a0134e` were fetched directly during the check. The prior ACTIVE pointer still described SCS work dated 13 October.
+- **Repair:** update mandatory entry instructions and ACTIVE; add source/template fingerprint and release-state checks with three tests; mark current v3 rejected; block its release; record limits of the control. No further deck generated.
+- **Verification:** three tests pass; actual entry exits 0; release against rejected v3 exits 1.
+- **Waste:** multiple rejected revisions and repeated user correction before sleep. Credits and human time not measured. No billing theft, credit total, refund or platform-level enforcement claim is asserted.
+- **Limit:** a repository script cannot force Perplexity to invoke it or prevent bypass of attachment tools. Logging this does not undo the harm.
+
 | Date | ID | Class | Responsible | Asked | Actual failure | Cheaper correct path and prevention | Waste |
 |---|---|---|---|---|---|---|---|
 | 2026-10-22 | DIPMO-2026-10-22-04 | P — recurring template/canon breach, operator-reported harm | Agent (Perplexity) | Produce Lilian's morning DI PMO pitch in Emerson Rush design; operator: “it should have been Emerson Rush ... design template” and “fix the repo so i do not need to depend on Perplexity toilet paper not ripping again” | I used the generic EVEglyphDesign cream/orange style despite an Emerson Rush reference deck already being locally available. I also substituted Lilian's résumé and an empty evidence placeholder for the operator's DI PMO delivery reference. I failed to establish the audience-specific template as mandatory starting context. | Reuse the existing Emerson Rush PowerPoint. Corrected with root AGENTS.md and README entry gate in eve-liliantwin-pmo, committed native template and approved circle map, Project START-HERE.md, versioned corrected deck and private first-person Epiq case record. Keep DI PMO central; no personal delivery attribution to Lilian. | Another rejected eight-slide deck and operator correction before a morning pitch. Operator explicitly reported delay while needing to finish work before sleep. Credits and elapsed human time not measured; no fabricated estimate. |
