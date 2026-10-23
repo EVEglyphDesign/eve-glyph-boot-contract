@@ -45,13 +45,13 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** Universal DI PMO v4 review candidate for Sashi as SI under Lilian's governance. User authorised direct V12 revision: 19 slides, source map and visual QA. V3 remains rejected; v4 is not yet operator-approved.
+- **Current surface:** Universal DI PMO v5 review candidate for Sashi: Lilian's V12 (15 slides, XML-identical) + Petra ten Berg's feedback in her wording (4 slides) + approved four-circle diagram. Not operator-approved. v4 retained, v3 rejected.
 - **Current repo:** [`EVEglyphDesign/eve-liliantwin-pmo`](https://github.com/EVEglyphDesign/eve-liliantwin-pmo) for instructions, templates and checks; private Universal DI PMO Project file repo for the case, deck and release status.
 - **Last-touched files:**
-  `eve-liliantwin-pmo`: `AGENTS.md`, `registry/VERSIONS.md`; Project: `di-pmo-pitch/v4/`, `di-pmo-pitch/VERSIONS.md`, `START-HERE.md`, `AGENTS.md`, `di-pmo-pitch/RELEASE-STATUS.json`; boot contract: `registry/ACTIVE.md`
+  Project: `di-pmo-pitch/v5/`, `di-pmo-pitch/VERSIONS.md`, `di-pmo-pitch/RELEASE-STATUS.json`, `START-HERE.md`; boot contract: `registry/ACTIVE.md`, `registry/OBSERVATIONS.md`
 - **Open:** tag `v0.1` not on the remote (the Claude Code session's git proxy refused the tag push, HTTP 403); create it on `7761009` from GitHub Releases. `Q-001` (EVE Sphere, domain gene, key-by-day, three update loops) partly answered from `dino-importtwin`, still open. `Q-002`–`Q-010` open, owners named in `scs-di-coe/registry/OPEN-QUESTIONS.md`. Prior open items (sovereign-starter i18n strings, 21 reference proposals, PR #3, Silva PMI) unchanged.
 
-**Updated:** 2026-10-22 · **By:** Perplexity thread `9a86f655-6dd9-46db-bbb2-c4828d683d20`. The SCS open items above are preserved from the prior state, not newly verified.
+**Updated:** 2026-10-22 · **By:** Perplexity thread `44d5a661-3d96-44ad-983d-bba3dbf98ff3`. SCS open items preserved from prior state, not newly verified.
 
 ---
 
