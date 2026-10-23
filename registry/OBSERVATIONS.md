@@ -1,5 +1,13 @@
 # Registry of Observations — ROO
 
+## DI PMO correction, 22 October 2026
+
+| Date | ID | Class | Responsible | Asked | Actual failure | Cheaper correct path and prevention | Waste |
+|---|---|---|---|---|---|---|---|
+| 2026-10-22 | DIPMO-2026-10-22-04 | P — recurring template/canon breach, operator-reported harm | Agent (Perplexity) | Produce Lilian's morning DI PMO pitch in Emerson Rush design; operator: “it should have been Emerson Rush ... design template” and “fix the repo so i do not need to depend on Perplexity toilet paper not ripping again” | I used the generic EVEglyphDesign cream/orange style despite an Emerson Rush reference deck already being locally available. I also substituted Lilian's résumé and an empty evidence placeholder for the operator's DI PMO delivery reference. I failed to establish the audience-specific template as mandatory starting context. | Reuse the existing Emerson Rush PowerPoint. Corrected with root AGENTS.md and README entry gate in eve-liliantwin-pmo, committed native template and approved circle map, Project START-HERE.md, versioned corrected deck and private first-person Epiq case record. Keep DI PMO central; no personal delivery attribution to Lilian. | Another rejected eight-slide deck and operator correction before a morning pitch. Operator explicitly reported delay while needing to finish work before sleep. Credits and elapsed human time not measured; no fabricated estimate. |
+
+The detailed commercial case stays in the Project file repository, not this public register. This entry records the defect and its preventive controls without publishing private engagement figures.
+
 **Document ID** `EgD-BOOT-001/ROO` · **Key ID** `EgD-KEY-2026-07` · Companion to
 [`README.md`](../README.md) (`EgD-BOOT-001`) and to
 [`registry/NARROWING.md`](./NARROWING.md) (the AI surface's first read, which cites
