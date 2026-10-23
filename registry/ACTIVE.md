@@ -45,10 +45,10 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** Universal DI PMO pitch for Sashi as SI, under Lilian's governance. Deck v3 is rejected; current work is repository/harness repair, not another deck.
+- **Current surface:** Universal DI PMO pitch for Sashi as SI, under Lilian's governance. Deck v3 remains rejected. Uploaded V12 guide and 15-slide source have been audited; no replacement deck generated.
 - **Current repo:** [`EVEglyphDesign/eve-liliantwin-pmo`](https://github.com/EVEglyphDesign/eve-liliantwin-pmo) for instructions, templates and checks; private Universal DI PMO Project file repo for the case, deck and release status.
 - **Last-touched files:**
-  `eve-liliantwin-pmo`: `AGENTS.md`, `scripts/preflight.py`, `tests/test_preflight.py`, `registry/HARNESS-CHECK-2026-10-22.md`, `registry/VERSIONS.md`; Project: `START-HERE.md`, `AGENTS.md`, `di-pmo-pitch/RELEASE-STATUS.json`; boot contract: `registry/OBSERVATIONS.md`, `registry/ACTIVE.md`
+  `eve-liliantwin-pmo`: `AGENTS.md`, `scripts/preflight.py`, `registry/VERSIONS.md`; Project: `di-pmo-pitch/sources/v12/`, `di-pmo-pitch/V12-COVERAGE-AUDIT.md`, `START-HERE.md`, `AGENTS.md`, `di-pmo-pitch/RELEASE-STATUS.json`; boot contract: `registry/ACTIVE.md`
 - **Open:** tag `v0.1` not on the remote (the Claude Code session's git proxy refused the tag push, HTTP 403); create it on `7761009` from GitHub Releases. `Q-001` (EVE Sphere, domain gene, key-by-day, three update loops) partly answered from `dino-importtwin`, still open. `Q-002`–`Q-010` open, owners named in `scs-di-coe/registry/OPEN-QUESTIONS.md`. Prior open items (sovereign-starter i18n strings, 21 reference proposals, PR #3, Silva PMI) unchanged.
 
 **Updated:** 2026-10-22 · **By:** Perplexity thread `9a86f655-6dd9-46db-bbb2-c4828d683d20`. The SCS open items above are preserved from the prior state, not newly verified.
