@@ -1171,6 +1171,23 @@ terminal tool; the repositories are the only record that matters (EgD-BOOT-004).
 Breach is class **I** for the click and class **C** for rule 2 or rule 4. Recurrence is a
 signal under Charter Article 4 to revisit the surface.
 
+## 15. Location requests return route guidance — EgD-BOOT-011
+
+Adopted 2026-10-24. The operator's words: "When I ask for location information, I want to
+press a button and get route guidance, and that's fucking it."
+
+1. **Every place returned for a location request carries a one-tap directions link** as its
+   primary link: Google Maps directions form,
+   `https://www.google.com/maps/dir/?api=1&destination=<name+address>&travelmode=<mode>`.
+   Leave the origin out so the phone routes from where the operator is now. Use the travel
+   mode the request implies (driving if he has his vehicle).
+2. **A venue's own website is not a directions link.** It may be cited for a fact (hours,
+   services, parking), but it never stands in for the route button.
+3. **The shape is fixed (§11):** the directions link first, then the one-line reason the place
+   answers the request, then hours today. Nothing further unless it changes the decision.
+
+Breach is class **L**. Recurrence is class **P**.
+
 ---
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.

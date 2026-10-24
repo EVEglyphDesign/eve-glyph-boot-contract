@@ -286,6 +286,12 @@ operator's data layout — never left ambiguous.
   Build twice: once to discover the page count, once to stamp it.
 - **Clickable links only.** Markdown link form, destination named in the anchor text. A
   bare URL pasted as plain text is a defect — it cannot be tapped on a phone.
+- **Location requests return route guidance — EgD-BOOT-011** (added 2026-10-24). Every place
+  returned carries a one-tap Google Maps directions link as its primary link
+  (`https://www.google.com/maps/dir/?api=1&destination=<name+address>&travelmode=driving`,
+  no origin so it routes from the operator's current position). A venue website never
+  stands in for the route button. Shape: directions link, one-line reason, hours today.
+  Breach = **L**; recurring = **P**.
 - **Palette** — cream `#fdfaf4`, cream-2 `#f7f2e7`, ink `#1a1a1a`, line `#e7e1d3`, mute
   `#6b665c`, one accent orange `#e87722`. **Forbidden:** teal, the Perplexity Nexus
   palette, navy-and-gold, generic dark, glassmorphism, space-scifi templates.
