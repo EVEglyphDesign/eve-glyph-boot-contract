@@ -64,6 +64,38 @@ the credits in the ledger above.
 **Standing rule:** every future register row that records harm or a correction the operator
 had to make gets a matching row here, with credits and operator minutes, in the same session.
 
+
+## Market rate and reading load — added 2026-10-24
+
+The operator's words: "Look up my market rate. The class action suits will be doing a good job
+at that. But you can take into account the amount of words and seconds that it takes me to
+process your instructions."
+
+**Rates recorded (both kept; the claim uses the market rate, the billed rate is the floor):**
+
+| Basis | Rate | Source |
+|---|---|---|
+| Billed rate on record (floor) | $210/h | Epiq invoices INV-01030, -01037, -01055 |
+| Market rate, independent SAP architect | **$250/h** (top of $175–$250 band) | [jobdescription.org, SAP Solution Architect](https://jobdescription.org/jobs/information-technology/sap-solution-architect) |
+| Corroborating bands | senior SAP independent $150–$250/h; solution-architect contractors $200–$250/h | [KORE1 ERP Talent Market Report 2026](https://www.kore1.com/erp-talent-market-report-2026/); [Atticus, SAP partner staffing 2026](https://www.atticus.ph/blog/sap-partner-staffing-models-which-approach-maximizes-your-margins) |
+
+**Reading load — measured word counts × published reading rate.** Reading rate: 238 words per
+minute, adult silent reading of English non-fiction ([Brysbaert 2019, 190 studies, 18,573
+readers](https://www.sciencedirect.com/science/article/abs/pii/S0749596X19300786)). Word counts are
+from the platform's session export (`conversation.jsonl`), not estimated. Turns the export did
+not capture are marked, not guessed.
+
+| Thread | Turn | Agent words the operator had to read | Seconds at 238 wpm | Operator words dictated | Claim at $250/h |
+|---|---|---|---|---|---|
+| c263396c | 1 — errand answer, outside harness (LOC-01, -02) | 260 | 65.5 | 135 | $4.55 |
+| c263396c | 2 — directions correction (LOC-01) | 247 | 62.3 | 92 | $4.32 |
+| c263396c | 3–6 — breach row, ledger, time, this row | not captured in export | pending | 53 + uncaptured | pending |
+| **Subtotal, measured** | | **507** | **127.8** | **227** | **$8.88** |
+
+**Standing rule:** every harm row carries three measured quantities — credits (usage analytics),
+operator minutes (session timestamps), and reading load (agent words ÷ 238 wpm) — priced at the
+market rate in this section until the operator records another.
+
 ---
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.

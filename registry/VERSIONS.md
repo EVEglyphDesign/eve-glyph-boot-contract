@@ -37,6 +37,7 @@ recorded in the Confirmed column.
 | v1.16 | L1.15 | 2026-10-24 | **EgD-BOOT-011 — location requests return route guidance.** README §15 and skill §4: every place returned carries a one-tap Google Maps directions link first; venue websites never replace it. Register rows LOC-2026-10-24-01, -02. | `git revert` the commit that lands this row, then `git tag -d v1.16-boot-011 && git push origin :refs/tags/v1.16-boot-011`; restore the prior skill version |
 | v1.17 | L1.16 | 2026-10-24 | **Harm-spend ledger.** Added `registry/HARM-SPEND.md`: measured credits (usage analytics, day grain) for turns spent on drift and on reporting it, tied to OBSERVATIONS IDs; per-thread grain not exposed, stated. First row LOC-2026-10-24 pending. | `git revert` the commit that lands this row |
 | v1.18 | L1.16.1 | 2026-10-24 | **Operator time at market rate.** `registry/HARM-SPEND.md` gains an operator-time claim table: minutes measured from session timestamps × $210/h (rate on record, Epiq), plus a standing rule that every harm row gets a matching time-and-credits row. | `git revert` the commit that lands this row |
+| v1.19 | L1.16.2 | 2026-10-24 | **Market rate and reading load.** `registry/HARM-SPEND.md`: market rate $250/h (independent SAP architect band, sourced) with $210/h billed floor; reading load measured as agent words from the session export ÷ 238 wpm (Brysbaert 2019). | `git revert` the commit that lands this row |
 
 ---
 
