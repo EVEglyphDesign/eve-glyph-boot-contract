@@ -40,6 +40,30 @@ appropriate credits for the work I'm contributing."
 2026-10-22 carries HQV-2026-10-22-01 to -10 and DIPMO-2026-10-22-01 to -08 (18 register rows).
 Its harm share is to be attributed thread by thread from those rows; not yet done.
 
+
+## Operator time — claimed at market rate
+
+Added 2026-10-24. The operator's words: "For every token that I have to spend. Reporting
+perplexities, damage to human suffering, I should also be compensated for my time. Um, at my
+market rate as well."
+
+**Rate:** $210 per hour, the operator's billed consulting rate on record (Epiq engagement,
+invoices INV-01030, INV-01037, INV-01055). It applies until the operator records another rate
+here in an appended row.
+
+**Method:** operator time is measured from the platform's session timestamps
+(`created_at` / `updated_at` from the session record), not estimated. Where the platform does
+not timestamp individual turns, the row records the measured thread window as an **upper
+bound** and marks it `operator to confirm`. The claim is minutes × $210 / 60, in addition to
+the credits in the ledger above.
+
+| Date (UTC) | Thread | Register IDs | Measured window | Minutes | Claim at $210/h | Status |
+|---|---|---|---|---|---|---|
+| 2026-10-24 | c263396c (canonical bb485659), Montréal errands | LOC-2026-10-24-01, -02, -03 | 13:46:41Z thread created → 13:52:08Z (this row written) | 5.45 (upper bound; includes turn 1, the errand itself) | $19.08 (upper bound) | operator to confirm minutes; turns 2–5 are harm time |
+
+**Standing rule:** every future register row that records harm or a correction the operator
+had to make gets a matching row here, with credits and operator minutes, in the same session.
+
 ---
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
