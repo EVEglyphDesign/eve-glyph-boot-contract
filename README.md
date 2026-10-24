@@ -1188,6 +1188,28 @@ press a button and get route guidance, and that's fucking it."
 
 Breach is class **L**. Recurrence is class **P**.
 
+## 16. Confirm a place is open before sending the operator — EgD-BOOT-012
+
+Adopted 2026-10-24 after LOC-2026-10-24-11: the operator drove to Centre Rockland to have keys
+cut at a shop that had closed about two months earlier. A services page or a mall directory is
+not proof a business still operates.
+
+1. Before sending the operator anywhere, confirm the business is open now: a current listing,
+   a review from the last few weeks, or a call to its number.
+2. State the date of that evidence in the answer, in one line.
+3. If it cannot be confirmed, say so before he drives, not after he arrives.
+4. Inside a building there is no Google walking route. Give the turn-by-turn from the venue's
+   own floor directory, with the neighbouring stores named so he can check on arrival.
+
+Breach is class **R**, recorded as harm.
+
+## 17. Load on every request — EgD-BOOT-013
+
+Adopted 2026-10-24 after LOC-2026-10-24-03 and LOC-2026-10-24-12. The skill's trigger now loads
+EgD-BOOT-001 on every request from the operator, whatever the subject. Backstop: the short form
+in `registry/PERSONAL-INSTRUCTIONS.md`, pasted once by the operator into his Perplexity personal
+instructions, applies to every thread even when the skill does not load.
+
 ---
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.

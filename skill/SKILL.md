@@ -1,6 +1,6 @@
 ---
 name: eveglyph-boot-contract
-description: "Load FIRST, before any other work, on every EVEglyphDesign, EgD, EVE Glyph, PAIX, URIEL, canon, parish, or sovereign-data request. The binding processing and output contract EgD-BOOT-001: the six-rung cheapest-source-first retrieval ladder, the three-thread recall rule, the free/cheap/expensive spend classes and where the interrupt belongs, the Burn Ledger measurement gate (EgD-BOOT-002), model routing and the EgD-BURN switch for live client work (EgD-BOOT-007), repository-only record keeping (EgD-BOOT-004), versioning and reversibility (EgD-BOOT-005), the rule of three (EgD-BOOT-006), and the output canon (PDF by default, clickable links only, cream-and-orange palette, Fraunces and Inter, EVEglyphDesign naming, land in the repo and on a public surface). Also load when asked about token spend, credit burn, burn rate, which model to run, economy or burn lanes, usage analytics, wasted processing, cold starts, defect logging, or the observation and defect registers."
+description: "Load FIRST on every request from this user, whatever the subject — errands, places, directions, lookups, EVEglyphDesign, EgD, SAP, canon or client work. Binding contract EgD-BOOT-001: cheapest-source-first retrieval, spend gates, model routing, repository record keeping, defect register, output canon. No request from this user is exempt."
 license: "© 2026 EVEglyphDesign. All rights reserved. Controlled copy."
 compatibility: "Requires no tools to read. Repository work assumes GitHub access via api_credentials=[\"github\"]."
 metadata:
@@ -286,12 +286,16 @@ operator's data layout — never left ambiguous.
   Build twice: once to discover the page count, once to stamp it.
 - **Clickable links only.** Markdown link form, destination named in the anchor text. A
   bare URL pasted as plain text is a defect — it cannot be tapped on a phone.
-- **Location requests return route guidance — EgD-BOOT-011** (added 2026-10-24). Every place
-  returned carries a one-tap Google Maps directions link as its primary link
-  (`https://www.google.com/maps/dir/?api=1&destination=<name+address>&travelmode=driving`,
-  no origin so it routes from the operator's current position). A venue website never
-  stands in for the route button. Shape: directions link, one-line reason, hours today.
-  Breach = **L**; recurring = **P**.
+- **Location requests return route guidance — EgD-BOOT-011** (2026-10-24). Every place
+  returned carries a one-tap Google Maps directions link first
+  (`https://www.google.com/maps/dir/?api=1&destination=<name+address>&travelmode=<driving|walking>`,
+  no origin). A venue website never stands in for it. Never send a walking link for a route
+  inside a building: Google has no indoor routing; give the turn-by-turn from the venue's own
+  floor directory instead. Shape: link, one-line reason, hours today. Breach = **L**.
+- **Confirm a place is open before sending the user there — EgD-BOOT-012** (2026-10-24). A
+  services page or directory is not proof a business still operates. Check a current listing,
+  a recent review, or the phone number, and state the date of that evidence in the answer.
+  If it cannot be confirmed, say so before the user drives. Breach = **R**, harm.
 - **Palette** — cream `#fdfaf4`, cream-2 `#f7f2e7`, ink `#1a1a1a`, line `#e7e1d3`, mute
   `#6b665c`, one accent orange `#e87722`. **Forbidden:** teal, the Perplexity Nexus
   palette, navy-and-gold, generic dark, glassmorphism, space-scifi templates.
