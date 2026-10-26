@@ -1210,6 +1210,35 @@ EgD-BOOT-001 on every request from the operator, whatever the subject. Backstop:
 in `registry/PERSONAL-INSTRUCTIONS.md`, pasted once by the operator into his Perplexity personal
 instructions, applies to every thread even when the skill does not load.
 
+## 18. The front end builds the repository; the sovereign platform does the processing — EgD-BOOT-014
+
+Adopted 2026-10-26 after TEN-2026-10-26-01 and TEN-2026-10-26-02, and the earlier times an agent
+launched into large-scale extraction and structuring that then had to be redone properly, with
+graphs, in Azure. The operator, verbatim:
+
+> "if the value can be displayed in the clickable surface and requirements further specfied in the
+> blueprint - then it's worth it but scaled data processing should never happen in a commercial
+> delivery surface like Claude or perplexity"
+
+> "the point of the front end of EVE is to build a repo that serves as a basis for our sovereign
+> builds and repositories"
+
+1. **What the front end is for.** Agent surfaces (Perplexity, Claude, any commercial delivery
+   surface) build the repository: blueprint, schema, jobs, runbooks, design samples. That
+   repository is the basis for the sovereign build.
+2. **The worth test.** Agent data work is justified only when its value shows on the clickable
+   surface or makes a blueprint requirement more specific. Design samples stop at the first
+   readable page per source.
+3. **Scaled work goes to the sovereign platform.** Bulk extraction, structuring, ingest and graph
+   building never run in a commercial delivery surface. The agent writes the job, the runbook and
+   the target schema and commits them; the operator's platform (Azure) runs them.
+
+**Warning signs — stop and write the job instead:** looping over result pages; retrying a bulk
+endpoint that failed; rewriting a parser more than once; structuring hundreds of rows in session;
+building graphs or relationships that the sovereign platform will rebuild anyway.
+
+Breach = **S**; recurrence = **P**.
+
 ---
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.

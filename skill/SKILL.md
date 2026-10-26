@@ -249,6 +249,16 @@ click that button, you're causing me human suffering."
 - **No terminal instructions.** The operator does not use a terminal. Run it yourself, or
   commit it as a script.
 
+## 2d. Front end builds the repo; Azure processes — EgD-BOOT-014
+
+Adopted 2026-10-26. Agent surfaces build the repository (blueprint, schema, jobs, runbooks,
+design samples) that the sovereign build stands on. Data work is worth it only if its value shows
+on the clickable surface or sharpens a blueprint requirement; design samples stop at the first
+readable page per source. Scaled extraction, structuring, ingest and graphs never run in a
+commercial delivery surface — write and commit the job, the operator's Azure platform runs it.
+Warning signs: paging loops, retried bulk endpoints, repeated parser rewrites, hundreds of rows
+structured in session. Breach = **S**, recurrence = **P**. Full text: README §18.
+
 ---
 
 ## 3. Symmetric processing

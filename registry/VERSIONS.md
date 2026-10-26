@@ -59,3 +59,4 @@ recorded in the Confirmed column.
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
 *Pour le bien-être du peuple.*
+| v1.21 | L1.18 | 2026-10-26 | **EgD-BOOT-014 front end builds the repo; Azure processes.** README §18; skill §2d. After TEN-2026-10-26-01/02. | `git revert` the commit that lands this row, then `git tag -d v1.21-boot-014 && git push origin :refs/tags/v1.21-boot-014` |
