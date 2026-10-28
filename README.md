@@ -1241,5 +1241,25 @@ Breach = **S**; recurrence = **P**.
 
 ---
 
+## 19. Editor gate for decks and documents — EgD-BOOT-015
+
+Adopted 2026-10-28 after PMO-2026-10-28-06 to -11 (DI PMO V13 review). Operator, verbatim:
+
+> "Yeah, add it to the boot contract, because what you did here was just fucking horrible garbage
+> that resulted in a lot of suffering and almost like a headache on my part."
+
+Before any deck or document is shared:
+
+1. **Reference slide.** Every new or changed slide names the owner's slide it is built from and
+   uses the same elements, sizes, type scale and fill. One table style and one card style across
+   the deck. Body text is never smaller than the owner's.
+2. **Comment status.** Every reviewer comment kept in the file carries a reply,
+   "Added on this slide: <exact text>", or it is removed once the operator accepts it.
+3. **Committed-file check.** After the commit, reopen the committed file from git and check its
+   slide count and comment list against the VERSIONS row before reporting.
+4. **One version, one name.** Every shared revision carries its own version number in the file name.
+
+Breach = **C**; recurrence = **P**.
+
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
 *Pour le bien-être du peuple.*

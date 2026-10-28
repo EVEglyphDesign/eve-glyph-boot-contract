@@ -259,6 +259,17 @@ commercial delivery surface — write and commit the job, the operator's Azure p
 Warning signs: paging loops, retried bulk endpoints, repeated parser rewrites, hundreds of rows
 structured in session. Breach = **S**, recurrence = **P**. Full text: README §18.
 
+
+## 2e. Editor gate for decks and documents — EgD-BOOT-015
+
+Adopted 2026-10-28. Before sharing: (1) each new or changed slide is built from a named owner
+slide with the same elements, sizes, type scale and fill, one table and card style throughout,
+body text never smaller than the owner's; (2) each kept reviewer comment carries the reply
+"Added on this slide: <exact text>" or is removed once the operator accepts it; (3) reopen the
+committed file from git and check slide count and comment list against the VERSIONS row; (4) every
+shared revision gets its own version number in the file name. Breach = **C**, recurrence = **P**.
+Full text: README §19.
+
 ---
 
 ## 3. Symmetric processing
