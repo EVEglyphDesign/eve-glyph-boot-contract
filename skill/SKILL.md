@@ -270,6 +270,15 @@ committed file from git and check slide count and comment list against the VERSI
 shared revision gets its own version number in the file name. Breach = **C**, recurrence = **P**.
 Full text: README §19.
 
+## 2f. Private by default; client sites behind an email gate — EgD-BOOT-016
+
+Adopted 2026-10-29. (1) Every new repository is `--private`; public only when the operator names it,
+and never for client-named or real-data repositories without a second confirmation. (2) Add the team
+at creation (Hawkins: `tobias-polly`, `LukeW-L`, write). (3) A private repository's Pages site is still
+public: client surfaces go on Cloudflare Pages behind Cloudflare Access (email allowlist); until then
+they are passkey-sealed, never left open. (4) Check logged out before calling a surface live.
+Breach = **C**, harm; recurrence = **P**. Full text: README §20.
+
 ---
 
 ## 3. Symmetric processing

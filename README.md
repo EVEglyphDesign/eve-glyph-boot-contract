@@ -1261,5 +1261,29 @@ Before any deck or document is shared:
 
 Breach = **C**; recurrence = **P**.
 
+## 20. Private by default; client sites behind an email gate — EgD-BOOT-016
+
+Adopted 2026-10-29 after SEC-2026-10-29-01/02 (Hawkins repos and Pages sites found public).
+Tobias Polly, verbatim, forwarded by the operator:
+
+> "new repos should always be private by default, especially anything with hawkins or real data
+> in it. otherwise a small leak costs us a lot"
+
+1. **Every new repository is created `--private`.** Public only when the operator names that
+   repository as public in the request. Anything carrying a client name (Hawkins, Peterbilt,
+   PACCAR, CDK, …) or real records is never made public, even on request, without the operator
+   confirming the specific repository a second time.
+2. **Collaborators at creation.** The working team is added when the repository is created, so
+   privacy never means handing files back and forth. Hawkins lane: `tobias-polly`, `LukeW-L`, write.
+3. **No open client site.** A private repository's GitHub Pages site is still public. Client
+   surfaces are served from Cloudflare Pages with Cloudflare Access in front, so only people
+   added by email can open them (control plane: `eve-external-surfaces`). Until Access is in
+   front of a surface, it is sealed with the passkey scheme in SEC-2026-10-29-02. It is never
+   left open, and never moved to a new open URL.
+4. **Check as a stranger.** Before reporting a client surface live, check it logged out: the
+   repository returns 404, and the site shows only the gate.
+
+Breach = **C**, harm; recurrence = **P**.
+
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
 *Pour le bien-être du peuple.*
