@@ -1732,3 +1732,8 @@ Lilian's drive so the models can run and the wireframe can be built.
 - What: TOBIAS-DESK-FEED v1.0 made the rooftop map and the service-manager owner wait on Luke. Both can be derived by Tobias from gold.location, journal_line, document, business_partner and communication. A Tobias handoff was mixed with Luke and Tim work for the second time (repeats -04 and -06).
 - Fix: TOBIAS-AZURE-RUNBOOK v1.0 (hawkins-twin). Tobias-only, data already in the lake, each step with a "done when" check.
 - Rule: a Tobias handoff names no other person as a dependency. Anything the lake can answer, Tobias derives.
+
+### WGN-2026-11-03-11 · service-recommendation drill-down left out of the Tobias handoff
+- What: the runbook and the traceability sheet left out the service recommendations the user had already asked for (each order checked against maintenance history, warranty, campaigns and faults) and the indexing that makes drill-down cheap. Without them, every click would be paid Perplexity processing.
+- Fix: TOBIAS-SERVICE-RECS v1.0, with history, rules, cards and MCP reads all built and indexed in Azure.
+- Rule: before a handoff, re-read every ask in the session and map each to a section. Compute and indexing belong in Azure; Perplexity only reads.
