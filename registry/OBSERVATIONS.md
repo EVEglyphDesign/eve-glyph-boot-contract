@@ -1737,3 +1737,10 @@ Lilian's drive so the models can run and the wireframe can be built.
 - What: the runbook and the traceability sheet left out the service recommendations the user had already asked for (each order checked against maintenance history, warranty, campaigns and faults) and the indexing that makes drill-down cheap. Without them, every click would be paid Perplexity processing.
 - Fix: TOBIAS-SERVICE-RECS v1.0, with history, rules, cards and MCP reads all built and indexed in Azure.
 - Rule: before a handoff, re-read every ask in the session and map each to a section. Compute and indexing belong in Azure; Perplexity only reads.
+
+### LIL-CV-2026-11-03-01 · class R · "latest CV" answered with the TCS-tailored copy
+- Asked: Lilian's latest CV, downloadable.
+- Done instead: returned the 2026-10-02 TCS SAP Programme Director clean copy (a role-tailored version) without checking Google Drive, where her general CVs live (`Lilian CV.pdf` 2026-09-04; `Lilian Corvington CV 092026.pdf` 2026-09-07).
+- Cheaper path: one Drive name search for "Lilian" before answering; treat role-tailored copies as variants, not the base CV.
+- Waste: one extra turn and operator correction.
+- Rule: a request for a person's CV means her own general CV unless a role is named; list tailored variants separately.
