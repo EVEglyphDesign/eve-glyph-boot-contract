@@ -1744,3 +1744,12 @@ Lilian's drive so the models can run and the wireframe can be built.
 - Cheaper path: one Drive name search for "Lilian" before answering; treat role-tailored copies as variants, not the base CV.
 - Waste: one extra turn and operator correction.
 - Rule: a request for a person's CV means her own general CV unless a role is named; list tailored variants separately.
+
+### 2026-11-03 — Hawkins owner dashboard dropped the no-cost scorecard work
+
+- Class: R (the record already held it)
+- Asked: Dany expected the no-cost Standards of Excellence actions (declarations, courses, customer enrolment, paperwork, each with a drafted email) on Tim's dashboard.
+- Done instead: v1.11.20 through v1.12.2 rebuilt the section order and kept only S1 (declarations) inside "Every cent". The rest of the work in `soe-score/README.md`, `ADMIN-LIST.md` and `DECLARATIONS-2026-11-03.md` (hawkins-twin v1.9.0 to v1.10.3) never reached the dashboard.
+- Cheaper path: read `registry/VERSIONS.md` for every line on the subject before reordering sections.
+- Fix: hawkins-twin v1.12.3 puts "Scorecard points that cost nothing" in position 2, with S1 to S4 and the score now against the conservative estimate.
+- Waste: one operator correction and a rebuild.
