@@ -45,11 +45,11 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** SCS EVE kit for Jeff Eden's eight items (solution set, presentations, architecture, implementation, estimation, use case, team, support), first use case Curated Events (Dave Paulus, event margin). Review branch, not operator-approved.
-- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe), branch `eve-kit-v0.3` (v0.3.0.1). Patterns from `hawkins-twin` and `dino-importtwin`, shape only.
+- **Current surface:** SCS EVE kit for Jeff Eden's eight items (solution set, presentations, architecture, implementation, estimation, use case, team, support), first use case Curated Events (Dave Paulus, event margin). Approved by Dany 5 Nov and merged.
+- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe), `main` at v0.3.0.1 (merged 5 Nov, Dany approved). Patterns from `hawkins-twin` and `dino-importtwin`, shape only.
 - **Last-touched files:**
   `1-sell/KIT.md`, `1-sell/ESTIMATION.md`, `1-sell/use-cases/CURATED-EVENTS.md`, `2-deliver/2.1-architecture/EVE-SPHERE.md`, `2-deliver/2.2-phases/BLUEPRINT-TEMPLATE.md`, `2-deliver/2.3-pmo/TEAM.md`, `3-keep/SUPPORT.md`, `registry/VERSIONS.md`, `registry/OPEN-QUESTIONS.md`; boot contract: `registry/ACTIVE.md`, `registry/OBSERVATIONS.md`
-- **Open:** Dany reviews and merges `eve-kit-v0.3`; reply to Jeff (WhatsApp) not sent; Steel Cloud Claude account still "To connect" (point it at scs-di-coe, not hawkins-twin); Q-011–Q-014 in scs-di-coe. Prior open items (DI PMO v5 tag `v0.1`, Q-001–Q-010) carried, not re-verified.
+- **Open:** reply to Jeff (WhatsApp) not sent; Steel Cloud Claude account still "To connect" (point it at scs-di-coe, not hawkins-twin); Q-011–Q-014 in scs-di-coe. Prior open items (DI PMO v5 tag `v0.1`, Q-001–Q-010) carried, not re-verified.
 
 **Updated:** 2026-11-05 · **By:** Claude Code (desktop, SitRep session).
 ---
