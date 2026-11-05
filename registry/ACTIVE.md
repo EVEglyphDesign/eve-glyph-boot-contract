@@ -45,11 +45,11 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** Reply to Jeff Eden positioning the EVE Sphere as the architecture component: the enterprise data map, reverse-engineered from the perpetually refreshed lake. Base model = map, context (persistent brain, memory of interactions), control (one project GitHub repo, requirement → source → component), reached by any AI surface over MCP; action-response deterministic component is an extra requirement. Supersedes Claude's rejected Curated Events margin proposal (v0.3.1) as the reply.
-- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe), review branch `eve-sphere-v0.4` (tag `v0.4.1`), **not merged**, awaiting Dany. `main` still at v0.3.1.1.
+- **Current surface:** SCS offer structure for Jeff Eden to sell repeatedly: front end = value of a DI PMO (V16 wording verbatim); back end = EVE Sphere (enterprise data map from the perpetually refreshed lake; base = map, context, control over MCP; action-response extra), proposed as SCS delivery background technology; client data and all indexing sovereign; DI CoE gives architecture and setup; lake connectivity and wider rollout owned by SCS delivery or client, else billed at Dany's and Tobias's hourly rates.
+- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe), review branch `eve-sphere-v0.4` (tags `v0.4.1`, `v0.5.0`), **not merged**, awaiting Dany. `main` at v0.3.1.1.
 - **Last-touched files:**
-  `2-deliver/2.1-architecture/EVE-SPHERE.md` (v0.4), `1-sell/KIT.md`, `1-sell/ESTIMATION.md`, `1-sell/use-cases/CURATED-EVENTS.md`, `1-sell/briefs/jeff-eve-sphere/` (PDF + `build_brief.py`), `registry/VERSIONS.md`
-- **Open:** Dany's review and merge of `eve-sphere-v0.4`; reply to Jeff not sent (Dany sends on WhatsApp); Jeff's access to private `scs-di-coe` open (BLUEPRINT §9); Steel Cloud Claude account still "To connect"; Q-011–Q-014 carried.
+  `1-sell/OFFER-STRUCTURE.md`, `1-sell/briefs/offer-structure/` (PDF + `build_offer.py`), `1-sell/KIT.md`, `2-deliver/2.1-architecture/EVE-SPHERE.md`, `1-sell/briefs/jeff-eve-sphere/`, `registry/VERSIONS.md`
+- **Open:** Dany's review and merge; Lilian's consent to V16 wording in an SCS offer (V16 is under review; its IP slide places DI PMO IP in the DI PMO venture); Jeff's access to private `scs-di-coe`; entry price not on the sheet (V16 assessment USD 25,000 vs OFFERING Phase 0 USD 5,000); Steel Cloud Claude account "To connect"; Q-011–Q-014.
 
 **Updated:** 2026-11-05 · **By:** Perplexity Computer (EVE project session).
 ---
