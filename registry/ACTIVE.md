@@ -45,14 +45,13 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** Universal DI PMO v5 review candidate for Sashi: Lilian's V12 (15 slides, XML-identical) + Petra ten Berg's feedback in her wording (4 slides) + approved four-circle diagram. Not operator-approved. v4 retained, v3 rejected.
-- **Current repo:** [`EVEglyphDesign/eve-liliantwin-pmo`](https://github.com/EVEglyphDesign/eve-liliantwin-pmo) for instructions, templates and checks; private Universal DI PMO Project file repo for the case, deck and release status.
+- **Current surface:** SCS EVE kit for Jeff Eden's eight items (solution set, presentations, architecture, implementation, estimation, use case, team, support), first use case Curated Events (Dave Paulus, event margin). Review branch, not operator-approved.
+- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe), branch `eve-kit-v0.3` (v0.3.0.1). Patterns from `hawkins-twin` and `dino-importtwin`, shape only.
 - **Last-touched files:**
-  Project: `di-pmo-pitch/v5/`, `di-pmo-pitch/VERSIONS.md`, `di-pmo-pitch/RELEASE-STATUS.json`, `START-HERE.md`; boot contract: `registry/ACTIVE.md`, `registry/OBSERVATIONS.md`
-- **Open:** tag `v0.1` not on the remote (the Claude Code session's git proxy refused the tag push, HTTP 403); create it on `7761009` from GitHub Releases. `Q-001` (EVE Sphere, domain gene, key-by-day, three update loops) partly answered from `dino-importtwin`, still open. `Q-002`–`Q-010` open, owners named in `scs-di-coe/registry/OPEN-QUESTIONS.md`. Prior open items (sovereign-starter i18n strings, 21 reference proposals, PR #3, Silva PMI) unchanged.
+  `1-sell/KIT.md`, `1-sell/ESTIMATION.md`, `1-sell/use-cases/CURATED-EVENTS.md`, `2-deliver/2.1-architecture/EVE-SPHERE.md`, `2-deliver/2.2-phases/BLUEPRINT-TEMPLATE.md`, `2-deliver/2.3-pmo/TEAM.md`, `3-keep/SUPPORT.md`, `registry/VERSIONS.md`, `registry/OPEN-QUESTIONS.md`; boot contract: `registry/ACTIVE.md`, `registry/OBSERVATIONS.md`
+- **Open:** Dany reviews and merges `eve-kit-v0.3`; reply to Jeff (WhatsApp) not sent; Steel Cloud Claude account still "To connect" (point it at scs-di-coe, not hawkins-twin); Q-011–Q-014 in scs-di-coe. Prior open items (DI PMO v5 tag `v0.1`, Q-001–Q-010) carried, not re-verified.
 
-**Updated:** 2026-10-22 · **By:** Perplexity thread `44d5a661-3d96-44ad-983d-bba3dbf98ff3`. SCS open items preserved from prior state, not newly verified.
-
+**Updated:** 2026-11-05 · **By:** Claude Code (desktop, SitRep session).
 ---
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
