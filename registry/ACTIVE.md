@@ -45,13 +45,13 @@ that would have prevented the next cold start lived only inside the session.
 
 ## State
 
-- **Current surface:** SCS EVE kit for Jeff Eden's eight items (solution set, presentations, architecture, implementation, estimation, use case, team, support), first use case Curated Events (Dave Paulus, event margin). Approved by Dany 5 Nov and merged.
-- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe), `main` at v0.3.0.1 (merged 5 Nov, Dany approved). Patterns from `hawkins-twin` and `dino-importtwin`, shape only.
+- **Current surface:** Reply to Jeff Eden positioning the EVE Sphere as the architecture component: the enterprise data map, reverse-engineered from the perpetually refreshed lake. Base model = map, context (persistent brain, memory of interactions), control (one project GitHub repo, requirement → source → component), reached by any AI surface over MCP; action-response deterministic component is an extra requirement. Supersedes Claude's rejected Curated Events margin proposal (v0.3.1) as the reply.
+- **Current repo:** [`EVEglyphDesign/scs-di-coe`](https://github.com/EVEglyphDesign/scs-di-coe), review branch `eve-sphere-v0.4` (tag `v0.4.1`), **not merged**, awaiting Dany. `main` still at v0.3.1.1.
 - **Last-touched files:**
-  `1-sell/KIT.md`, `1-sell/ESTIMATION.md`, `1-sell/use-cases/CURATED-EVENTS.md`, `2-deliver/2.1-architecture/EVE-SPHERE.md`, `2-deliver/2.2-phases/BLUEPRINT-TEMPLATE.md`, `2-deliver/2.3-pmo/TEAM.md`, `3-keep/SUPPORT.md`, `registry/VERSIONS.md`, `registry/OPEN-QUESTIONS.md`; boot contract: `registry/ACTIVE.md`, `registry/OBSERVATIONS.md`
-- **Open:** reply to Jeff (WhatsApp) not sent; Steel Cloud Claude account still "To connect" (point it at scs-di-coe, not hawkins-twin); Q-011–Q-014 in scs-di-coe. Prior open items (DI PMO v5 tag `v0.1`, Q-001–Q-010) carried, not re-verified.
+  `2-deliver/2.1-architecture/EVE-SPHERE.md` (v0.4), `1-sell/KIT.md`, `1-sell/ESTIMATION.md`, `1-sell/use-cases/CURATED-EVENTS.md`, `1-sell/briefs/jeff-eve-sphere/` (PDF + `build_brief.py`), `registry/VERSIONS.md`
+- **Open:** Dany's review and merge of `eve-sphere-v0.4`; reply to Jeff not sent (Dany sends on WhatsApp); Jeff's access to private `scs-di-coe` open (BLUEPRINT §9); Steel Cloud Claude account still "To connect"; Q-011–Q-014 carried.
 
-**Updated:** 2026-11-05 · **By:** Claude Code (desktop, SitRep session).
+**Updated:** 2026-11-05 · **By:** Perplexity Computer (EVE project session).
 ---
 
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
