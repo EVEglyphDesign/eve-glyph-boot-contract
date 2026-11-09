@@ -249,19 +249,3 @@ parser; do not silently drop.
   `| 2026-11-05 | EPQ-2026-11-05-02 | C — near-empty last page on first Word build | Perplexity Computer (agent), thread 687a5ff5 | Spec v34 for the sponsor. | First render of v34 docx ran to 5 pages with one bullet on page`
 - line 1761: date-row did not parse into an entry
   `| 2026-11-05 | EPQ-2026-11-05-03 | ✓ — commendation, operator-awarded | Perplexity Computer (agent), thread [3eecfec2](https://www.perplexity.ai/computer/tasks/3eecfec2-0c03-4b0a-bb15-24590b0b27ad) | Find the early Epiq `
-- line 1762: date-row did not parse into an entry
-  `| 2026-11-06 | DINO-2026-11-06-01 | C, P — spine changed twice; harm to the operator in front of his client | Perplexity Computer (agent), thread [54855bca](https://www.perplexity.ai/computer/tasks/54855bca-8379-408a-bd3`
-- line 1763: date-row did not parse into an entry
-  `| 2026-11-06 | DINO-2026-11-06-02 | R — the record already answered | Perplexity Computer (agent), thread [54855bca](https://www.perplexity.ai/computer/tasks/54855bca-8379-408a-bd3b-a504cf03c18a) | How to treat "renumber`
-- line 1764: date-row did not parse into an entry
-  `| 2026-11-06 | DINO-2026-11-06-03 | C — mechanical shift, generator not run | Perplexity Computer (agent), thread [54855bca](https://www.perplexity.ai/computer/tasks/54855bca-8379-408a-bd3b-a504cf03c18a) | Consistent num`
-- line 1765: date-row did not parse into an entry
-  `| 2026-11-06 | DINO-2026-11-06-04 | S — work on a surface not in use | Perplexity Computer (agent), thread [54855bca](https://www.perplexity.ai/computer/tasks/54855bca-8379-408a-bd3b-a504cf03c18a) | Make everything consi`
-- line 1766: date-row did not parse into an entry
-  `| 2026-11-06 | DINO-2026-11-06-05 | C — unchosen additions and invented dates | Perplexity Computer (agent), thread [54855bca](https://www.perplexity.ai/computer/tasks/54855bca-8379-408a-bd3b-a504cf03c18a) | Fix section `
-- line 1767: date-row did not parse into an entry
-  `| 2026-11-06 | DINO-2026-11-06-06 | T — change marks not readable | Perplexity Computer (agent), thread [54855bca](https://www.perplexity.ai/computer/tasks/54855bca-8379-408a-bd3b-a504cf03c18a) | A version Dino can revie`
-- line 1768: date-row did not parse into an entry
-  `| 2026-11-07 | DINO-2026-11-07-01 | C — bank name in GitHub | Perplexity Computer (agent), thread [54855bca](https://www.perplexity.ai/computer/tasks/54855bca-8379-408a-bd3b-a504cf03c18a) | Bank names stay out of GitHub.`
-- line 1769: date-row did not parse into an entry
-  `| 2026-11-09 | DINO-2026-11-09-01 | T, C — sending offered before review | Perplexity Computer (agent), thread [54855bca](https://www.perplexity.ai/computer/tasks/54855bca-8379-408a-bd3b-a504cf03c18a) | Build 3.26 for th`
