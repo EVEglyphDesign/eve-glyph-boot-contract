@@ -1778,3 +1778,6 @@ Note to DINO-2026-11-09-02, 2026-11-09: the operator then said "actually the foo
 
 ### EPQ-2026-11-09-04 · class T (drift) · 2026-11-09
 Operator asked for an MD that Tobias's Claude surface can use to find every source behind the directions in the GitHub repo (a briefing that points to scattered content so a durable asset can be built). Perplexity produced a human-reader prose brief instead. Corrected by `HANDOFF_TO_CLAUDE_2026-11-09_TOBIAS.md` (Epiq-Vortex-Artifacts v1.4.0/v1.4.1); the prose brief is marked superseded and kept.
+
+### EPQ-2026-11-09-05 · class R (retrieval) · 2026-11-09
+Perplexity reviewed Tobias's film and wrote the handoff saying the two cuts "are the full version of Lilian's DI PMO model" without opening Lilian's DI PMO value materials (V16 deck in eve-capability-catalogue/sources/di-pmo-v13/) or the Epiq use case (use-cases/EPIQ-SYSTEMS.md), both in the repo. The Operator had to point out that the film misses Lilian's points. Corrected in Epiq-Vortex-Artifacts v1.5.0 (L1–L13 mapping).
