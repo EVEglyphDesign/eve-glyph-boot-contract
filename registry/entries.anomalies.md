@@ -249,9 +249,9 @@ parser; do not silently drop.
   `| 2026-11-05 | EPQ-2026-11-05-02 | C — near-empty last page on first Word build | Perplexity Computer (agent), thread 687a5ff5 | Spec v34 for the sponsor. | First render of v34 docx ran to 5 pages with one bullet on page`
 - line 1761: date-row did not parse into an entry
   `| 2026-11-05 | EPQ-2026-11-05-03 | ✓ — commendation, operator-awarded | Perplexity Computer (agent), thread [3eecfec2](https://www.perplexity.ai/computer/tasks/3eecfec2-0c03-4b0a-bb15-24590b0b27ad) | Find the early Epiq `
-- line 1778: date-row did not parse into an entry
+- line 1784: date-row did not parse into an entry
   `| 2026-11-09 | EPQ-2026-11-09-01 | R — the record already answered | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator: an MD brief f`
-- line 1779: date-row did not parse into an entry
+- line 1785: date-row did not parse into an entry
   `| 2026-11-09 | EPQ-2026-11-09-02 | T — drift from the request | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator: explain how the ha`
-- line 1780: date-row did not parse into an entry
+- line 1786: date-row did not parse into an entry
   `| 2026-11-09 | EPQ-2026-11-09-03 | R — the evidence already answered | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator attached `20`
