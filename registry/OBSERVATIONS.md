@@ -371,6 +371,10 @@ under the same register because both are failures of the same judgment.
 
 ---
 
+### HWK-2026-11-14-01 · classes L and T · 2026-11-14
+
+I returned a narrow connection/proof summary instead of answering the five lead questions in the supplied workplan, then used a private GitHub file URL as the deliverable. The operator reported “That was a 404 please give me a doc” and then “Answer Jeff’s questions.” The cheaper correct path was to answer the supplied questions directly, label evidence gaps, and attach an editable Word file in the current surface. Corrected in the same session with a five-page Word answer, persisted in the private working repository and Project Files and successfully attached. No client dispatch occurred. Waste: two corrective user turns and document rework; credit cost unmeasured.
+
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
 *Pour le bien-être du peuple.*
 
