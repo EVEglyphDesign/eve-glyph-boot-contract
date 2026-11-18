@@ -17,14 +17,14 @@ of three, no unconfirmed spend — and from the position paper `EgD-POS-001`.
 
 ### I.1 Who he is
 
-> **Superseded, 1 August 2026.** The counterpart is **Zane Hall**, who writes
+> **Superseded, 1 August 2026.** The counterpart is **Writer Z**, who writes
 > [Frictionless Decisions](https://eveglyphdesign.github.io/eve-substack-archive/zanehall/)
-> and who has already agreed to review the position paper. Ashutosh Bansal, identified below,
-> is a subscription, not the friend. The corrections that follow from reading Zane's full
-> archive are in [Reading Zane Hall](https://eveglyphdesign.github.io/eve-substack-archive/review/EgD-REV-001.html)
+> and who has already agreed to review the position paper. Writer A, identified below,
+> is a subscription, not the friend. The corrections that follow from reading Writer Z's full
+> archive are in [Reading Writer Z](https://eveglyphdesign.github.io/eve-substack-archive/review/EgD-REV-001.html)
 > — §I.3 and §II of this note are amended there.
 
-The writer is **Ashutosh Bansal**, and the publication is
+The writer is **Writer A**, and the publication is
 [The Transformation Advantage](https://www.linkedin.com/pulse/why-semiconductor-sop-underpricing-volatility-what-its-bansal-t0n4c).
 One correction before anything is built on top of it: it runs as a **LinkedIn
 newsletter, not a Substack**. The Substack subscriptions in the operator's mailbox are
@@ -140,7 +140,7 @@ outreach, no volume tooling. If this needs a budget, it has already failed.
 
 One message, to one person, this week. Short enough to read on a phone:
 
-> Ashutosh — I have been reading The Transformation Advantage since the S&OP volatility
+> Writer A — I have been reading The Transformation Advantage since the S&OP volatility
 > piece. I have written a position paper on entering an SAP estate additively — mirror
 > rights and non-competition rather than displacement — and §III is the part I am least
 > sure of. Would you read it and tell me where the FP&A reasoning breaks?

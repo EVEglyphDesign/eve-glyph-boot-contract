@@ -5,6 +5,13 @@
 > Read this file **before** you spend anything. It is short on purpose. Reading it
 > costs less than one careless retrieval. Not reading it is the defect.
 
+> **Public skills, free to use.** The skills and the canon in this repository are made to be
+> loaded into any AI service – Claude, ChatGPT, Copilot, Gemini, Perplexity or your own agent.
+> Copy them, load them, adapt them. The registers are kept as worked evidence of how agents
+> fail and what the cheaper path was. Client, partner and person names in them are replaced by
+> role labels (Client C, Dealer group B, Partner T, Candidate L, …), client figures read
+> "[in private record]", and personal rows are withheld. The full record is kept privately.
+
 Canonical raw URL — fetch this, do not guess:
 `https://raw.githubusercontent.com/EVEglyphDesign/eve-glyph-boot-contract/main/README.md`
 
@@ -529,7 +536,7 @@ Rung 0 is one block, ≤10 lines total, fixed shape:
 2. **Owner participation points.** The 3–7 major steps where the operator, or a named
    third party, decides, signs, or is named. Numbered.
 3. **Data custody map.** For each participation point, who holds the data before,
-   during, and after — **named parties, not systems**. "PACCAR", "the dealer",
+   during, and after — **named parties, not systems**. "the OEM", "the dealer",
    "EVEglyphDesign", not "the API".
 4. **Boundary of this turn.** What will and will not be elaborated in the reply that
    follows. Everything outside the boundary is deferred, not guessed.
@@ -1100,9 +1107,9 @@ where four of six agents cannot write. Idea only; no text or code copied.
 
 ## 13. Live client sessions and precedent first — EgD-BOOT-009
 
-Adopted 2026-09-28 after the Dino connection session (DIN-2026-09-28-02 to -08). Every failure
+Adopted 2026-09-28 after the Client C connection session (DIN-2026-09-28-02 to -08). Every failure
 in that session was foreseeable: the same slow-drive, local-disk and batch-size limits had
-already been hit on Lillian's transfer, and the committed session plan already held the
+already been hit on Candidate L's transfer, and the committed session plan already held the
 contract and exclusion gates. The agent followed neither. The operator was harmed in front of
 his client. This clause exists so that cannot recur.
 
@@ -1190,8 +1197,8 @@ Breach is class **L**. Recurrence is class **P**.
 
 ## 16. Confirm a place is open before sending the operator — EgD-BOOT-012
 
-Adopted 2026-10-24 after LOC-2026-10-24-11: the operator drove to Centre Rockland to have keys
-cut at a shop that had closed about two months earlier. A services page or a mall directory is
+Adopted 2026-10-24 after LOC-2026-10-24-11: the operator drove to a shopping centre for a service
+at a shop that had closed about two months earlier. A services page or a mall directory is
 not proof a business still operates.
 
 1. Before sending the operator anywhere, confirm the business is open now: a current listing,
@@ -1263,18 +1270,18 @@ Breach = **C**; recurrence = **P**.
 
 ## 20. Private by default; client sites behind an email gate — EgD-BOOT-016
 
-Adopted 2026-10-29 after SEC-2026-10-29-01/02 (Hawkins repos and Pages sites found public).
-Tobias Polly, verbatim, forwarded by the operator:
+Adopted 2026-10-29 after SEC-2026-10-29-01/02 (Dealer group B repos and Pages sites found public).
+Partner T, verbatim, forwarded by the operator:
 
-> "new repos should always be private by default, especially anything with hawkins or real data
+> "new repos should always be private by default, especially anything with dealerb or real data
 > in it. otherwise a small leak costs us a lot"
 
 1. **Every new repository is created `--private`.** Public only when the operator names that
-   repository as public in the request. Anything carrying a client name (Hawkins, Peterbilt,
-   PACCAR, CDK, …) or real records is never made public, even on request, without the operator
+   repository as public in the request. Anything carrying a client name (Dealer group B, Dealer B1,
+   the OEM, CDK, …) or real records is never made public, even on request, without the operator
    confirming the specific repository a second time.
 2. **Collaborators at creation.** The working team is added when the repository is created, so
-   privacy never means handing files back and forth. Hawkins lane: `tobias-polly`, `LukeW-L`, write.
+   privacy never means handing files back and forth. Dealer group B lane: [GitHub handles in private record], write.
 3. **No open client site.** A private repository's GitHub Pages site is still public. Client
    surfaces are served from Cloudflare Pages with Cloudflare Access in front, so only people
    added by email can open them (control plane: `eve-external-surfaces`). Until Access is in

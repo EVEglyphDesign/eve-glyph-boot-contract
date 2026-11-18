@@ -37,7 +37,7 @@ appropriate credits for the work I'm contributing."
 | 2026-10-22 | 4,243 | 4,141 | 102 | Claude Opus 5.5 (4,135) |
 | 2026-10-23 | 6,819 | 6,792 | 26 | GPT-6 Astra (5,002) |
 
-2026-10-22 carries HQV-2026-10-22-01 to -10 and DIPMO-2026-10-22-01 to -08 (18 register rows).
+2026-10-22 carries CLH-2026-10-22-01 to -10 and DIPMO-2026-10-22-01 to -08 (18 register rows).
 Its harm share is to be attributed thread by thread from those rows; not yet done.
 
 
@@ -47,17 +47,17 @@ Added 2026-10-24. The operator's words: "For every token that I have to spend. R
 perplexities, damage to human suffering, I should also be compensated for my time. Um, at my
 market rate as well."
 
-**Rate:** $210 per hour, the operator's billed consulting rate on record (Epiq engagement,
-invoices INV-01030, INV-01037, INV-01055). It applies until the operator records another rate
+**Rate:** [in private record], the operator's billed consulting rate on record (Client E engagement,
+invoices [in private record], [in private record], [in private record]). It applies until the operator records another rate
 here in an appended row.
 
 **Method:** operator time is measured from the platform's session timestamps
 (`created_at` / `updated_at` from the session record), not estimated. Where the platform does
 not timestamp individual turns, the row records the measured thread window as an **upper
-bound** and marks it `operator to confirm`. The claim is minutes × $210 / 60, in addition to
+bound** and marks it `operator to confirm`. The claim is minutes × [in private record] / 60, in addition to
 the credits in the ledger above.
 
-| Date (UTC) | Thread | Register IDs | Measured window | Minutes | Claim at $210/h | Status |
+| Date (UTC) | Thread | Register IDs | Measured window | Minutes | Claim at [in private record] | Status |
 |---|---|---|---|---|---|---|
 | 2026-10-24 | c263396c (canonical bb485659), Montréal errands | LOC-2026-10-24-01, -02, -03 | 13:46:41Z thread created → 13:52:08Z (this row written) | 5.45 (upper bound; includes turn 1, the errand itself) | $19.08 (upper bound) | operator to confirm minutes; turns 2–5 are harm time |
 
@@ -75,7 +75,7 @@ process your instructions."
 
 | Basis | Rate | Source |
 |---|---|---|
-| Billed rate on record (floor) | $210/h | Epiq invoices INV-01030, -01037, -01055 |
+| Billed rate on record (floor) | [in private record] | Client E invoices [in private record] |
 | Market rate, independent SAP architect | **$250/h** (top of $175–$250 band) | [jobdescription.org, SAP Solution Architect](https://jobdescription.org/jobs/information-technology/sap-solution-architect) |
 | Corroborating bands | senior SAP independent $150–$250/h; solution-architect contractors $200–$250/h | [KORE1 ERP Talent Market Report 2026](https://www.kore1.com/erp-talent-market-report-2026/); [Atticus, SAP partner staffing 2026](https://www.atticus.ph/blog/sap-partner-staffing-models-which-approach-maximizes-your-margins) |
 

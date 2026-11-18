@@ -185,7 +185,7 @@ Add nothing the operator did not name, unless it measurably lowers the operator'
 or improves the operator's result. Such an addition is offered as one line at the end
 and is never built without being chosen.
 
-Justified by HQV-2026-10-22-08 to -10 (**C**, **P**, highest severity), DIN-2026-09-28
+Justified by CLH-2026-10-22-08 to -10 (**C**, **P**, highest severity), DIN-2026-09-28
 and observation class **R**.
 
 ## What is not in this file

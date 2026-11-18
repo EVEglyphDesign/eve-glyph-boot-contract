@@ -11,8 +11,8 @@
 
 ## I. The source
 
-Jack Neel Podcast, episode 52 — *Short-Form Expert: "Going Viral Isn't Luck." I
-Make $1M/Month With 31 Second Videos*, published 29 September 2025, 99 minutes.
+Contact N Podcast, episode 52 — *Short-Form Expert: "Going Viral Isn't Luck." I
+Make [in private record]/Month With 31 Second Videos*, published 29 September 2025, 99 minutes.
 Guest: Daniel Bitton, co-founder of Crayo AI, eighteen at the time of recording.
 Listen on [Spotify](https://open.spotify.com/episode/1JGZOWkjNkNeDwS24ah9md) or
 [iHeart](https://www.iheart.com/podcast/1323-jack-neel-podcast-203871835/episode/short-form-expert-going-viral-isnt-luck-297396646/).

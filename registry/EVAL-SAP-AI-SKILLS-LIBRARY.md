@@ -24,7 +24,7 @@ SAP's official registry of agent skills in the open `SKILL.md` format (the same 
 
 1. **Design reference, no credentials.** `sap-fiori-guidelines` — Fiori design system, page types, Fiori Elements, S/4HANA patterns, Joule/AI patterns. Pure Markdown. **Adopted** as personal skill `user:sap-fiori-guidelines` (skill id `c0f6f5d1-3d78-49b3-afc5-26ad3ec09e97`), unmodified, with Apache NOTICE.
 2. **Needs an SAP tenant.** `aicore-*` — Python scripts against SAP AI Core / GenAI Hub; require a BTP AI Core instance and service key. `sap-fiori-ios` requires the Figma MCP. **Held** — no operator tenant on record.
-3. **Elsewhere in the catalogue, relevant to live work.** CAP Add Remote Service (imports S/4 OData into a CAP app — the SAP endpoint accelerator for the Hawkins spine), BTP CLI, CF CLI, SAP Tutorials Content Access (no auth). **Held** — repos not yet reviewed.
+3. **Elsewhere in the catalogue, relevant to live work.** CAP Add Remote Service (imports S/4 OData into a CAP app — the SAP endpoint accelerator for the Dealer group B spine), BTP CLI, CF CLI, SAP Tutorials Content Access (no auth). **Held** — repos not yet reviewed.
 
 ## Boundary
 

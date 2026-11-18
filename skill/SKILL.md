@@ -210,8 +210,8 @@ Model ids, per-lane defaults and the burn-window fields are in
 
 ## 2c. Live client sessions — EgD-BOOT-009
 
-Adopted 2026-09-28 after the Dino connection session harmed the operator in front of his
-client. Every failure was foreseeable: Lillian's transfer had already hit the same limits.
+Adopted 2026-09-28 after the Client C connection session harmed the operator in front of his
+client. Every failure was foreseeable: Candidate L's transfer had already hit the same limits.
 Applies whenever the operator is, or will be, on screen with a client. Full text: README §13.
 
 **Precedent before procedure.** Before any transfer, access, export or install step, read the
@@ -274,7 +274,7 @@ Full text: README §19.
 
 Adopted 2026-10-29. (1) Every new repository is `--private`; public only when the operator names it,
 and never for client-named or real-data repositories without a second confirmation. (2) Add the team
-at creation (Hawkins: `tobias-polly`, `LukeW-L`, write). (3) A private repository's Pages site is still
+at creation (Dealer group B: [GitHub handles in private record], write). (3) A private repository's Pages site is still
 public: client surfaces go on Cloudflare Pages behind Cloudflare Access (email allowlist); until then
 they are passkey-sealed, never left open. (4) Check logged out before calling a surface live.
 Breach = **C**, harm; recurrence = **P**. Full text: README §20.
