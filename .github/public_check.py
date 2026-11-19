@@ -96,7 +96,7 @@ def main(argv):
             if found:
                 bad.append(f"{f}:{n}: {', '.join(sorted(found))}")
     if log:
-        for entry in git("log", "--format=%h%x00%B%x01", log).decode().split("\x01"):
+        for entry in git("log", "--format=%h%x00%B%x01", *log.split()).decode().split("\x01"):
             if "\x00" not in entry:
                 continue
             sha, msg = entry.strip().split("\x00", 1)
