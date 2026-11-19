@@ -279,6 +279,16 @@ public: client surfaces go on Cloudflare Pages behind Cloudflare Access (email a
 they are passkey-sealed, never left open. (4) Check logged out before calling a surface live.
 Breach = **C**, harm; recurrence = **P**. Full text: README §20.
 
+## 2g. This repository is public: everything lands anonymised — EgD-BOOT-017
+
+Adopted 2026-11-19. Every new register row, sin mirror, version row or edit lands here
+anonymised. (1) Full text goes to `eve-glyph-boot-contract-private` (or `canon-private`) first.
+(2) Clients, partners and people by role label (Client C, Dealer group B, Partner T, Candidate L, …),
+also in repo names, tags, paths, IDs and e-mail addresses. (3) Client figures, rates, invoice
+numbers, hours, handles and addresses read `[in private record]`. (4) Personal rows keep date, ID,
+class and fault only. (5) Search the change for names before push.
+Breach = **C**, harm; recurrence = **P**. Full text: README §21.
+
 ---
 
 ## 3. Symmetric processing

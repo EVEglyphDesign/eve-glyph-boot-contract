@@ -1292,5 +1292,29 @@ Partner T, verbatim, forwarded by the operator:
 
 Breach = **C**, harm; recurrence = **P**.
 
+## 21. This repository is public: everything lands anonymised — EgD-BOOT-017
+
+Adopted 2026-11-19 after v1.29 (public skills, anonymised in place). Operator, verbatim:
+"Yes, add the rule".
+
+The skills and the canon here are public and free to use in any AI service. The registers are
+public evidence of how agents fail. So every new register row, sin mirror, version row or edit
+lands here already anonymised:
+
+1. **Full text to the private repository first.** The unredacted row goes to
+   `eve-glyph-boot-contract-private` (canon: `canon-private`). Nothing is lost.
+2. **Names become role labels.** Clients, partners and people are written by role, using the
+   labels already in the register (Client C, Dealer group B, Dealer B1, Client E, Partner T,
+   Partner S, Partner J, Candidate L, …). A new party gets a new label of the same kind. Repo
+   names, tags, paths, IDs and e-mail addresses that carry a name are changed the same way.
+3. **Figures stay private.** Client figures, rates, invoice numbers, hours billed, GitHub handles
+   and addresses read `[in private record]`.
+4. **Personal matters are withheld.** A row about the operator's personal life keeps its date, ID,
+   class and fault; every other cell reads `Personal matter – full row in private record`.
+5. **Check before push.** Search the change for client and person names; a hit is fixed before
+   the push, never after.
+
+Breach = **C**, harm; recurrence = **P**.
+
 © 2026 EVEglyphDesign. All rights reserved. Controlled copy.
 *Pour le bien-être du peuple.*
