@@ -14,3 +14,6 @@ Attachments on the dealer principal's mail were never read: the Twin stores atta
 
 ## Related
 CLC-2026-11-17-01 and CLC-2026-11-17-02 (silent failure; absence stated without scope).
+
+## Addendum, 19 Nov (sweep result)
+The full sweep confirmed the miss was larger than first recorded: the August 2026 composite of the peer group (all members, the dealer as member 05) had been in the Twin since 21 Oct 2026 as attachments on the principal's mail, together with the ATD guide benchmarks. Six assessment versions said peer figures were not held.
