@@ -1,0 +1,24 @@
+# EgD-BOOT-017: this repository is public. Fails when a pushed file or commit
+# message carries a client, partner or person name (hashed list in .github/).
+name: public-check
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  names:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check files and new commit messages for names
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          SHA: ${{ github.sha }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then range="$BASE..$SHA"
+          elif [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then range="$SHA^!"
+          else range="$BEFORE..$SHA"; fi
+          python3 .github/public_check.py --log "$range"
