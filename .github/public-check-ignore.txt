@@ -1,0 +1,3 @@
+# Files the public check skips – each line needs a reason.
+# Working recovery script with client file patterns; move to the -private repo or keep is Dany's call (open since 2026-11-19).
+scripts/device/EgD-PC-Recover.ps1

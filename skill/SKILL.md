@@ -286,7 +286,8 @@ anonymised. (1) Full text goes to `eve-glyph-boot-contract-private` (or `canon-p
 (2) Clients, partners and people by role label (Client C, Dealer group B, Partner T, Candidate L, …),
 also in repo names, tags, paths, IDs and e-mail addresses. (3) Client figures, rates, invoice
 numbers, hours, handles and addresses read `[in private record]`. (4) Personal rows keep date, ID,
-class and fault only. (5) Search the change for names before push.
+class and fault only. (5) Search the change for names before push; `.github/public_check.py` does it
+(pre-push hook: `git config core.hooksPath .githooks`; GitHub Action `public-check`).
 Breach = **C**, harm; recurrence = **P**. Full text: README §21.
 
 ---

@@ -1312,7 +1312,12 @@ lands here already anonymised:
 4. **Personal matters are withheld.** A row about the operator's personal life keeps its date, ID,
    class and fault; every other cell reads `Personal matter – full row in private record`.
 5. **Check before push.** Search the change for client and person names; a hit is fixed before
-   the push, never after.
+   the push, never after. Automatic since v1.31: `.github/public_check.py` checks every tracked
+   text file and every new commit message against `.github/public-denylist.txt` (salted SHA-256
+   hashes of the names, so the list itself names no one). It runs as a pre-push hook
+   (`git config core.hooksPath .githooks`, once per clone – blocks the push) and as the
+   `public-check` GitHub Action on every push and pull request (red X after a push that slipped
+   through). Add a name: `python .github/public_check.py --hash <name>` and paste the line.
 
 Breach = **C**, harm; recurrence = **P**.
 

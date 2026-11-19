@@ -25,7 +25,7 @@ of three, no unconfirmed spend — and from the position paper `EgD-POS-001`.
 > — §I.3 and §II of this note are amended there.
 
 The writer is **Writer A**, and the publication is
-[The Transformation Advantage](https://www.linkedin.com/pulse/why-semiconductor-sop-underpricing-volatility-what-its-bansal-t0n4c).
+[The Transformation Advantage]([source link in private record]).
 One correction before anything is built on top of it: it runs as a **LinkedIn
 newsletter, not a Substack**. The Substack subscriptions in the operator's mailbox are
 other publications — *The Wright Report*, *AI Supremacy*, *AI Agents Simplified*, Rami

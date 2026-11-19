@@ -244,33 +244,33 @@ parser; do not silently drop.
 - line 1735: date-row did not parse into an entry
   `| 2026-11-05 | PTS-2026-11-05-03 | O — output canon: formal deliverable given as chat text; content beyond sources | Claude Code (agent), SitRep desktop session | Operator: "Yes, finalize it" (the reply to Partner J). Th`
 - line 1762: date-row did not parse into an entry
-  `| 2026-11-05 | EPQ-2026-11-05-01 | R — re-verified an operator statement by enumeration | Perplexity Computer (agent), thread 687a5ff5 | Operator: build the Client E DI PMO blueprint branch; transfer to Client E where "A`
+  `| 2026-11-05 | CLE-2026-11-05-01 | R — re-verified an operator statement by enumeration | Perplexity Computer (agent), thread 687a5ff5 | Operator: build the Client E DI PMO blueprint branch; transfer to Client E where "C`
 - line 1763: date-row did not parse into an entry
-  `| 2026-11-05 | EPQ-2026-11-05-02 | C — near-empty last page on first Word build | Perplexity Computer (agent), thread 687a5ff5 | Spec v34 for the sponsor. | First render of v34 docx ran to 5 pages with one bullet on page`
+  `| 2026-11-05 | CLE-2026-11-05-02 | C — near-empty last page on first Word build | Perplexity Computer (agent), thread 687a5ff5 | Spec v34 for the sponsor. | First render of v34 docx ran to 5 pages with one bullet on page`
 - line 1764: date-row did not parse into an entry
-  `| 2026-11-05 | EPQ-2026-11-05-03 | ✓ — commendation, operator-awarded | Perplexity Computer (agent), thread [3eecfec2](https://www.perplexity.ai/computer/tasks/3eecfec2-0c03-4b0a-bb15-24590b0b27ad) | Find the early Clien`
+  `| 2026-11-05 | CLE-2026-11-05-03 | ✓ — commendation, operator-awarded | Perplexity Computer (agent), thread [3eecfec2](https://www.perplexity.ai/computer/tasks/3eecfec2-0c03-4b0a-bb15-24590b0b27ad) | Find the early Clien`
 - line 1792: date-row did not parse into an entry
-  `| 2026-11-09 | EPQ-2026-11-09-01 | R — the record already answered | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator: an MD brief f`
+  `| 2026-11-09 | CLE-2026-11-09-01 | R — the record already answered | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator: an MD brief f`
 - line 1793: date-row did not parse into an entry
-  `| 2026-11-09 | EPQ-2026-11-09-02 | T — drift from the request | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator: explain how the ha`
+  `| 2026-11-09 | CLE-2026-11-09-02 | T — drift from the request | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator: explain how the ha`
 - line 1794: date-row did not parse into an entry
-  `| 2026-11-09 | EPQ-2026-11-09-03 | R — the evidence already answered | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator attached `20`
+  `| 2026-11-09 | CLE-2026-11-09-03 | R — the evidence already answered | Perplexity Computer (agent), thread [90220e0a](https://www.perplexity.ai/computer/tasks/90220e0a-7d9e-4767-9c97-c8eb371d9e25) | Operator attached `20`
 - line 1808: date-row did not parse into an entry
   `| 2026-11-11 | HRN-2026-11-11-01 | P — recurring single-surface dependency (with D) | Agent (Perplexity) | Ben's harness, thread [9e615121](https://www.perplexity.ai/computer/tasks/9e615121-e181-4229-b97d-ae970129b2ee): `
 - line 1809: date-row did not parse into an entry
   `| 2026-11-11 | PTS-2026-11-11-01 | R (with C) | Perplexity Computer | Contact K introduction email, thread [4f2fbb70](https://www.perplexity.ai/computer/tasks/4f2fbb70-56c0-4b0f-911b-ac05434fc32c): add an AI example from`
 - line 1810: date-row did not parse into an entry
-  `| 2026-11-14 | HWK-2026-11-14-01 | B — harness not loaded | Agent (Claude Code, Opus 5.5, session a37c309e) | Dealer group B TRL work, 13–14 Nov: find the TRL contracts Client lead B loaded, file them, connect Client lea`
+  `| 2026-11-14 | DLB-2026-11-14-01 | B — harness not loaded | Agent (Claude Code, Opus 5.5, session a37c309e) | Dealer group B Vendor T work, 13–14 Nov: find the Vendor T contracts Client lead B loaded, file them, connect `
 - line 1811: date-row did not parse into an entry
-  `| 2026-11-14 | HWK-2026-11-14-02 | V (with C, D) | Agent (Claude Code, Opus 5.5, session a37c309e) | Same thread: file the TRL Solutions proposal Client lead B posted. | On 13 Nov I pushed `4a33f73` straight to `EVEglyph`
+  `| 2026-11-14 | DLB-2026-11-14-02 | V (with C, D) | Agent (Claude Code, Opus 5.5, session a37c309e) | Same thread: file the Vendor T proposal Client lead B posted. | On 13 Nov I pushed `4a33f73` straight to `EVEglyphDesig`
 - line 1812: date-row did not parse into an entry
-  `| 2026-11-14 | HWK-2026-11-14-03 | P (with R, D) | Agent (Claude Code, Opus 5.5, session a37c309e) | Operator, 14 Nov: "I don't want to go between different Claude surfaces … we want all of our work reflected back in our`
+  `| 2026-11-14 | DLB-2026-11-14-03 | P (with R, D) | Agent (Claude Code, Opus 5.5, session a37c309e) | Operator, 14 Nov: "I don't want to go between different Claude surfaces … we want all of our work reflected back in our`
 - line 1813: date-row did not parse into an entry
-  `| 2026-11-14 | HWK-2026-11-14-04 | C (with T) | Agent (Claude Code, Opus 5.5, session a37c309e) | Same thread. | I handed the operator manual steps instead of doing the work: a multi-step Cowork procedure, a `gh api` col`
+  `| 2026-11-14 | DLB-2026-11-14-04 | C (with T) | Agent (Claude Code, Opus 5.5, session a37c309e) | Same thread. | I handed the operator manual steps instead of doing the work: a multi-step Cowork procedure, a `gh api` col`
 - line 1814: date-row did not parse into an entry
-  `| 2026-11-14 | HWK-2026-11-14-05 | I (with R) | Agent (Claude Code, Opus 5.5, session a37c309e) | 12–13 Nov, failing external Toshiba drive: get the drive working. | I ran timed watch/sleep loops waiting for the drive to`
+  `| 2026-11-14 | DLB-2026-11-14-05 | I (with R) | Agent (Claude Code, Opus 5.5, session a37c309e) | 12–13 Nov, failing external Toshiba drive: get the drive working. | I ran timed watch/sleep loops waiting for the drive to`
 - line 1816: date-row did not parse into an entry
-  `| 2026-11-14 | HWK-2026-11-14-07 | L (with P) | Agent (Claude Code, Opus 5.5, session a37c309e) | 13 Nov: how to read the files on the WD drive. | I explained APFS partitions and command-line extraction in terms the oper`
+  `| 2026-11-14 | DLB-2026-11-14-07 | L (with P) | Agent (Claude Code, Opus 5.5, session a37c309e) | 13 Nov: how to read the files on the WD drive. | I explained APFS partitions and command-line extraction in terms the oper`
 - line 1819: date-row did not parse into an entry
   `| 2026-11-17 | CLC-2026-11-17-01 | E (silent failure) | Agent (Perplexity Computer, Claude Opus 5.5, session [bc5c5d7f](https://www.perplexity.ai/computer/tasks/bc5c5d7f-be03-4ca4-918b-304b13b9e581)) | Review all of Clie`
 - line 1820: date-row did not parse into an entry
@@ -279,3 +279,5 @@ parser; do not silently drop.
   `| 2026-11-18 | CLC-2026-11-18-01 | E (silent failure) | Agent (Perplexity Computer, Claude Opus 5.5, sessions [bc5c5d7f](https://www.perplexity.ai/computer/tasks/bc5c5d7f-be03-4ca4-918b-304b13b9e581) and [4062736a](https`
 - line 1822: date-row did not parse into an entry
   `| 2026-11-17 | CLC-2026-11-17-02 | E (silent failure) | Agent (Perplexity Computer, Claude Opus 5.5, session [bc5c5d7f](https://www.perplexity.ai/computer/tasks/bc5c5d7f-be03-4ca4-918b-304b13b9e581)) | Review Client C's `
+- line 1823: date-row did not parse into an entry
+  `| 2026-11-19 | DLB-2026-11-19-01 | E (silent failure) | Agent (Claude Code, Opus 5.5, session 02b0ad28) | Dealer group B capability maturity assessment for the dealer principal, built on the Twin (18–19 Nov); standing in`

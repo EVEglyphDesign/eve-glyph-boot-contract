@@ -1,0 +1,10 @@
+#!/bin/sh
+# EgD-BOOT-017: blocks a push that carries client, partner or person names.
+# Install once per clone: git config core.hooksPath .githooks
+z=0000000000000000000000000000000000000000
+while read lref lsha rref rsha; do
+  [ "$lsha" = "$z" ] && continue
+  if [ "$rsha" = "$z" ]; then range="$lsha^!"; else range="$rsha..$lsha"; fi
+  python .github/public_check.py --rev "$lsha" --log "$range" || exit 1
+done
+exit 0
