@@ -19,3 +19,6 @@ Register row: [CLO-2026-11-23-01](../OBSERVATIONS.md)
 
 ## Related
 DLB-2026-11-19-01 (attachments never read), PPX-2026-11-21-01 (extract called comprehensive while incomplete), CLG-2026-11-22-01 (new version dropped prior detail) – same family: output delivered before full source coverage.
+
+## Addendum, 23 Nov (full source check)
+The line-by-line check the record said was still owed was run the same day: five readers, 295 of 295 slide files, all five call-note files, the spec and the blueprint, each against the 53-slide deck. Result: about 200 cited claims held; about 110 findings (some overlapping) did not – wrong or partial citations, statuses stated as designed where the sources say provisional, open or "to verify", quotes that are paraphrases or a machine mishearing, and source positions the deck never carried (activity-type level decided for the build at one level while three decks and the call define it at another; the existing decision on who creates the 2028 standard journals; the allocation option sets; the SAVH lean). Confirms the severity: four versions had gone to the operator built on summaries.
