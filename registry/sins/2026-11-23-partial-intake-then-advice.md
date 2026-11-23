@@ -29,3 +29,6 @@ CLO-2026-11-23-01 (deck built before full source analysis), DLB-2026-11-19-01 (a
 
 ## Addendum, 23 Nov (correction and second batch)
 The operator corrected the record: Teams is disconnected by choice, so it could not be searched. A second, sharper batch of 53 photos (plus 45 items the message store holds without content) arrived after the first reply; it is being taken in before anything else.
+
+## Addendum, 23 Nov (reconciliation not done)
+After the second batch I reported "9 slides missing, positions unknown" and two unplaced slides instead of reconciling: the first batch's own thumbnail pane (photo p07) already showed slides 15–20, with 16 and 17 being the two option diagrams the second batch read sharply. The reconciliation (16, 17 confirmed; 15, 18 table slides; missing = slides 6–14) took one crop and was done only after the operator objected. Rule: reconcile every batch against every other batch and the indexed record before reporting a gap.
